@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/component.css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -57,25 +58,117 @@
         <h2 class="mt-4">32(더보기)</h2>
         <a href="#" class="btn-more32"><span class="icon-more">더보기</span></a>
         <a href="#" class="btn-more32 disabled"><span class="icon-more">더보기</span></a>
-        <h1 class="mt-6">아이콘버튼</h1>
+
+
+        <h1 class="mt-4">아이콘버튼</h1>
         <h2 class="mt-4">68</h2>
-        <button type="button" class="btn-play">플레이</button>
-        <button type="button" class="btn-play disabled">플레이</button>
+        <div class="player-btn" style="background-color: #88898a;">
+            <button type="button" class="btn-play">플레이</button>
+            <button type="button" class="btn-play disabled">플레이</button>
+        </div>
+
         <h2 class="mt-4">52</h2>
         <div class="p-1">
             <button type="button" class="btn-increace">늘리기</button>
             <button type="button" class="btn-increace disabled">늘리기</button>
         </div>
         <div class="p-1">
-            <div class="count">
+            <div class="count d-flex flex-column">
                 <button type="button" class="plus">더하기</button>
                 <button type="button" class="minus">빼기</button>
             </div>
+            
+            <div class="count d-flex flex-column">
+                <button type="button" class="plus disabled">더하기</button>
+                <button type="button" class="minus disabled">빼기</button>
+            </div>
         </div>
+
         <h2 class="mt-4">48</h2>
+        <div class="control-btn p-1">
+            <button type="button" class="control-prev">이전</button>
+            <button type="button" class="control-next">다음</button>
+        </div>
+        <div class="control-btn p-1">
+            <button type="button" class="control-prev disabled">이전</button>
+            <button type="button" class="control-next disabled">다음</button>
+        </div>
+
         <h2 class="mt-4">44</h2>
+        <div class="p-1">
+            <button type="button" class="btn-close">닫기</button>
+            <button type="button" class="btn-close disabled">닫기</button>
+        </div>
+
         <h2 class="mt-4">40</h2>
+        <div style="background-color: #88898a;">
+            <div class="control-btn smal p-1">
+                <button type="button" class="control-prev">이전</button>
+                <button type="button" class="control-next">다음</button>
+                <button type="button" class="search-btn">검색</button>
+            </div>
+            <div class="control-btn smal p-1">
+                <button type="button" class="control-prev disabled">이전</button>
+                <button type="button" class="control-next disabled">다음</button>
+                <button type="button" class="search-btn disabled">검색</button>
+            </div>
+        </div>
+
         <h2 class="mt-4">20</h2>
+        <div class="control-btn p-1" style="background-color: #88898a;">
+            <button type="button" class="stop">stop</button>
+            <button type="button" class="play">play</button>
+        </div>
+        <div class="control-btn p-1" style="background-color: #88898a;">
+            <button type="button" class="stop disabled">stop</button>
+            <button type="button" class="play disabled">play</button>
+        </div>
+
+        <h1 class="mt-4">태그</h1>
+        <a href="#" class="tag">Normal</a>
+        <a href="#" class="tag disabled">Normal</a>
+
+        <h1 class="mt-4">탭</h1>
+        <ul class="nav pc-tab" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Normal</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Normal</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Normal</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">111111</div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">2222</div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">3333</div>
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">4444</div>
+        </div>
+        <ul class="nav mo-tab" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane1" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Normal</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane1" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Normal</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane1" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Normal</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane1" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane1" role="tabpanel" aria-labelledby="home-tab" tabindex="0">111111</div>
+            <div class="tab-pane fade" id="profile-tab-pane1" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">2222</div>
+            <div class="tab-pane fade" id="contact-tab-pane1" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">3333</div>
+            <div class="tab-pane fade" id="disabled-tab-pane1" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">4444</div>
+        </div>
     </div>
 </body>     
 </html>
