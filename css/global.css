@@ -1,0 +1,150 @@
+@font-face {
+font-family: "Noto Sans CJK KR";
+font-weight: 100;
+font-style: normal;
+src: url("../fonts/NotoSans-Thin.eot?") format("eot"),
+url("../fonts/NotoSans-Thin.otf") format("opentype"),
+url("../fonts/NotoSans-Thin.woff") format("woff"),
+url("../fonts/NotoSans-Thin.woff2") format("woff2");
+}
+
+@font-face {
+font-family: "Noto Sans CJK KR";
+font-weight: 300;
+font-style: normal;
+src: url("../fonts/NotoSans-Light.eot?") format("eot"),
+url("../fonts/NotoSans-Light.otf") format("opentype"),
+url("../fonts/NotoSans-Light.woff") format("woff"),
+url("../fonts/NotoSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+font-family: "Noto Sans CJK KR";
+font-weight: 400;
+font-style: normal;
+src: url("../fonts/NotoSans-Regular.eot?") format("eot"),
+url("../fonts/NotoSans-Regular.otf") format("opentype"),
+url("../fonts/NotoSans-Regular.woff") format("woff"),
+url("../fonts/NotoSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+font-family: "Noto Sans CJK KR";
+font-weight: 500;
+font-style: normal;
+src: url("../fonts/NotoSans-Medium.eot?") format("eot"),
+url("../fonts/NotoSans-Medium.otf") format("opentype"),
+url("../fonts/NotoSans-Medium.woff") format("woff"),
+url("../fonts/NotoSans-Medium.woff2") format("woff2");
+}
+
+@font-face {
+font-family: "Noto Sans CJK KR";
+font-weight: 700;
+font-style: normal;
+src: url("../fonts/NotoSans-Bold.eot?") format("eot"),
+url("../fonts/NotoSans-Bold.otf") format("opentype"),
+url("../fonts/NotoSans-Bold.woff") format("woff"),
+url("../fonts/NotoSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+font-family: "DXMgoB";
+font-weight: 700;
+font-style: normal;
+src: url("../fonts/DXMgoB-KSCpc-EUC-H.eot?") format("eot"),
+url("../fonts/DXMgoB-KSCpc-EUC-H.ttf") format("truetype"),
+url("../fonts/DXMgoB-KSCpc-EUC-H.woff") format("woff"),
+url("../fonts/DXMgoB-KSCpc-EUC-H.woff2") format("woff2");
+}
+
+a{ text-decoration: none;}
+
+body{font-family: "Noto Sans CJK KR";font-weight: 400;}
+
+@media (min-width: 1400px){}
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1200px;
+    padding: 0;
+}
+
+.ico {display: inline-block;vertical-align: middle;}
+.ico.epis {width:34px;height: 20px;background:url(../images/ico_epis.png);background-size: cover;}
+.ico.donong {width:20px;height: 20px;background:url(../images/ico_donong.png);background-size: cover;}
+.ico.facebook {width:20px;height: 20px;background:url(../images/ico_facebook.png);background-size: cover;}
+.ico.twitter {width:20px;height: 20px;background:url(../images/ico_twitter.png);background-size: cover;}
+.ico.kakaotalk {width:20px;height: 20px;background:url(../images/ico_kakao.png);background-size: cover;}
+.ico.logout {width:12px;height: 12px;background:url(../images/btn_12_logout_white_n.png);background-size: cover;}
+.ico.login {width:12px;height: 12px;background:url(../images/btn_16_login_blak_d.png);background-size: cover;}
+.ico.join {width:14px;height: 14px;background:url(../images/btn_16_join_black_d.png);background-size: cover;}
+
+/* header */
+header .util{
+background-color: #101314;
+color: #b2b2b2;
+display: flex;
+justify-content: space-between;
+height:44px;
+padding:0 24px;
+align-items: center;
+font-size: 11px;
+}
+header .util .link{
+display: flex;
+align-items: center;
+letter-spacing: -0.18px;
+}
+header .util .link a{
+text-decoration: none;
+color:#b2b2b2;
+font-weight: 300;
+}
+header .util .link li {margin-right: 10px;}
+header .util .link li .epis,
+header .util .link li .donong{margin-right: 3px;margin-top: -2px;}
+header .util .link li:nth-child(2){margin-right: 13px;}
+header .util .setting{
+display: flex;
+font-weight: 100;
+color: #fff;
+}
+header .util .setting li {margin-left: 20px;}
+header .util .setting a{
+    color: #fff;
+}
+header .util .setting .before a{
+    color:#b2b2b2;
+}
+header .util .setting a .ico{
+    margin-top: -2px;
+    margin-right: 3px;
+}
+header .util .dropdown .dropdown-toggle{
+    padding: 3px 8px 3px;
+    color:#fff;
+    font-size: 12px;
+    border: 1px solid rgba(255,255,255,.36);
+    letter-spacing: -0.36px;
+    border-radius: 2px;
+}
+
+/* footer */
+footer .inner{
+    display: flex;
+    padding:49px 0 60px;
+}
+footer .inner .logo img{
+    width:153px;
+    vertical-align: middle;
+}
+footer .inner .logo .region{
+    display: inline-block;
+    height: 30px;
+    font-size: 20px;
+    padding: 0 6px;
+    background-color: #4e5658;
+    color:#fff;
+    font-family: 'DXMgoB';
+    border-radius: 3px;
+    vertical-align: middle;
+}

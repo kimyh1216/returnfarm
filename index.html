@@ -5,13 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script><!-- dropdown 사용시 링크 걸어야함-->
     <title>귀농귀촌 종합센터</title>
+		<script>
+			$(document).ready(function(){
+				$(".dropdown-menu li a").click(function(){
+					$(".btn:first-child").html($(this).text()+' <span class="caret"></span>');
+				});
+			})
+		</script>
 </head>
 <body>
-    <div class="container">
-        Test Container;;
-    </div>
+    <header>
+        <div class="util">
+            <ul class="link">
+                <li><a href="https://www.epis.or.kr/" target="_blank"><i class="ico epis"></i>농림수산식품교육문화정보원</a></li>
+                <li><a href="https://www.agriwork.kr:447/" target="_blank"><i class="ico donong"></i>도·농 인력중계 서비스</a></li>
+                <li><a href="http://www.facebook.com" target="_blank"><i class="ico facebook"></i></a></li>
+                <li><a href="http://www.twitter.com" target="_blank"><i class="ico twitter"></i></a></li>
+                <li><a href="http://www.kakaotalk.com" target="_blank"><i class="ico kakaotalk"></i></a></li>
+								<li>
+									<div class="dropdown">
+										<a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											패밀리 사이트 바로가기
+										</a>
+										<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="#">Action</a></li>
+												<li><a class="dropdown-item" href="#">Another action</a></li>
+												<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</li>
+            </ul>
+            <ul class="setting">
+                <li><strong>홍길동</strong>님 안녕하세요.</li>
+                <li><a href="#"><i class="ico logout"></i>로그아웃</a></li>
+                <li class="before"><a href="#"><i class="ico login"></i>로그인</a></li>
+                <li class="before"><a href="#"><i class="ico join"></i>회원가입</a></li>
+            </ul>
+        </div>
+        <nav class="gnb"></nav>
+    </header>
+    
+		<footer>
+			<div class="container">
+				<ul class="inner">
+					<li class="logo">
+						<img src="images/img_logo_footer.png" alt="귀농귀촌종합센터" />
+						<span class="region">경상남도</span>
+					</li>
+					<li class="link">
+						<ul>
+							<li><a href="#">사이트 맵</a></li>
+							<li><a href="#">이메일무단수집거부</a></li>
+							<li><a href="#">개인정보처리방침</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</footer>
 </body>
 </html>
