@@ -31,3 +31,19 @@
 .btn-white76 {padding:25px 56px 24px;background-color:#fff;border-color:#cfd0d0;border-radius:12px;color:#101314;font-size:18px;}
 .btn-white76:hover {border-color:#ee8508;background-color:#ee8508;color:#fff;}
 .btn-white76.disabled {background-color:#e8e8e8;border-color:#e8e8e8;color:#cfd0d0;opacity: 1;}
+
+.btn-more24 {color:#88898a;font-size:12px;text-decoration:none;}
+.btn-more24:hover {color:#282b2c;}
+.btn-more24:hover .icon-more::after {background:url(../images/btn_8_ico_plus_p.png) no-repeat right center;background-size:cover;}
+.btn-more24.disabled {border-color:#cfd0d0;color:#cfd0d0;}
+.btn-more24.disabled .icon-more::after {background:url(../images/btn_8_ico_plus_d.png) no-repeat right center;background-size:cover;}
+.btn-more24 .icon-more {position:relative;padding-left:11px;}
+.btn-more24 .icon-more::after {content:'';position:absolute;top:50%;left:0;width:8px;height:8px;background:url(../images/btn_8_ico_plus_n.png) no-repeat right center; background-size:cover; transform: translateY(-50%);}
+
+.btn-more32 {color:#88898a;font-size:13px;text-decoration:none;}
+.btn-more32:hover {color:#282b2c;}
+.btn-more32:hover .icon-more::after {background:url(../images/btn_8_ico_plus_p.png) no-repeat right center;background-size:cover;}
+.btn-more32.disabled {border-color:#cfd0d0;color:#cfd0d0;}
+.btn-more32.disabled .icon-more::after {background:url(../images/btn_8_ico_plus_d.png) no-repeat right center;background-size:cover;}
+.btn-more32 .icon-more {position:relative;padding-left:14px;}
+.btn-more32 .icon-more::after {content:'';position:absolute;top:50%;left:0;width:10px;height:10px;background:url(../images/btn_8_ico_plus_n.png) no-repeat right center; background-size:cover; transform: translateY(-50%);}
