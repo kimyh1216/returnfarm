@@ -89,7 +89,10 @@
 
 .search-btn {width:40px;height:40px;background:url(../images/btn_40_ico_search_n.png) no-repeat left top;background-size:cover;border:none;font-size:0;}
 .search-btn:hover {background:url(../images/btn_40_ico_search_p.png) no-repeat left top;background-size:cover;}
+.search-btn.gnb {background: url(../images/btn_24_icon_search_p.png) center no-repeat;background-size: 24px 24px;}
 .search-btn.disabled {background:url(../images/btn_40_ico_search_d.png) no-repeat left top;background-size:cover;}
+
+.menu-btn {width:40px;height:40px;background:url(../images/btn_24_icon_menu_p.png) no-repeat center;background-size:24px;border:none;font-size:0;}
 
 .btn-close {width:44px;height:44px;background:url(../images/btn_44_ico_close_n.png) no-repeat left top;background-size:cover;font-size:0;}
 .btn-close:hover {background:url(../images/btn_44_ico_close_p.png) no-repeat left top;background-size:cover;}
