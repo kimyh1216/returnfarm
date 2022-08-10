@@ -95,20 +95,38 @@
 .btn-close:hover {background:url(../images/btn_44_ico_close_p.png) no-repeat left top;background-size:cover;}
 .btn-close.disabled {background:url(../images/btn_44_ico_close_d.png) no-repeat left top;background-size:cover;opacity: 1;}
 
-.tag {padding: 4px 16px;border-radius: 20px;border: solid 1px #ccc;background-color: #e8e8e8;color:#707172;font-size:16px;}
+.tag {padding: 3px 16px;border-radius: 20px;border: solid 1px #ccc;background-color: #e8e8e8;color:#707172;font-size:16px;}
+.tag + .tag {margin-left:8px;}
 .tag:hover {border: solid 1px #ee8508;background-color: #fff;color:#101314;}
 .tag.disabled {border: solid 1px #cfd0d0;background-color: #e8e8e8;color:#cfd0d0;}
 
 .pc-tab {width:100%;}
 .pc-tab li {position:relative;}
 .pc-tab li + li {margin-left:24px;}
-.pc-tab li .nav-link {padding: 0px 19px 20px;background:#fff;border:none;color: #968f8f;font-size:18px;}
+.pc-tab li .nav-link {padding: 4px 19px 24px;background:#fff;border:none;color: #968f8f;font-size:18px;}
+.pc-tab li button::after {content: ""; background: #ff7f00; height: 4px; position: absolute; width: 100%; left: 0px; bottom: 0px; transition: all 250ms ease 0s; transform: scale(0);}
 .pc-tab li .active {color:#ee8508;}
-.pc-tab li .active::after {content:'';position:absolute;left:0;bottom:0;display:block;width:100%;height:4px;background:#ff7f00;}
+.pc-tab li button:hover::after,
+.pc-tab li .active::after {transform: scale(1);}
 .pc-tab li .nav-link:disabled {color:#cfd0d0;}
+.pc-tab li .nav-link:disabled::after {content:"";background:#fff;}
 
 .mo-tab {width:100%;}
 .mo-tab li + li {margin-left:8px;}
-.mo-tab li .nav-link {padding: 8px 20px;border-radius: 18px;background-color: #cfd6de;border:none;color: #788ba0;font-size:14px;}
+.mo-tab li .nav-link {padding:10px 20px;border-radius: 18px;background-color: #cfd6de;border:none;color: #788ba0;font-size:14px;}
+.mo-tab li button:hover,
 .mo-tab li .active {background:#101314;color:#fff;}
 .mo-tab li .nav-link:disabled {background-color: #e8e8e8;color:#cfd0d0;}
+
+.tab-switch {display:inline-flex;padding: 3px;border-radius: 10px;border: solid 1px rgba(112, 112, 112, 0.13);background-color: #e6e6e6;}
+.tab-switch:hover {padding:2px;border:2px solid #1a1a1a;}
+.tab-switch li .nav-link {padding: 11px 16px;border-radius: 6px;background:transparent;border:none;color:#646464;font-size:16px;}
+.tab-switch li .active {padding: 11px 16px;border-radius: 6px;box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);background-color: #383838;color:#fff;}
+
+.form-check-box .form-check-label {font-size:12px;}
+.form-check-box .form-check-label + .form-check-input {margin-left:12px;}
+.form-check-input {width:20px;height:20px;background:url(../images/checkbox_20_n.png) no-repeat left top;background-size:cover;border:none;}
+.form-check-input:checked[type=checkbox] {background-image: url(../images/checkbox_20_s.png);background-size:cover;}
+.form-check-input:checked {background:none;border:none;}
+.form-check-input.press {background:url(../images/checkbox_20_n_p.png) no-repeat left top;background-size:cover;}
+.form-check-input.press:checked[type=checkbox] {background-image: url(../images/checkbox_20_s_p.png);background-size:cover;}
