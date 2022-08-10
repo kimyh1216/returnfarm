@@ -124,9 +124,35 @@
 .tab-switch li .active {padding: 11px 16px;border-radius: 6px;box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);background-color: #383838;color:#fff;}
 
 .form-check-box .form-check-label {font-size:12px;}
-.form-check-box .form-check-label + .form-check-input {margin-left:12px;}
+.form-check-box .form-check-label + .form-check-input {margin-left:10px;}
+.form-check-box .form-check-input + .form-check-label {margin-left:10px;}
 .form-check-input {width:20px;height:20px;background:url(../images/checkbox_20_n.png) no-repeat left top;background-size:cover;border:none;}
 .form-check-input:checked[type=checkbox] {background-image: url(../images/checkbox_20_s.png);background-size:cover;}
 .form-check-input:checked {background:none;border:none;}
 .form-check-input.press {background:url(../images/checkbox_20_n_p.png) no-repeat left top;background-size:cover;}
 .form-check-input.press:checked[type=checkbox] {background-image: url(../images/checkbox_20_s_p.png);background-size:cover;}
+
+.dropdown .dropdown-toggle {position:relative;min-width:110px;padding: 10px 12px;border-radius: 8px;border: solid 1px #d8d8d8;background-color: #fff;text-align:left;}
+.dropdown .dropdown-toggle::after {content:"";position:absolute;top:50%;right:10px;width:16px;height:16px;margin-top:-7px;background:url(../images/ico_16_drop_n.png) no-repeat left top;background-size:cover;border:none;vertical-align:baseline;}
+.dropdown.show .dropdown-toggle::after {transform: rotate(-180deg);}
+.dropdown-menu {min-width:110px;padding:6px 8px 8px 12px;}
+.dropdown-menu li {padding-right:4px;}
+.dropdown-menu li:first-child a {border-top:none;}
+.dropdown-menu li a {display:block;padding:8px 0;border-top:1px solid #e8e8e8;color:#000;font-size:14px;}
+.dropdown-menu ul {overflow-y:scroll;height:150px;}
+.dropdown-menu ul::-webkit-scrollbar {width: 2px;}
+.dropdown-menu ul::-webkit-scrollbar-thumb {background-color: #b8b9b9;}
+.dropdown-menu ul::-webkit-scrollbar-track {background-color: transparent;}
+
+.icon-rural {position:relative;padding-left:32px;color:#1a1a1a;font-size:14px;line-height:24px;}
+.icon-rural::after {content:"";position:absolute;top:0;left:0;width:24px;height:24px;background:url(../images/icon_24_poi_life.png) no-repeat left top;background-size:cover;}
+.icon-farmland {position:relative;padding-left:32px;color:#1a1a1a;font-size:14px;line-height:24px;}
+.icon-farmland::after {content:"";position:absolute;top:0;left:0;width:24px;height:24px;background:url(../images/icon_24_poi_info.png) no-repeat left top;background-size:cover;}
+.icon-emptyhouse {position:relative;padding-left:32px;color:#1a1a1a;font-size:14px;line-height:24px;}
+.icon-emptyhouse::after {content:"";position:absolute;top:0;left:0;width:24px;height:24px;background:url(../images/icon_24_poi_house.png) no-repeat left top;background-size:cover;}
+.icon-education {position:relative;padding-left:32px;color:#1a1a1a;font-size:14px;line-height:24px;}
+.icon-education::after {content:"";position:absolute;top:0;left:0;width:24px;height:24px;background:url(../images/icon_24_poi_educatio.png) no-repeat left top;background-size:cover;}
+.icon-health {position:relative;padding-left:32px;color:#1a1a1a;font-size:14px;line-height:24px;}
+.icon-health::after {content:"";position:absolute;top:0;left:0;width:24px;height:24px;background:url(../images/icon_24_poi_welfare.png) no-repeat left top;background-size:cover;}
+.icon-job {position:relative;padding-left:32px;color:#1a1a1a;font-size:14px;line-height:24px;}
+.icon-job::after {content:"";position:absolute;top:0;left:0;width:24px;height:24px;background:url(../images/icon_24_poi_work.png) no-repeat left top;background-size:cover;}
