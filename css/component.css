@@ -135,13 +135,26 @@
 .form-checkbox .form-check-input.press {background:url(../images/checkbox_20_n_p.png) no-repeat left top;background-size:cover;}
 .form-checkbox .form-check-input.press:checked[type=checkbox] {background-image: url(../images/checkbox_20_s_p.png);background-size:cover;}
 
-.form-checkbox .form-check-input:checked ~ .form-check-label::before {
-    background-color: green!important;
-  }
-  
-  .form-checkbox .form-check-input:active ~ .form-check-label::before {
-    background-color: #fff; 
-  }
+/* 4.6 version */
+.custom-checkbox .custom-control-label {font-size:15px;}
+.custom-checkbox .custom-control-label::before {top:0.15rem;width:20px;height:20px;background:url(../images/checkbox_20_n.png) no-repeat left top;background-size:cover;border:none;}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    width:20px;
+    height:20px;
+    background: url(../images/checkbox_20_s.png) no-repeat left top;
+    background-size:cover;
+    border:none;
+}
+.custom-checkbox .custom-control-input:disabled~.custom-control-label::before, .custom-control-input[disabled]~.custom-control-label::before {
+    background:url(../images/checkbox_20_d.png) no-repeat left top;background-size:cover;border:none;
+}
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before {box-shadow:none;}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {background:none;}
+
+.custom-radio .custom-control-label {font-size:15px;}
+.custom-radio .custom-control-label::before {top:0.15rem;width:20px;height:20px;background:url(../images/radiobutton_20_n.png) no-repeat left top;background-size:cover;border:none;}
+.custom-radio .custom-control-input:checked~.custom-control-label::before {width:20px;height:20px;background:url(../images/radiobutton_20_p.png) no-repeat left top;background-size:cover;border:none;color:unset;}
+.custom-radio .custom-control-input:checked~.custom-control-label::after {background:none;}
 
 .select .dropdown-toggle {position:relative;min-width:110px;padding: 10px 12px;border-radius: 8px;border: solid 1px #d8d8d8;background-color: #fff;text-align:left;}
 .select .dropdown-toggle::after {content:"";position:absolute;top:50%;right:10px;width:16px;height:16px;margin-top:-7px;background:url(../images/ico_16_drop_n.png) no-repeat left top;background-size:cover;border:none;vertical-align:baseline;}
