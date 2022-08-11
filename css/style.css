@@ -28,7 +28,7 @@
 .total .total-search .total-input input::placeholder {color:#9fa1a1;font-size:14px;}
 .total .total-search .total-input input:focus {outline:none;}
 
-.tableList {width:100%;}
+.tableList {width:100%;margin-top:12px;}
 .tableList th {height:48px;border-top:1px solid #000;border-bottom:1px solid #d0d0d0 !important;color:#191919;font-size:15px;}
 .tableList td {height:48px;border-bottom:1px solid #eaeaea;color:#262626;font-size:15px;}
 .tableList td.tit {padding-left:100px;}
@@ -37,3 +37,7 @@
 .tableList td .locked i::after {content:"";position:absolute;top:0;left:0;width:16px;height:16px;background:url(../images/ico_16_lock.png) no-repeat left top;background-size:cover;}
 .tableList td .locked .categori {margin-right:4px;color:#88898a;}
 
+
+.paging {justify-content:center;margin-top:16px;}
+.paging .page-item {margin:0 2px;border-radius: 4px;}
+.paging .page-item .page-link {width:34px;height:34px;padding:0;}

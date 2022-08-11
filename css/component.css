@@ -1,4 +1,4 @@
-.btnRight {text-align:right;}
+.btnRight {margin-top:12px;text-align:right;}
 .disabled {pointer-events:none;}
 .btn-outline-frame34 {padding:6px 12px 5px;border-color:#968f8f;color:#101314;font-size:14px;}
 .btn-outline-frame34:hover {border-color:#101314;}
@@ -22,18 +22,17 @@
 .btn-outline-frame44:hover {border-color:#101314;background-color:rgba(232, 232, 232, 0.5);}
 .btn-outline-frame44.disabled {background:white;border-color:#cfd0d0;color:#cfd0d0;opacity: 1;}
 
-.btn-black40 {height:40px;padding:0 16px;background-color:#282b2c;border-color:#282b2c;color:#fff;font-size:15px;}
-.btn-black40:hover {border-color:#585a5b;background-color:#585a5b;color:#fff;}
-.btn-black40.disabled {background-color:#b8b9b9;border-color:#b8b9b9;color:#cfd0d0;opacity: 1;}
-
-.btn-black48 {padding:10px 20px 9px;background-color:#282b2c;border-color:#282b2c;color:#fff;font-size:18px;}
-.btn-black48:hover {border-color:#585a5b;background-color:#585a5b;color:#fff;}
-.btn-black48.disabled {background-color:#b8b9b9;border-color:#b8b9b9;color:#cfd0d0;opacity: 1;}
+.btn-black {height:40px;padding:0 16px;background-color:#282b2c;border-color:#282b2c;color:#fff;font-size:15px;}
+.btn-black:hover {border-color:#585a5b;background-color:#585a5b;color:#fff;}
+.btn-black.disabled {background-color:#b8b9b9;border-color:#b8b9b9;color:#cfd0d0;opacity: 1;}
+.btn-black40 {height:40px;padding:0 16px;}
+.btn-black48 {height:48px;padding:0 20px;font-size:18px;}
 
 .btn-white48 {padding:10px 20px 9px;background-color:#fff;color:#282b2c;font-size:18px;}
 .btn-white48:hover {border-color:rgba(232, 232, 232, 0.5);background-color:rgba(232, 232, 232, 0.5);color:#282b2c;}
 .btn-white48.disabled {background-color:#e8e8e8;border-color:#e8e8e8;color:#cfd0d0;opacity: 1;}
 
+.btn-white76 {padding:25px 10px 24px;background-color:#fff;border-color:#cfd0d0;border-radius:12px;color:#101314;font-size:18px;}
 .btn-white76:hover {border-color:#ee8508;background-color:#ee8508;color:#fff;}
 .btn-white76.disabled {background-color:#e8e8e8;border-color:#e8e8e8;color:#cfd0d0;opacity: 1;}
 
