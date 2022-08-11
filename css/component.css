@@ -34,7 +34,6 @@
 .btn-white48:hover {border-color:rgba(232, 232, 232, 0.5);background-color:rgba(232, 232, 232, 0.5);color:#282b2c;}
 .btn-white48.disabled {background-color:#e8e8e8;border-color:#e8e8e8;color:#cfd0d0;opacity: 1;}
 
-.btn-white76 {padding:25px 10px 24px;background-color:#fff;border-color:#cfd0d0;border-radius:12px;color:#101314;font-size:18px;}
 .btn-white76:hover {border-color:#ee8508;background-color:#ee8508;color:#fff;}
 .btn-white76.disabled {background-color:#e8e8e8;border-color:#e8e8e8;color:#cfd0d0;opacity: 1;}
 
