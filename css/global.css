@@ -60,9 +60,22 @@ url("../fonts/DXMgoB-KSCpc-EUC-H.woff") format("woff"),
 url("../fonts/DXMgoB-KSCpc-EUC-H.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: "NanumSquareRound";
+    font-style: normal;
+    font-weight: 800;
+    src: local("NanumSquareRoundEB"), /* computer */
+      url("../fonts/NanumSquareRoundEB.eot"), /* IE9 Compat Modes */
+      url("../fonts/NanumSquareRoundEB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/NanumSquareRoundEB.woff2") format("woff2"), /* Modern Browsers */
+      url("../fonts/NanumSquareRoundEB.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/NanumSquareRoundEB.ttf") format("truetype"); /* Safari, Android, iOS */
+  }
+  
+
 a,a:hover{ text-decoration: none;}
 
-body{font-family: "Noto Sans CJK KR";font-weight: 400;}
+body{font-family: "Noto Sans CJK KR";font-weight: 400;color:#101314;}
 .bg01{background-color: #cbcbcb;}
 
 @media (min-width: 1400px){}
