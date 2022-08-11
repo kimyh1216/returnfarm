@@ -14,6 +14,7 @@
     <script src="../js/jquery-3.6.0.min.js"></script>
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
     
     <style>
         .guidewrap {
@@ -111,15 +112,15 @@
         <div class="guideTit">
             <h1 class="mt-4">아이콘버튼</h1>
             <h2 class="mt-4">68</h2>
-            <div class="player-btn" style="background-color: #88898a;">
+            <div class="playerBtn" style="background-color: #88898a;">
                 <button type="button" class="btn-play">플레이</button>
                 <button type="button" class="btn-play disabled">플레이</button>
             </div>
 
             <h2 class="mt-4">52</h2>
             <div class="p-1">
-                <button type="button" class="btn-increace">늘리기</button>
-                <button type="button" class="btn-increace disabled">늘리기</button>
+                <button type="button" class="btnIncreace">늘리기</button>
+                <button type="button" class="btnIncreace disabled">늘리기</button>
             </div>
             <div class="p-1">
                 <div class="count d-flex flex-column">
@@ -134,11 +135,11 @@
             </div>
 
             <h2 class="mt-4">48</h2>
-            <div class="control-btn p-1">
+            <div class="controlBtn p-1">
                 <button type="button" class="control-prev">이전</button>
                 <button type="button" class="control-next">다음</button>
             </div>
-            <div class="control-btn p-1">
+            <div class="controlBtn p-1">
                 <button type="button" class="control-prev disabled">이전</button>
                 <button type="button" class="control-next disabled">다음</button>
             </div>
@@ -151,24 +152,24 @@
 
             <h2 class="mt-4">40</h2>
             <div style="background-color: #88898a;">
-                <div class="control-btn smal p-1">
+                <div class="controlBtn smal p-1">
                     <button type="button" class="control-prev">이전</button>
                     <button type="button" class="control-next">다음</button>
-                    <button type="button" class="search-btn">검색</button>
+                    <button type="button" class="searchBtn">검색</button>
                 </div>
-                <div class="control-btn smal p-1">
+                <div class="controlBtn smal p-1">
                     <button type="button" class="control-prev disabled">이전</button>
                     <button type="button" class="control-next disabled">다음</button>
-                    <button type="button" class="search-btn disabled">검색</button>
+                    <button type="button" class="searchBtn disabled">검색</button>
                 </div>
             </div>
 
             <h2 class="mt-4">20</h2>
-            <div class="control-btn p-1" style="background-color: #88898a;">
+            <div class="controlBtn p-1" style="background-color: #88898a;">
                 <button type="button" class="stop">stop</button>
                 <button type="button" class="play">play</button>
             </div>
-            <div class="control-btn p-1" style="background-color: #88898a;">
+            <div class="controlBtn p-1" style="background-color: #88898a;">
                 <button type="button" class="stop disabled">stop</button>
                 <button type="button" class="play disabled">play</button>
             </div>
@@ -184,7 +185,7 @@
 
         <div class="guideTit">
             <h1 class="mt-4">탭</h1>
-            <ul class="nav pc-tab" id="myTab" role="tablist">
+            <ul class="nav pcTab" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" data-toggle="tab" data-target="#pc-tab1" type="button">Normal</button>
                 </li>
@@ -204,7 +205,7 @@
                 <div class="tab-pane" id="pc-tab3">3333</div>
                 <div class="tab-pane" id="pc-tab4">4444</div>
             </div>
-            <ul class="nav mo-tab" id="myTab" role="tablist">
+            <ul class="nav moTab" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" data-toggle="tab" data-target="#mo-tab1" type="button">Normal</button>
                 </li>
@@ -314,7 +315,7 @@
                     <span class="value">경기도</span>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <ul>
+                    <ul class="h150">
                         <li role="presentation"><a href="#" value="경기도" role="menuitem" tabindex="-1">경기도</a></li>
                         <li role="presentation"><a href="#" value="강원도" role="menuitem" tabindex="-1">강원도</a></li>
                         <li role="presentation"><a href="#" value="경상북도" role="menuitem" tabindex="-1">경상북도</a></li>
@@ -324,20 +325,14 @@
                     </ul>
                 </div>
             </div>
-            <script>
-                $('#country-codes li a').on('click', function(e) {
-                    e.preventDefault(); 
-                    $('#country-codes button span.value').text($(this).attr('value'));
-                });
-            </script>
 
             <h1 class="mt-4">이미지 리소스</h1>
-            <a href="#" class="icon-rural">농촌에서 살아보기</a>
-            <a href="#" class="icon-farmland">농지 정보</a>
-            <a href="#" class="icon-emptyhouse">빈집 정보</a>
-            <a href="#" class="icon-education">교육 정보</a>
-            <a href="#" class="icon-health">보건·복지</a>
-            <a href="#" class="icon-job">일자리</a>
+            <a href="#" class="iconRural">농촌에서 살아보기</a>
+            <a href="#" class="iconFarmland">농지 정보</a>
+            <a href="#" class="iconEmptyhouse">빈집 정보</a>
+            <a href="#" class="iconEducation">교육 정보</a>
+            <a href="#" class="iconHealth">보건·복지</a>
+            <a href="#" class="iconJob">일자리</a>
         </div>
 
         <div class="guideTit">
