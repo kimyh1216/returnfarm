@@ -1,0 +1,42 @@
+.main_info{
+    height:901px;
+    background: url(../images/img_bg_main.jpg);
+    background-size: cover;
+}
+.lg_info {
+    margin-top: 100px;
+    display: flex;
+}
+.lg_info .map{}
+.lg_info .select h3{
+    font-size: 44px;
+    font-family: 'NanumSquareRound';
+    color:#fff;
+}
+.lg_info .select p{
+    line-height: 27px;
+    font-size: 18px;
+    color:#fff;
+}
+.lg_info .select_box{
+    width:588px;
+    height:431px;
+    padding:32px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.lg_info .select_box h4{
+    font-size: 20px;
+}
+.lg_info .select_box p{
+    margin-top: 12px;
+    color:#101314;
+    font-size: 16px;
+}
+.lg_info .select_box .citys{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:8px;
+    margin-top:32px;
+}
+.map {}
