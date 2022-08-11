@@ -8,7 +8,6 @@
     <title>가이드 </title>
 
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/component.css">
@@ -247,31 +246,37 @@
 
         <div class="guideTit">
             <h1 class="mt-4">체크박스</h1>
-            <div class="form-check-box">
+            <div class="myTest custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+              </div>
+
+              
+            <div class="form-checkbox">
                 <label class="form-check-label" for="normal">
                     Normal
                 </label>
                 <input class="form-check-input" type="checkbox" value="" id="normal">
             </div>
-            <div class="form-check-box">
+            <div class="form-checkbox">
                 <label class="form-check-label" for="select">
                     Select
                 </label>
                 <input class="form-check-input" type="checkbox" value="" id="select" checked>
             </div>
-            <div class="form-check-box">
+            <div class="form-checkbox">
                 <label class="form-check-label" for="disable">
                     Disable
                 </label>
                 <input class="form-check-input" type="checkbox" value="" id="disable" disabled>
             </div>
-            <div class="form-check-box">
+            <div class="form-checkbox">
                 <label class="form-check-label" for="normal_press">
                     Normal_press
                 </label>
                 <input class="form-check-input press" type="checkbox" value="" id="normal_press">
             </div>
-            <div class="form-check-box">
+            <div class="form-checkbox">
                 <label class="form-check-label" for="select_press">
                     Select_press
                 </label>
@@ -281,7 +286,7 @@
 
         <div class="guideTit">
             <h1 class="mt-4">아이콘</h1>
-            <div class="dropdown" id="country-codes">
+            <div class="dropdown select" id="country-codes">
                 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
                     <span class="value">경기도</span>
                 </button>
