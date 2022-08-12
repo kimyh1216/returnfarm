@@ -27,7 +27,7 @@
 .total .total-search .total-input input {height:40px;margin:0 8px 0 4px;padding:0 16px;border:1px solid #cfd0d0;border-radius:8px;}
 .total .total-search .total-input input:valid,
 .total .total-search .total-input input::placeholder {color:#9fa1a1;font-size:14px;}
-.total .total-search .total-input input:focus {outline:none;}
+/* .total .total-search .total-input input:focus {outline:none;} */
 
 .tableList {width:100%;margin-top:12px;}
 .tableList th {height:48px;border-top:1px solid #000;border-bottom:1px solid #d0d0d0 !important;color:#191919;font-size:15px;}
@@ -43,7 +43,7 @@
 .paging .page-link {display: flex;align-items: center;justify-content: center;width:34px;height:34px;margin:0 2px;padding:0;border-radius:4px;color:#767676;font-size:13px;}
 .paging .page-link:hover,
 .paging .page-link.on {background:#ee8508;color:#fff;}
-.paging .page-link:focus {box-shadow: none;}
+/* .paging .page-link:focus {box-shadow: none;} */
 .paging .page-link.disabled {pointer-events:none;}
 .paging .page-link.firstBtn {background:url(../images/btn_34_pagination_prev_d.png)no-repeat left top;background-size:cover;font-size:0;line-height:0;}
 .paging .page-link.prevBtn {background:url(../images/btn_34_pagination_left_d.png)no-repeat left top;background-size:cover;font-size:0;line-height:0;}

@@ -11,14 +11,8 @@
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script><!-- dropdown 사용시 링크 걸어야함-->
+    <script src="../js/common.js"></script>
     <title>귀농귀촌 종합센터</title>
-		<script>
-			$(document).ready(function(){
-				$(".dropdown-menu a").click(function(){
-					$(".btn:first-child").html($(this).text()+' <span class="caret"></span>');
-				});
-			})
-		</script>
 </head>
 <body>
     <header>
@@ -136,8 +130,8 @@
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <ul>
-                                        <li role="presentation"><a href="#" value="답변대기" role="menuitem" tabindex="-1">답변대기</a></li>
-                                        <li role="presentation"><a href="#" value="답변완료" role="menuitem" tabindex="-1">답변완료</a></li>
+                                        <li><button type="button">답변대기</button></li>
+                                        <li><button type="button">답변완료</button></li>
                                     </ul>
                                 </div>
                             </div>
@@ -156,8 +150,8 @@
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <ul>
-                                        <li role="presentation"><a href="#" value="제목" role="menuitem" tabindex="-1">제목</a></li>
-                                        <li role="presentation"><a href="#" value="내용" role="menuitem" tabindex="-1">내용</a></li>
+                                        <li><button type="button">제목</button></li>
+                                        <li><button type="button">내용</button></li>
                                     </ul>
                                 </div>
                             </div>

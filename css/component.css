@@ -164,8 +164,8 @@
 .select.show .dropdown-toggle::after {transform: rotate(-180deg);}
 .select .dropdown-menu {min-width:110px;padding:6px 8px 8px 12px;}
 .select .dropdown-menu li {padding-right:4px;}
-.select .dropdown-menu li:first-child a {border-top:none;}
-.select .dropdown-menu li a {display:block;padding:8px 0;border-top:1px solid #e8e8e8;color:#000;font-size:14px;}
+.select .dropdown-menu li:first-child button {border-top:none;}
+.select .dropdown-menu li button {display:block;width:100%;padding:8px 0;background:none;border:none;border-top:1px solid #e8e8e8;color:#000;font-size:14px;text-align:left;}
 .select .dropdown-menu ul {overflow-y:scroll;}
 .select .dropdown-menu.h150 ul {height:150px;}
 .select .dropdown-menu ul::-webkit-scrollbar {width: 2px;}
