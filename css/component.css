@@ -172,6 +172,11 @@
 .select .dropdown-menu ul::-webkit-scrollbar-thumb {background-color: #b8b9b9;}
 .select .dropdown-menu ul::-webkit-scrollbar-track {background-color: transparent;}
 
+input.inputBox {height:40px;padding:0 16px;border:1px solid #cfd0d0;border-radius:8px;}
+input.inputBox:valid,
+input.inputBox::placeholder {color:#9fa1a1;font-size:14px;}
+/* input:focus {outline:none;} */
+
 .iconRural {position:relative;padding-left:32px;color:#1a1a1a;font-size:14px;line-height:24px;}
 .iconRural::after {content:"";position:absolute;top:0;left:0;width:24px;height:24px;background:url(../images/icon_24_poi_life.png) no-repeat left top;background-size:cover;}
 .iconFarmland {position:relative;padding-left:32px;color:#1a1a1a;font-size:14px;line-height:24px;}

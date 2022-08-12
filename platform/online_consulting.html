@@ -85,9 +85,25 @@
                         </ul>
                     </div>
                     <div class="col-6">
-                        <ul class="shareMenu">
+                        <ul class="shareMenu float-right">
                             <li><button type="button" class="print">인쇄</button></li>
-                            <li><button type="button" class="share">공유</button></li>
+                            <li><button type="button" class="share">공유</button>
+                                <div class="shareBox">
+                                    <strong>공유하기</strong>
+                                    <ul class="linkBox">
+                                        <li><a href="#" class="kaka">카카오톡</a></li>
+                                        <li><a href="#" class="twit">트위터</a></li>
+                                        <li><a href="#" class="face">페이스북</a></li>
+                                    </ul>
+                                    <div class="linkBtn">
+                                        <input type="text" class="inputBox linkInp" value="Https://www.urlur...">
+                                        <button type="button" class="btn btn-black btn-black40 lickCopy">복사</button>
+                                    </div>
+                                    <button type="button" class="close">
+                                        <span aria-hidden="true">닫기</span>
+                                    </button>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -130,6 +146,7 @@
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <ul>
+                                        <li><button type="button">최신순</button></li>
                                         <li><button type="button">답변대기</button></li>
                                         <li><button type="button">답변완료</button></li>
                                     </ul>
@@ -156,7 +173,7 @@
                                 </div>
                             </div>
                             <div class="total-input">
-                                <input type="text" placeholder="검색어를 입력해주세요">
+                                <input type="text" class="inputBox" placeholder="검색어를 입력해주세요">
                             </div>
                             <button type="button" class="searchBtn">검색</button>
                         </div>
@@ -252,6 +269,7 @@
                         </tbody>
                     </table>
                     <div class="btnRight">
+                        <button type="button" class="btn btn-black btn-black40">글쓰기</button>
                         <button type="button" class="btn btn-black btn-black40">온라인 상담 작성하기</button>
                     </div>
                     
