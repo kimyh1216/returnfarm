@@ -2,6 +2,7 @@
 .subContents .online {background:url(../images/online_top.jpg) no-repeat center center;background-size:cover;}
 .subContents .visual h2 {font-size:32px;}
 .subContents .visual p {font-size:18px;}
+.subContents + footer {margin-top:80px;border-top:1px solid #e6e6e6;}
 .lnbArea {border:1px solid #e8e8e8;border-left:none;border-right:none;}
 .lnbArea .lnb {display:flex;}
 .lnbArea .lnb > li {padding:11px 20px;border-right:1px solid #e8e8e8;}
@@ -39,5 +40,15 @@
 
 
 .paging {justify-content:center;margin-top:16px;}
-.paging .page-item {margin:0 2px;border-radius: 4px;}
-.paging .page-item .page-link {width:34px;height:34px;padding:0;}
+.paging .page-link {display: flex;align-items: center;justify-content: center;width:34px;height:34px;margin:0 2px;padding:0;border-radius:4px;color:#767676;font-size:13px;}
+.paging .page-link:hover,
+.paging .page-link.on {background:#ee8508;color:#fff;}
+.paging .page-link:focus {box-shadow: none;}
+.paging .page-link.disabled {pointer-events:none;}
+.paging .page-link.firstBtn {background:url(../images/btn_34_pagination_prev_d.png)no-repeat left top;background-size:cover;font-size:0;line-height:0;}
+.paging .page-link.prevBtn {background:url(../images/btn_34_pagination_left_d.png)no-repeat left top;background-size:cover;font-size:0;line-height:0;}
+.paging .page-link.nextBtn {background:url(../images/btn_34_pagination_right_n.png)no-repeat left top;background-size:cover;font-size:0;line-height:0;}
+.paging .page-link.lastBtn {background:url(../images/btn_34_pagination_next_n.png)no-repeat left top;background-size:cover;font-size:0;line-height:0;}
+
+
+
