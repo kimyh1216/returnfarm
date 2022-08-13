@@ -9,5 +9,14 @@ $(document).ready(function(){
     $('.shareBox .close').click(function(){
         $('.shareBox').hide();
     });
-    
+    $('.secrComm').click(function(){
+        if($(this).hasClass('lock')){
+            $(this).removeClass('lock');
+        }else {
+            $(this).addClass('lock');
+        }
+    });
+    $('.btnCom').click(function () {
+        $(this).addClass('show');
+    });
 })
