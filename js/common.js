@@ -4,19 +4,19 @@ $(document).ready(function(){
     });
     
     $('.share').click(function(){
-        $('.shareBox').show();
+        $('.share-box').show();
     });
-    $('.shareBox .close').click(function(){
-        $('.shareBox').hide();
+    $('.share-box .close').click(function(){
+        $('.share-box').hide();
     });
-    $('.secrComm').click(function(){
+    $('.secr-comm').click(function(){
         if($(this).hasClass('lock')){
             $(this).removeClass('lock');
         }else {
             $(this).addClass('lock');
         }
     });
-    $('.btnCom').click(function () {
+    $('.btn-com').click(function () {
         $(this).addClass('show');
     });
 })
