@@ -28,6 +28,11 @@
 .btn-black40 {height:40px;padding:0 16px;}
 .btn-black48 {height:48px;padding:0 20px;font-size:18px;}
 
+.btn-outline-white {border:1px solid #968f8f;border-radius:8px;}
+
+.btn-orange {background:#ee8508;border-radius:8px;color:#fff;}
+.btn-orange:hover {background:#af6d20;color:#fff;}
+
 .btn-white48 {padding:10px 20px 9px;background-color:#fff;color:#282b2c;font-size:18px;}
 .btn-white48:hover {border-color:rgba(232, 232, 232, 0.5);background-color:rgba(232, 232, 232, 0.5);color:#282b2c;}
 .btn-white48.disabled {background-color:#e8e8e8;border-color:#e8e8e8;color:#cfd0d0;opacity: 1;}
@@ -107,6 +112,7 @@
 .tag.disabled {border: solid 1px #cfd0d0;background-color: #e8e8e8;color:#cfd0d0;}
 
 .pc-tab {width:100%;border-bottom:1px solid #e8e8e8;}
+.pc-tab.bdb-nline {border-bottom:none;}
 .pc-tab li {position:relative;}
 .pc-tab li + li {margin-left:24px;}
 .pc-tab li .nav-link {padding: 4px 19px 24px;background:#fff;border:none;color: #968f8f;font-size:19px;}

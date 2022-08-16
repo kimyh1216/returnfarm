@@ -36,11 +36,10 @@
 					</div>
 				</li>
             </ul>
-            <ul class="setting">
-                <li><strong>홍길동</strong>님 안녕하세요.</li>
-                <li><a href="#"><i class="ico logout"></i>로그아웃</a></li>
-                <li class="before"><a href="#"><i class="ico login"></i>로그인</a></li>
-                <li class="before"><a href="#"><i class="ico join"></i>회원가입</a></li>
+            <ul class="service-link">
+                <li><a href="#"><span>대국민 서비스</span></a></li>
+                <li><a href="#"><span>통합플랫폼</span></a></li>
+                <li><a href="#"><span>지자체관</span></a></li>
             </ul>
         </div>
 		
@@ -59,6 +58,7 @@
 					</ul>
 				</li>
 				<li>
+                    <button type="button" class="icon-login">로그인</button>
 					<button type="button" class="search-btn gnb">검색</button>
 					<button type="button" class="menu-btn">전체메뉴</button>
 				</li>
@@ -110,7 +110,7 @@
             </div>
         </div>
         <div class="container mt-5">
-            <ul class="nav pc-tab" id="myTab" role="tablist">
+            <ul class="nav pc-tab bdb-nline" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" data-toggle="tab" data-target="#pc-tab1" type="button">전체</button>
                 </li>
@@ -138,6 +138,7 @@
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane active" id="pc-tab1">
+
                     <div class="row total">
                         <div class="col-6 total-all">
                             <div class="dropdown select" id="country-codes">
@@ -178,6 +179,39 @@
                             <button type="button" class="search-btn">검색</button>
                         </div>
                     </div>
+
+                    <div class="option-box">
+                        <div class="btn--group">
+                            <button type="button" class="ico-filter">목록</button>
+                            <button type="button" class="ico-refresh">초기화</button>
+                            <div class="sec-box">
+                                <button type="button" class="btn btn-proc">과정</button>
+                            </div>
+                            <div class="sec-box">
+                                <button type="button" class="btn btn-type">유형</button>
+                            </div>
+                            <div class="sec-box">
+                                <button type="button" class="btn btn-state">상태</button>
+                            </div>
+                            <div class="sec-box">
+                                <button type="button" class="btn btn-sched">일정</button>
+                            </div>
+                            <div class="sec-box">
+                                <button type="button" class="btn btn-area">지역</button>
+                            </div>
+                        </div>
+                        <ul class="option-type">
+                            <li>
+                                <p>기본공통과정</p>
+                                <button class="type-close">닫기</button>
+                            </li>
+                            <li>
+                                <p>기본공통(여성)교육_주간</p>
+                                <button class="type-close">닫기</button>
+                            </li>
+                        </ul>
+                    </div>
+
                     <table class="table-list">
                         <colgroup>
                             <col style="width:10%;" />
