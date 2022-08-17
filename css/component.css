@@ -115,9 +115,9 @@
 .pc-tab.bdb-nline {border-bottom:none;}
 .pc-tab li {position:relative;}
 .pc-tab li + li {margin-left:24px;}
-.pc-tab li .nav-link {padding: 4px 19px 24px;background:#fff;border:none;color: #968f8f;font-size:19px;}
+.pc-tab li .nav-link {padding: 4px 19px 24px;background:#fff;border:none;color: #968f8f;font-size:18px;line-height:1.5;}
 .pc-tab li button::after {content: ""; background: #ff7f00; height: 4px; position: absolute; width: 100%; left: 0px; bottom: 0px; transition: all 250ms ease 0s; transform: scale(0);}
-.pc-tab li .active {color:#ee8508;}
+.pc-tab li .active {color:#ee8508;font-weight:bold;}
 .pc-tab li button:hover::after,
 .pc-tab li .active::after {transform: scale(1);}
 .pc-tab li .nav-link:disabled {color:#cfd0d0;}
