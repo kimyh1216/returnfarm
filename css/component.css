@@ -28,6 +28,8 @@
 .btn-black40 {height:40px;padding:0 16px;}
 .btn-black48 {height:48px;padding:0 20px;font-size:18px;}
 
+.btn-radius-black44 {height:44px;padding:10px 18px;border-radius:24px;}
+
 .btn-outline-white {border:1px solid #968f8f;border-radius:8px;}
 
 .btn-orange {background:#ee8508;border-radius:8px;color:#fff;}
@@ -112,7 +114,6 @@
 .tag.disabled {border: solid 1px #cfd0d0;background-color: #e8e8e8;color:#cfd0d0;}
 
 .pc-tab {width:100%;border-bottom:1px solid #e8e8e8;}
-.pc-tab.bdb-nline {border-bottom:none;}
 .pc-tab li {position:relative;}
 .pc-tab li + li {margin-left:24px;}
 .pc-tab li .nav-link {padding: 4px 19px 24px;background:#fff;border:none;color: #968f8f;font-size:18px;line-height:1.5;}
@@ -181,7 +182,7 @@
 
 input.input-box {height:40px;padding:0 16px;border:1px solid #cfd0d0;border-radius:8px;}
 input.input-box:valid,
-input.input-box::placeholder {color:#9fa1a1;font-size:14px;}
+input.input-box::placeholder {color:#9fa1a1;font-size:14px;font-weight:normal;}
 /* input:focus {outline:none;} */
 
 .icon-rural {position:relative;padding-left:32px;color:#1a1a1a;font-size:14px;line-height:24px;}

@@ -110,7 +110,7 @@
             </div>
         </div>
         <div class="container mt-5">
-            <ul class="nav pc-tab bdb-nline" id="myTab" role="tablist">
+            <ul class="nav pc-tab" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" data-toggle="tab" data-target="#pc-tab1" type="button">전체</button>
                 </li>
@@ -157,32 +157,30 @@
                                 총 <strong>600</strong> 건 · 페이지 <strong>1</strong> / 12
                             </p>
                         </div>
-                        <div class="col-6 total-search">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">내 답변만 보기</label>
-                            </div>
-                            <div class="dropdown select" id="country-codes">
-                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
-                                    <span class="value">제목+내용</span>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <ul>
-                                        <li><button type="button">제목</button></li>
-                                        <li><button type="button">내용</button></li>
-                                    </ul>
+                        <div class="col-6 d-flex align-items-center justify-content-end">
+                            <div class="total-search d-flex align-items-center justify-content-end">
+                                <div class="dropdown select" id="country-codes">
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                                        <span class="value">제목+내용</span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <ul>
+                                            <li><button type="button">제목</button></li>
+                                            <li><button type="button">내용</button></li>
+                                        </ul>
+                                    </div>
                                 </div>
+                                <div class="total-input">
+                                    <input type="text" class="input-box" placeholder="검색어를 입력해주세요">
+                                </div>
+                                <button type="button" class="search-icon-btn">검색</button>
                             </div>
-                            <div class="total-input">
-                                <input type="text" class="input-box" placeholder="검색어를 입력해주세요">
-                            </div>
-                            <button type="button" class="search-btn">검색</button>
+                            <button type="button" class="ico-filter" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">필터</button>
                         </div>
                     </div>
 
-                    <div class="option-box">
+                    <div class="option-box collapse" id="collapseExample">
                         <div class="btn--group">
-                            <button type="button" class="ico-filter">목록</button>
                             <button type="button" class="ico-refresh">초기화</button>
                             <div class="sec-box">
                                 <button type="button" class="btn btn-proc">과정</button>
@@ -304,7 +302,6 @@
                     </table>
                     <div class="btn-right">
                         <button type="button" class="btn btn-black btn-black40">글쓰기</button>
-                        <button type="button" class="btn btn-black btn-black40">온라인 상담 작성하기</button>
                     </div>
                     
                     <div class="pagination paging">

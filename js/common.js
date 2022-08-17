@@ -16,9 +16,6 @@ $(document).ready(function(){
             $(this).addClass('lock');
         }
     });
-    $('.btn-com').click(function () {
-        $(this).addClass('show');
-    });
     $('.accordion-btn').click(function() {
         $(this).parents().addClass('show').siblings().removeClass('show');
     })

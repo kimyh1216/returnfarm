@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/component.css" />
@@ -36,11 +39,10 @@
 					</div>
 				</li>
             </ul>
-            <ul class="setting">
-                <li><strong>홍길동</strong>님 안녕하세요.</li>
-                <li><a href="#"><i class="ico logout"></i>로그아웃</a></li>
-                <li class="before"><a href="#"><i class="ico login"></i>로그인</a></li>
-                <li class="before"><a href="#"><i class="ico join"></i>회원가입</a></li>
+            <ul class="service-link">
+                <li><a href="#"><span>대국민 서비스</span></a></li>
+                <li><a href="#"><span>통합플랫폼</span></a></li>
+                <li><a href="#"><span>지자체관</span></a></li>
             </ul>
         </div>
 		
@@ -59,6 +61,7 @@
 					</ul>
 				</li>
 				<li>
+                    <button type="button" class="icon-login">로그인</button>
 					<button type="button" class="search-btn gnb">검색</button>
 					<button type="button" class="menu-btn">전체메뉴</button>
 				</li>
@@ -68,9 +71,9 @@
 
     <!-- 서브 컨텐츠 -->
     <div class="sub-contents">
-        <div class="container-fluid py-5 online">
+        <div class="container-fluid py-5 counsel">
             <div class="container py-5 visual">
-                <h2>온라인 상담</h2>
+                <h2>종합상담</h2>
                 <p>귀농귀촌에 대해 궁금한 점이 있으신 경우 문의 주세요.</p>
             </div>
         </div>
@@ -81,65 +84,67 @@
                         <ul class="lnb">
                             <li class="home"><a href="#">home</a></li>
                             <li><a href="#">귀농귀촌 상담</a></li>
-                            <li><span>온라인 상담</span></li>
-                        </ul>
-                    </div>
-                    <div class="col-6">
-                        <ul class="shareMenu float-right">
-                            <li><button type="button" class="print">인쇄</button></li>
+                            <li><span>종합상담</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container mt-5 detail-content">
-            <strong class="sTxt">정책</strong>
-            <h3>노후소득보장 종합연구<span class="badge">답변완료</span></h3>
-            <div class="row user-cs">
-                <div class="col-6">
-                    <ul class="user-inquiry">
-                        <li>홍길동</li>
-                        <li>2022.06.20</li>
-                        <li>조회 <span class="">105</span></li>
-                    </ul>
+        <div class="container mt-5 counsel-content">
+            
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <h5 class="card-title">온라인 상담</h5>
+                        <div class="card-img-top"><img src="../images/img_advice_online.png"  alt="온라인 상담사진"></div>
+                        <div class="card-body">
+                          <p class="card-text">
+                            온라인 상담은 인터넷 환경에서 귀농귀촌종합센터<br/>
+                            홈페이지를 통해 상담내용을 등록하시면 전문 상담사가<br/>
+                            자세하게 답변을 홈페이지에 등록해주는 서비스 입니다.
+                          </p>
+                          <p class="card-des txt-orange">(응답은 근무일 기준 48시간 이내로 드리겠습니다.)</p>
+                          <a href="#" class="btn btn-black btn-radius-black44 mt-43">교육 신청하러 가기!</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="answer-txt">
-                <p>
-                    안녕하세요 
-                    3-5년 전 부터 귀농귀촌 준비를 했고 교육을 받았습니다.<br />
-                    그러나 막상 귀농귀촌 하라고 하니 농업 경력과 농지, 주거지 없어서 귀농귀촌을 포기를 했습니다.<br />
-                    최근에 워크넷에서 구인공문 올라 오는 것 보고... 지원하리고 하는데...<br/> 저의 고민은 구인공지 올라와도 믿고 갈만 곳인지 겁이 납니다.<br/>
-                    혹시 센터에서 연계이나 추천 할만 곳 있는지... 궁금합니다.
-                </p>
-                <div class="comme-comme">
-                    <span class="user-date">답변</span>
-                    <p class="comm-txt">
-                        먼저, 귀농귀촌에 관심 가져주셔서 감사드립니다.<br />
-                        저희 귀농귀촌종합센터는 현재 기 구축된 일자리 관련 사이트를 연계해 일자리 정보를 제공해드리고 있으며,  직접 취업 알선이나 업체소개는 하지 않습니다. <br />
-                        따라서, 관련 업무를 맡고있는 기관에 연락하시면 원하시는 도움을 받으실 수 있을것입니다.<br />
-                        감사합니다.
-                    </p>
-                    <div class="sBtn">
-                        <span class="date">2022.06.20</span>
-                        <span>답변</span>
-                        <span>귀농귀촌 상담사</span>
+
+                <div class="col-4">
+                    <div class="card">
+                        <h5 class="card-title">전화상담</h5>
+                        <div class="card-img-top"><img src="../images/img_advice_call.png" alt="온라인 상담사진"></div>
+                        <div class="card-body">
+                          <p class="card-text">
+                            전화상담은 귀농귀촌종합센터만의 전문 콜센터로<br/>
+                            전화를 걸어 전문 상담사에게 직접 상담을<br/>
+                            진행 하실 수 있는 서비스 입니다.
+                          </p>
+                          <p class="card-des">(상담시간 09:00 ~ 18:00 점심시간 12:00 ~ 13:00)</p>
+                          <strong class="p-num">1889 - 9097</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <h5 class="card-title">방문상담</h5>
+                        <div class="card-img-top"><img src="../images/img_advice_visit.png" alt="온라인 상담사진"></div>
+                        <div class="card-body">
+                          <p class="card-text">
+                            방문상담은 귀농귀촌종합센터에 직접 내방하시여<br/>
+                            센터에 상주하는 전문 상담사에게 직접 상담을<br/>
+                            진행하는 서비스 입니다.
+                          </p>
+                          <p class="card-des">
+                            주소 : 서울특별시 서초구 강남대로 27 aT 센터 4층<br/>
+                            (상담시간 09:00 ~ 18:00 점심시간 12:00 ~ 13:00)
+                          </p>
+                          <a href="#" class="btn btn-black btn-radius-black44 mt-25">센터 위치보기!</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="page-control">
-                <ul>
-                    <li>
-                        <button type="button" class="prev-txt">이전글</button>
-                        <a href="#" class="page-tit">귀농 농업창업 및 주택구입 융자지원사업 문의</a>
-                    </li>
-                    <li>
-                        <a href="#" class="page-tit">귀농 농업창업 및 주택구입 융자지원사업 문의</a>
-                        <button type="button" class="next-txt">다음글</button>
-                    </li>
-                </ul>
-                <a href="#" class="list-btn">목록</a>
-            </div>
+
         </div>
     </div>
     <!-- //서브 컨텐츠 -->
