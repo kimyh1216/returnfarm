@@ -177,7 +177,7 @@
 .map .kangwon .samcheok.on,
 .map .kangwon .samcheok:hover {background-image: url(../images/map/map_gangwon_samcheok_on.png);}
 .map .kangwon .samcheok a {transform: translate(-20%,-90%);}
-.map .gyeonggi {width:411px;height:502px;margin:93px 0 0 75px;}
+.map .gyeonggi {display:none;width:411px;height:502px;margin:93px 0 0 75px;}
 .map .gyeonggi li a {opacity: 1;border-color: #ccc;color:#5b666a;padding: 3px 5px;min-width: 68px;background-color: #e8e8e8;}
 .map .gyeonggi li:hover a{border-color: #ee8508;color: #1a1a1a; }
 .map .gyeonggi .yeoncheon {left:87px;top:0;width:119px;height:118px;background-image: url(../images/map/map_gyeonggi_yeoncheon.png);background-size: cover;}
@@ -305,6 +305,69 @@
 .map .gyeonggi .yeoju:hover {background-image: url(../images/map/map_gyeonggi_yeoju_on.png);}
 .map .gyeonggi .yeoju a {transform: translate(-20%,-90%);}
 
+.map .chungcheong {width:545px;height:481px;margin:93px 0 0 75px;}
+.map .chungcheong li a {opacity: 1;border-color: #ccc;color:#5b666a;padding: 3px 5px;min-width: 68px;background-color: #e8e8e8;}
+.map .chungcheong li:hover a{border-color: #ee8508;color: #1a1a1a; }
+.map .chungcheong .taean {left:0;top: 41px;width: 106px;height: 240px;background-image: url(../images/map/map_chungcheong_taean.png);background-size: cover;}
+.map .chungcheong .taean a {transform: translate(-70%,-160%);}
+.map .chungcheong .taean.on,
+.map .chungcheong .taean:hover {background-image: url(../images/map/map_chungcheong_taean_on.png);}
+.map .chungcheong .seosan {left: 73px;top: 20px;width: 116px;height:180px;background-image: url(../images/map/map_chungcheong_seosan.png);background-size:cover;}
+.map .chungcheong .seosan.on,
+.map .chungcheong .seosan:hover {background-image: url(../images/map/map_chungcheong_seosan_on.png);}
+.map .chungcheong .seosan a {transform: translate(-50%,50%);}
+.map .chungcheong .dangjin {left: 125px;top:0;width: 139px;height: 133px;background-image: url(../images/map/map_chungcheong_dangjin.png);background-size:cover;z-index: 1;}
+.map .chungcheong .dangjin.on,
+.map .chungcheong .dangjin:hover {background-image: url(../images/map/map_chungcheong_dangjin_on.png);}
+.map .chungcheong .dangjin a {transform: translate(-60%,-60%);}
+.map .chungcheong .hongseong {left: 113px;top: 176px;width: 117px;height:90px;background-image: url(../images/map/map_chungcheong_hongseong.png);background-size:cover;z-index: 1;}
+.map .chungcheong .hongseong.on,
+.map .chungcheong .hongseong:hover {background-image: url(../images/map/map_chungcheong_hongseong_on.png);}
+.map .chungcheong .hongseong a {transform: translate(-50%,-50%);}
+.map .chungcheong .yesan {left: 166px;top: 115px;width:138px;height:122px;background-image: url(../images/map/map_chungcheong_yesan.png);background-size:cover;}
+.map .chungcheong .yesan.on,
+.map .chungcheong .yesan:hover {background-image: url(../images/map/map_chungcheong_yesan_on.png);}
+.map .chungcheong .yesan a {transform: translate(-30%,-80%);}
+.map .chungcheong .asan {left: 254px;top: 56px;width:104px;height:122px;background-image: url(../images/map/map_chungcheong_asan.png);background-size:cover;}
+.map .chungcheong .asan.on,
+.map .chungcheong .asan:hover {background-image: url(../images/map/map_chungcheong_asan_on.png);}
+.map .chungcheong .asan a {transform: translate(-40%,-60%);}
+.map .chungcheong .cheonan {left: 320px;top: 40px;width:145px;height:156px;background-image: url(../images/map/map_chungcheong_cheonan.png);background-size:cover;z-index: 1;}
+.map .chungcheong .cheonan.on,
+.map .chungcheong .cheonan:hover {background-image: url(../images/map/map_chungcheong_cheonan_on.png);}
+.map .chungcheong .cheonan a {transform: translate(-40%,-70%);}
+.map .chungcheong .bolyeong {left:127px;top:236px;width:91px;height: 155px;background-image: url(../images/map/map_chungcheong_bolyeong.png);background-size:cover;}
+.map .chungcheong .bolyeong.on,
+.map .chungcheong .bolyeong:hover {background-image: url(../images/map/map_chungcheong_bolyeong_on.png);}
+.map .chungcheong .bolyeong a {transform: translate(-60%,-60%);}
+.map .chungcheong .cheongyang {left: 201px;top: 222px;width: 121px;height: 107px;background-image: url(../images/map/map_chungcheong_cheongyang.png);background-size:cover;}
+.map .chungcheong .cheongyang.on,
+.map .chungcheong .cheongyang:hover {background-image: url(../images/map/map_chungcheong_cheongyang_on.png);}
+.map .chungcheong .cheongyang a {transform: translate(-70%,-40%);}
+.map .chungcheong .gongju {left: 276px;top: 173px;width: 141px;height: 174px;background-image: url(../images/map/map_chungcheong_gongju.png);background-size:cover;}
+.map .chungcheong .gongju.on,
+.map .chungcheong .gongju:hover {background-image: url(../images/map/map_chungcheong_gongju_on.png);}
+.map .chungcheong .gongju a {transform: translate(-33%,-30%);}
+.map .chungcheong .seocheon {left:131px;bottom:12px;width:134px;height:83px;background-image: url(../images/map/map_chungcheong_seocheon.png);background-size:cover;}
+.map .chungcheong .seocheon.on,
+.map .chungcheong .seocheon:hover {background-image: url(../images/map/map_chungcheong_seocheon_on.png);}
+.map .chungcheong .seocheon a {transform: translate(-50%,-50%);}
+.map .chungcheong .buyeo {left:199px;bottom: 42px;width:139px;height:135px;background-image: url(../images/map/map_chungcheong_buyeo.png);background-size:cover;}
+.map .chungcheong .buyeo.on,
+.map .chungcheong .buyeo:hover {background-image: url(../images/map/map_chungcheong_buyeo_on.png);}
+.map .chungcheong .buyeo a {transform: translate(-60%,-70%);}
+.map .chungcheong .nongsan {right:112px;bottom:39px;width:124px;height:120px;background-image: url(../images/map/map_chungcheong_nongsan.png);background-size:cover;}
+.map .chungcheong .nongsan.on,
+.map .chungcheong .nongsan:hover {background-image: url(../images/map/map_chungcheong_nongsan_on.png);}
+.map .chungcheong .nongsan a {transform: translate(-50%,-20%);}
+.map .chungcheong .gyelyong {right: 129px;bottom: 112px;width:28px;height:52px;background-image: url(../images/map/map_chungcheong_gyelyong.png);background-size:cover;z-index: 1;}
+.map .chungcheong .gyelyong.on,
+.map .chungcheong .gyelyong:hover {background-image: url(../images/map/map_chungcheong_gyelyong_on.png);}
+.map .chungcheong .gyelyong a {transform: translate(-10%,-60%);}
+.map .chungcheong .geumsan {right:0;bottom:0;width:114px;height:130px;background-image: url(../images/map/map_chungcheong_geumsan.png);background-size:cover;}
+.map .chungcheong .geumsan.on,
+.map .chungcheong .geumsan:hover {background-image: url(../images/map/map_chungcheong_geumsan_on.png);}
+.map .chungcheong .geumsan a {transform: translate(-50%,-30%);}
 
 @keyframes circle{
     0% {transform : scale(0);}
