@@ -68,7 +68,7 @@
 .total .total-input .input-box {height:38px;margin:0 8px 0 4px;border:none;}
 .total .search-icon-btn {position:absolute;top:0;right:12px;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_search_n.png) no-repeat left top;background-size:cover;border:none;font-size:0;line-height:0;}
 .total .ico-filter {position:relative;width:40px;height:40px;background:#fff;border:1px solid #d8d8d8;border-radius:8px;font-size:0;line-height:0;}
-.total .ico-filter::after {content:"";position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;width:40px;height:40px;background:url(../images/btn_40_icon_n.png) no-repeat left top;background-size:cover;}
+.total .ico-filter::after {content:"";position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;width:40px;height:40px;background:url(../images/btn_40_icon_p.png) no-repeat left top;background-size:cover;}
 .total .ico-filter.collapsed::after {content:"";position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;width:40px;height:40px;background:url(../images/btn_40_icon_n.png) no-repeat left top;background-size:cover;}
 
 .table-list {width:100%;margin-top:12px;}

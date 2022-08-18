@@ -99,8 +99,62 @@
                         </div>
                         <button type="button" class="search-icon-btn">검색</button>
                     </div>
-                    <button type="button" class="ico-filter">필터</button>
+                    <button type="button" class="ico-filter collapsed" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">필터</button>
                 </div>
+            </div>
+
+            <div class="option-box collapse" id="collapseExample">
+                <div class="btn--group">
+                    <button type="button" class="ico-refresh">초기화</button>
+                    <div class="sec-box">
+                        <button type="button" class="btn btn-proc">과정</button>
+                    </div>
+                    <div class="sec-box">
+                        <button type="button" class="btn btn-type">유형</button>
+                    </div>
+                    <div class="sec-box">
+                        <button type="button" class="btn btn-state">상태</button>
+                    </div>
+                    <div class="sec-box">
+                        <button type="button" class="btn btn-sched">일정</button>
+                    </div>
+                    <div class="sec-box">
+                        <button type="button" class="btn btn-area">지역</button>
+                    </div>
+                </div>
+                <ul class="option-type">
+                    <li>
+                        <p>기본공통과정</p>
+                        <button class="type-close">닫기</button>
+                    </li>
+                    <li>
+                        <p>기본공통(여성)교육_주간</p>
+                        <button class="type-close">닫기</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="guideTit">
+            <h1>검색박스</h1>
+
+            <div class="search-box">
+                
+                <div class="dropdown" id="country-codes">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                        <span class="value">제목</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <ul>
+                            <li><button type="button">제목</button></li>
+                            <li><button type="button">카테고리2</button></li>
+                            <li><button type="button">카테고리3</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="text" class="input-box" placeholder="검색어를 입력하세요.">
+                <button type="button" class="search">검색</button>
             </div>
 
         </div>
@@ -186,11 +240,21 @@
                 <div class="p-1">
                     <button type="button" class="btn btn-black btn-black40">글쓰기</button>
                 </div>
+                
+                <div class="p-1">
+                    <button type="button" class="btn btn-outline-white btn-black40">취소</button>
+                </div>
+                <div class="p-1">
+                    <button type="button" class="btn btn-orange btn-black40">작성</button>
+                </div>
+                
             </div>
             
             <h2 class="mt-4">44(카드프레임)</h2>
             <button type="button" class="btn btn-outline-frame44 rounded-pill">확인하기</button>
             <button type="button" class="btn btn-outline-frame44 rounded-pill disabled">확인하기</button>
+
+            <a href="#" class="btn btn-black btn-radius-black44">교육 신청하러 가기!</a>
 
             <h2 class="mt-4">48(프레임 바깥에 있는 버튼류)</h2>
             <div class="p-1">
@@ -200,6 +264,13 @@
             <div class="p-1">
                 <button type="button" class="btn btn-white48 rounded-pill">교육 신청하러 가기</button>
                 <button type="button" class="btn btn-white48 rounded-pill disabled">교육 신청하러 가기</button>
+            </div>
+
+            <h2 class="mt-4">56</h2>
+
+            <div class="p-1">
+                <button type="button" class="btn btn-orange56">교육 신청하기</button>
+                <button type="button" class="btn btn-orange56 disabled">교육 신청하기</button>
             </div>
 
             <h2 class="mt-4">76(상단 버튼)</h2>
