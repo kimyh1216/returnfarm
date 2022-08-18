@@ -45,7 +45,7 @@
 .btn-orange {background:#ee8508;border-radius:8px;color:#fff;}
 .btn-orange:hover {background:#af6d20;color:#fff;}
 
-.btn-orange56 {height:56px;padding:15px 25px;background:#ee8508;border-radius:8px;color:#fff;}
+.btn-orange56 {height:56px;padding:15px 25px;background:#ee8508;border-radius:8px;color:#fff;font-size:18px;}
 .btn-orange56:hover {background:#af6d20;color:#fff;}
 .btn-orange56.disabled {background:#ee8508;opacity:.3;color:#fff;font-size:18px;}
 
