@@ -7,16 +7,39 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-datepicker.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/global.css" />
 	<link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/component.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script><!-- dropdown 사용시 링크 걸어야함-->
     <title>귀농귀촌 종합센터</title>
 		<script>
 			$(document).ready(function(){
 				$(".dropdown-menu a").click(function(){
 					$(".dropdown-toggle:first-child").html($(this).text()+' <span class="caret"></span>');
+				});
+				const swiper = new Swiper('.swiper', {
+					// Optional parameters
+					loop: true,
+					slidesPerView :'auto',
+					spaceBetween: 24,
+					// If we need pagination
+					pagination: {
+						el: '.swiper-pagination',
+					},
+
+					// Navigation arrows
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+
+					// And if we need scrollbar
+					scrollbar: {
+						el: '.swiper-scrollbar',
+					},
 				});
 			})
 		</script>
@@ -135,6 +158,110 @@
 						<a href="#none" class="pointer"></a>
 					</li>
 				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="settlement_step4">
+		<div class="container">
+			<h3><strong>귀농·귀촌</strong> 정착과정을 위한 4단계</h3>
+			<p>귀농·귀촌을 준비하시는 여러분들을 위해 각 단계별 귀농·귀촌 통합플랫폼의 주요 기능을 알려드립니다.</p>
+			<ul class="step">
+				<li class="step1">
+					<div class="sn">STEP 1</div>
+					<div class="tit">탐색</div>
+					<p>귀농귀촌에 대한 관심과 흥미로운<br />
+					귀농귀촌 관련 정보를 탐색하는 단계</p>
+					<button type="button" class="btn btn-outline-frame34 rounded-pill"><span class="arrow-right">농촌에서 살아보기</span></button>
+					<button type="button" class="btn btn-outline-frame34 rounded-pill"><span class="arrow-right">자가진단</span></button>
+				</li>
+				<li class="step2">
+					<div class="sn">STEP 2</div>
+					<div class="tit">준비</div>
+					<p>귀농귀촌을 결심 후 계획을 수립하고<br />
+					교육을 수강하며 준비하는 단계</p>
+					<button type="button" class="btn btn-outline-frame34 rounded-pill"><span class="arrow-right">농촌에서 살아보기</span></button>
+					<button type="button" class="btn btn-outline-frame34 rounded-pill"><span class="arrow-right">자가진단</span></button>
+				</li>
+				<li class="step3">
+					<div class="sn">STEP 3</div>
+					<div class="tit">탐색</div>
+					<p>귀농귀촌 계획에 따라 실제적인 행위<br />
+					(계약 등)을 실행하는 단계</p>
+					<button type="button" class="btn btn-outline-frame34 rounded-pill"><span class="arrow-right">농촌에서 살아보기</span></button>
+					<button type="button" class="btn btn-outline-frame34 rounded-pill"><span class="arrow-right">자가진단</span></button>
+				</li>
+				<li class="step4">
+					<div class="sn">STEP 4</div>
+					<div class="tit">탐색</div>
+					<p>실제 귀농귀촌하여 생활하며 적응하는<br />
+					단계</p>
+					<button type="button" class="btn btn-outline-frame34 rounded-pill"><span class="arrow-right">농촌에서 살아보기</span></button>
+					<button type="button" class="btn btn-outline-frame34 rounded-pill"><span class="arrow-right">자가진단</span></button>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="returnfarm_selftest">
+		<div class="container">
+			<div class="start">
+				<img src="images/main/img_rf_selftest.png" />
+				<div class="text">
+					<h3><strong>귀농·귀촌</strong> 자가진단</h3>
+					<p>자가진단의 결과는 하나의 테스트일 뿐입니다. 농작업은 계절마다<br />
+						차이가 있으므로 귀농 희망지역을 3회 이상 방문하시길 바라며,<br />
+						본인에 맞는 귀농계획을 세우시기 바랍니다.</p>
+					<a href="#" class="btn btn-black btn-radius-black44">교육 신청하러 가기!</a>
+				</div>
+			</div>
+			<div class="succss_story">
+				<div class="mainTit">
+					<div class="text">
+						<h3><strong>귀농·귀촌</strong><br />성공사례</h3>
+						<p>귀농·귀촌 성공/실패 여부를 점치기<br />
+						힘드시다구요? 다양한 성공사례를 통해 <br />
+						성공의 가능성을 확인해보세요!</p>
+					</div>
+				</div>
+				<div class="slider">
+					<div class="swiper">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<img src="images/main/img_success_photo_01.png" alt="성공사례 이미지: [양산시] 어영마을 청정수로 키운
+								표고버섯으로 6차산업 꿈" />
+								<div class="bdg">성공사례</div>
+								<p>[양산시] 어영마을 청정수로 키운<br>
+									표고버섯으로 6차산업 꿈</p>
+								<p class="date">2021.01.01</p>
+							</li>
+							<li class="swiper-slide">
+								<img src="images/main/img_success_photo_02.png" alt="성공사례 이미지: [하동군] 귀촌은 단순 농사 아닌
+								'창업 도전 삶 전환 기회의 땅'" />
+								<div class="bdg">성공사례</div>
+								<p>[하동군] 귀촌은 단순 농사 아닌<br>
+									'창업 도전 삶 전환 기회의 땅'</p>
+								<p class="date">2021.01.01</p>
+							</li>
+							<li class="swiper-slide">
+								<img src="images/main/img_success_photo_03.png" alt="성공사례 이미지: [함양군] 산양삼 재배로 20대에 억대
+								농부로~! 힐링팜 전수진 대표" />
+								<div class="bdg">성공사례</div>
+								<p>[함양군] 산양삼 재배로 20대에 억대<br>
+									농부로~! 힐링팜 전수진 대표</p>
+								<p class="date">2021.01.01</p>
+							</li>
+							<li class="swiper-slide">
+								<img src="images/main/img_success_photo_04.png" alt="성공사례 이미지: [의령군] 멜론농장 팜앤팜 박태우
+								대표" />
+								<div class="bdg">성공사례</div>
+								<p>[의령군] 멜론농장 팜앤팜 박태우<br>
+									대표</p>
+								<p class="date">2021.01.01</p>
+							</li>
+						</ul>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
