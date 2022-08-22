@@ -423,7 +423,7 @@
 .map .jeonbug .yeonggwang {left: 161px;top: 23px;width: 106px;height: 101px;background-image: url(../images/map/map_jeonbug_yeonggwang.png);background-size: cover;}
 .map .jeonbug .yeonggwang a {transform: translate(-70%,-20%);}
 .map .jeonbug .yeonggwang.on,
-.map .jeonbug .yeonggwang:hover {background-image: url(../images/map/map_jeonbug_jincheon_on.png);}
+.map .jeonbug .yeonggwang:hover {background-image: url(../images/map/map_jeonbug_yeonggwang_on.png);}
 .map .jeonbug .jangseong {left: 252px;top: 1px;width: 105px;height:110px;background-image: url(../images/map/map_jeonbug_jangseong.png);background-size:cover;}
 .map .jeonbug .jangseong.on,
 .map .jeonbug .jangseong:hover {background-image: url(../images/map/map_jeonbug_jangseong_on.png);}
