@@ -1,6 +1,7 @@
 .btn-center {text-align:center;}
 .btn-right {margin-top:12px;text-align:right;}
 
+.mt-12 {margin-top:12px !important;}
 .mt-20 {margin-top:20px !important;}
 .mt-23 {margin-top:23px !important;}
 .mt-24 {margin-top:24px !important;}
@@ -10,6 +11,8 @@
 .mt-41 {margin-top:41px !important;}
 .mt-43 {margin-top:43px !important;}
 .mt-52 {margin-top:52px !important;}
+
+.ml-8 {margin-left:8px;}
 
 .disabled {pointer-events:none;}
 .btn-outline-frame34 {padding:6px 12px 5px;border-color:#968f8f;color:#101314;font-size:14px;}
