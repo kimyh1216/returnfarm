@@ -102,7 +102,7 @@
 .map .all .jeju a:first-of-type {transform: translate(-50%,-145%);}
 .map .all .jeju .pointer {transform: translate(-50%,-45%);}
 .map .all .seoul{left:101px;top:100px;width:36px;height: 30px;background-image: url(../images/map/map_kr_seoul.png);background-size: 36px 30px;}
-.map .kangwon {display:none;width:537px;height:490px;margin:93px 0 0 75px;}
+.map .kangwon {width:537px;height:490px;margin:93px 0 0 75px;}
 .map .kangwon li a {opacity: 1;border-color: #ccc;color:#5b666a;padding: 3px 5px;min-width: 68px;background-color: #e8e8e8;}
 .map .kangwon li:hover a{border-color: #ee8508;color: #1a1a1a; }
 .map .kangwon .cheolwon {left:0;top:64px;width:200px;height:78px;background-image: url(../images/map/map_gangwon_cheolwon.png);background-size: cover;}
