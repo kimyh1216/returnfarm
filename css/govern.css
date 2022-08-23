@@ -24,7 +24,8 @@
 .settlement_step4 li.step3::after {content:"";position:absolute;top:0;right:-20px;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/main/ico_arrow_step.png) no-repeat left top;background-size:cover;}
 
 
-.map-info .map {position:relative;width:1920px;margin:48px auto 0;}
+.map-info .map {position:relative;max-width:1920px;margin:48px auto 0;}
+.map-info .map img {width:100%;height:auto;}
 .map-info .map .layer-wrap {position:absolute;top:20px;left:20px;}
 .map-info .map .layer {position:relative;z-index: 2;width:282px;padding:16px;background-color:#fff;border:1px solid #4d4b4b;border-radius:12px;box-shadow:0 2px 24px  rgba(0,0,0,0.07);}
 .map-info .map .l-img {overflow:hidden;width:250px;height:186px;}
