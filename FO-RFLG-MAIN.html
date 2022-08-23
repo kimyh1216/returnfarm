@@ -57,18 +57,110 @@
 				</li>
 				<li>
 					<button type="button" class="search-btn gnb">검색</button>
-					<button type="button" class="menu-btn" data-toggle="offcanvas">전체</button>
-                    
+                    <button type="button" class="user-logout">로아아웃</button>
+					<button type="button" class="menu-btn navbar-toggler js-offcanvas-trigger" data-toggle="offcanvas">전체</button>
 				</li>
 			</ul>
-            <div class="offcanvas">
-                <ul>
-                    <li><a href="#"></a>
-                        <ul>
-                            <li><a href="#"></a></li>
+            <div class="offcanvas offcanvas-collapse">
+                <div class="close-log">
+                    <button type="button" class="btn-close">닫기</button>
+                    <ul class="log">
+                        <li><a href="#" class="login">로그인</a></li>
+                        <li><a href="#" class="join">회원가입</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-outline-frame40 rounded-pill">농촌에서 살아보기</button>
+                <!-- <ul class="lnb-nav accordion" id="accordionExample">
+                    <li><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">귀농·귀촌 상담</a>
+                        <ul id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <li><a href="#">귀농귀촌 절차 안내</a></li>
+                            <li><a href="#">상담안내</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">자가진단</a></li>
+                            <li><a href="#">지자체 설명회</a></li>
                         </ul>
                     </li>
-                </ul>
+                    <li><a href="#" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">교육정보 및 신청</a>
+                        <ul id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <li><a href="#">오프라인 교육</a></li>
+                            <li><a href="#">온라인 교육</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">지원정책</a>
+                        <ul id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <li><a href="#">사업지침</a></li>
+                            <li><a href="#">청년농업인 육성정책</a></li>
+                            <li><a href="#">체류형 농업창업지원센터</a></li>
+                            <li><a href="#">중앙정보복지정책</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">자료실</a>
+                        <ul id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <li><a href="#">통계자료</a></li>
+                            <li><a href="#">발간자료</a></li>
+                            <li><a href="#">농총주택 설계자료</a></li>
+                            <li><a href="#">욕조주택 설게자료</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">알림소식</a>
+                        <ul id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">언론보도</a></li>
+                            <li><a href="#">행사알림</a></li>
+                            <li><a href="#">커뮤니티</a></li>
+                        </ul>
+                    </li>
+                </ul> -->
+                <div class="lnb-nav" id="accordionExample">
+                    <div class="inner-nav">
+                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">귀농·귀촌 상담</a>
+                  
+                        <ul id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <li><a href="#">귀농귀촌 절차 안내</a></li>
+                            <li><a href="#">상담안내</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">자가진단</a></li>
+                            <li><a href="#">지자체 설명회</a></li>
+                        </ul>
+                    </div>
+                    <div class="inner-nav">
+                      <a href="#" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">교육정보 및 신청</a>
+                      <ul id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                          <li><a href="#">오프라인 교육</a></li>
+                          <li><a href="#">온라인 교육</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="inner-nav">
+                        <a href="#" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">지원정책</a>
+                        <ul id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <li><a href="#">사업지침</a></li>
+                            <li><a href="#">청년농업인 육성정책</a></li>
+                            <li><a href="#">체류형 농업창업지원센터</a></li>
+                            <li><a href="#">중앙정보복지정책</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="inner-nav">
+                        <a href="#" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">자료실</a>
+                        <ul id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <li><a href="#">통계자료</a></li>
+                            <li><a href="#">발간자료</a></li>
+                            <li><a href="#">농총주택 설계자료</a></li>
+                            <li><a href="#">욕조주택 설게자료</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="inner-nav">
+                        <a href="#" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">알림소식</a>
+                        <ul id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">언론보도</a></li>
+                            <li><a href="#">행사알림</a></li>
+                            <li><a href="#">커뮤니티</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
                 
 		</nav>
@@ -356,8 +448,8 @@
             
             </div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
         </div>
          
     </div>

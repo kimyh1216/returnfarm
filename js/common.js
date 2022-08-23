@@ -37,4 +37,12 @@ $(document).ready(function(){
         $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
         return false;
     });
+
+    $('[data-toggle="offcanvas"]').on('click', function () {
+        $('.offcanvas-collapse').toggleClass('open')
+    });
+    $('.btn-close').on('click', function () {
+        $('.offcanvas-collapse').toggleClass('open')
+    })
+
 })
