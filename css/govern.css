@@ -96,7 +96,7 @@
 .view-like .like-num {position:relative;margin-left:16px;padding-left:24px;color:#88898a;font-size:14px;font-weight:500;}
 .view-like .like-num::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:20px;height:20px;background:url(../images/ico_20_like_n.png) no-repeat left top;background-size:cover;}
 
-.we-writer {padding:100px 0 220px;background:url(../images/img_bg_writer.png) no-repeat center;background-size:cover;}
+.we-writer {padding:100px 0 220px;background:url(../images/img_bg_writer.png) no-repeat center bottom;background-size:contain;}
 .we-writer h3 {color:#101314;font-size:40px;font-family:'NanumSquareRound';line-height:1;text-align:center;}
 .we-writer h3 strong {color:#ee8508;}
 .we-writer > p {margin-top:16px;color:#282b2c;font-size:18px;text-align:center;}
