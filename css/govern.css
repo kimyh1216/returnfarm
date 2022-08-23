@@ -1,0 +1,3 @@
+/* main */
+.rflg-bg {background:url(../images/img_main_rflg.jpg) no-repeat left top;background-size:cover;}
+.rflg-bg::after {content:"";position:absolute;left:0;bottom:0;right:0;height:577px;background:linear-gradient(to bottom, #000, rgba(0,0,0,0));opacity:0.4;}
