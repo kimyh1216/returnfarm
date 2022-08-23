@@ -49,12 +49,24 @@
 					pagination: {
 						el: '.swiper-pagination',
 					},
+
 					// Navigation arrows
 					navigation: {
-						nextEl: '.swiper-button-next',
-						prevEl: '.swiper-button-prev',
+						nextEl: '.swiper-button-next.v2',
+						prevEl: '.swiper-button-prev.v2',
 					},
-				})
+					breakpoints: {
+						320:{
+							slidesPerView: '1',
+						},
+						600:{
+							slidesPerView: '2',
+						},
+						769:{
+							slidesPerView: '4',
+						}
+					}
+				});
 			})
 		</script>
 </head>
@@ -482,6 +494,7 @@
 					확인해보실 수 있습니다.</p>
 			</div>
 			<div class="movie player-btn">
+				<img src="images/main/img_video.jpg" />
 				<button type="button" class="btn-play">플레이</button>
 			</div>
 		</div>
@@ -813,6 +826,7 @@
 								</div>
 							</li>
 						</ul>
+						<div class="swiper-pagination"></div>
 					</div>
 				</div>
 			</div>
@@ -914,10 +928,10 @@
 					</div>
 				</li>
 			</ul>
-			</div>
 			<div class="swiper-pagination"></div>
-			<button class="swiper-button-prev"></button>
-			<button class="swiper-button-next"></button>
+			</div>
+			<button class="swiper-button-prev v2"></button>
+			<button class="swiper-button-next v2"></button>
 		</div>
 	</div>
 	<div class="experience">
@@ -925,25 +939,25 @@
             <h3>2022 농업일자리 체험교육</h3>
             <p>내가 원하는 품목을 선택할 수 있다고?</p>
             <div class="d-flex skillup-notice">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="opacity-box">
-                        <p>농업일자리 체험교육을 통한 농작업 SKILL UP~!</p>
+                        <p>농업일자리 체험교육을 통한<br /> 농작업 SKILL UP~!</p>
                         <div class="d-flex step-wrap">
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <span class="step">혜택1</span>
                                 <p>
                                     실습지원비 지급<br/>
                                     (농작업 체험시간 X 최저시급)
                                 </p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <span class="step">혜택2</span>
                                 <p>
                                     교육시간 80시간 인정<br/>
                                     (농업교육포털)
                                 </p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <span class="step">혜택3</span>
                                 <p>
                                     교육비 전액 무료 <br/>
@@ -954,7 +968,7 @@
                     </div>
                     <button type="button" class="btn btn-white btn-white48 btn-radius-white48 mt-18">교육 신청하러 가기!</button>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="notice-box">
                         <ul class="nav notice-tab" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
