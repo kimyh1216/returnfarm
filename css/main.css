@@ -617,7 +617,7 @@ h3 strong {color:#ee8508}
 
 
 .gototop {position:fixed;right:24px;bottom:115px;z-index: 1000;}
-.gototop button {display: none;width:56px;height:56px;background: #101314 url(../images/img_gototop.png) no-repeat center;border-radius: 100%;box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);}
+.gototop button {display: none;width:56px;height:56px;background: #101314 url(../images/img_gototop.png) no-repeat center;border-radius: 100%;box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);border:0;}
 @media (max-width: 1920px) {
     .returnfarm_selftest .success_story .slider {margin-right: -33vh;}
 }
