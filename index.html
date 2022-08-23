@@ -10,16 +10,16 @@
 	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/global.css" />
 	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/govern.css" />
     <link rel="stylesheet" href="css/component.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/common.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script><!-- dropdown 사용시 링크 걸어야함-->
     <title>귀농귀촌 종합센터</title>
 	<script>
 		$(document).ready(function(){
-			$(".dropdown-menu a").click(function(){
-				$(".dropdown-toggle:first-child").html($(this).text()+' <span class="caret"></span>');
-			});
+			
 			const swiper = new Swiper('.swiper.success', {
 				// Optional parameters
 				slidesPerView :'auto',
@@ -58,7 +58,6 @@
 					prevEl: '.swiper-button-prev',
 				},
 			})
-			
 		})
 	</script>
 </head>
@@ -546,6 +545,135 @@
 			<button class="swiper-button-next"></button>
 		</div>
 	</div>
+	<div class="experience">
+        <div class="inner">
+            <h3>2022 농업일자리 체험교육</h3>
+            <p>내가 원하는 품목을 선택할 수 있다고?</p>
+            <div class="d-flex skillup-notice">
+                <div class="col-6">
+                    <div class="opacity-box">
+                        <p>농업일자리 체험교육을 통한 농작업 SKILL UP~!</p>
+                        <div class="d-flex step-wrap">
+                            <div class="col-4">
+                                <span class="step">혜택1</span>
+                                <p>
+                                    실습지원비 지급<br/>
+                                    (농작업 체험시간 X 최저시급)
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <span class="step">혜택2</span>
+                                <p>
+                                    교육시간 80시간 인정<br/>
+                                    (농업교육포털)
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <span class="step">혜택3</span>
+                                <p>
+                                    교육비 전액 무료 <br/>
+                                    (중식제공)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-white btn-white48 btn-radius-white48 mt-18">교육 신청하러 가기!</button>
+                </div>
+                <div class="col-6">
+                    <div class="notice-box">
+                        <ul class="nav notice-tab" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" data-toggle="tab" data-target="#pc-tab1" type="button">공지사항</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-toggle="tab" data-target="#pc-tab2" type="button">귀농귀촌 뉴스</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-toggle="tab" data-target="#pc-tab3" type="button">자주하는 질문</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane active" id="pc-tab1">
+            
+                                <ul class="notice-com-list">
+                                    <li>
+                                        <a href="#">2022년 하반기 귀농귀촌 유치지원사업 시행지침(220609 개정)</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">제4회 팜(Farm)터지고 펀(Fun)한 농업·농촌 영상 공모전 실시</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">2022년 청년귀농 장기교육 운영기관별 교육생 모집 안내</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">동네작가 콘텐츠 등록가이드(동네작가용)</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">2022년 하반기 귀농귀촌 유치지원사업 시행지침(220609 개정)</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                </ul>
+        
+                            </div>
+                            <div class="tab-pane" id="pc-tab2">
+
+                                <ul class="notice-com-list">
+                                    <li>
+                                        <a href="#">동네작가 콘텐츠 등록가이드(동네작가용)</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">2022년 하반기 귀농귀촌 유치지원사업 시행지침(220609 개정)</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">2021년 하반기 귀농귀촌 유치지원사업 시행지침(220609 개정)</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">제4회 팜(Farm)터지고 펀(Fun)한 농업·농촌 영상 공모전 실시</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">2022년 청년귀농 장기교육 운영기관별 교육생 모집 안내</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="pc-tab3">
+                                <ul class="notice-com-list">
+                                    <li>
+                                        <a href="#">2022년 청년귀농 장기교육 운영기관별 교육생 모집 안내</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">동네작가 콘텐츠 등록가이드(동네작가용)</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">2022년 하반기 귀농귀촌 유치지원사업 시행지침(220609 개정)</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">2020년 하반기 귀농귀촌 유치지원사업 시행지침(220609 개정)</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">제4회 팜(Farm)터지고 펀(Fun)한 농업·농촌 영상 공모전 실시</a>
+                                        <span class="date">22.06.07</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<footer>
 		<div class="container">
 			<ul class="inner">
@@ -579,5 +707,8 @@
 			</ul>
 		</div>
 	</footer>
+	<div class="gototop">
+		<button></button>
+	</div>
 </body>
 </html>
