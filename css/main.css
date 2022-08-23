@@ -588,9 +588,30 @@ h3 strong {color:#ee8508}
 .pressevent .slider .swiper-pagination-bullet-active {background-color: #ee8508;}
 .swiper-button-next:after,.swiper-button-prev:after {display: none;}
 
-.main_advertising {min-height: 703px;background-color: #f7f6f2;}
-.main_advertising .text{}
-.main_advertising .movie {width:894px;height:503px;}
+.main_advertising {min-height: 703px;padding-top:100px;background-color: #f7f6f2;}
+.main_advertising  .text{float:left; width:305px;}
+.main_advertising  .text h3 {text-align: left;margin-top: 32px;}
+.main_advertising  .text p{font-size: 18px;}
+.main_advertising .movie {float:right;position: relative; width:894px;height:503px;background: url(../images/main/img_video.jpg) no-repeat;}
+.main_advertising .movie .btn-play{position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);}
+
+.ai_result {min-height: 895px;}
+.ai_result h3 {text-align: left;padding-top: 100px;line-height: 1.5;}
+.ai_result h3 span{color:#70b949}
+.ai_result .explain {position: relative;margin-top: 48px; padding:24px;background-color:#70b949;border-radius: 20px;color:#fff; box-shadow: 0 3px 6px 0 rgba(66, 131, 32, 0.17);}
+.ai_result .explain h4 {font-size: 18px;}
+.ai_result .explain .btn{position:absolute;right:24px;top:50%;transform:translateY(-50%);}
+.ai_result .select_box {margin-top: 16px; border-radius: 12px;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);border: solid 1px #e8e8e8;}
+.ai_result .select_box .nav {padding:18px 24px;}
+.ai_result .txt_info {background-color: rgba(108, 173, 34, 0.2);padding: 9px 58px;}
+.ai_result .txt_info.ico_home {background-image: url(../images/main/img_home.png);background-repeat: no-repeat;background-position: 24px center;background-size: 28px;}
+.ai_result .cnt_info {padding:0 34px;}
+.ai_result .cnt_info>li {display: flex;padding:28px 0 33px;border-bottom: 1px solid #e4e4e4;}
+.ai_result .cnt_info>li .tit {min-width:212px; font-size: 24px;font-weight: 800;}
+.ai_result .cnt_info>li .cnt ul {display: grid;grid-template-columns: 1fr 1fr;column-gap:50px;row-gap: 20px;}
+.ai_result .cnt_info>li .cnt ul .cnt_tit_sub{font-size: 16px;font-weight: 800;}
+.ai_result .cnt_info>li .cnt ul .cnt_txt_sub{font-size: 14px;color:#4b4b4b;margin-top: 8px;word-break: keep-all;}
+
 
 .gototop {position:fixed;right:24px;bottom:115px;z-index: 1000;}
 .gototop button {display: none;width:56px;height:56px;background: #101314 url(../images/img_gototop.png) no-repeat center;border-radius: 100%;box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);}
