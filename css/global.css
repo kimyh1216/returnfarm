@@ -154,6 +154,7 @@ header .util .dropdown .dropdown-toggle{
 .gnb > ul li {display: flex;}
 .gnb > ul li .logo {display: block;width:153px;height:27px;background: url(../images/img_logo_top_black.png);background-size: cover;vertical-align: middle;}
 
+.gnb_menu_list {display: flex;}
 .gnb_menu_list li {margin-left: 32px;font-size: 18px;}
 .gnb_menu_list li:first-of-type{margin-left: 0;}
 .gnb_menu_list a {color:#101314}

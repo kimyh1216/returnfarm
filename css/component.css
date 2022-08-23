@@ -24,7 +24,7 @@
 .offcanvas .lnb-nav .inner-nav > ul > li > a:hover {color:#32936a;text-decoration:underline;}
 
 @media (min-width: 992px) {
-    .rflg-bg .navbar-toggler {
+    .navbar-toggler {
         display: none;
     }
 }
