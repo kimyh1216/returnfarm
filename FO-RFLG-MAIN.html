@@ -49,7 +49,7 @@
         </div>
     </header>
 	<div class="main_info rflg-bg">
-		<nav class="gnb trans">
+		<nav class="navbar gnb trans">
 			<ul>
 				<li><a class="logo" href="#"></a><span class="tit_sub">지자체관</span></li>
 				<li>
@@ -57,9 +57,20 @@
 				</li>
 				<li>
 					<button type="button" class="search-btn gnb">검색</button>
-					<button type="button" class="menu-btn">검색</button>
+					<button type="button" class="menu-btn" data-toggle="offcanvas">전체</button>
+                    
 				</li>
 			</ul>
+            <div class="offcanvas">
+                <ul>
+                    <li><a href="#"></a>
+                        <ul>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+                
 		</nav>
 
 		<div class="container lg_info">
@@ -216,12 +227,30 @@
         <h3><strong>고성군</strong> 농지/빈집 정보</h3>
         <div class="map">
             <img src="./images/main/bg_map.jpg" alt="">
-            <div class="layer">
-                <div class="l-img"><img src="./images/main/img_photo_chun.jpg" alt=""></div>
-                <strong>E편한세상 춘천 104동</strong>
-                <p>강원도 춘천시 소양로2가 183</p>
-                <p class="price">매매 3억 8,000</p>
-                <button type="button" class="btn-detail">상세 보기</button>
+            <div class="layer-wrap">
+                <div class="layer-close">
+                    <button type="button" class="close">닫기</button>
+                </div>
+                <div class="layer">
+                    <div class="l-img"><img src="./images/main/img_photo_chun.jpg" alt=""></div>
+                    <strong>E편한세상 춘천 104동</strong>
+                    <p>강원도 춘천시 소양로2가 183</p>
+                    <p class="price">매매 3억 8,000</p>
+                    <button type="button" class="btn-detail">상세 보기</button>
+                </div>
+            </div>
+            <div class="full">
+                <button type="button" class="btn-increace">전체화면</button>
+            </div>
+            <div class="map-size">
+                <div class="count d-flex flex-column">
+                    <button type="button" class="plus">더하기</button>
+                    <button type="button" class="minus">빼기</button>
+                </div>
+            </div>
+            <div class="house-info">
+                <button type="button" class="farmland">농지 정보</button>
+                <button type="button" class="vacant-house">빈집 정보</button>
             </div>
         </div>
         <!-- Slider main container -->
@@ -402,6 +431,300 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_01.png" alt="">
+                            <span class="txt-attr">지역명소</span>
+                        </div>
+                        <div class="we-txt">
+                            <strong>맛나다~!</strong>
+                            <ul class="name-area">
+                                <li>김철곤</li>
+                                <li>전라북도 정읍시 구릉동</li>
+                            </ul>
+                            <p>
+                                지난맘 무더위속 갈증을 시원하게 풀어주<br/>
+                                는 단비가 내려 오늘 하루는 무척 시원하...
+                            </p>
+                            <div class="viewlike-date">
+                                <div class="view-like">
+                                    <span class="view-num">16</span>
+                                    <span class="like-num">2</span>
+                                </div>
+                                <span class="we-date">2021.04.12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_02.png" alt="">
+                            <span class="txt-life">농촌생활</span>
+                        </div>
+                        <div class="we-txt">
+                            <strong>감자밭에 풀 자르기</strong>
+                            <ul class="name-area">
+                                <li>성기숙</li>
+                                <li>전라북도 정읍시 구릉동</li>
+                            </ul>
+                            <p>
+                                안녕하세요. 22년 강원도 홍천군 동네작가<br/>
+                                청년농부입니다. 오늘은 감자밭에 있는...
+                            </p>
+                            <div class="viewlike-date">
+                                <div class="view-like">
+                                    <span class="view-num">16</span>
+                                    <span class="like-num">2</span>
+                                </div>
+                                <span class="we-date">2021.04.12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_03.png" alt="">
+                            <span class="txt-scene">영농현장</span>
+                        </div>
+                        <div class="we-txt">
+                            <strong>포항 연일에서 만나는 흑토마토</strong>
+                            <ul class="name-area">
+                                <li>김철곤</li>
+                                <li>전라북도 정읍시 구릉동</li>
+                            </ul>
+                            <p>
+                                연일에서 유일하게 흑토마토를 재배하시는<br/>
+                                분을 찾아갔어요~ 하우스 3곳에서 재배...
+                            </p>
+                            <div class="viewlike-date">
+                                <div class="view-like">
+                                    <span class="view-num">16</span>
+                                    <span class="like-num">2</span>
+                                </div>
+                                <span class="we-date">2021.04.12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_04.png" alt="">
+                            <span class="txt-life">농촌생활</span>
+                        </div>
+                        <div class="we-txt">
+                            <strong>농촌생활 (소경매장 둘러보기)</strong>
+                            <ul class="name-area">
+                                <li>박정자</li>
+                                <li>전라북도 정읍시 구릉동</li>
+                            </ul>
+                            <p>
+                                안녕하세요 귀농2년차 농부입니다. 오늘은<br/>
+                                비도오고 마침 소경매하는날이라 구경을...
+                            </p>
+                            <div class="viewlike-date">
+                                <div class="view-like">
+                                    <span class="view-num">16</span>
+                                    <span class="like-num">2</span>
+                                </div>
+                                <span class="we-date">2021.04.12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_01.png" alt="">
+                            <span class="txt-attr">지역명소</span>
+                        </div>
+                        <div class="we-txt">
+                            <strong>맛나다~!</strong>
+                            <ul class="name-area">
+                                <li>김철곤</li>
+                                <li>전라북도 정읍시 구릉동</li>
+                            </ul>
+                            <p>
+                                지난맘 무더위속 갈증을 시원하게 풀어주<br/>
+                                는 단비가 내려 오늘 하루는 무척 시원하...
+                            </p>
+                            <div class="viewlike-date">
+                                <div class="view-like">
+                                    <span class="view-num">16</span>
+                                    <span class="like-num">2</span>
+                                </div>
+                                <span class="we-date">2021.04.12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_02.png" alt="">
+                            <span class="txt-life">농촌생활</span>
+                        </div>
+                        <div class="we-txt">
+                            <strong>감자밭에 풀 자르기</strong>
+                            <ul class="name-area">
+                                <li>성기숙</li>
+                                <li>전라북도 정읍시 구릉동</li>
+                            </ul>
+                            <p>
+                                안녕하세요. 22년 강원도 홍천군 동네작가<br/>
+                                청년농부입니다. 오늘은 감자밭에 있는...
+                            </p>
+                            <div class="viewlike-date">
+                                <div class="view-like">
+                                    <span class="view-num">16</span>
+                                    <span class="like-num">2</span>
+                                </div>
+                                <span class="we-date">2021.04.12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_03.png" alt="">
+                            <span class="txt-scene">영농현장</span>
+                        </div>
+                        <div class="we-txt">
+                            <strong>포항 연일에서 만나는 흑토마토</strong>
+                            <ul class="name-area">
+                                <li>김철곤</li>
+                                <li>전라북도 정읍시 구릉동</li>
+                            </ul>
+                            <p>
+                                연일에서 유일하게 흑토마토를 재배하시는<br/>
+                                분을 찾아갔어요~ 하우스 3곳에서 재배...
+                            </p>
+                            <div class="viewlike-date">
+                                <div class="view-like">
+                                    <span class="view-num">16</span>
+                                    <span class="like-num">2</span>
+                                </div>
+                                <span class="we-date">2021.04.12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_04.png" alt="">
+                            <span class="txt-life">농촌생활</span>
+                        </div>
+                        <div class="we-txt">
+                            <strong>농촌생활 (소경매장 둘러보기)</strong>
+                            <ul class="name-area">
+                                <li>박정자</li>
+                                <li>전라북도 정읍시 구릉동</li>
+                            </ul>
+                            <p>
+                                안녕하세요 귀농2년차 농부입니다. 오늘은<br/>
+                                비도오고 마침 소경매하는날이라 구경을...
+                            </p>
+                            <div class="viewlike-date">
+                                <div class="view-like">
+                                    <span class="view-num">16</span>
+                                    <span class="like-num">2</span>
+                                </div>
+                                <span class="we-date">2021.04.12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_01.png" alt="">
+                            <span class="txt-attr">지역명소</span>
+                        </div>
+                        <div class="we-txt">
+                            <strong>맛나다~!</strong>
+                            <ul class="name-area">
+                                <li>김철곤</li>
+                                <li>전라북도 정읍시 구릉동</li>
+                            </ul>
+                            <p>
+                                지난맘 무더위속 갈증을 시원하게 풀어주<br/>
+                                는 단비가 내려 오늘 하루는 무척 시원하...
+                            </p>
+                            <div class="viewlike-date">
+                                <div class="view-like">
+                                    <span class="view-num">16</span>
+                                    <span class="like-num">2</span>
+                                </div>
+                                <span class="we-date">2021.04.12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_02.png" alt="">
+                            <span class="txt-life">농촌생활</span>
+                        </div>
+                        <div class="we-txt">
+                            <strong>감자밭에 풀 자르기</strong>
+                            <ul class="name-area">
+                                <li>성기숙</li>
+                                <li>전라북도 정읍시 구릉동</li>
+                            </ul>
+                            <p>
+                                안녕하세요. 22년 강원도 홍천군 동네작가<br/>
+                                청년농부입니다. 오늘은 감자밭에 있는...
+                            </p>
+                            <div class="viewlike-date">
+                                <div class="view-like">
+                                    <span class="view-num">16</span>
+                                    <span class="like-num">2</span>
+                                </div>
+                                <span class="we-date">2021.04.12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_03.png" alt="">
+                            <span class="txt-scene">영농현장</span>
+                        </div>
+                        <div class="we-txt">
+                            <strong>포항 연일에서 만나는 흑토마토</strong>
+                            <ul class="name-area">
+                                <li>김철곤</li>
+                                <li>전라북도 정읍시 구릉동</li>
+                            </ul>
+                            <p>
+                                연일에서 유일하게 흑토마토를 재배하시는<br/>
+                                분을 찾아갔어요~ 하우스 3곳에서 재배...
+                            </p>
+                            <div class="viewlike-date">
+                                <div class="view-like">
+                                    <span class="view-num">16</span>
+                                    <span class="like-num">2</span>
+                                </div>
+                                <span class="we-date">2021.04.12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_04.png" alt="">
+                            <span class="txt-life">농촌생활</span>
+                        </div>
+                        <div class="we-txt">
+                            <strong>농촌생활 (소경매장 둘러보기)</strong>
+                            <ul class="name-area">
+                                <li>박정자</li>
+                                <li>전라북도 정읍시 구릉동</li>
+                            </ul>
+                            <p>
+                                안녕하세요 귀농2년차 농부입니다. 오늘은<br/>
+                                비도오고 마침 소경매하는날이라 구경을...
+                            </p>
+                            <div class="viewlike-date">
+                                <div class="view-like">
+                                    <span class="view-num">16</span>
+                                    <span class="like-num">2</span>
+                                </div>
+                                <span class="we-date">2021.04.12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                     <div class="swiper-slide">
                         <div class="we-img">
                             <img src="./images/main/img_success_photo_01.png" alt="">
