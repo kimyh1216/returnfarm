@@ -73,14 +73,14 @@
 .map .all .kyungki:hover{background-image: url(../images/map/map_kr_kyungki_on.png);}
 .map .all .kyungki a:first-of-type {transform: translate(-30%,-100%);min-width: 80px;}
 .map .all .kyungki .pointer {transform: translate(10%,0%);}
-.map .all .chungnam{left:30px;top:174px;width:136px;height: 135px;background-image: url(../images/map/map_kr_chungnam.png);background-size: 136px 135px;}
-.map .all .chungnam:hover{background-image: url(../images/map/map_kr_chungnam_on.png);}
-.map .all .chungnam a:first-of-type {transform: translate(-65%,-180%);}
-.map .all .chungnam .pointer {transform: translate(-90%,-80%);}
-.map .all .chungbuk{left:138px;top:162px;width:135px;height: 145px;background-image: url(../images/map/map_kr_chungbuk.png);background-size: 135px 145px;}
-.map .all .chungbuk:hover{background-image: url(../images/map/map_kr_chungbuk_on.png);}
-.map .all .chungbuk a:first-of-type {transform: translate(-75%,-260%);}
-.map .all .chungbuk .pointer {transform: translate(-115%,-160%);}
+.map .all .chungnam_p{left:30px;top:174px;width:136px;height: 135px;background-image: url(../images/map/map_kr_chungnam.png);background-size: 136px 135px;}
+.map .all .chungnam_p:hover{background-image: url(../images/map/map_kr_chungnam_on.png);}
+.map .all .chungnam_p a:first-of-type {transform: translate(-65%,-180%);}
+.map .all .chungnam_p .pointer {transform: translate(-90%,-80%);}
+.map .all .chungbuk_p{left:138px;top:162px;width:135px;height: 145px;background-image: url(../images/map/map_kr_chungbuk.png);background-size: 135px 145px;}
+.map .all .chungbuk_p:hover{background-image: url(../images/map/map_kr_chungbuk_on.png);}
+.map .all .chungbuk_p a:first-of-type {transform: translate(-75%,-260%);}
+.map .all .chungbuk_p .pointer {transform: translate(-115%,-160%);}
 .map .all .gyeungnam{right:0;top:184px;width:169px;height: 186px;background-image: url(../images/map/map_kr_gyeungnam.png);background-size: 169px 186px;}
 .map .all .gyeungnam:hover{background-image: url(../images/map/map_kr_gyeungnam_on.png);}
 .map .all .gyeungnam a:first-of-type {transform: translate(-30%,-180%);}
@@ -508,4 +508,72 @@
 @keyframes circle{
     0% {transform : scale(0);}
     100% {transform : scale(1);}
+}
+
+h3 {line-height:1;text-align: center;font-family: "NanumSquareRound";font-size: 40px;}
+h3 strong {color:#ee8508}
+.settlement_step4 {padding:100px 0;background-color: #fff;}
+.settlement_step4 .container>p {text-align: center;}
+.settlement_step4 ul {display: grid;margin-top: 48px; grid-template-columns: 1fr 1fr 1fr 1fr;gap:24px}
+.settlement_step4 li {padding:24px;background-color: #f7f7f7;color:#101314;border-radius: 20px;}
+.settlement_step4 li button {display: block;margin-top: 24px;}
+.settlement_step4 li button+button {margin-top: 6px;}
+.settlement_step4 li .sn {font-size: 15px;color:#ee8508;font-weight: 800;}
+.settlement_step4 li .tit {font-size: 21px;font-weight: 800;}
+.settlement_step4 li p {font-size: 15px;margin-top: 18px;}
+.settlement_step4 li.step1 {background-image:url(../images/main/img_process_step1.png);background-repeat:no-repeat;background-position: 90% 25px;background-size: 56px;}
+.settlement_step4 li.step2 {background-image:url(../images/main/img_process_step2.png);background-repeat:no-repeat;background-position: 90% 25px;background-size: 56px;}
+.settlement_step4 li.step3 {background-image:url(../images/main/img_process_step3.png);background-repeat:no-repeat;background-position: 90% 25px;background-size: 56px;}
+.settlement_step4 li.step4 {background-image:url(../images/main/img_process_step4.png);background-repeat:no-repeat;background-position: 90% 25px;background-size: 56px;}
+
+/* 귀농·귀촌 자가진단 */
+.returnfarm_selftest {overflow:hidden;background-color: #fff1e0;}
+.returnfarm_selftest .start {display: grid;grid-template-columns: 1fr 1fr;padding-top: 65px;}
+.returnfarm_selftest .start .text{padding-top: 55px;padding-left: 120px;text-align: left;}
+.returnfarm_selftest .start .text h3 {text-align: left;}
+.returnfarm_selftest .start .text p {margin-top: 20px;font-size: 18px;}
+.returnfarm_selftest .start .text a{margin-top: 48px;}
+.returnfarm_selftest .success_story {position: relative;margin-top: 140px;padding-bottom: 100px; padding-left: 400px;}
+.returnfarm_selftest .success_story .mainTit {position: absolute;left:0;top:17px;}
+.returnfarm_selftest .success_story .text{display:inline-block;max-width: 408px;}
+.returnfarm_selftest .success_story .text h3{line-height: 48px;text-align: left;}
+.returnfarm_selftest .success_story .text p{font-size: 18px;margin-top: 16px;}
+.returnfarm_selftest .success_story .slider {margin-right: -53vh;}
+.returnfarm_selftest .success_story li {width:282px;background-color: #fff;font-size: 16px;border-radius: 20px;}
+.returnfarm_selftest .success_story li img{width:100%;}
+.returnfarm_selftest .success_story li .cnt {padding:22px 0 22px 24px;}
+.returnfarm_selftest .success_story li .bdg span{padding: 2px 4px; font-size:12px;color: #ff7f00;background-color: #fff1e0;  border-radius: 3px;}
+.returnfarm_selftest .success_story li .date{margin-top: 6px; color:#88898a;font-size: 14px;}
+.returnfarm_selftest .success_story li p{color:#101314;}
+.returnfarm_selftest .success_story .swiper {width:100%;height:350px}
+.returnfarm_selftest .success_story .slider {position: relative;}
+.returnfarm_selftest .success_story .control-btn {position: absolute;left:0;bottom:-130px;}
+.returnfarm_selftest .success_story .control-btn .control-prev[aria-disabled="true"] {background: url(../images/btn_48_ico_left_d.png) no-repeat left top;background-size: cover;}
+.returnfarm_selftest .success_story .control-btn .control-next[aria-disabled="true"] {background: url(../images/btn_48_ico_right_d.png) no-repeat left top;background-size: cover;}
+
+/* 지원 정책 */
+.support_policy {min-height: 883px;background: #70b949 url(../images/main/img_bg_policy.png) no-repeat center;background-size: auto 100%;}
+.support_policy h3 {line-height: 1;margin:0;padding-top: 100px;color:#fff}
+.support_policy p{margin-top: 16px;color:#fff;font-size: 18px;text-align: center;}
+.policy_list {display: grid;margin-top: 48px; grid-template-columns: 1fr 1fr 1fr;gap:24px}
+.policy_list li {padding: 32px 32px 28px; background-color: #fff;border-radius: 20px;text-align: right;}
+.policy_list li h4 {font-size: 18px;text-align: left;}
+.policy_list li p {color:#101314;text-align: left;font-size: 16px;}
+
+/* 2021 기준 귀농·귀촌인 통계 */
+.statistics {min-height: 800px;background-color: #fff;}
+.statistics h3{padding-top: 100px;}
+.statistics .cnt {width:996px;height:570px;margin:48px auto 0;padding:24px;border:1px solid #eaeaea;border-radius: 20px;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);}
+.statistics .cnt img {width:100%;}
+
+/* 우리동네 작가 */
+.mytown {min-height: 850px;background: #fff url(../images/main/img_bg_mytownwriter.png) no-repeat center bottom;background-size: auto 100%;}
+.mytown h3 {padding-top: 100px;}
+.mytown p {margin-top: 16px;text-align: center;font-size: 18px;}
+
+/* 언론보도/행사알림 */
+.pressevent {min-height: 745px;}
+
+@media (max-width: 1920px) {
+    .returnfarm_selftest .success_story .slider {margin-right: -33vh;}
 }
