@@ -62,6 +62,10 @@
 .btn-white48:hover {border-color:rgba(232, 232, 232, 0.5);background-color:rgba(232, 232, 232, 0.5);color:#282b2c;}
 .btn-white48.disabled {background-color:#e8e8e8;border-color:#e8e8e8;color:#cfd0d0;opacity: 1;}
 
+.btn-white50 {padding:10px 20px 9px;background-color:transparent;border:1px solid #fff ;color:#fff;font-size:18px;font-weight:500;}
+.btn-white50:hover {border-color:rgba(232, 232, 232, 0.5);background-color:rgba(232, 232, 232, 0.5);color:#282b2c;}
+.btn-white50.disabled {background-color:#e8e8e8;border-color:#e8e8e8;color:#cfd0d0;opacity: 1;}
+
 .btn-radius-white48 {border-radius:26px;}
 
 .btn-white76 {padding:25px 10px 24px;background-color:#fff;border-color:#cfd0d0;border-radius:12px;color:#101314;font-size:18px;}
