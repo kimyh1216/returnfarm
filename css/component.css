@@ -237,14 +237,13 @@ input.input-box::placeholder {color:#9fa1a1;font-size:14px;font-weight:normal;}
 .gnb .icon-user {position:relative;width:40px;height:40px;background:none;border:none;font-size:0;line-height:0;}
 .gnb .icon-user::after {content:"";position: absolute;top:0;left:0;bottom:0;right:0;margin:auto;width:24px;height:24px;background:url(../images/ico_24_user_n.png) no-repeat left top;background-size:cover;}
 
-.swiper-container .swiper-button-prev {left:0;}
-.swiper-container .swiper-button-next {right:0;}
+
 .swiper-container .swiper-button-prev,
 .swiper-container .swiper-button-next {width:24px;height:24px;}
-.swiper-container .swiper-button-prev::after,
-.swiper-container .swiper-button-next::after {content:"";width:24px;height:24px;}
-.swiper-container .swiper-button-prev::after {background:url(../images/btn_left.png) no-repeat left top;background-size:cover;}
-.swiper-container .swiper-button-next::after {background:url(../images/btn_right.png) no-repeat left top;background-size:cover;}
+.swiper-container .swiper-button-prev {background:url(../images/btn_left.png) no-repeat left top;background-size:cover;}
+.swiper-container .swiper-button-next {background:url(../images/btn_right.png) no-repeat left top;background-size:cover;}
+.swiper-container .swiper-button-prev {left:0;}
+.swiper-container .swiper-button-next {right:0;}
 
 .swiper-pagination-bullet {background:#aaa;}
 .swiper-pagination-bullet.swiper-pagination-bullet-active {background:#ee8508;}
