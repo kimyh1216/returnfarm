@@ -84,6 +84,8 @@
 .btn-more32 .icon-more {position:relative;padding-left:14px;}
 .btn-more32 .icon-more::after {content:'';position:absolute;top:0;left:0;bottom:0;margin:auto;width:10px;height:10px;background:url(../images/btn_8_ico_plus_n.png) no-repeat right center; background-size:cover;}
 
+.btn-icon-more {position:absolute;top:20px;right:20px;padding:3px 6px;background:#edeff0;border-radius:4px;color:#88898a;font-size:12px;}
+
 .player-btn {position:relative;}
 .player-btn .btn-play {width:68px;height:68px;background:url(../images/btn_68_play_n.png) no-repeat left top;background-size:cover;border:none;font-size:0;} 
 .player-btn .btn-play:hover {background:url(../images/btn_68_play_p.png) no-repeat left top;background-size:cover;}
