@@ -217,3 +217,10 @@ footer .cooperation ul {display: flex;
 flex-direction: row;}
 footer .cooperation ul li{margin-left: 26px;}
 footer .cooperation ul img{height: 46px;}
+@media only screen and (max-width: 768px) {
+    footer .inner{flex-direction: column;}
+    footer .link {margin-left: 0;margin-top: 24px;}
+    footer .address{margin-left: 0;}
+    footer .cooperation {position: static;border-top: 1px solid #cacaca;margin-top: 20px;padding-top: 20px;}
+    footer .cooperation ul li:first-of-type {margin-left: 0;}
+}
