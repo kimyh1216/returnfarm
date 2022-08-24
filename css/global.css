@@ -175,6 +175,34 @@ header .util .dropdown .dropdown-toggle{
 .tit_sub.outlined {background-color: transparent;border:1px solid #4e5658;color:#4e5658;}
 
 
+/* 공통 */
+.service-link {display:flex;}
+.service-link li + li {margin-left:4px;}
+.service-link li a {display:block;padding:4px 12px;border:1px solid #fff;border-radius:14px;}
+.service-link li a span {position:relative;padding-right:16px;color:#fff;font-size:14px;line-height:1.43;}
+.service-link li a span::after {content:"";position:absolute;top:0;right:0;bottom:0;margin:auto;width:12px;height:12px;background:url(../images/ico_arrow_n.png) no-repeat left top;background-size:cover;}
+
+.gnb .icon-login {position:relative;width:40px;height:40px;background:none;border:none;font-size:0;line-height:0;}
+.gnb .icon-login::after {content:"";position: absolute;top:0;left:0;bottom:0;right:0;margin:auto;width:24px;height:24px;background:url(../images/btn_16_login_blak_n.png) no-repeat left top;background-size:cover;}
+.gnb .icon-user {position:relative;width:40px;height:40px;background:none;border:none;font-size:0;line-height:0;}
+.gnb .icon-user::after {content:"";position: absolute;top:0;left:0;bottom:0;right:0;margin:auto;width:24px;height:24px;background:url(../images/ico_24_user_n.png) no-repeat left top;background-size:cover;}
+
+
+.swiper-container .swiper-button-prev,
+.swiper-container .swiper-button-next {width:24px;height:24px;}
+.swiper-container .swiper-button-prev {background:url(../images/btn_left.png) no-repeat left top;background-size:cover;}
+.swiper-container .swiper-button-next {background:url(../images/btn_right.png) no-repeat left top;background-size:cover;}
+.swiper-container .swiper-button-prev {left:0;}
+.swiper-container .swiper-button-next {right:0;}
+.swiper-container .swiper-button-prev::after,
+.swiper-container .swiper-button-next::after {display:none;}
+
+
+.swiper-pagination-bullet {background:#aaa;}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {background:#ee8508;}
+
+
+
 /* footer */
 footer .inner{
     position: relative;
@@ -219,6 +247,7 @@ flex-direction: row;}
 footer .cooperation ul li{margin-left: 26px;}
 footer .cooperation ul img{height: 46px;}
 @media only screen and (max-width: 768px) {
+    .gnb_menu_list {display:none;}
     footer .inner{flex-direction: column;}
     footer .link {margin-left: 0;margin-top: 24px;}
     footer .address{margin-left: 0;}
