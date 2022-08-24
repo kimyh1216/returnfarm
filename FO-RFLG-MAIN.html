@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/main.css" />
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/govern.css" />
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script><!-- dropdown 사용시 링크 걸어야함-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/common.js"></script>
     <title>귀농귀촌 종합센터</title>
 </head>
@@ -133,7 +133,7 @@
                 </p>
 				<div class="select_box">
                     <div class="select-wrap">
-                        <div class="dropdown select" id="country-codes">
+                        <div class="dropdown select-box" id="country-codes">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
                                 <span class="value">경기도</span>
                             </button>
@@ -146,7 +146,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="dropdown select" id="country-codes">
+                        <div class="dropdown select-box" id="country-codes">
                             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
                                 <span class="value">고성군</span>
                             </button>
@@ -417,13 +417,24 @@
     <script>
         const swiper = new Swiper('.map-info .swiper', {
             // Optional parameters
-            slidesPerView: 2,
+            // slidesPerView: 2,
             // grid: {
             //     rows: 2
             // },
             spaceBetween: 24,
             slidesPerGroup: 2,
             loop: true,
+            breakpoints: {
+					320:{
+						slidesPerView: '1',
+					},
+					600:{
+						slidesPerView: '1',
+					},
+					1400:{
+						slidesPerView: '2',
+					}
+				},
 
             // If we need pagination
             pagination: {
@@ -891,10 +902,21 @@
     <script>
         const swiper1 = new Swiper('.we-writer .swiper', {
             // Optional parameters
-            slidesPerView: 4,
+            // slidesPerView: 4,
             spaceBetween: 24,
             slidesPerGroup: 4,
             loop: true,
+            breakpoints: {
+                320:{
+                    slidesPerView: '1',
+                },
+                600:{
+                    slidesPerView: '2',
+                },
+                769:{
+                    slidesPerView: '4',
+                }
+            },
 
             // If we need pagination
             pagination: {
@@ -1121,10 +1143,21 @@
         <script>
             const swiper2 = new Swiper('.area-community .swiper', {
                 // Optional parameters
-                slidesPerView: 2,
+                // slidesPerView: 2,
                 spaceBetween: 24,
                 slidesPerGroup: 2,
                 loop: true,
+                breakpoints: {
+					320:{
+						slidesPerView: '1',
+					},
+					600:{
+						slidesPerView: '1',
+					},
+					769:{
+						slidesPerView: '2',
+					}
+				},
 
                 // If we need pagination
                 pagination: {
@@ -1150,25 +1183,25 @@
             <h3>2022 농업일자리 체험교육</h3>
             <p>내가 원하는 품목을 선택할 수 있다고?</p>
             <div class="d-flex skillup-notice">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="opacity-box">
                         <p>농업일자리 체험교육을 통한 농작업 SKILL UP~!</p>
                         <div class="d-flex step-wrap">
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <span class="step">혜택1</span>
                                 <p>
                                     실습지원비 지급<br/>
                                     (농작업 체험시간 X 최저시급)
                                 </p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <span class="step">혜택2</span>
                                 <p>
                                     교육시간 80시간 인정<br/>
                                     (농업교육포털)
                                 </p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <span class="step">혜택3</span>
                                 <p>
                                     교육비 전액 무료 <br/>
@@ -1179,7 +1212,7 @@
                     </div>
                     <button type="button" class="btn btn-white btn-white48 btn-radius-white48 mt-18">교육 신청하러 가기!</button>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="notice-box">
                         <ul class="nav notice-tab" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">

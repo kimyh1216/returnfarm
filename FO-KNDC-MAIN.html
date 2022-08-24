@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/component.css" />
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/community.css" />
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script><!-- dropdown 사용시 링크 걸어야함-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
     <script src="../js/common.js"></script>
     <title>귀농귀촌 종합센터</title>
 </head>
@@ -261,10 +261,21 @@
     <script>
         const swiper = new Swiper('.swiper', {
         // Optional parameters
-        slidesPerView: 4,
+        // slidesPerView: 4,
         spaceBetween: 24,
         slidesPerGroup: 4,
         loop: true,
+        breakpoints: {
+            320:{
+                slidesPerView: '2',
+            },
+            600:{
+                slidesPerView: '2',
+            },
+            769:{
+                slidesPerView: '4',
+            }
+        },
 
         // If we need pagination
         pagination: {
@@ -292,7 +303,7 @@
     <div class="community-new">
         <h3><strong>최신</strong> 지식인</h3>
         <ul class="new-list d-flex flex-wrap">
-            <li class="col-6">
+            <li class="col-lg-6">
                 <div class="mgbox">
                     <ul class="tag-list">
                         <li><a href="#">#귀농</a></li>
@@ -318,7 +329,7 @@
                     </div>
                 </div>
             </li>
-            <li class="col-6">
+            <li class="col-lg-6">
                 <div class="mgbox">
                     <ul class="tag-list">
                         <li><a href="#">#귀농</a></li>
@@ -344,7 +355,7 @@
                     </div>
                 </div>
             </li>
-            <li class="col-6">
+            <li class="col-lg-6">
                 <div class="mgbox">
                     <ul class="tag-list">
                         <li><a href="#">#귀농</a></li>
@@ -370,7 +381,7 @@
                     </div>
                 </div>
             </li>
-            <li class="col-6">
+            <li class="col-lg-6">
                 <div class="mgbox">
                     <ul class="tag-list">
                         <li><a href="#">#귀농</a></li>
@@ -403,6 +414,7 @@
         <h3><strong>동네작가</strong> 마을 소식</h3>
         <ul class="village-news-list">
             <li>
+                <div class="vn-img"><img src="./images/img_photo_new1.jpg" alt=""></div>
                 <ul class="tag-list">
                     <li><a href="#">#혜민농원</a></li>
                     <li><a href="#">#귀농일기</a></li>
@@ -414,7 +426,6 @@
                     <strong>귀농 첫해의 무화과 농사</strong>
                     <p>귀농 6년차 그때와 지금은 모든게 달라졌다. 농장의 상황도 나의 마음 가짐도 그리고 농장을 알게 된 많은 사람들… 문득 6년의 시간 중 막… 몇가지는 달성이 되었지만, 몇가지는 아직도 멀다. 이제 얼마 남지 않은 시간이지만, 매우 잘 될꺼라고 본다. </p>
                 </a>
-                <div class="vn-img"><img src="./images/img_photo_new1.jpg" alt=""></div>
                 <div class="vn-wrap">
                     <span class="vn-name">김철곤</span>
                     <span class="vn-tit">혜민농원, 땅끝해남의 달달한 무화과</span>
@@ -422,6 +433,7 @@
                 </div>
             </li>
             <li>
+                <div class="vn-img"><img src="./images/img_photo_new2.jpg" alt=""></div>
                 <ul class="tag-list">
                     <li><a href="#">#혜민농원</a></li>
                     <li><a href="#">#귀농일기</a></li>
@@ -433,7 +445,6 @@
                     <strong>귀농 첫해의 무화과 농사</strong>
                     <p>귀농 6년차 그때와 지금은 모든게 달라졌다. 농장의 상황도 나의 마음 가짐도 그리고 농장을 알게 된 많은 사람들… 문득 6년의 시간 중 막… 몇가지는 달성이 되었지만, 몇가지는 아직도 멀다. 이제 얼마 남지 않은 시간이지만, 매우 잘 될꺼라고 본다. </p>
                 </a>
-                <div class="vn-img"><img src="./images/img_photo_new2.jpg" alt=""></div>
                 <div class="vn-wrap">
                     <span class="vn-name">김철곤</span>
                     <span class="vn-tit">혜민농원, 땅끝해남의 달달한 무화과</span>
