@@ -262,6 +262,8 @@ input.input-box::placeholder {color:#9fa1a1;font-size:14px;font-weight:normal;}
 .icon-job {position:relative;padding-left:32px;color:#1a1a1a;font-size:14px;line-height:24px;}
 .icon-job::after {content:"";position:absolute;top:0;left:0;width:24px;height:24px;background:url(../images/icon_24_poi_work.png) no-repeat left top;background-size:cover;}
 
-
+.txt-close {padding:3px 8px;background:#edeff0;border-radius:4px;}
+.txt-close .close {position:relative;display:block;padding-left:11px;color:#88898a;font-size:12px;letter-spacing:-0.36px;}
+.txt-close .close::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:7px;height:7px;background:url(../images/ico_7_close.png) no-repeat left top;background-size:cover;}
 
 
