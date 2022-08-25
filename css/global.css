@@ -253,4 +253,7 @@ footer .cooperation ul img{height: 46px;}
     footer .address{margin-left: 0;}
     footer .cooperation {position: static;border-top: 1px solid #cacaca;margin-top: 20px;padding-top: 20px;}
     footer .cooperation ul li:first-of-type {margin-left: 0;}
+
+    .swiper-container .swiper-button-prev {display:none;}
+    .swiper-container .swiper-button-next {display:none;}
 }

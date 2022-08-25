@@ -28,6 +28,8 @@
         display: none;
     }
 }
+
+
 .user-logout {position:relative;width:40px;height:40px;background:none;border:none;font-size:0;line-height:0;}
 .user-logout::after {content:"";position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/ico_24_user_white_n.png) no-repeat left top;background-size:cover;}
 
