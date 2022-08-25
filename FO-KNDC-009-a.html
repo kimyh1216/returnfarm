@@ -45,15 +45,14 @@
 		
         <nav class="gnb">
 			<ul>
-				<li><a class="logo" href="#"></a></li>
+				<li><a class="logo" href="#"></a><span class="tit_sub gray">지식확산 커뮤니티</span></li>
 				<li>
 					<ul class="gnb_menu_list">
-						<li><a href="#">귀농귀촌 상담</a></li>
-						<li><a href="#">교육정보 및 신청</a></li>
-						<li><a href="#">지원정책</a></li>
-						<li><a href="#">자료실</a></li>
-						<li><a href="#">알람소식</a></li>
-						<li><a href="#">지자체관</a></li>
+						<li><a href="#">지식확산 서비스 안내</a></li>
+						<li><a href="#">커뮤니티</a></li>
+						<li><a href="#">귀농귀촌 지식인</a></li>
+						<li><a href="#">알림마당</a></li>
+						<li><a href="#">마을소개</a></li>
 						<li class="living"><a href="#">농촌에서 살아보기</a></li>
 					</ul>
 				</li>
@@ -68,12 +67,6 @@
 
     <!-- 서브 컨텐츠 -->
     <div class="sub-contents">
-        <div class="container-fluid py-5 online">
-            <div class="container py-5 visual">
-                <h2>온라인 상담</h2>
-                <p>귀농귀촌에 대해 궁금한 점이 있으신 경우 문의 주세요.</p>
-            </div>
-        </div>
         <div class="container-fluid lnb-area">
             <div class="container">
                 <div class="row">
@@ -109,64 +102,33 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-5">
-            <ul class="nav pc-tab" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" data-toggle="tab" data-target="#pc-tab1" type="button">전체</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-toggle="tab" data-target="#pc-tab2" type="button">교육</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-toggle="tab" data-target="#pc-tab3" type="button">정책</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-toggle="tab" data-target="#pc-tab4" type="button">농지주택</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-toggle="tab" data-target="#pc-tab5" type="button">작목</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-toggle="tab" data-target="#pc-tab6" type="button">임업</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-toggle="tab" data-target="#pc-tab7" type="button">기타</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-toggle="tab" data-target="#pc-tab8" type="button">예약상담</button>
-                </li>
-            </ul>
-
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane active" id="pc-tab1">
-                    <div class="row total">
-                        <div class="col-6 total-all">
-                            <div class="dropdown select" id="country-codes">
-                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
-                                    <span class="value">답변상태</span>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <ul>
-                                        <li><button type="button">최신순</button></li>
-                                        <li><button type="button">답변대기</button></li>
-                                        <li><button type="button">답변완료</button></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <p class="total-txt">
-                                총 <strong>600</strong> 건 · 페이지 <strong>1</strong> / 12
-                            </p>
-                        </div>
-                        <div class="col-6 d-flex align-items-center justify-content-end">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">내 답변만 보기</label>
-                            </div>
+        <div class="container-fluid knowledge_spread">
+            <div class="container visual">
+                <img src="images/ico_community_mungyeong.png" />
+                <div>
+                    <h2><span>문경시 귀농 귀촌 연합회</span><button type="button" class="btn btn-outline-frame32"><span class="ico-plus">가입하기</span></button>
+                        <button type="button" class="btn btn-outline-frame32"><span class="ico-link">초대 링크 복사</span></button></h2>
+                    <p>멤버수 <strong>4,274</strong></p>
+                    <p>새글 <strong class="text-primary">2</strong> /9,231</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <div class="pc-tab-full">
+                <div class="container">
+                    <ul class="nav pc-tab" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-toggle="tab" data-target="#pc-tab1" type="button">전체글</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#pc-tab2" type="button">전체 공지사항</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#pc-tab3" type="button">내가 쓴 글</button>
+                        </li>
+                        <li class="total knowledgespread">
                             <div class="total-search d-flex align-items-center justify-content-end">
                                 <div class="dropdown select" id="country-codes">
-                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
-                                        <span class="value">제목+내용</span>
-                                    </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <ul>
                                             <li><button type="button">제목</button></li>
@@ -179,138 +141,178 @@
                                 </div>
                                 <button type="button" class="search-icon-btn">검색</button>
                             </div>
-                            <button type="button" class="ico-filter collapsed">필터</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane active" id="pc-tab1">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="comm_menu">
+                                    <div class="user">
+                                        <div class="profile-img">
+                                            <img src="images/temp_img_profile.png" />
+                                            <button class="btn-setting"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="row total">
+                                    <div class="col-6 total-all">
+                                        <div class="dropdown select" id="country-codes">
+                                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                                                <span class="value">답변상태</span>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <ul>
+                                                    <li><button type="button">최신순</button></li>
+                                                    <li><button type="button">답변대기</button></li>
+                                                    <li><button type="button">답변완료</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="total-txt">
+                                            총 <strong>600</strong> 건 · 페이지 <strong>1</strong> / 12
+                                        </p>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-center justify-content-end">
+                                        <button type="button" class="btn btn-black btn-black40">글쓰기</button>
+                                    </div>
+                                </div>
+                                <table class="table-list">
+                                    <colgroup>
+                                        <col style="width:10%;" />
+                                        <col style="width:10%;" />
+                                        <col style="width:60%;" />
+                                        <col style="width:10%;" />
+                                        <col style="width:10%;" />
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" class="text-center">상담유형</th>
+                                        <th scope="col" class="text-center">답변</th>
+                                        <th scope="col" class="text-center">제목</th>
+                                        <th scope="col" class="text-center">작성자</th>
+                                        <th scope="col" class="text-center">작성일</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-center">교육</td>
+                                        <td class="text-center">답변완료</td>
+                                        <td class="tit"><a href="#" class="locked"><i>잠김글</i><span class="categori">[카테고리]</span>귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">2021-00-00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">정책</td>
+                                        <td class="text-center">답변완료</td>
+                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">2021-00-00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">교육</td>
+                                        <td class="text-center">답변완료</td>
+                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">2021-00-00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">정책</td>
+                                        <td class="text-center">답변완료</td>
+                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">2021-00-00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">교육</td>
+                                        <td class="text-center">답변완료</td>
+                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">2021-00-00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">정책</td>
+                                        <td class="text-center">답변완료</td>
+                                        <td class="tit"><a href="#" class="locked"><i>잠김글</i>귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">2021-00-00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">교육</td>
+                                        <td class="text-center">답변완료</td>
+                                        <td class="tit"><a href="#" class="locked"><i>잠김글</i>귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">2021-00-00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">정책</td>
+                                        <td class="text-center">답변완료</td>
+                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">2021-00-00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">교육</td>
+                                        <td class="text-center">답변완료</td>
+                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">2021-00-00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">교육</td>
+                                        <td class="text-center">답변완료</td>
+                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">2021-00-00</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class="btn-right">
+                                    <button type="button" class="btn btn-black btn-black40">글쓰기</button>
+                                </div>
+                                
+                                <div class="pagination paging">
+                                    <button type="button" class="page-link firstBtn disabled">
+                                        처음페이지
+                                    </button>
+                                    <button type="button" class="page-link prevBtn disabled">
+                                        이전페이지
+                                    </button>
+
+                                    <a class="page-link on" href="#">1</a></li>
+                                    <a class="page-link" href="#">2</a></li>
+                                    <a class="page-link" href="#">3</a></li>
+                                    <a class="page-link" href="#">4</a></li>
+                                    <a class="page-link" href="#">5</a></li>
+                                    <a class="page-link" href="#">6</a></li>
+                                    <a class="page-link" href="#">7</a></li>
+                                    <a class="page-link" href="#">8</a></li>
+                                    <a class="page-link" href="#">9</a></li>
+                                    <a class="page-link" href="#">10</a></li>
+                                    
+                                    <button type="button" class="page-link nextBtn">
+                                        다음페이지
+                                    </button>
+                                    <button type="button" class="page-link lastBtn">
+                                        마지막페이지
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <table class="table-list">
-                        <colgroup>
-                            <col style="width:10%;" />
-                            <col style="width:10%;" />
-                            <col style="width:60%;" />
-                            <col style="width:10%;" />
-                            <col style="width:10%;" />
-                        </colgroup>
-                        <thead>
-                          <tr>
-                            <th scope="col" class="text-center">상담유형</th>
-                            <th scope="col" class="text-center">답변</th>
-                            <th scope="col" class="text-center">제목</th>
-                            <th scope="col" class="text-center">작성자</th>
-                            <th scope="col" class="text-center">작성일</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="text-center">교육</td>
-                            <td class="text-center">답변완료</td>
-                            <td class="tit"><a href="#" class="locked"><i>잠김글</i><span class="categori">[카테고리]</span>귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
-                            <td class="text-center">홍길동</td>
-                            <td class="text-center">2021-00-00</td>
-                          </tr>
-                          <tr>
-                            <td class="text-center">정책</td>
-                            <td class="text-center">답변완료</td>
-                            <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
-                            <td class="text-center">홍길동</td>
-                            <td class="text-center">2021-00-00</td>
-                          </tr>
-                          <tr>
-                            <td class="text-center">교육</td>
-                            <td class="text-center">답변완료</td>
-                            <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
-                            <td class="text-center">홍길동</td>
-                            <td class="text-center">2021-00-00</td>
-                          </tr>
-                          <tr>
-                            <td class="text-center">정책</td>
-                            <td class="text-center">답변완료</td>
-                            <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
-                            <td class="text-center">홍길동</td>
-                            <td class="text-center">2021-00-00</td>
-                          </tr>
-                          <tr>
-                            <td class="text-center">교육</td>
-                            <td class="text-center">답변완료</td>
-                            <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
-                            <td class="text-center">홍길동</td>
-                            <td class="text-center">2021-00-00</td>
-                          </tr>
-                          <tr>
-                            <td class="text-center">정책</td>
-                            <td class="text-center">답변완료</td>
-                            <td class="tit"><a href="#" class="locked"><i>잠김글</i>귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
-                            <td class="text-center">홍길동</td>
-                            <td class="text-center">2021-00-00</td>
-                          </tr>
-                          <tr>
-                            <td class="text-center">교육</td>
-                            <td class="text-center">답변완료</td>
-                            <td class="tit"><a href="#" class="locked"><i>잠김글</i>귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
-                            <td class="text-center">홍길동</td>
-                            <td class="text-center">2021-00-00</td>
-                          </tr>
-                          <tr>
-                            <td class="text-center">정책</td>
-                            <td class="text-center">답변완료</td>
-                            <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
-                            <td class="text-center">홍길동</td>
-                            <td class="text-center">2021-00-00</td>
-                          </tr>
-                          <tr>
-                            <td class="text-center">교육</td>
-                            <td class="text-center">답변완료</td>
-                            <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
-                            <td class="text-center">홍길동</td>
-                            <td class="text-center">2021-00-00</td>
-                          </tr>
-                          <tr>
-                            <td class="text-center">교육</td>
-                            <td class="text-center">답변완료</td>
-                            <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
-                            <td class="text-center">홍길동</td>
-                            <td class="text-center">2021-00-00</td>
-                          </tr>
-                        </tbody>
-                    </table>
-                    <div class="btn-right">
-                        <button type="button" class="btn btn-black btn-black40">글쓰기</button>
-                    </div>
-                    
-                    <div class="pagination paging">
-                        <button type="button" class="page-link firstBtn disabled">
-                            처음페이지
-                        </button>
-                        <button type="button" class="page-link prevBtn disabled">
-                            이전페이지
-                        </button>
-
-                        <a class="page-link on" href="#">1</a></li>
-                        <a class="page-link" href="#">2</a></li>
-                        <a class="page-link" href="#">3</a></li>
-                        <a class="page-link" href="#">4</a></li>
-                        <a class="page-link" href="#">5</a></li>
-                        <a class="page-link" href="#">6</a></li>
-                        <a class="page-link" href="#">7</a></li>
-                        <a class="page-link" href="#">8</a></li>
-                        <a class="page-link" href="#">9</a></li>
-                        <a class="page-link" href="#">10</a></li>
-                        
-                        <button type="button" class="page-link nextBtn">
-                            다음페이지
-                        </button>
-                        <button type="button" class="page-link lastBtn">
-                            마지막페이지
-                        </button>
-                    </div>
-                    
+                    <div class="tab-pane" id="pc-tab2">2222</div>
+                    <div class="tab-pane" id="pc-tab3">3333</div>
+                    <div class="tab-pane" id="pc-tab4">4444</div>
+                    <div class="tab-pane" id="pc-tab5">5555</div>
+                    <div class="tab-pane" id="pc-tab6">6666</div>
+                    <div class="tab-pane" id="pc-tab7">7777</div>
+                    <div class="tab-pane" id="pc-tab8">8888</div>
                 </div>
-                <div class="tab-pane" id="pc-tab2">2222</div>
-                <div class="tab-pane" id="pc-tab3">3333</div>
-                <div class="tab-pane" id="pc-tab4">4444</div>
-                <div class="tab-pane" id="pc-tab5">5555</div>
-                <div class="tab-pane" id="pc-tab6">6666</div>
-                <div class="tab-pane" id="pc-tab7">7777</div>
-                <div class="tab-pane" id="pc-tab8">8888</div>
             </div>
         </div>
     </div>

@@ -49,11 +49,18 @@
 .ml-8 {margin-left:8px;}
 
 .disabled {pointer-events:none;}
+.btn-outline-frame32 {padding:6px 10px 4px;border-color:none;color:#646161;font-size:13px;background-color: #edeff0;}
+.btn-outline-frame32.disabled {border-color:#cfd0d0;color:#cfd0d0;}
+.btn-outline-frame32.disabled .arrow-right::after {background:url(../images/btn_16_arrow_black_d.png) no-repeat right center;background-size:cover;}
 .btn-outline-frame34 {padding:6px 12px 5px;border-color:#968f8f;color:#101314;font-size:14px;}
 .btn-outline-frame34:hover {border-color:#101314;}
 .btn-outline-frame34:hover .arrow-right::after {background:url(../images/btn_16_arrow_black_p.png) no-repeat right center;background-size:cover;}
 .btn-outline-frame34.disabled {border-color:#cfd0d0;color:#cfd0d0;}
 .btn-outline-frame34.disabled .arrow-right::after {background:url(../images/btn_16_arrow_black_d.png) no-repeat right center;background-size:cover;}
+.ico-plus {position:relative;padding-left:14px;}
+.ico-plus::after {content:'';position:absolute;top:0;left:0;bottom:0;margin:auto;width:10px;height:10px;background:url(../images/btn_8_ico_plus_n.png) no-repeat right center; background-size:cover;}
+.ico-link {position:relative;padding-left:14px;}
+.ico-link::after {content:'';position:absolute;top:0;left:0;bottom:0;margin:auto;width:10px;height:10px;background:url(../images/btn_8_ico_link_n.png) no-repeat right center; background-size:cover;}
 .arrow-right {position:relative;padding-right:22px;}
 .arrow-right::after {content:'';position:absolute;top:0;right:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/btn_16_arrow_black_n.png) no-repeat right center; background-size:cover;}
 .btn-outline-green {padding:6px 12px 5px;border-color:#94eb32;color:#94eb32;font-size:14px;}
@@ -177,7 +184,7 @@
 .tag:hover {border: solid 1px #ee8508;background-color: #fff;color:#101314;}
 .tag.disabled {border: solid 1px #cfd0d0;background-color: #e8e8e8;color:#cfd0d0;}
 
-.pc-tab {width:100%;border-bottom:1px solid #e8e8e8;}
+.pc-tab {position: relative; width:100%;border-bottom:1px solid #e8e8e8;}
 .pc-tab li {position:relative;}
 .pc-tab li + li {margin-left:24px;}
 .pc-tab li .nav-link {padding: 4px 19px 24px;background:#fff;border:none;color: #968f8f;font-size:18px;line-height:1.5;}
@@ -187,6 +194,7 @@
 .pc-tab li .active::after {transform: scale(1);}
 .pc-tab li .nav-link:disabled {color:#cfd0d0;}
 .pc-tab li .nav-link:disabled::after {content:"";background:#fff;}
+.pc-tab .total button:after{display: none;}
 
 .mo-tab {width:100%;}
 .mo-tab li + li {margin-left:8px;}

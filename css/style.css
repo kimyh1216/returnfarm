@@ -1,9 +1,17 @@
+.pc-tab-full {border-bottom: 1px solid #e8e8e8;}
+.pc-tab-full .pc-tab{margin-bottom: -1px;}
 /* 온라인상담 게시판 */
 .sub-contents {width:100%;}
 .sub-contents .online {background:#eaf8e1 url(../images/img_onlineconsulting.png) no-repeat center center;background-size:cover;}
+.sub-contents .knowledge_spread {min-height:300px;background:#eaf8e1 url(../images/bg_community_knowledge_spread.jpg) no-repeat center center;background-size:cover;}
 .sub-contents .visual h2 {font-size:32px;font-family:'NanumSquareRound';}
 .sub-contents .visual p {font-size:18px;}
+.sub-contents .knowledge_spread .visual h2{margin-bottom: 16px;}
+.sub-contents .knowledge_spread .visual h2>span:first-of-type{margin-right: 16px;}
+.sub-contents .knowledge_spread .visual h2 button {vertical-align: middle;}
+.sub-contents .knowledge_spread .visual p{font-size: 16px;}
 .sub-contents + footer {margin-top:80px;border-top:1px solid #e6e6e6;}
+.knowledge_spread .visual {display: flex; padding:137px 0 55px;color: #fff;column-gap: 28px;}
 .lnb-area {border:1px solid #e8e8e8;border-left:none;border-right:none;}
 .lnb-area .lnb {display:flex;}
 .lnb-area .lnb > li {padding:11px 20px;border-right:1px solid #e8e8e8;}
@@ -60,6 +68,8 @@
 .total .ico-filter {position:relative;width:40px;height:40px;background:#fff;border:1px solid #d8d8d8;border-radius:8px;font-size:0;line-height:0;}
 .total .ico-filter::after {content:"";position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;width:40px;height:40px;background:url(../images/btn_40_icon_p.png) no-repeat left top;background-size:cover;}
 .total .ico-filter.collapsed::after {content:"";position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;width:40px;height:40px;background:url(../images/btn_40_icon_n.png) no-repeat left top;background-size:cover;}
+.total.knowledgespread {position:absolute;right:0;margin-top: 0;}
+.total.knowledgespread .total-search {margin-right: 0;}
 
 .table-list {width:100%;margin-top:12px;}
 .table-list th {height:48px;border-top:1px solid #000;border-bottom:1px solid #d0d0d0 !important;color:#191919;font-size:15px;}
@@ -294,3 +304,5 @@
 .common-txt .ce-down {margin-top:8px;position:relative;height:34px;padding:0 11px 0 31px;background:none;border:1px solid #968f8f;border-radius:18px;color:#101314;font-size:15px;line-height:1.47;letter-spacing:-0.45px;font-weight:500;}
 .common-txt .ce-down::after {content:"";position:absolute;top:0;left:11px;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_down.png) no-repeat left top;background-size:cover;}
 
+/* color set */
+.text-primary {color:#ee8508 !important}
