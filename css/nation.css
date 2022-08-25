@@ -1,14 +1,16 @@
 .nation-bg {height:733px;background:url(../images/main/img_main.jpg) no-repeat center top;background-size:cover;}
 .nation-bg .nation-menu {height:650px;display:flex;justify-content:center;}
-.nation-bg .nation-menu li {width:239px;height:100%;padding:38px 24px 0 24px;border-left:1px solid rgba(255,255,255,0.18);}
-.nation-bg .nation-menu li dt {position:relative;margin-bottom:32px;padding-left:32px;color:#fff;font-size:16px;letter-spacing:-0.48px;}
-.nation-bg .nation-menu li:nth-child(1) dt::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_residence.png) no-repeat left top;background-size:cover;}
-.nation-bg .nation-menu li:nth-child(2) dt::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_farmland.png) no-repeat left top;background-size:cover;}
-.nation-bg .nation-menu li:nth-child(3) dt::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_education.png) no-repeat left top;background-size:cover;}
-.nation-bg .nation-menu li:nth-child(4) dt::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_money.png) no-repeat left top;background-size:cover;}
-.nation-bg .nation-menu li:nth-child(5) dt::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_life.png) no-repeat left top;background-size:cover;}
-.nation-bg .nation-menu li dd {margin:0 0 26px 0;padding-left:32px;}
-.nation-bg .nation-menu li dd a {color:#fff;font-size:16px;font-weight:normal;}
+.nation-bg .nation-menu > li {width:239px;height:100%;padding:38px 24px 0 24px;border-left:1px solid rgba(255,255,255,0.18);}
+.nation-bg .nation-menu > li button {display:block;position:relative;width:100%;margin-bottom:32px;padding-left:32px;background:none;border:none;color:#fff;font-size:16px;letter-spacing:-0.48px;text-align:left;}
+.nation-bg .nation-menu > li:nth-child(1) button::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_residence.png) no-repeat left top;background-size:cover;}
+.nation-bg .nation-menu > li:nth-child(2) button::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_farmland.png) no-repeat left top;background-size:cover;}
+.nation-bg .nation-menu > li:nth-child(3) button::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_education.png) no-repeat left top;background-size:cover;}
+.nation-bg .nation-menu > li:nth-child(4) button::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_money.png) no-repeat left top;background-size:cover;}
+.nation-bg .nation-menu > li:nth-child(5) button::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_life.png) no-repeat left top;background-size:cover;}
+.nation-bg .nation-menu > li ul {padding-left:32px;}
+.nation-bg .nation-menu > li ul > li {margin-top:26px;}
+.nation-bg .nation-menu > li ul > li > a {color:#fff;font-size:16px;font-weight:normal;}
+.nation-bg .nation-menu .collapse:not(.show) {display:block;}
 
 .recom {padding:80px 0 92px;background:none;}
 .recom .recom-txt {padding:22px 24px 20px;}
@@ -52,9 +54,36 @@
 .regis-info .all-regis-list li p {color:#575757;font-size:16px;font-weight:500;letter-spacing:-0.8px;}
 .regis-info .all-regis-list li p strong {font-weight:bold;}
 
+
 @media only screen and (max-width: 768px) {
+    .nation-bg {height:auto;}
+    .nation-bg .nation-menu li:nth-child(1) button::after,
+    .nation-bg .nation-menu li:nth-child(2) button::after,
+    .nation-bg .nation-menu li:nth-child(3) button::after,
+    .nation-bg .nation-menu li:nth-child(4) button::after,
+    .nation-bg .nation-menu li:nth-child(5) button::after {left:16px;}
     .nation-bg .nation-menu {display:block;height:auto;}
-    .nation-bg .nation-menu li {width:100%;padding:0;}
-    .nation-bg .nation-menu li dt {margin:0;}
-    .nation-bg .nation-menu li dd {margin:0;padding:0;}
+    .nation-bg .nation-menu > li {width:100%;padding:0;}
+    .nation-bg .nation-menu > li > button {margin:0;padding:15px 16px 15px 48px;border-top:1px solid rgba(255,255,255,0.18);}
+    .nation-bg .nation-menu > li ul li {margin:0;padding:15px 0 15px 16px;}
+    .mo-flex {height:280px;display:flex;flex-wrap:wrap;flex-direction:column;align-content:flex-start;}
+    .mo-flex li {width:50%;}
+    .nation-bg .nation-menu .collapse:not(.show) {display:none;}
+
+    .recom {padding:40px 0 0 16px;}
+    .recom .swiper-container {margin-top:28px;}
+
+    .popularity {padding:44px 16px 56px;}
+    .rank-tab .tit-tab h3 {font-size:24px;text-align:left;}
+    .popularity .inner,
+    .rank-tab .tit-tab {flex-direction: column;}
+    .rank-tab .tit-tab .pc-tab {margin-top:24px;}
+    .rank-wrap li .rank-img {max-width:140px;}
+    .rank-wrap li .rank-txt {margin-left:12px;padding:5px 0 0 0;}
+    .rank-wrap li .rank-txt strong {font-size:16px;}
+    .rank-wrap li .rank-txt p {font-size:13px;}
+    .rank-wrap li .rank-txt .rk-price {font-size:18px;}
+    .banner-info {max-width:100%;margin-top:40px;}
+    .regis-info {margin-top:20px;padding:32px 62px 57px 24px;background:#fff url(../images/main/img_statistics.png) no-repeat right -10% bottom 0;background-size:164px 172px;}
+    .regis-info::after {display:none;}
 }
