@@ -92,9 +92,22 @@
 
 
             <div class="btn-center">
+                
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#exampleModal">검색하기</button>
                 <button type="button" class="btn btn-orange btn-black40" data-toggle="modal" data-target="#congratulation">개설</button>
                 <button type="button" class="btn btn-orange btn-black40" data-toggle="modal" data-target="#closure">커뮤니티 폐쇠하기</button>
+
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#joinModal1">가입하기1</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#joinModal2">가입하기2</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#withdrawalModal1">탈퇴하기1</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#withdrawalModal2">탈퇴하기2</button><br/><br/>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#communityModal">커뮤니티가입</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#myinforModal">내정보관리</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#checkModal">확인1</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#checkModal2">확인2</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#checkModal3">확인3</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#checkModal4">확인4</button>
+
             </div>
 
         </div>
@@ -131,7 +144,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <!-- //개설축하모달 -->
 
     <!-- 작목모달 -->
@@ -176,7 +189,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <!-- //작목모달 -->
 
     <!-- 커뮤니티 폐쇄하기 -->
@@ -216,11 +229,11 @@
                 </div>
                 <div class="input-check">
                     <div class="i-pd">
-                        <input type="text" class="input-box iw-100p" placeholder="커뮤니티를 폐쇄합니다.">
+                        <input type="text" class="input-box iw-100p" value="커뮤니티를 폐쇄합니다.">
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="noview">
-                        <label class="custom-control-label" for="noview">공지</label>
+                        <input type="checkbox" class="custom-control-input" id="notice">
+                        <label class="custom-control-label" for="notice">공지</label>
                     </div>
                 </div>
                 <textarea class="closure-text"></textarea>
@@ -233,6 +246,224 @@
         </div>
       </div>
     <!-- //커뮤니티 폐쇄하기 -->
+
+    <!-- 커뮤니티 가입하기1 -->
+    <div class="modal fade" id="joinModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w320">
+          <div class="modal-content">
+            <div class="modal-body">
+                <p class="txt14">
+                    멤버에게만 공개된 게시글입니다.<br/>문경시 귀농 귀촌 연합회 커뮤니티에 가입해 <br/>보세요!
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn btn-orange btn-black48">커뮤티니 가입하기</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //커뮤니티 가입하기1 -->
+
+    <!-- 커뮤니티 가입하기2 -->
+    <div class="modal fade" id="joinModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w320">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">커뮤니티 가입</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="txt14">
+                    문경시 귀농 귀촌 연합회 커뮤니티에 <br/>
+                    가입하시겠습니까?
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-orange btn-black48">커뮤니티 가입하기</button>
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //커뮤니티 가입하기2 -->
+
+    <!-- 탈퇴하기1 -->
+    <div class="modal fade" id="withdrawalModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w320">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">커뮤니티 탈퇴</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="txt14">
+                    문경시 귀농 귀촌 연합회 커뮤니티에서<br/>
+                    탈퇴하시겠습니까?<br/>
+                    작성하신 글은 모두 삭제됩니다.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-orange btn-black48">커뮤니티 가입하기</button>
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //탈퇴하기1 -->
+
+    <!-- 탈퇴하기2 -->
+    <div class="modal fade" id="withdrawalModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w320">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">커뮤니티 탈퇴</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="txt14">
+                    문경시 귀농 귀촌 연합회 커뮤니티에서<br/>탈퇴하셨습니다.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-orange btn-black48">확인</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //탈퇴하기2 -->
+
+    <!-- 내정보 관리가기 -->
+    <div class="modal fade" id="withdrawalModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w320">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">커뮤니티 가입</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="">
+                    <div class=""><img src="" alt=""></div>
+                    <p></p>
+                </div>
+                <p class="txt14">
+                    문경시 귀농 귀촌 연합회 커뮤니티에서<br/>탈퇴하셨습니다.
+                </p>
+                <p class=""></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-orange btn-black48">확인</button>
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //내정보 관리가기 -->
+
+    <!-- 내정보 관리 -->
+    <div class="modal fade" id="withdrawalModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w320">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">내 정보 관리</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="">
+                    <div class=""><img src="" alt=""></div>
+                    <p></p>
+                </div>
+                <p class="txt14">
+                    문경시 귀농 귀촌 연합회 커뮤니티에서<br/>탈퇴하셨습니다.
+                </p>
+                <p class=""></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-orange btn-black48">확인</button>
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //내정보 관리 -->
+
+    <!-- 확인1 -->
+    <div class="modal fade" id="checkModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w320">
+          <div class="modal-content">
+            <div class="modal-body">
+                <p class="txt14">
+                    운영진에게만 공개된 게시글입니다.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-orange btn-black48">확인</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //확인1 -->
+
+    <!-- 확인2 -->
+    <div class="modal fade" id="checkModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w320">
+          <div class="modal-content">
+            <div class="modal-body">
+                <p class="txt14">
+                    강제탈퇴 및 활동 중지인 회원은 문경시 귀농 귀촌 연합회 커뮤니티에 입장할 수 없습니다.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-orange btn-black48">확인</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //확인2 -->
+
+    <!-- 확인3 -->
+    <div class="modal fade" id="checkModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w320">
+          <div class="modal-content">
+            <div class="modal-body">
+                <p class="txt14">
+                    검색어를 입력하세요.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-orange btn-black48">확인</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //확인3 -->
+
+    <!-- 확인4 -->
+    <div class="modal fade" id="checkModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w320">
+          <div class="modal-content">
+            <div class="modal-body">
+                <p class="txt14">
+                    글 작성이 가능한 게시판이 없습니다.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-orange btn-black48">확인</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //확인4 -->
 
     <footer>
         <div class="container">
