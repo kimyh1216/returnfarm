@@ -137,20 +137,7 @@ h3.tit strong {color:#ee8508;}
 .txt-error::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_error.png) no-repeat left top;background-size:cover;}
 .error-bd {border:1px solid #e54e2b !important;}
 
-.modal-w356 {width:356px;}
-.modal-w457 {width:457px;}
-.modal-content {border-radius:16px;;}
-.modal-content .modal-header {padding:24px 24px 0 24px;border-bottom:none;}
-.modal-content .modal-body {padding:16px 24px;}
-.modal-content .modal-body .txt14 {color:#4b4b4b;font-size:14px;letter-spacing:-0.42px;}
-.modal-content .modal-body .txt14 .orangecolor {color:#ee8508;}
-.modal-content .modal-body .tit-com {color:#101314;font-size:24px;font-weight:bold;letter-spacing:-1.2px;}
-.modal-content .modal-body .txt-btn {position:relative;margin-top:30px;padding:17px 12px;border:1px solid #e3e3e3;border-radius:4px;}
-.modal-content .modal-body .txt-btn p {position:relative;color:#262626;font-size:15px;line-height:1.47;}
-.modal-content .modal-body .txt-btn .smal-arrow-btn {position:absolute;top:0;right:12px;bottom:0;margin:auto;padding-right:18px;background:none;border:none;color:#4d4b4b;font-size:13px;letter-spacing:-0.39px;}
-.modal-content .modal-body .txt-btn .smal-arrow-btn::after {content:"";position:absolute;top:0;right:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_next_n.png) no-repeat left top;background-size:cover;}
-.modal-content .modal-body .txt-btn + .txt-btn {margin-top:12px;}
-.modal-content .modal-footer {padding:0 24px 24px 24px;border-top:none;}
+
 
 .pc {display:block;}
 .mo {display:none;}
