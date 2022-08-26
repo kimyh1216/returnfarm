@@ -150,16 +150,53 @@
                     <div class="tab-pane active" id="pc-tab1">
                         <div class="row">
                             <div class="col-2">
-                                <div class="comm_menu">
+                                <div class="comm-menu">
                                     <div class="user">
                                         <div class="profile-img">
                                             <img src="images/temp_img_profile.png" />
-                                            <button class="btn-setting"></button>
+                                            <a href="#" class="icon-setting"></a>
+                                        </div>
+                                        <div>
+                                            <p class="group">농촌사랑</p>
+                                            <p class="member">정회원</p>
                                         </div>
                                     </div>
+                                    <div class="manage">
+                                        <a href="#" class="icon-setting2">커뮤니티 관리</a>
+                                    </div>
+                                    <hr class="line">
+                                    <div class="menu-list">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="icon-home">커뮤니티 홈</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="icon-all">전체글</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="icon-notice">전체 공지사항</a>
+                                            </li>
+                                            <li class="depth">
+                                                <a href="#" class="icon-list">게시판</a>
+                                            </li>
+                                            <li class="depth">
+                                                <a href="#" class="icon-depth">자유게시판 1</a>
+                                            </li>
+                                            <li class="depth">
+                                                <a href="#" class="icon-depth">자유게시판 2</a>
+                                            </li>
+                                            <li class="depth">
+                                                <a href="#" class="icon-depth">자유게시판 3</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <hr class="line">
+                                    <a href="#" class="exit">탈퇴하기</a>
                                 </div>
                             </div>
                             <div class="col-10">
+                                <h3 class="comm-tit">전체글</h3>
+                                <p class="comm-tit-sub">커뮤니티의 전체글을 확인할 수 있습니다.</p>
                                 <div class="row total">
                                     <div class="col-6 total-all">
                                         <div class="dropdown select" id="country-codes">
@@ -185,97 +222,87 @@
                                 <table class="table-list">
                                     <colgroup>
                                         <col style="width:10%;" />
-                                        <col style="width:10%;" />
-                                        <col style="width:60%;" />
+                                        <col style="width:70%;" />
                                         <col style="width:10%;" />
                                         <col style="width:10%;" />
                                     </colgroup>
                                     <thead>
                                     <tr>
-                                        <th scope="col" class="text-center">상담유형</th>
-                                        <th scope="col" class="text-center">답변</th>
+                                        <th scope="col" class="text-center">번호</th>
                                         <th scope="col" class="text-center">제목</th>
                                         <th scope="col" class="text-center">작성자</th>
                                         <th scope="col" class="text-center">작성일</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td class="text-center">교육</td>
-                                        <td class="text-center">답변완료</td>
-                                        <td class="tit"><a href="#" class="locked"><i>잠김글</i><span class="categori">[카테고리]</span>귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                    <tr class="notice">
+                                        <td class="text-center"><span class="badge badge-primary">공지</span></td>
+                                        <td class="tit"><a href="#">귀농귀촌 지식인 서비스 이용 안내</a></td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">2021-00-00</td>
+                                    </tr>
+                                    <tr class="notice">
+                                        <td class="text-center"><span class="badge badge-primary">공지</span></td>
+                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 자금을 악용한 사기피해 예방 안내</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center">정책</td>
-                                        <td class="text-center">답변완료</td>
+                                        <td class="text-center">514</td>
                                         <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center">교육</td>
-                                        <td class="text-center">답변완료</td>
+                                        <td class="text-center">513</td>
                                         <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center">정책</td>
-                                        <td class="text-center">답변완료</td>
+                                        <td class="text-center">512</td>
                                         <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center">교육</td>
-                                        <td class="text-center">답변완료</td>
+                                        <td class="text-center">511</td>
                                         <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center">정책</td>
-                                        <td class="text-center">답변완료</td>
+                                        <td class="text-center">510</td>
                                         <td class="tit"><a href="#" class="locked"><i>잠김글</i>귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center">교육</td>
-                                        <td class="text-center">답변완료</td>
+                                        <td class="text-center">509</td>
                                         <td class="tit"><a href="#" class="locked"><i>잠김글</i>귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center">정책</td>
-                                        <td class="text-center">답변완료</td>
+                                        <td class="text-center">508</td>
                                         <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center">교육</td>
-                                        <td class="text-center">답변완료</td>
+                                        <td class="text-center">507</td>
                                         <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center">교육</td>
-                                        <td class="text-center">답변완료</td>
+                                        <td class="text-center">506</td>
                                         <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     </tbody>
                                 </table>
-                                <div class="btn-right">
-                                    <button type="button" class="btn btn-black btn-black40">글쓰기</button>
-                                </div>
-                                
                                 <div class="pagination paging">
                                     <button type="button" class="page-link firstBtn disabled">
                                         처음페이지
