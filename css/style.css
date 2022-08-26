@@ -114,8 +114,8 @@
 .comment-share {display:flex;}
 .comment-share span,
 .comment-share button {color:#1e1e1e;font-size:14px;}
-.comment-share .comment-number {position:relative;padding-left:26px;}
-.comment-share .comment-number::after {content:'';position:absolute;top:0;left:0;bottom:0;margin:auto;width:20px;height:20px;background:url(../images/ico_20_reply_n.png) no-repeat left top;background-size:cover;}
+.comment-number {position:relative;padding-left:26px;}
+.comment-number::after {content:'';position:absolute;top:0;left:0;bottom:0;margin:auto;width:20px;height:20px;background:url(../images/ico_20_reply_n.png) no-repeat left top;background-size:cover;}
 .comment-share .comment-number em {font-style: normal;font-weight:bold;}
 .comment-share .share {position:relative;margin-left:12px;padding-left:22px;background:none;border:none;}
 .comment-share .share::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_share.png) no-repeat left top;background-size:cover;}
@@ -303,6 +303,16 @@
 .common-txt.line-black {border-bottom:1px solid #4d4b4b;}
 .common-txt .ce-down {margin-top:8px;position:relative;height:34px;padding:0 11px 0 31px;background:none;border:1px solid #968f8f;border-radius:18px;color:#101314;font-size:15px;line-height:1.47;letter-spacing:-0.45px;font-weight:500;}
 .common-txt .ce-down::after {content:"";position:absolute;top:0;left:11px;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_down.png) no-repeat left top;background-size:cover;}
+
+.area-title {display:flex;}
+.area-title li {color:#4d4b4b;font-size:14px;font-weight:500;}
+.area-title li + li {position:relative;margin-left:6px;padding-left:8px;}
+.area-title li + li::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:2px;height:2px;background-color:#4d4b4b;}
+
+.name-title {display:flex;}
+.name-title li {color:#4e5658;font-size:14px;font-weight:bold;}
+.name-title li + li {margin-left:4px;color:#848484;font-size:14px;font-weight:500;}
+
 
 /* color set */
 .text-primary {color:#ee8508 !important}
