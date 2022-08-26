@@ -1,5 +1,21 @@
 .pc-tab-full {border-bottom: 1px solid #e8e8e8;}
 .pc-tab-full .pc-tab{margin-bottom: -1px;}
+
+/* 커뮤니티 왼쪽메뉴 */
+.comm-menu {min-height: 449px; margin-top:32px; margin-right: -6px; padding:20px 16px;border:1px solid #ddd;border-radius: 8px;}
+.comm-menu .user{display: flex;column-gap: 16px;}
+.comm-menu .user .group {font-weight: 800;}
+.comm-menu .user .member {color: #88898a;}
+.comm-menu .profile-img{position: relative;display: inline-block;}
+.comm-menu .profile-img .icon-setting {position: absolute; right:-10px;bottom:23px;}
+.comm-menu .manage {margin-top: 17px;}
+.comm-menu .exit {color:#707172;font-size: 14px;}
+.comm-menu .menu-list li {margin-bottom: 14px;}
+.comm-menu .menu-list li.depth {margin-bottom: 10px;}
+.comm-tit {margin-top: 32px; font-size: 20px;font-weight: 800;}
+.comm-tit-sub {color:#88898a;}
+.comm-tit-sub+.total {margin-top: 24px;}
+
 /* 온라인상담 게시판 */
 .sub-contents {width:100%;}
 .sub-contents .online {background:#eaf8e1 url(../images/img_onlineconsulting.png) no-repeat center center;background-size:cover;}
@@ -73,15 +89,15 @@
 
 .table-list {width:100%;margin-top:12px;}
 .table-list th {height:48px;border-top:1px solid #000;border-bottom:1px solid #d0d0d0 !important;color:#191919;font-size:15px;}
-.table-list td {height:48px;border-bottom:1px solid #eaeaea;color:#262626;font-size:15px;}
+.table-list td {height:48px;border-bottom:1px solid #eaeaea;color:#262626;font-size:14px;}
 .table-list td.tit {padding-left:100px;}
 .table-list td a {display:flex;align-items:center;color:#262626;font-size:15px;}
 .table-list td .locked i {position:relative;display:inline-block;width:16px;height:16px;margin-right:4px;font-size:0;line-height:0;}
 .table-list td .locked i::after {content:"";position:absolute;top:0;left:0;width:16px;height:16px;background:url(../images/ico_16_lock.png) no-repeat left top;background-size:cover;}
 .table-list td .locked .categori {margin-right:4px;color:#88898a;}
+.table-list .notice {background-color: #fff5eb;}
 
-
-.paging {justify-content:center;margin-top:16px;}
+.paging {justify-content:center;margin-top:24px;}
 .paging .page-link {display: flex;align-items: center;justify-content: center;width:34px;height:34px;margin:0 2px;padding:0;border-radius:4px;color:#767676;font-size:13px;}
 .paging .page-link:hover {background:#fff;border:1px solid #101314;}
 .paging .page-link.on {background:#ee8508;border:none;color:#fff;}
