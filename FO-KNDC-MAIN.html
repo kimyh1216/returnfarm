@@ -132,12 +132,12 @@
     </header>
 
     <div class="community-visual">
-        <div class="visual">
+        <div class="visual pc">
             <div class="service">
                 <strong>지식확산 서비스란?</strong>
                 <p>
-                    회원들간의 커뮤니티 활동을 지원하는 지식확산 커뮤니티와 <br/>
-                    귀농・귀촌 활동을 위해 궁금한점을 질문하고 답변을 받는<br/>
+                    회원들간의 커뮤니티 활동을 지원하는 지식확산 커뮤니티와 
+                    귀농・귀촌 활동을 위해 궁금한점을 질문하고 답변을 받는
                     지식인 서비스를 제공합니다.
                 </p>
                 <button type="button" class="more">자세히 보기</button>
@@ -145,14 +145,71 @@
             <div class="village">
                 <strong>동네작가 마을 소개란?</strong>
                 <p>
-                    각 지자체 별로 마을의 소식을 <br/>
-                    소개하기 위해 마을의 리포터 역활을 하는동네 작가님들의 <br/>
+                    각 지자체 별로 마을의 소식을 
+                    소개하기 위해 마을의 리포터 역활을 하는동네 작가님들의 
                     블로그 서비스 입니다.
                 </p>
                 <button type="button" class="more">자세히 보기</button>
             </div>
         </div>
+
+        <!-- mobile -->
+        <div class="swiper-container mo">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="service">
+                            <strong>지식확산 서비스란?</strong>
+                            <p>
+                                회원들간의 커뮤니티 활동을 지원하는 지식확산 커뮤니티와 
+                                귀농・귀촌 활동을 위해 궁금한점을 질문하고 답변을 받는
+                                지식인 서비스를 제공합니다.
+                            </p>
+                            <button type="button" class="more">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="village">
+                            <strong>동네작가 마을 소개란?</strong>
+                            <p>
+                                각 지자체 별로 마을의 소식을 
+                                소개하기 위해 마을의 리포터 역활을 하는동네 작가님들의 
+                                블로그 서비스 입니다.
+                            </p>
+                            <button type="button" class="more">자세히 보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        slidesPerView: 1,
+        spaceBetween: 24,
+        // slidesPerGroup: 4,
+        loop: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
 
     <div class="knowledge">
         <h3><strong>지식확산</strong> 커뮤니티</h3>
@@ -259,18 +316,18 @@
     </div>
 
     <script>
-        const swiper = new Swiper('.swiper', {
+        const swiper2 = new Swiper('.knowledge .swiper', {
         // Optional parameters
         // slidesPerView: 4,
         spaceBetween: 24,
-        slidesPerGroup: 4,
+        // slidesPerGroup: 4,
         loop: true,
         breakpoints: {
             320:{
-                slidesPerView: '2',
+                slidesPerView: '1.5',
             },
             600:{
-                slidesPerView: '2',
+                slidesPerView: '1.5',
             },
             769:{
                 slidesPerView: '4',
@@ -321,7 +378,7 @@
                             <a href="#" class="comm">2</a>
                             <span class="good">4</span>
                         </div>
-                        <div class="ana-wrap">
+                        <div class="ana-wrap pc">
                             <span class="ana-ans">답변</span>
                             <span class="ana-name">김철곤</span>
                             <span class="ana-area">전라북도 정읍시 구릉동</span>
@@ -347,7 +404,7 @@
                             <a href="#" class="comm">2</a>
                             <span class="good">4</span>
                         </div>
-                        <div class="ana-wrap">
+                        <div class="ana-wrap pc">
                             <span class="ana-ans">답변</span>
                             <span class="ana-name">김철곤</span>
                             <span class="ana-area">전라북도 정읍시 구릉동</span>
@@ -373,7 +430,7 @@
                             <a href="#" class="comm">2</a>
                             <span class="good">4</span>
                         </div>
-                        <div class="ana-wrap">
+                        <div class="ana-wrap pc">
                             <span class="ana-ans">답변</span>
                             <span class="ana-name">김철곤</span>
                             <span class="ana-area">전라북도 정읍시 구릉동</span>
@@ -399,7 +456,7 @@
                             <a href="#" class="comm">2</a>
                             <span class="good">4</span>
                         </div>
-                        <div class="ana-wrap">
+                        <div class="ana-wrap pc">
                             <span class="ana-ans">답변</span>
                             <span class="ana-name">김철곤</span>
                             <span class="ana-area">전라북도 정읍시 구릉동</span>
@@ -412,46 +469,58 @@
 
     <div class="village-news">
         <h3><strong>동네작가</strong> 마을 소식</h3>
-        <ul class="village-news-list">
-            <li>
-                <div class="vn-img"><img src="./images/img_photo_new1.jpg" alt=""></div>
-                <ul class="tag-list">
-                    <li><a href="#">#혜민농원</a></li>
-                    <li><a href="#">#귀농일기</a></li>
-                    <li><a href="#">#귀농</a></li>
-                    <li><a href="#">#무화과</a></li>
-                    <li><a href="#">#혼합무화과</a></li>
-                </ul>
-                <a href="#">
-                    <strong>귀농 첫해의 무화과 농사</strong>
-                    <p>귀농 6년차 그때와 지금은 모든게 달라졌다. 농장의 상황도 나의 마음 가짐도 그리고 농장을 알게 된 많은 사람들… 문득 6년의 시간 중 막… 몇가지는 달성이 되었지만, 몇가지는 아직도 멀다. 이제 얼마 남지 않은 시간이지만, 매우 잘 될꺼라고 본다. </p>
-                </a>
+        <div class="village-news-list">
+            <div class="vn-list">
+                <div class="vn-txt-wrap">
+                    <div class="vn-txt">
+                        <ul class="tag-list">
+                            <li><a href="#">#혜민농원</a></li>
+                            <li><a href="#">#귀농일기</a></li>
+                            <li><a href="#">#귀농</a></li>
+                            <li><a href="#">#무화과</a></li>
+                            <li><a href="#">#혼합무화과</a></li>
+                        </ul>
+                        <a href="#">
+                            <strong>귀농 첫해의 무화과 농사</strong>
+                            <p>귀농 6년차 그때와 지금은 모든게 달라졌다. 농장의 상황도 나의 마음 가짐도 그리고 농장을 알게 된 많은 사람들… 문득 6년의 시간 중 막… 몇가지는 달성이 되었지만, 몇가지는 아직도 멀다. 이제 얼마 남지 않은 시간이지만, 매우 잘 될꺼라고 본다. </p>
+                        </a>
+                    </div>
+                    <div class="vn-img"><img src="./images/img_photo_new1.jpg" alt=""></div>
+                </div>
                 <div class="vn-wrap">
-                    <span class="vn-name">김철곤</span>
-                    <span class="vn-tit">혜민농원, 땅끝해남의 달달한 무화과</span>
+                    <ul>
+                        <li class="vn-name">김철곤</li>
+                        <li class="vn-tit">혜민농원, 땅끝해남의 달달한 무화과</span>
+                    </ul>
                     <span class="vn-date">2021.01.01</span>
                 </div>
-            </li>
-            <li>
-                <div class="vn-img"><img src="./images/img_photo_new2.jpg" alt=""></div>
-                <ul class="tag-list">
-                    <li><a href="#">#혜민농원</a></li>
-                    <li><a href="#">#귀농일기</a></li>
-                    <li><a href="#">#귀농</a></li>
-                    <li><a href="#">#무화과</a></li>
-                    <li><a href="#">#혼합무화과</a></li>
-                </ul>
-                <a href="#">
-                    <strong>귀농 첫해의 무화과 농사</strong>
-                    <p>귀농 6년차 그때와 지금은 모든게 달라졌다. 농장의 상황도 나의 마음 가짐도 그리고 농장을 알게 된 많은 사람들… 문득 6년의 시간 중 막… 몇가지는 달성이 되었지만, 몇가지는 아직도 멀다. 이제 얼마 남지 않은 시간이지만, 매우 잘 될꺼라고 본다. </p>
-                </a>
+            </div>
+            <div class="vn-list">
+                <div class="vn-txt-wrap">
+                    <div class="vn-txt">
+                        <ul class="tag-list">
+                            <li><a href="#">#혜민농원</a></li>
+                            <li><a href="#">#귀농일기</a></li>
+                            <li><a href="#">#귀농</a></li>
+                            <li><a href="#">#무화과</a></li>
+                            <li><a href="#">#혼합무화과</a></li>
+                        </ul>
+                        <a href="#">
+                            <strong>귀농 첫해의 무화과 농사</strong>
+                            <p>귀농 6년차 그때와 지금은 모든게 달라졌다. 농장의 상황도 나의 마음 가짐도 그리고 농장을 알게 된 많은 사람들… 문득 6년의 시간 중 막… 몇가지는 달성이 되었지만, 몇가지는 아직도 멀다. 이제 얼마 남지 않은 시간이지만, 매우 잘 될꺼라고 본다. </p>
+                        </a>
+                    </div>
+                    <div class="vn-img"><img src="./images/img_photo_new2.jpg" alt=""></div>
+                </div>
                 <div class="vn-wrap">
-                    <span class="vn-name">김철곤</span>
-                    <span class="vn-tit">혜민농원, 땅끝해남의 달달한 무화과</span>
+                    <ul>
+                        <li class="vn-name">김철곤</li>
+                        <li class="vn-tit">혜민농원, 땅끝해남의 달달한 무화과</li>
+                    </ul>
                     <span class="vn-date">2021.01.01</span>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 
     <footer>

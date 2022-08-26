@@ -123,63 +123,74 @@
             </div>
 		</nav>
 
-        <ul class="nation-menu">
+        <ul class="nation-menu" id="menu">
             <li>
-                <dl>
-                    <dt>거주지 정보</dt>
-                    <dd><a href="#">거주지</a></dd>
-                    <dd><a href="#">주거지원</a></dd>
-                </dl>
+                <button type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">거주지 정보</button>
+                <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne1" data-parent="#menu">
+                    <ul>
+                        <li><a href="#">거주지</a></li>
+                        <li><a href="#">주거지원</a></li>
+                    </ul>
+                </div>
             </li>
             <li>
-                <dl>
-                    <dt>농지·일자리</dt>
-                    <dd><a href="#">농지특성</a></dd>
-                    <dd><a href="#">농지은행</a></dd>
-                    <dd><a href="#">지역특산물</a></dd>
-                    <dd><a href="#">농산물가격</a></dd>
-                    <dd><a href="#">농산물관측</a></dd>
-                    <dd><a href="#">직업</a></dd>
-                    <dd><a href="#">자격증</a></dd>
-                    <dd><a href="#">일자리</a></dd>
-                    <dd><a href="#">창업지원</a></dd>
-                    <dd><a href="#">여성농업인</a></dd>
-                </dl>
+                <button type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">농지·일자리</button>
+                <div class="collapse"  id="collapseTwo2" aria-labelledby="headingTwo2" data-parent="#menu">
+                    <ul class="mo-flex">
+                        <li><a href="#">농지특성</a></li>
+                        <li><a href="#">농지은행</a></li>
+                        <li><a href="#">지역특산물</a></li>
+                        <li><a href="#">농산물가격</a></li>
+                        <li><a href="#">농산물관측</a></li>
+                        <li><a href="#">직업</a></li>
+                        <li><a href="#">자격증</a></li>
+                        <li><a href="#">일자리</a></li>
+                        <li><a href="#">창업지원</a></li>
+                        <li><a href="#">여성농업인</a></li>
+                    </ul>
+                </div>
             </li>
             <li>
-                <dl>
-                    <dt>교육</dt>
-                    <dd><a href="#">교육자료</a></dd>
-                    <dd><a href="#">온라인교육</a></dd>
-                    <dd><a href="#">오프라인(집합)교육</a></dd>
-                    <dd><a href="#">SNS 정보 교육</a></dd>
-                    <dd><a href="#">작목정보</a></dd>
-                    <dd><a href="#">치유농업</a></dd>
-                    <dd><a href="#">체험정보</a></dd>
-                    <dd><a href="#">영농 경영 정보</a></dd>
-                </dl>
+                <button type="button" data-toggle="collapse" data-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">교육</button>
+                <div class="collapse"  id="collapseThree3" aria-labelledby="headingThree3" data-parent="#menu">
+                    <ul class="mo-flex">
+                        <li><a href="#">교육자료</a></li>
+                        <li><a href="#">온라인교육</a></li>
+                        <li><a href="#">오프라인(집합)교육</a></li>
+                        <li><a href="#">SNS 정보 교육</a></li>
+                        <li><a href="#">작목정보</a></li>
+                        <li><a href="#">치유농업</a></li>
+                        <li><a href="#">체험정보</a></li>
+                        <li><a href="#">영농 경영 정보</a></li>
+                    </ul>
+                </div>
             </li>
             <li>
-                <dl>
-                    <dt>자금</dt>
-                    <dd><a href="#">자금지원</a></dd>
-                    <dd><a href="#">금융지원</a></dd>
-                </dl>
+                <button type="button" data-toggle="collapse" data-target="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">자금</button>
+                <div id="collapseFour4" class="collapse" aria-labelledby="headingFour4" data-parent="#menu">
+                    <ul>
+                        <li><a href="#">자금지원</a></li>
+                        <li><a href="#">금융지원</a></li>
+                    </ul>
+                </div>
             </li>
             <li>
-                <dl>
-                    <dt>생활</dt>
-                    <dd><a href="#">행사 및 생활</a></dd>
-                    <dd><a href="#">복지서비스정보</a></dd>
-                    <dd><a href="#">복지시설</a></dd>
-                    <dd><a href="#">아이돌봅서비스</a></dd>
-                    <dd><a href="#">생활편의시설</a></dd>
-                    <dd><a href="#">병원 및 의료시설</a></dd>
-                </dl>
+                <button type="button" data-toggle="collapse" data-target="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">생활</button>
+                <div class="collapse " id="collapseFive5" aria-labelledby="headingFive5" data-parent="#menu">
+                    <ul class="mo-flex">
+                        <li><a href="#">행사 및 생활</a></li>
+                        <li><a href="#">복지서비스정보</a></li>
+                        <li><a href="#">복지시설</a></li>
+                        <li><a href="#">아이돌봅서비스</a></li>
+                        <li><a href="#">생활편의시설</a></li>
+                        <li><a href="#">병원 및 의료시설</a></dd>
+                    </ul>
+                </div>
             </li>
         </ul>
 		
 	</div>
+    
 
     <div class="we-writer recom">
         <h3><strong>추천</strong> 정보</h3>
@@ -251,7 +262,66 @@
                         </div>
                     </div>
 
-                    
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_01.png" alt="">
+                            <span class="txt-attr">지역명소</span>
+                        </div>
+                        <div class="recom-txt">
+                            <ul class="recom-info">
+                                <li>농지정보</li>
+                                <li>강원도 홍천군</li>
+                            </ul>
+                            <p>
+                                E편한세상 춘천 104동
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_02.png" alt="">
+                            <span class="txt-life">농촌생활</span>
+                        </div>
+                        <div class="recom-txt">
+                            <ul class="recom-info">
+                                <li>농지정보</li>
+                                <li>강원도 홍천군</li>
+                            </ul>
+                            <p>
+                                E편한세상 춘천 104동
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_03.png" alt="">
+                            <span class="txt-scene">영농현장</span>
+                        </div>
+                        <div class="recom-txt">
+                            <ul class="recom-info">
+                                <li>농지정보</li>
+                                <li>강원도 홍천군</li>
+                            </ul>
+                            <p>
+                                E편한세상 춘천 104동
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="we-img">
+                            <img src="./images/main/img_success_photo_04.png" alt="">
+                            <span class="txt-life">농촌생활</span>
+                        </div>
+                        <div class="recom-txt">
+                            <ul class="recom-info">
+                                <li>농지정보</li>
+                                <li>강원도 홍천군</li>
+                            </ul>
+                            <p>
+                                E편한세상 춘천 104동
+                            </p>
+                        </div>
+                    </div>
 
                 </div>
                     
@@ -279,7 +349,7 @@
                     slidesPerView: '1.5',
                 },
                 600:{
-                    slidesPerView: '2',
+                    slidesPerView: '1.5',
                 },
                 769:{
                     slidesPerView: '4',
