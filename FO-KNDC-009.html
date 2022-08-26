@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/component.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/community.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script><!-- dropdown 사용시 링크 걸어야함-->
+    <script src="../js/common.js"></script>
+    <title>귀농귀촌 종합센터</title>
+</head>
+<body>
+    <header>
+        <div class="util">
+            <ul class="link">
+                <li><a href="https://www.epis.or.kr/" target="_blank"><i class="ico epis"></i>농림수산식품교육문화정보원</a></li>
+                <li><a href="https://www.agriwork.kr:447/" target="_blank"><i class="ico donong"></i>도·농 인력중계 서비스</a></li>
+                <li><a href="http://www.facebook.com" target="_blank"><i class="ico facebook"></i></a></li>
+                <li><a href="http://www.twitter.com" target="_blank"><i class="ico twitter"></i></a></li>
+                <li><a href="http://www.kakaotalk.com" target="_blank"><i class="ico kakaotalk"></i></a></li>
+				<li>
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+							패밀리 사이트 바로가기
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</div>
+				</li>
+            </ul>
+            <ul class="service-link">
+                <li><a href="#"><span>대국민 서비스</span></a></li>
+                <li><a href="#"><span>통합플랫폼</span></a></li>
+                <li><a href="#"><span>지자체관</span></a></li>
+            </ul>
+        </div>
+		
+        <nav class="gnb">
+			<ul>
+				<li>
+                    <a class="logo" href="#"></a>
+                    <span class="tit_sub gray">지식확산 커뮤니티</span>
+                </li>
+				<li>
+					<ul class="gnb_menu_list">
+						<li><a href="#">지식확산 서비스 안내</a></li>
+						<li><a href="#">커뮤니티</a></li>
+						<li><a href="#">귀농귀촌 지식인</a></li>
+						<li><a href="#">알림마당</a></li>
+						<li><a href="#">마을소개</a></li>
+						<li class="living"><a href="#">농촌에서 살아보기</a></li>
+					</ul>
+				</li>
+				<li>
+                    <button type="button" class="icon-user">로그인</button>
+					<button type="button" class="search-btn gnb">검색</button>
+					<button type="button" class="menu-btn">전체메뉴</button>
+				</li>
+			</ul>
+		</nav>
+    </header>
+
+    <!-- 서브 컨텐츠 -->
+    <div class="sub-contents">
+        <div class="container-fluid py-5 community">
+            <div class="container py-5 visual">
+                <h2>지식확산 커뮤니티</h2>
+                <p>지식확산 커뮤니티 정보를 제공해 드립니다.</p>
+            </div>
+        </div>
+        <div class="container-fluid lnb-area">
+            <div class="container">
+                <ul class="lnb">
+                    <li class="home"><a href="#">home</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                    <li><span>커뮤니티 개설</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mt-5">
+            
+            <h3 class="tit">커뮤니티 개설</h3>
+
+            <dl class="commnt-table d-flex flex-wrap">
+                <dt class="col-1">커뮤니티 명<span class="req">*</span></dt>
+                <dd class="col-11 d-flex align-items-center">
+                    <input type="text" class="input-box iw308 error-bd" value="우주최강 농사 커뮤니티짱">
+                    <p class="txt-complete">사용 가능한 이름입니다</p>
+                    <p class="txt-error">이미 사용 중입니다. 다른 이름을 입력해주세요.</p>
+                </dd>
+                <dt class="col-1">커뮤니티 주소<span class="req">*</span></dt>
+                <dd class="col-11 d-flex align-items-center">
+                    <span>https://www.returnfarm.com:444/community/</span>
+                    <input type="text" class="input-box iw240 error-bd" value="Spaceking">
+                    <p class="txt-complete">사용 가능한 주소입니다. 커뮤니티 주소는 변경 불가하니 신중히 선택해 주세요.</p>
+                    <p class="txt-error">이미 사용중입니다. 다른 주소를 입력해주세요.</p>
+                </dd>
+                <dt class="col-1">지역선택<span class="req">*</span></dt>
+                <dd class="col-11 d-flex align-items-center">
+                    <div class="dropdown select" id="country-codes">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                            <span class="value">시도</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul class="h150">
+                                <li><button type="button">경기도</button></li>
+                                <li><button type="button">강원도</button></li>
+                                <li><button type="button">경상북도</button></li>
+                                <li><button type="button">경상남도</button></li>
+                                <li><button type="button">충청북도</button></li>
+                                <li><button type="button">충청남도</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown select" id="country-codes">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                            <span class="value">시군구</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul class="h150">
+                                <li><button type="button">고성군</button></li>
+                                <li><button type="button">강원도</button></li>
+                                <li><button type="button">경상북도</button></li>
+                                <li><button type="button">경상남도</button></li>
+                                <li><button type="button">충청북도</button></li>
+                                <li><button type="button">충청남도</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="txt-error">지역을 선택하세요.</p>
+                </dd>
+                <dt class="col-1">작목선택<span class="req">*</span></dt>
+                <dd class="col-11 d-flex align-items-center">
+                    <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#exampleModal">검색하기</button>
+                    <ul class="files-area file-sec">
+                        <li>
+                            채소 > 딸기
+                            <button type="button" class="file-del">삭제</button>
+                        </li>
+                    </ul>
+                    <p class="txt-error">작목을 선택하세요.</p>
+                </dd>
+                <dt class="col-1">공개설정</dt>
+                <dd class="col-11 d-flex align-items-center">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="pb_1" name="pb" class="custom-control-input green" value="email" checked>
+                        <label class="custom-control-label" for="pb_1">공개</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="pb_2" name="pb" class="custom-control-input red" value="pone">
+                        <label class="custom-control-label" for="pb_2">비공개</label>
+                    </div>
+                </dd>
+                <dt class="col-1">가입방식</dt>
+                <dd class="col-11 d-flex align-items-center">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="rd_1" name="rd" class="custom-control-input green" value="email" checked>
+                        <label class="custom-control-label" for="rd_1">바로 가입</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="rd_2" name="rd" class="custom-control-input red" value="pone">
+                        <label class="custom-control-label" for="rd_2">운영자 승인후 가입</label>
+                    </div>
+                </dd>
+                <dt class="col-1">대표 이미지</dt>
+                <dd class="col-11">
+                    <div class="img-upload">
+                        <div class="reptimg"></div>
+                        <div class="img-btn">
+                            <button type="button" class="btn btn-black btn-black40">이미지 선택</button>
+                            <ul class="files-area">
+                                <li>
+                                    파일명.jpg
+                                    <button type="button" class="file-del">삭제</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-1">메인 이미지<br/>(배경)</dt>
+                <dd class="col-11">
+                    <div class="img-upload">
+                        <div class="mainimg"></div>
+                        <div class="img-btn">
+                            <button type="button" class="btn btn-black btn-black40">이미지 선택</button>
+                            <ul class="files-area">
+                                <li>
+                                    파일명.jpg
+                                    <button type="button" class="file-del">삭제</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-1">커뮤니티 소개<span class="req">*</span></dt>
+                <dd class="col-11">
+                    <textarea class="commnt-textarea error-bd"></textarea>
+                    <p class="txt-error">커뮤니티 소개를 입력하세요.</p>
+                </dd>
+                <dt class="col-1">검색 키워드</dt>
+                <dd class="col-11">
+                    <input type="text" class="input-box iw363" placeholder="#입력(최대10개)">
+                    <ul class="files-area">
+                        <li>
+                            키워드
+                            <button type="button" class="file-del">삭제</button>
+                        </li>
+                        <li>
+                            대박농장
+                            <button type="button" class="file-del">삭제</button>
+                        </li>
+                        <li>
+                            함께행복
+                            <button type="button" class="file-del">삭제</button>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+
+            <div class="btn-right">
+                <button type="button" class="btn btn-outline-white btn-black40">취소</button>
+                <button type="button" class="btn btn-orange btn-black40" data-toggle="modal" data-target="#congratulation">개설</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- //서브 컨텐츠 -->
+
+    <!-- 개설축하모달 -->
+    <div class="modal fade show" id="congratulation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-w457">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center"><img src="./images/img_congratulation.jpg" alt="축하이미지"></div>
+                <h5 class="tit-com text-center">커뮤니티 개설을 축하합니다.</h5>
+                <div class="d-flex txt-btn">
+                    <p>게시판을 개설하고 커뮤니티를 관리해보세요.</p>
+                    <button type="button" class="smal-arrow-btn">커뮤니티관리</button>
+                </div>
+                <div class="d-flex txt-btn">
+                    <p>커뮤니티 활도을 함께할 친구를 모아보세요</p>
+                    <button type="button" class="smal-arrow-btn">친구초대</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="noview">
+                    <label class="custom-control-label" for="noview">다시 보지 않음</label>
+                </div>
+                <button type="button" class="btn txt-close" data-dismiss="modal" aria-label="Close"><span class="close">닫기</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- //개설축하모달 -->
+
+    <!-- 작목모달 -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-w356">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">작목선택</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="txt14">관심 작목을 선택해 주세요(최대1개)</p>
+                <p class="txt14">관심 작목으로 <strong class="orangecolor">딸기</strong> 를 선택 하셨습니다.</p>
+                <div class="d-flex mt-12">
+                    <div class="dropdown select" id="country-codes">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                            <span class="value">선택</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul class="h150">
+                                <li><button type="button">채소</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown select ml-8" id="country-codes">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                            <span class="value">선택</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul class="h150">
+                                <li><button type="button">딸기</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-white btn-black40" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-orange btn-black40">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- //작목모달 -->
+
+    <footer>
+        <div class="container">
+            <ul class="inner">
+                <li class="logo">
+                    <img src="../images/img_logo_footer.png" alt="귀농귀촌종합센터" />
+                    <span class="tit_sub gray">경상남도</span>
+                </li>
+                <li>
+                    <ul class="link">
+                        <li><a href="#">사이트 맵</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    <ul class="address">
+                        <li>
+                            (52732) 경상남도 진주시 월아산로 2026 경남도청 서부청사<span class="slice"></span>
+                            귀농귀촌 종합상담 : 055-211-6244
+                        </li>
+                        <li>
+                            Copyright ⓒ 귀농귀촌통합플랫폼. All Rights Reserved.
+                        </li>
+                    </ul>
+                </li>
+                <li class="cooperation">
+                    <ul>
+                        <li><img src="../images/img_ftr_logo_mafra.png" /></li>
+                        <li><img src="../images/img_ftr_logo_epis.png" /></li>
+                        <li><img src="../images/img_ftr_logo_wa.png" /></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
