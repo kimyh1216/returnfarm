@@ -123,6 +123,7 @@
 .detail-content h3 strong {margin-right:4px;color:#88898a;}
 .detail-content h3 .badge {margin-left:10px;padding:2px 4px;background-color:#e2f1da;border-radius:3px;color:#70b949;font-size:12px;line-height:1.5;}
 .detail-content.comm {margin-top: 32px;padding: 28px 28px 11px; border:1px solid red;border: 1px solid #ddd;border-radius: 8px;}
+.btn-right button+button {margin-left: 4px;}
 .user-cs {margin-top:13px;}
 .user-inquiry {display:flex;}
 .user-inquiry > li {position:relative;padding-right:8px;margin-right:8px;color:#88898a;font-size:15px;}
