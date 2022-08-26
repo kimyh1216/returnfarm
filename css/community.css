@@ -35,7 +35,7 @@
 .new-list {max-width:1296px;margin:0 auto;}
 .new-list > li.col-lg-6 {padding:12px;}
 .new-list > li .mgbox {position:relative;padding:30px 24px 81px 24px;background:#fff;border:1px solid #e2e2e2;border-radius:20px;}
-.tag-list {display:flex;}
+.tag-list {display:flex;flex-wrap:wrap;}
 .tag-list li a {color:#ee8508;font-size:13px;font-weight:bold;}
 .tag-list li + li {margin-left:8px;}
 .new-list > li .mgbox > a > strong {display:block;margin-top:24px;color:#101314;font-size:22px;line-height:1.55;letter-spacing:-1.1px;}
@@ -53,22 +53,23 @@
 .village-news {padding:92px 0 134px;background:#ffeed9 url(../images/img_bottom.jpg) no-repeat center bottom;background-size:cover;}
 .village-news h3 {color:#101314;font-size:38px;font-family:'NanumSquareRound';font-weight:700;line-height:1.13;text-align:center;}
 .village-news h3 strong {color:#ee8508;}
-.village-news .village-news-list {max-width:1200px;margin:40px auto 0;}
-.village-news .village-news-list .vn-list {position:relative;padding:30px 24px 81px 24px;background:#fff;border:1px solid #e2e2e2;border-radius:20px;}
-.village-news .village-news-list .vn-list + .vn-list {margin-top:24px;}
-.village-news .village-news-list .vn-list .vn-txt-wrap {display:flex;width:100%;}
-.village-news .village-news-list .vn-list .vn-txt-wrap .vn-txt {max-width:971px;width:100%;margin-right:24px;}
-.village-news .village-news-list .vn-list .vn-txt-wrap .vn-txt a > strong {display:block;margin-top:24px;color:#101314;font-size:22px;line-height:1.55;letter-spacing:-1.1px;}
-.village-news .village-news-list .vn-list .vn-txt-wrap .vn-txt a > p {margin-top:16px;color:#757575;font-size:15px;line-height:1.67;letter-spacing:-0.45px;}
-.village-news .village-news-list .vn-list .vn-img {max-width:161px;width:100%;border-radius:12px;overflow:hidden;}
-.village-news .village-news-list .vn-list .vn-img img {width:100%;margin:auto;}
-.village-news .village-news-list .vn-list .vn-wrap {position:absolute;left:0;bottom:0;right:0;display:flex;align-items:center;height:48px;padding:0 24px;border-top:1px solid #e2e2e2;}
-.village-news .village-news-list .vn-list .vn-wrap .vn-name {color:#848484;font-size:14px;font-weight:500;}
-.village-news .village-news-list .vn-list .vn-wrap .vn-tit {color:#848484;font-size:14px;font-weight:500;}
-.village-news .village-news-list .vn-list .vn-wrap .vn-tit {position:relative;margin-left:6px;padding-left:8px;color:#848484;font-size:14px;font-weight:500;}
-.village-news .village-news-list .vn-list .vn-wrap .vn-tit::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:2px;height:2px;background-color:#848484;}
-.village-news .village-news-list .vn-list .vn-wrap .vn-date {position:relative;margin-left:6px;padding-left:8px;color:#bcbcbc;font-size:14px;font-weight:500;}
-.village-news .village-news-list .vn-list .vn-wrap .vn-date::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:1px;height:12px;background-color:#dfdfe2;}
+.village-news-list {max-width:1200px;margin:40px auto 0;}
+.village-news-list .vn-list {position:relative;background:#fff;border:1px solid #e2e2e2;border-radius:20px;}
+.village-news-list .vn-list + .vn-list {margin-top:24px;}
+.village-news-list .vn-list .vn-txt-wrap {display:flex;width:100%;padding:30px 24px;}
+.village-news-list .vn-list .vn-txt-wrap .vn-txt {max-width:971px;width:100%;margin-right:24px;}
+.village-news-list .vn-list .vn-txt-wrap .vn-txt a > strong {display:block;margin-top:24px;color:#101314;font-size:22px;line-height:1.55;letter-spacing:-1.1px;}
+.village-news-list .vn-list .vn-txt-wrap .vn-txt a > p {margin-top:16px;color:#757575;font-size:15px;line-height:1.67;letter-spacing:-0.45px;}
+.village-news-list .vn-list .vn-img {max-width:161px;width:100%;border-radius:12px;overflow:hidden;}
+.village-news-list .vn-list .vn-img img {width:100%;margin:auto;}
+.village-news-list .vn-list .vn-wrap {display:flex;align-items:center;padding:13px 24px;border-top:1px solid #e2e2e2;}
+.village-news-list .vn-list .vn-wrap ul {display:flex;}
+.village-news-list .vn-list .vn-wrap .vn-name {color:#848484;font-size:14px;font-weight:500;}
+.village-news-list .vn-list .vn-wrap .vn-tit {color:#848484;font-size:14px;font-weight:500;}
+.village-news-list .vn-list .vn-wrap .vn-tit {position:relative;margin-left:6px;padding-left:8px;color:#848484;font-size:14px;font-weight:500;}
+.village-news-list .vn-list .vn-wrap .vn-tit::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:2px;height:2px;background-color:#848484;}
+.village-news-list .vn-list .vn-wrap .vn-date {position:relative;margin-left:6px;padding-left:8px;color:#bcbcbc;font-size:14px;font-weight:500;}
+.village-news-list .vn-list .vn-wrap .vn-date::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:1px;height:12px;background-color:#dfdfe2;}
 
 
 /* 연령별 */
@@ -171,7 +172,9 @@ h3.tit strong {color:#ee8508;}
     .community-visual .service p, .community-visual .village p {margin-top:16px;font-size:14px;}
     .community-visual .service br, .community-visual .village br {display:inline;}
 
-    .knowledge .swiper-container {padding:0;}
+    .knowledge {margin-top:44px;padding-left:16px;}
+    .knowledge h3 {font-size:24px;text-align:left;}
+    .knowledge .swiper-container {margin-top:16px;padding:0;}
     .knowledge .swiper-container::before {display:none;}
     .knowledge .swiper-container::after {display:none;}
 
@@ -182,9 +185,12 @@ h3.tit strong {color:#ee8508;}
     .village-news {padding:44px 16px 56px;background-color:#ffeed9;}
     .village-news h3 {font-size:24px;text-align:left;}
     .village-news .village-news-list {margin-top:16px;}
+    .village-news .village-news-list .vn-list .vn-wrap {display:block;}
     .village-news .village-news-list .vn-list .vn-txt-wrap {display:block;}
-    .village-news .village-news-list .vn-list .vn-img {overflow:hidden;position:relative;padding-top:62.2%;max-width:100%;}
+    .village-news .village-news-list .vn-list .vn-img {overflow:hidden;position:relative;margin-top:20px;padding-top:62.2%;max-width:100%;}
     .village-news .village-news-list .vn-list .vn-img img {position:absolute;top:-9999px;left:-9999px;right:-9999px;bottom:-9999px;width:100%;margin:auto;}
+    .village-news .village-news-list .vn-list .vn-wrap .vn-date {margin-left:0;padding-left:0;}
+    .village-news .village-news-list .vn-list .vn-wrap .vn-date::after {display:none;}
 
     .community-new {margin:16px 0 0 0;padding:44px 4px;}
     .community-new h3 {margin-left:16px;font-size:24px;font-weight:700;text-align:left;}
