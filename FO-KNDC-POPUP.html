@@ -101,7 +101,7 @@
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#joinModal2">가입하기2</button>
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#withdrawalModal1">탈퇴하기1</button>
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#withdrawalModal2">탈퇴하기2</button><br/><br/>
-                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#communityModal">커뮤니티가입</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#myinforgoModal">내정보관리가기</button>
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#myinforModal">내정보관리</button>
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#checkModal">확인1</button>
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#checkModal2">확인2</button>
@@ -340,8 +340,8 @@
     <!-- //탈퇴하기2 -->
 
     <!-- 내정보 관리가기 -->
-    <div class="modal fade" id="withdrawalModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
-        <div class="modal-dialog modal-dialog-centered modal-w320">
+    <div class="modal fade" id="myinforgoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w346">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">커뮤니티 가입</h5>
@@ -350,17 +350,17 @@
               </button>
             </div>
             <div class="modal-body">
-                <div class="">
-                    <div class=""><img src="" alt=""></div>
-                    <p></p>
+                <div class="mc-wrap">
+                    <div class="mc-img"><img src="./images/ico_community_mungyeong.png" alt="이미지"></div>
+                    <p>문경시 귀농 귀촌 연합회</p>
                 </div>
                 <p class="txt14">
-                    문경시 귀농 귀촌 연합회 커뮤니티에서<br/>탈퇴하셨습니다.
+                    커뮤니티 가입을 환영합니다.<br/>운영자 승인 후 커뮤니티 활동이 가능합니다.
                 </p>
-                <p class=""></p>
+                <p class="txt12">* 커뮤니티에서 발송하는 알림과 이메일의 수신 설정은 내 정보 관리에서 가능합니다.</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-orange btn-black48">확인</button>
+                <button type="button" class="btn btn-orange btn-black48">내 정보 관리 가기</button>
                 <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">닫기</button>
             </div>
           </div>
@@ -369,8 +369,8 @@
     <!-- //내정보 관리가기 -->
 
     <!-- 내정보 관리 -->
-    <div class="modal fade" id="withdrawalModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
-        <div class="modal-dialog modal-dialog-centered modal-w320">
+    <div class="modal fade" id="myinforModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w467">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">내 정보 관리</h5>
@@ -379,14 +379,46 @@
               </button>
             </div>
             <div class="modal-body">
-                <div class="">
-                    <div class=""><img src="" alt=""></div>
-                    <p></p>
+                <div class="op-wrap">
+                    <div class="op-img"><img src="./images/temp_img_profile.png" alt="이미지">
+                        <button type="button" class="i-setting">설정</button>
+                    </div>
+                    <div class="op-txt">
+                        <p class="op-user">농촌사랑</p>
+                        <p class="op-rating">정회원</p>
+                        <button type="button" class="i-arrow">프로필 수정</button>
+                    </div>
                 </div>
-                <p class="txt14">
-                    문경시 귀농 귀촌 연합회 커뮤니티에서<br/>탈퇴하셨습니다.
-                </p>
-                <p class=""></p>
+                <table class="area-list">
+                    <colgroup>
+                        <col style="width:25%;">
+                        <col style="width:30%;">
+                        <col style="width:45%;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col" class="text-center">가입일</th>
+                        <th scope="col" class="text-center">마지막 방문일</th>
+                        <th scope="col" class="text-center">수신설정</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">2021.12.27</td>
+                        <td class="text-center">2021.12.27</td>
+                        <td class="d-flex justify-content-center align-items-center">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="not">
+                                <label class="custom-control-label" for="not">알림</label>
+                            </div>
+                            <div class="custom-control custom-checkbox ml-8">
+                                <input type="checkbox" class="custom-control-input" id="email">
+                                <label class="custom-control-label" for="email">이메일</label>
+                            </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-orange btn-black48">확인</button>
