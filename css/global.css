@@ -204,6 +204,7 @@ header .util .dropdown .dropdown-toggle{
 
 
 /* footer */
+footer {background-color: #fff;}
 footer .inner{
     position: relative;
     display: flex;

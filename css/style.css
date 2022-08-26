@@ -42,7 +42,7 @@
 .lnb-area .shareMenu > li > button {position:relative;padding-left:22px;background:none;border:none;color:#000;font-size:14px;}
 .lnb-area .shareMenu > li > .print::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_print.png) no-repeat left top;background-size:cover;}
 .lnb-area .shareMenu > li > .share::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_share.png) no-repeat left top;background-size:cover;}
-.share-box {position:absolute;top:46px;left:0;padding:20px;background:#fff;border:1px solid #d8d8d8;border-radius:8px;z-index: 10;}
+.share-box {display: none; position:absolute;top:46px;left:0;padding:20px;background:#fff;border:1px solid #d8d8d8;border-radius:8px;z-index: 10;}
 .share-box strong {color:#000;font-size:16px;}
 .share-box .close {position:absolute;top:20px;right:20px;width:20px;height:20px;background: url(../images/ico_20_close_n.png) no-repeat left top;background-size:cover;}
 .share-box .close span {font-size:0;line-height:0;}
@@ -122,7 +122,7 @@
 .detail-content h3 {display:flex;align-items:center;color:#262626;font-size:24px;font-weight:bold;line-height:1.5;}
 .detail-content h3 strong {margin-right:4px;color:#88898a;}
 .detail-content h3 .badge {margin-left:10px;padding:2px 4px;background-color:#e2f1da;border-radius:3px;color:#70b949;font-size:12px;line-height:1.5;}
-.detail-content.comm {margin-top: 32px;padding: 28px; border:1px solid red;border: 1px solid #ddd;border-radius: 8px;}
+.detail-content.comm {margin-top: 32px;padding: 28px 28px 11px; border:1px solid red;border: 1px solid #ddd;border-radius: 8px;}
 .user-cs {margin-top:13px;}
 .user-inquiry {display:flex;}
 .user-inquiry > li {position:relative;padding-right:8px;margin-right:8px;color:#88898a;font-size:15px;}
@@ -141,7 +141,7 @@
 .content-txt {margin-top:25px;padding:32px 0 40px;border-top:1px solid #ccc;border-bottom:1px solid #101010;}
 .content-txt .photo {margin-bottom:16px;}
 .content-txt p {color:#000;font-size:15px;line-height:1.6;letter-spacing:-0.3px;}
-.content-txt .comment-more {margin-top:48px;}
+.content-txt .comment-more {margin-top:48px;opacity: 0.6;}
 .content-txt .comment-more a {position:relative;padding-right:20px;color:#000;font-size:15px;line-height:1.4;letter-spacing:-0.3px;}
 .content-txt .comment-more a::after {content:"";position:absolute;top:0;right:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_arrow_black_n.png) no-repeat left top;background-size:cover;}
 .content-txt .comment-more a span {font-weight:500;}
@@ -157,19 +157,21 @@
 .comment-wrap .comment-box .comment-btn .secr-comm.lock::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:20px;height:20px;background:url(../images/ico_20_lock_n.png) no-repeat left top;background-size:cover;}
 .comment-wrap .comment-box .comment-btn .btn-black40 {margin-left:24px;}
 
-.comment-list {margin-top:6px;border-bottom:1px solid #000;}
-.comment-list > li {padding-top:14px;}
+.comment-list {margin-top:6px;}
+.comment-list > li .indent{padding-top:14px;}
+.comment-list > li.owner .indent{background-color: #fafafa;}
 .comment-list > li + li {border-top:1px solid #c8c8c8;}
-.comment-list .indent {margin-bottom:17px;padding-left:20px;}
+.comment-list .indent {padding-bottom:17px;padding-left:20px;}
 .comment-list .user-date {color:#000;font-size:16px;font-weight:500;line-height:1.31;letter-spacing:-0.32px;}
-.comment-list .user-date em {color:#88898a;font-size:14px;line-height:1.43;font-style:normal;}
+.comment-list .user-date em {margin-left: 8px; color:#88898a;font-size:14px;line-height:1.43;font-style:normal;font-weight: 400;}
 .comment-list .comm-txt {margin-top:6px;color:#000;font-size:15px;line-height:1.4;letter-spacing:-0.3px;}
 .comment-list .lock-txt {position:relative;margin-top:6px;padding-left:20px;color:#88898a;font-size:15px;line-height:1.4;letter-spacing:-0.3px;}
 .comment-list .lock-txt::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_lock.png) no-repeat top left;background-size:cover;}
 .comment-list .lock-txt.show::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_lock.png) no-repeat top left;background-size:cover;}
 .sBtn {margin-top:9px;}
+.sBtn.text-right {margin-top:0;padding-right: 31px;}
 .sBtn span,
-.sBtn button {position:relative;padding-right:16px;background:none;border:none;color:#88898a;font-size:14px;font-weight:500;line-height:1.5;letter-spacing:-0.28px;}
+.sBtn button {position:relative;padding-right:16px;background:none;border:none;color:#212121;font-size:14px;font-weight:500;line-height:1.5;letter-spacing:-0.28px;}
 .sBtn span::after,
 .sBtn button::after {content:"";position:absolute;top:0;right:0;bottom:0;margin:auto;width:1px;height:13px;background:#e8e8e8;}
 .sBtn .btn-com::after {content:"";position:absolute;top:0;right:0;bottom:0;margin:auto;width:12px;height:12px;background:url(../images/ico_12_close.png) no-repeat left top;background-size:cover;}
@@ -179,16 +181,19 @@
 .sBtn .btn-del {padding:0;background:none;border:none;color:#88898a;font-size:15px;font-weight:500;line-height:1.4;letter-spacing:-0.3px;}
 .sBtn .lock-right {display:none;text-align: right;}
 .lock-comme {display:none;}
-.comme-comme {padding:16px 0 17px 36px;background:#fafafa;border-top:1px solid #c8c8c8;}
+.comme-comme {padding:16px 0 17px 36px;border-top:1px solid #c8c8c8;}
+.comme-comme.owner {background:#fafafa;}
 .comme-comme .user-date {position:relative;padding-left:20px;font-size:15px;font-weight:500;line-height:1.4;letter-spacing:-0.3px;}
 .comme-comme .user-date::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_reply_n.png) no-repeat left top;background-size:cover;}
 .comme-comme .date {position:relative;padding-right:9px;margin-right:3px;color:#88898a;font-size:15px;font-weight:500;line-height:1.47;}
 .comme-comme .date::after {content:"";position:absolute;top:0;right:0;bottom:0;margin:auto;width:1px;height:13px;background:#e8e8e8;}
 .comme-comme .btn-com {position:relative;padding-right:9px;margin-right:3px;background:none;border:none;color:#88898a;font-size:15px;font-weight:500;line-height:1.4;letter-spacing:-0.3px;}
+.btn-com.collapsed {color:#88898a;}
 .comme-comme .btn-com::after {content:"";position:absolute;top:0;right:0;bottom:0;margin:auto;width:1px;height:13px;background:#e8e8e8;}
+.comme-comme .comment-box {padding: 0 16px 16px;}
 .page-control {display:flex;justify-content:space-between;margin-top:24px;border:1px solid #d3d3d4;border-radius:4px;}
 .page-control ul {display:flex;justify-content:space-between;width:100%;}
-.page-control ul > li {display:flex;align-items:center;width:50%;padding:15px 16px;border-right:1px solid #d3d3d4;}
+.page-control ul > li {display:flex;align-items:center;width:50%;padding:11px 16px;border-right:1px solid #d3d3d4;}
 .page-control ul > li + li {justify-content: flex-end;}
 .page-control .prev-txt {position:relative;padding-left:20px;background:none;border:none;color:#101314;font-size:14px;line-height:1.86;font-weight:bold;letter-spacing:-0.14px;}
 .page-control .prev-txt::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_prev_n.png) no-repeat left top;background-size:cover;}
