@@ -187,7 +187,6 @@ header .util .dropdown .dropdown-toggle{
 .gnb .icon-user {position:relative;width:40px;height:40px;background:none;border:none;font-size:0;line-height:0;}
 .gnb .icon-user::after {content:"";position: absolute;top:0;left:0;bottom:0;right:0;margin:auto;width:24px;height:24px;background:url(../images/ico_24_user_n.png) no-repeat left top;background-size:cover;}
 
-
 .swiper-container .swiper-button-prev,
 .swiper-container .swiper-button-next {width:24px;height:24px;}
 .swiper-container .swiper-button-prev {background:url(../images/btn_left.png) no-repeat left top;background-size:cover;}
@@ -197,9 +196,11 @@ header .util .dropdown .dropdown-toggle{
 .swiper-container .swiper-button-prev::after,
 .swiper-container .swiper-button-next::after {display:none;}
 
-
 .swiper-pagination-bullet {background:#aaa;}
 .swiper-pagination-bullet.swiper-pagination-bullet-active {background:#ee8508;}
+
+/* text color */
+.text-primary {color:#ee8508}
 
 /* button size */
 .btn-lg {padding:20px;}
