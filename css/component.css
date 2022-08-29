@@ -84,7 +84,7 @@
 .icon-more {position:relative;padding-left:14px;}
 .icon-more::after {content:'';position:absolute;top:0;left:0;bottom:0;margin:auto;width:10px;height:10px;background:url(../images/ico_10_plus_p.png) no-repeat right center; background-size:cover;}
 
-.btn-black {height:40px;padding:0 16px;background-color:#282b2c;border-color:#282b2c;color:#fff;font-size:15px;}
+.btn-black {height:40px;padding:0 16px;background-color:#282b2c;border-color:#282b2c;color:#fff;font-size:15px;border-radius: 8px;}
 .btn-black:hover {border-color:#585a5b;background-color:#585a5b;color:#fff;}
 .btn-black.disabled {background-color:#b8b9b9;border-color:#b8b9b9;color:#cfd0d0;opacity: 1;}
 .btn-black40 {height:40px;padding:0 16px;}

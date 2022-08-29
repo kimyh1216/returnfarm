@@ -56,6 +56,14 @@
 .share-box .linkBtn .linkInp:valid {color:#101314;font-size:14px;}
 .share-box .linkBtn .lickCopy {width:60px;margin-left:3px;color:#fff;font-size:14px;}
 
+.search_result {display: flex;column-gap: 6px;margin-top: 32px;padding:20px;background-color: #f8f8f8;border-radius: 12px;}
+.search_result .total {flex:0 0 55%;margin-top: 0;}
+.search_result .total .total-search {background-color: #fff;}
+.search_result .total .total-input {width:100%;} 
+.search_result .total .total-input input {width:100%;margin:0}
+.search_result .select .dropdown-toggle,
+.search_result .select .dropdown-menu {min-width: 140px;font-size: 14px;}
+
 .option-box {margin-top:12px;padding:19px 26px 17px 14px;background:#f8f8f8;border:1px solid #e8e8e8;border-radius:12px;}
 .option-box .btn--group {display:flex;}
 .option-box .btn--group .ico-refresh {position:relative;width:40px;height:40px;margin-left:4px;background:#fff;border:1px solid #d8d8d8;border-radius:8px;font-size:0;line-height:0;}
@@ -91,7 +99,7 @@
 .table-list th {height:48px;border-top:1px solid #000;border-bottom:1px solid #d0d0d0 !important;color:#191919;font-size:15px;}
 .table-list td {height:48px;border-bottom:1px solid #eaeaea;color:#262626;font-size:14px;}
 .table-list td.tit {padding-left:100px;}
-.table-list td a {display:flex;align-items:center;color:#262626;font-size:15px;}
+.table-list td a {color:#262626;font-size:15px;}
 .table-list td .locked i {position:relative;display:inline-block;width:16px;height:16px;margin-right:4px;font-size:0;line-height:0;}
 .table-list td .locked i::after {content:"";position:absolute;top:0;left:0;width:16px;height:16px;background:url(../images/ico_16_lock.png) no-repeat left top;background-size:cover;}
 .table-list td .locked .categori {margin-right:4px;color:#88898a;}

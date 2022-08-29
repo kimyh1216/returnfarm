@@ -106,7 +106,7 @@
             <div class="container visual">
                 <img src="images/ico_community_mungyeong.png" />
                 <div>
-                    <h2><span>문경시 귀농 귀촌 연합회</span><button type="button" class="btn btn-outline-frame32"><span class="ico-plus">가입하기</span></button>
+                    <h2><span><span class="text-primary">문경시</span> 귀농 귀촌 연합회</span><button type="button" class="btn btn-outline-frame32"><span class="ico-plus">가입하기</span></button>
                         <button type="button" class="btn btn-outline-frame32"><span class="ico-link">초대 링크 복사</span></button></h2>
                     <p>멤버수 <strong>4,274</strong></p>
                     <p>새글 <strong class="text-primary">2</strong> /9,231</p>
@@ -195,8 +195,52 @@
                                 </div>
                             </div>
                             <div class="col-10">
-                                <h3 class="comm-tit">전체글</h3>
-                                <p class="comm-tit-sub">커뮤니티의 전체글을 확인할 수 있습니다.</p>
+                                <div class="search_result">
+                                    <div class="dropdown select" id="search-period">
+                                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                                            <span class="value">전체기간</span>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <ul>
+                                                <li><button type="button">최신순</button></li>
+                                                <li><button type="button">답변대기</button></li>
+                                                <li><button type="button">답변완료</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown select" id="search-board">
+                                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                                            <span class="value">전체 게시판</span>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <ul>
+                                                <li><button type="button">최신순</button></li>
+                                                <li><button type="button">답변대기</button></li>
+                                                <li><button type="button">답변완료</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown select" id="search-all">
+                                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                                            <span class="value">전체</span>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <ul>
+                                                <li><button type="button">최신순</button></li>
+                                                <li><button type="button">답변대기</button></li>
+                                                <li><button type="button">답변완료</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="total">
+                                        <div class="total-search d-flex align-items-center justify-content-start">
+                                            <div class="total-input">
+                                                <input type="text" class="input-box" placeholder="검색어를 입력해주세요">
+                                            </div>
+                                            <button type="button" class="search-icon-btn">검색</button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row total">
                                     <div class="col-6 total-all">
                                         <div class="dropdown select" id="country-codes">
@@ -235,69 +279,57 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr class="notice">
-                                        <td class="text-center"><span class="badge badge-primary">공지</span></td>
-                                        <td class="tit"><a href="#">귀농귀촌 지식인 서비스 이용 안내</a></td>
-                                        <td class="text-center">홍길동</td>
-                                        <td class="text-center">2021-00-00</td>
-                                    </tr>
-                                    <tr class="notice">
-                                        <td class="text-center"><span class="badge badge-primary">공지</span></td>
-                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 자금을 악용한 사기피해 예방 안내</a></td>
-                                        <td class="text-center">홍길동</td>
-                                        <td class="text-center">2021-00-00</td>
-                                    </tr>
                                     <tr>
                                         <td class="text-center">514</td>
-                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td><a href="#">2022 케이팜 귀농귀촌 박람회 오픈 세미나 안내</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">513</td>
-                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td><a href="#">수목식별 <span class="text-primary">문경시</span> 교육생 모집</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">512</td>
-                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td><a href="#">[미래산림연구소] 2022년 산림활용을 위한 수목식별 과정(2기) 교육생 모집 안내</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">511</td>
-                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td><a href="#">[미래산림연구소] 2022년 산촌학교(1기) 교육생 모집 안내</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">510</td>
-                                        <td class="tit"><a href="#" class="locked"><i>잠김글</i>귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td><a href="#">2022년 귀농귀촌 맞춤형 교육과정 2차 운영기관 선정결과 알림</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">509</td>
-                                        <td class="tit"><a href="#" class="locked"><i>잠김글</i>귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td><a href="#"><span class="text-primary">문경시</span> 귀농귀촌 연합회 모임</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">508</td>
-                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td><a href="#">2022 케이팜 귀농귀촌 박람회 오픈 세미나 안내</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">507</td>
-                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td><a href="#">2022 케이팜 귀농귀촌 <span class="text-primary">문경시</span> 박람회 개최 및 무료 오픈 세미나 안내</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center">506</td>
-                                        <td class="tit"><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
+                                        <td><a href="#">귀농 농업창업 및 주택구입 융자지원사업 문의</a></td>
                                         <td class="text-center">홍길동</td>
                                         <td class="text-center">2021-00-00</td>
                                     </tr>
