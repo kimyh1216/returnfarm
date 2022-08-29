@@ -78,6 +78,10 @@
 .btn-outline-frame40:hover {border-color:#101314;background-color:rgba(232, 232, 232, 0.5);}
 .btn-outline-frame40.disabled {background:white;border-color:#cfd0d0;color:#cfd0d0;opacity: 1;}
 
+.btn-outline-danger {padding:9px 16px 8px;background:white;border-color:#d3343a;color:#d3343a;font-size:14px;border-radius: 8px;}
+.btn-outline-danger:hover {border-color:#d3343a;background-color:d3343a;}
+.btn-outline-danger.disabled {background:white;border-color:#cfd0d0;color:#cfd0d0;opacity: 1;}
+
 .btn-outline-frame44 {padding:9px 16px;background:white;border-color:#101314;color:#101314;font-size:16px;}
 .btn-outline-frame44:hover {border-color:#101314;background-color:rgba(232, 232, 232, 0.5);}
 .btn-outline-frame44.disabled {background:white;border-color:#cfd0d0;color:#cfd0d0;opacity: 1;}
@@ -243,7 +247,7 @@
 .custom-radio .custom-control-input:checked~.custom-control-label::before {width:20px;height:20px;background:url(../images/radiobutton_20_p.png) no-repeat left top;background-size:cover;border:none;color:unset;}
 .custom-radio .custom-control-input:checked~.custom-control-label::after {background:none;}
 
-.select .dropdown-toggle {position:relative;min-width:110px;height:40px;border-radius: 8px;border: solid 1px #d8d8d8;background-color: #fff;text-align:left;}
+.select .dropdown-toggle {position:relative;min-width:110px;height:40px;border-radius: 8px;border: solid 1px #d8d8d8;background-color: #fff;text-align:left;font-size: 14px;}
 .select .dropdown-toggle::after {content:"";position:absolute;top:50%;right:10px;width:16px;height:16px;margin-top:-7px;background:url(../images/ico_16_drop_n.png) no-repeat left top;background-size:cover;border:none;vertical-align:baseline;}
 .select.show .dropdown-toggle::after {transform: rotate(-180deg);}
 .select .dropdown-menu {min-width:110px;padding:6px 8px 8px 12px;}

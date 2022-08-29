@@ -12,14 +12,15 @@
 .comm-menu .exit {color:#707172;font-size: 14px;}
 .comm-menu .menu-list li {margin-bottom: 14px;}
 .comm-menu .menu-list li.depth {margin-bottom: 10px;}
-.comm-tit {margin-top: 32px; font-size: 20px;font-weight: 800;}
+.comm-tit {display: flex;align-items: center; justify-content: space-between; margin-top: 32px; font-size: 21px;font-weight: 800;}
 .comm-tit-sub {color:#88898a;}
 .comm-tit-sub+.total {margin-top: 24px;}
 
 /* 온라인상담 게시판 */
 .sub-contents {width:100%;}
 .sub-contents .online {background:#eaf8e1 url(../images/img_onlineconsulting.png) no-repeat center center;background-size:cover;}
-.sub-contents .knowledge_spread {min-height:300px;background:#eaf8e1 url(../images/bg_community_knowledge_spread.jpg) no-repeat center center;background-size:cover;}
+.sub-contents .knowledge_spread {position: relative; min-height:300px;background:#eaf8e1 url(../images/bg_community_knowledge_spread.jpg) no-repeat center center;background-size:cover;}
+.sub-contents .knowledge_spread:after{content: "";position: absolute;left:0; bottom:0;width:100%;height:222px;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));}
 .sub-contents .visual h2 {font-size:32px;font-family:'NanumSquareRound';}
 .sub-contents .visual p {font-size:18px;}
 .sub-contents .knowledge_spread .visual h2{margin-bottom: 16px;}
@@ -27,7 +28,8 @@
 .sub-contents .knowledge_spread .visual h2 button {vertical-align: middle;}
 .sub-contents .knowledge_spread .visual p{font-size: 16px;}
 .sub-contents + footer {margin-top:80px;border-top:1px solid #e6e6e6;}
-.knowledge_spread .visual {display: flex; padding:137px 0 55px;color: #fff;column-gap: 28px;}
+.knowledge_spread .visual {position: relative; display: flex; padding:137px 0 55px;color: #fff;column-gap: 28px;z-index: 1;}
+.knowledge_spread .visual .btn-public {position: absolute;right:0;bottom: 55px;}
 .lnb-area {border:1px solid #e8e8e8;border-left:none;border-right:none;}
 .lnb-area .lnb {display:flex;}
 .lnb-area .lnb > li {padding:9px 20px 10px;border-right:1px solid #e8e8e8;}
@@ -344,6 +346,30 @@
 .name-title li {color:#4e5658;font-size:14px;font-weight:bold;}
 .name-title li + li {margin-left:4px;color:#848484;font-size:14px;font-weight:500;}
 
-
 /* color set */
 .text-primary {color:#ee8508 !important}
+
+/* 관리 홈 */
+.manage-list {margin-top: 32px;}
+.manage-list ul {display: grid;grid-template-columns: 1fr 1fr;column-gap:24px;row-gap: 22px;}
+.manage-list ul li {min-height: 152px;padding:24px 28px;border: solid 1px rgba(112, 112, 112, 0.2);background-position: 80% 70%;background-repeat: no-repeat;background-size: 83px auto;border-radius: 16px; box-shadow: 0 3px 10px 0 rgba(161, 105, 18, 0.05);}
+.manage-list ul li .tit {color:#8b8b8b}
+.manage-list ul li.visitor {background-image: url(../images/img_manage_visitors.png);}
+.manage-list ul li.visit {background-image: url(../images/img_manage_visit.png);}
+.manage-list ul li.join {background-image: url(../images/img_manage_join.png);}
+.manage-list ul li.new {background-image: url(../images/img_manage_new.png);}
+.manage-list ul li .num {position: relative;display: inline-block; font-size: 52px;color:#101314;}
+.manage-list ul li .num .badge{position: absolute;right:-23px;top:10px;min-width: 34px;height: 26px;line-height: 26px;padding:0 7px; border-radius: 13px;color: #fff;font-size: 16px;font-weight: 400;opacity: 0.9;}
+.manage-list ul li .num .badge.posi {background-color: #ee8508;}
+.manage-list ul li .num .badge.nega {background-color: #0896ee;}
+
+.manage-notice-list {min-height: 326px; margin-top: 32px;padding: 24px; border: solid 1px rgba(112, 112, 112, 0.2);border-radius: 16px;}
+.manage-notice-list  h4 {margin: 0; padding-bottom: 10px; font-size: 18px; border-bottom: 1px solid #e8e8e8;font-weight: 500;}
+.manage-notice-list .badge {margin-right: 16px;}
+.manage-notice-list .badge.badge-guide {background-color:rgba(89,165,48,.2);color: #59a530;}
+.manage-notice-list .badge.badge-notice {background-color:rgba(255,127,0,.2);color: #ff7f00;}
+.manage-notice-list li {background-color: rgba(178,178,178,.05);}
+.manage-notice-list li a{display: flex;padding-left: 16px;padding-right: 24px;justify-content: space-between; align-items: center; height: 47px; border-bottom: 1px solid #e8e8e8;font-size: 15px;color:#262626;}
+.manage-notice-list li .date{font-size: 14px;}
+
+

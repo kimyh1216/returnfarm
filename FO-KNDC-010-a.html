@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/component.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/community.css" />
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script><!-- dropdown 사용시 링크 걸어야함-->
+    <script src="../js/common.js"></script>
+    <title>귀농귀촌 종합센터</title>
+</head>
+<body>
+    <header>
+        <div class="util">
+            <ul class="link">
+                <li><a href="https://www.epis.or.kr/" target="_blank"><i class="ico epis"></i>농림수산식품교육문화정보원</a></li>
+                <li><a href="https://www.agriwork.kr:447/" target="_blank"><i class="ico donong"></i>도·농 인력중계 서비스</a></li>
+                <li><a href="http://www.facebook.com" target="_blank"><i class="ico facebook"></i></a></li>
+                <li><a href="http://www.twitter.com" target="_blank"><i class="ico twitter"></i></a></li>
+                <li><a href="http://www.kakaotalk.com" target="_blank"><i class="ico kakaotalk"></i></a></li>
+				<li>
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+							패밀리 사이트 바로가기
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</div>
+				</li>
+            </ul>
+            <ul class="service-link">
+                <li><a href="#"><span>대국민 서비스</span></a></li>
+                <li><a href="#"><span>통합플랫폼</span></a></li>
+                <li><a href="#"><span>지자체관</span></a></li>
+            </ul>
+        </div>
+		
+        <nav class="gnb">
+			<ul>
+				<li><a class="logo" href="#"></a><span class="tit_sub gray">지식확산 커뮤니티</span></li>
+				<li>
+					<ul class="gnb_menu_list">
+						<li><a href="#">지식확산 서비스 안내</a></li>
+						<li><a href="#">커뮤니티</a></li>
+						<li><a href="#">귀농귀촌 지식인</a></li>
+						<li><a href="#">알림마당</a></li>
+						<li><a href="#">마을소개</a></li>
+						<li class="living"><a href="#">농촌에서 살아보기</a></li>
+					</ul>
+				</li>
+				<li>
+                    <button type="button" class="icon-login">로그인</button>
+					<button type="button" class="search-btn gnb">검색</button>
+					<button type="button" class="menu-btn">전체메뉴</button>
+				</li>
+			</ul>
+		</nav>
+    </header>
+
+    <!-- 서브 컨텐츠 -->
+    <div class="sub-contents">
+        <div class="container-fluid lnb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="lnb">
+                            <li class="home"><a href="#">home</a></li>
+                            <li><a href="#">귀농귀촌 상담</a></li>
+                            <li><span>온라인 상담</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="shareMenu float-right">
+                            <li><button type="button" class="print">인쇄</button></li>
+                            <li><button type="button" class="share">공유</button>
+                                <div class="share-box">
+                                    <strong>공유하기</strong>
+                                    <ul class="linkBox">
+                                        <li><a href="#" class="kaka">카카오톡</a></li>
+                                        <li><a href="#" class="twit">트위터</a></li>
+                                        <li><a href="#" class="face">페이스북</a></li>
+                                    </ul>
+                                    <div class="linkBtn">
+                                        <input type="text" class="input-box linkInp" value="Https://www.urlur...">
+                                        <button type="button" class="btn btn-black btn-black40 lickCopy">복사</button>
+                                    </div>
+                                    <button type="button" class="close">
+                                        <span aria-hidden="true">닫기</span>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid knowledge_spread">
+            <div class="container visual">
+                <img src="images/ico_community_mungyeong.png" />
+                <div>
+                    <h2>문경시 귀농 귀촌 연합회</h2>
+                    <p>멤버수 <strong>4,274</strong></p>
+                    <p>새글 <strong class="text-primary">2</strong> /9,231</p>
+                    <div class="btn-public">
+                        <button type="button" class="btn btn-outline-frame32">공개설정 <span class="text-primary">공개</span></button>
+                        <button type="button" class="btn btn-outline-frame32">등업요청 <u class="text-primary">4</u></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3">
+            <div class="pc-tab-full">
+                <div class="container">
+                    <ul class="nav pc-tab" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-toggle="tab" data-target="#pc-tab1" type="button">관리 홈</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#pc-tab2" type="button">기본정보 관리</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#pc-tab3" type="button">메뉴관리</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#pc-tab4" type="button">게시글 관리</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#pc-tab5" type="button">회원관리</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane active" id="pc-tab1">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="manage-list">
+                                    <ul>
+                                        <li class="visitor">
+                                            <p class="tit">방문자수</p>
+                                            <p class="num">16<span class="badge posi">+5</span></p>
+                                        </li>
+                                        <li class="visit">
+                                            <p class="tit">방문수</p>
+                                            <p class="num">34<span class="badge posi">+2</span></p>
+                                        </li>
+                                        <li class="join">
+                                            <p class="tit">가입자수</p>
+                                            <p class="num">9<span class="badge nega">-5</span></p>
+                                        </li>
+                                        <li class="new">
+                                            <p class="tit">새글수</p>
+                                            <p class="num">88<span class="badge posi">+15</span></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="manage-notice-list">
+                                    <h4>커뮤니티 공지사항</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <p>
+                                                    <span class="badge badge-guide">안내</span>
+                                                    커뮤니티 속도 개선 패치 안내
+                                                </p>
+                                                <span class="date">2021-00-00</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p>
+                                                    <span class="badge badge-notice">안내</span>
+                                                    커뮤니티 개설 및 관리 메뉴얼
+                                                </p>
+                                                <span class="date">2021-00-00</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p>
+                                                    <span class="badge badge-notice">안내</span>
+                                                    커뮤니티 개설 및 관리 메뉴얼
+                                                </p>
+                                                <span class="date">2021-00-00</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p>
+                                                    <span class="badge badge-notice">안내</span>
+                                                    커뮤니티 개설 및 관리 메뉴얼
+                                                </p>
+                                                <span class="date">2021-00-00</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p>
+                                                    <span class="badge badge-notice">안내</span>
+                                                    커뮤니티 개설 및 관리 메뉴얼
+                                                </p>
+                                                <span class="date">2021-00-00</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pc-tab2">
+                        <h3 class="comm-tit"><span>기본정보 관리</span>
+                            <button type="button" class="btn btn-outline-danger btn-black40">커뮤니티 폐쇠하기</button>
+                        </h3>
+
+                        <dl class="commnt-table d-flex flex-wrap">
+                            <dt class="col-1">커뮤니티 명<span class="req">*</span></dt>
+                            <dd class="col-11 d-flex align-items-center">
+                                <input type="text" class="input-box iw308" value="우주최강 농사 커뮤니티짱"><!-- 에러시 error-bd 클래스 추가 -->
+                                <p class="txt-complete">사용 가능한 이름입니다</p>
+                                <!-- <p class="txt-error">이미 사용 중입니다. 다른 이름을 입력해주세요.</p> -->
+                            </dd>
+                            <dt class="col-1">커뮤니티 주소<span class="req">*</span></dt>
+                            <dd class="col-11 d-flex align-items-center">
+                                <span>https://www.returnfarm.com:444/community/</span>
+                                <strong>Spaceking</strong>
+                            </dd>
+                            <dt class="col-1">지역선택<span class="req">*</span></dt>
+                            <dd class="col-11 d-flex align-items-center">
+                                <div class="dropdown select" id="country-codes">
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                                        <span class="value">시도</span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <ul class="h150">
+                                            <li><button type="button">경기도</button></li>
+                                            <li><button type="button">강원도</button></li>
+                                            <li><button type="button">경상북도</button></li>
+                                            <li><button type="button">경상남도</button></li>
+                                            <li><button type="button">충청북도</button></li>
+                                            <li><button type="button">충청남도</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown select" id="country-codes">
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                                        <span class="value">시군구</span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <ul class="h150">
+                                            <li><button type="button">고성군</button></li>
+                                            <li><button type="button">강원도</button></li>
+                                            <li><button type="button">경상북도</button></li>
+                                            <li><button type="button">경상남도</button></li>
+                                            <li><button type="button">충청북도</button></li>
+                                            <li><button type="button">충청남도</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- <p class="txt-error">지역을 선택하세요.</p> -->
+                            </dd>
+                            <dt class="col-1">작목선택<span class="req">*</span></dt>
+                            <dd class="col-11 d-flex align-items-center">
+                                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#exampleModal">검색하기</button>
+                                <ul class="files-area file-sec">
+                                    <li>
+                                        채소 > 딸기
+                                        <button type="button" class="file-del">삭제</button>
+                                    </li>
+                                </ul>
+                                <!-- <p class="txt-error">작목을 선택하세요.</p> -->
+                            </dd>
+                            <dt class="col-1">공개설정</dt>
+                            <dd class="col-11 d-flex align-items-center">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="pb_1" name="pb" class="custom-control-input green" value="email" checked>
+                                    <label class="custom-control-label" for="pb_1">공개</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="pb_2" name="pb" class="custom-control-input red" value="pone">
+                                    <label class="custom-control-label" for="pb_2">비공개</label>
+                                </div>
+                            </dd>
+                            <dt class="col-1">가입방식</dt>
+                            <dd class="col-11 d-flex align-items-center">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="rd_1" name="rd" class="custom-control-input green" value="email" checked>
+                                    <label class="custom-control-label" for="rd_1">바로 가입</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="rd_2" name="rd" class="custom-control-input red" value="pone">
+                                    <label class="custom-control-label" for="rd_2">운영자 승인후 가입</label>
+                                </div>
+                            </dd>
+                            <dt class="col-1">대표 이미지</dt>
+                            <dd class="col-11">
+                                <div class="img-upload">
+                                    <div class="img-btn">
+                                        <button type="button" class="btn btn-black btn-black40">이미지 선택</button>
+                                    </div>
+                                    <div class="reptimg">
+                                        <img src="../images/ico_community_mungyeong.png" />
+                                        <button type="button" class="photo-del">삭제</button>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt class="col-1">메인 이미지<br/>(배경)</dt>
+                            <dd class="col-11">
+                                <div class="img-upload">
+                                    <div class="img-btn">
+                                        <button type="button" class="btn btn-black btn-black40">이미지 선택</button>
+                                    </div>
+                                    <div class="mainimg">
+                                        <img src="../images/img_upload2.jpg" />
+                                        <button type="button" class="photo-del">삭제</button>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt class="col-1">커뮤니티 소개<span class="req">*</span></dt>
+                            <dd class="col-11">
+                                <textarea class="commnt-textarea">행복을 꿈꾸는 커뮤니티입니다.
+우리모두 우주최강 귀농인이 되어봅시다!</textarea><!-- 에러시 error-bd 클래스 추가 -->
+                                <!-- <p class="txt-error">커뮤니티 소개를 입력하세요.</p> -->
+                            </dd>
+                            <dt class="col-1">검색 키워드</dt>
+                            <dd class="col-11">
+                                <input type="text" class="input-box iw363" placeholder="#입력(최대10개)">
+                                <ul class="files-area">
+                                    <li>
+                                        키워드
+                                        <button type="button" class="file-del">삭제</button>
+                                    </li>
+                                    <li>
+                                        대박농장
+                                        <button type="button" class="file-del">삭제</button>
+                                    </li>
+                                    <li>
+                                        함께행복
+                                        <button type="button" class="file-del">삭제</button>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        <div class="btn-right">
+                            <button type="button" class="btn btn-outline-white btn-black48">취소</button>
+                            <button type="button" class="btn btn-orange btn-black48" data-toggle="modal" data-target="#congratulation">수정</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pc-tab3">3333</div>
+                    <div class="tab-pane" id="pc-tab4">4444</div>
+                    <div class="tab-pane" id="pc-tab5">5555</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //서브 컨텐츠 -->
+
+    <footer>
+        <div class="container">
+            <ul class="inner">
+                <li class="logo">
+                    <img src="../images/img_logo_footer.png" alt="귀농귀촌종합센터" />
+                    <span class="tit_sub gray">경상남도</span>
+                </li>
+                <li>
+                    <ul class="link">
+                        <li><a href="#">사이트 맵</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    <ul class="address">
+                        <li>
+                            (52732) 경상남도 진주시 월아산로 2026 경남도청 서부청사<span class="slice"></span>
+                            귀농귀촌 종합상담 : 055-211-6244
+                        </li>
+                        <li>
+                            Copyright ⓒ 귀농귀촌통합플랫폼. All Rights Reserved.
+                        </li>
+                    </ul>
+                </li>
+                <li class="cooperation">
+                    <ul>
+                        <li><img src="../images/img_ftr_logo_mafra.png" /></li>
+                        <li><img src="../images/img_ftr_logo_epis.png" /></li>
+                        <li><img src="../images/img_ftr_logo_wa.png" /></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
