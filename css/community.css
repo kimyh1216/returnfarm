@@ -148,10 +148,16 @@ h3.tit strong {color:#ee8508;}
 .community-home h3 {max-width:1200px;margin:56px auto 0;color:#101314;font-size:38px;font-family:'NanumSquareRound';line-height:1;}
 .community-home h3 strong {color:#ee8508;}
 .community-swiper .swiper-container {max-width:1296px;width:100%;margin:24px auto 0;padding:0 48px;position:relative;}
-.com-operation {padding:88px 0;background:#ee8508;}
-.com-operation h3 {margin:0 auto;}
-.com-operation .commnt-list {max-width:1200px;margin:auto;}
-
+.community-swiper .swiper {padding-bottom:48px;}
+.community-swiper .img {position:relative;overflow:hidden;border-radius:20px;}
+.community-swiper .txt {position:absolute;left:0;bottom:0;right:0;padding:20px 0 23px 20px;background-color:#fff;border:1px solid rgba(112, 112, 112, 0.13);border-top:none;border-bottom-left-radius:20px;border-bottom-right-radius:20px;box-shadow:0 3px 12px rgba(0,0,0,0.05);}
+.community-swiper .txt .tit {color:#101314;font-size:16px;font-weight:500;}
+.community-swiper .txt .mb-num {margin-top:6px;color:#757575;font-size:13px;}
+.com-operation {margin-top:60px;padding:88px 0;background:#ee8508;}
+.com-operation h3 {position:relative;margin:0 auto;padding-bottom:12px;color:#fff;border-bottom:4px solid #be6c0b;}
+.com-operation h3::after {content:"";position:absolute;left:0;bottom:-4px;width:40px;height:4px;background-color:#fff;}
+.com-operation h3 strong {color:#be6c0b;letter-spacing:-1.52px;}
+.com-operation .commnt-list {max-width:1200px;margin:24px auto 0;}
 
 
 
