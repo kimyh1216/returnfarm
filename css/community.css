@@ -137,6 +137,15 @@ h3.tit strong {color:#ee8508;}
 .txt-error::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_error.png) no-repeat left top;background-size:cover;}
 .error-bd {border:1px solid #e54e2b !important;}
 
+.community-home .tab-wrap {max-width:1200px;margin:32px auto 0;}
+.community-home h3 {max-width:1200px;margin:56px auto 0;color:#101314;font-size:38px;font-family:'NanumSquareRound';line-height:1;}
+.community-home h3 strong {color:#ee8508;}
+.community-swiper .swiper-container {max-width:1296px;width:100%;margin:24px auto 0;padding:0 48px;position:relative;}
+.com-operation {padding:88px 0;background:#ee8508;}
+.com-operation h3 {margin:0 auto;}
+.com-operation .commnt-list {max-width:1200px;margin:auto;}
+
+
 
 
 .pc {display:block;}
