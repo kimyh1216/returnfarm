@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding:0;margin:0;}
+        .tab {
+            overflow:hidden;
+        width:400px;
+        height:60px;
+        border:1px solid #ccc;
+        margin:100px auto;
+        position:relative;
+        background:#ccc;
+        }
+        ul {
+        width:900px;
+        position:absolute;
+        top:0;
+        left:0;
+        transition:all 0.2s;
+        }
+        ul li {
+        width:100px;
+        height:60px;
+        list-style:none;
+        float:left;
+        border-bottom:1px solid red;
+        border:1p solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab" id="tab">
+        <ul id="list">
+          <li>tab1</li>
+          <li>tab2</li>
+          <li>tab3</li>
+          <li>tab4</li>
+          <li>tab5</li>
+          <li>tab6</li>
+          <li>tab7</li>
+          <li>tab8</li>
+          <li>tab9</li>
+        </ul>
+      </div>
+      <script>
+        var oTab = document.getElementById('tab');
+        var List = document.getElementById('list');
+        var aLi = List.getElementsByTagName('li');
+        var iBox = oTab.offsetWidth;
+        var iLi = aLi[0].offsetWidth;
+        var dis = (iBox - iLi)/2;
+        var iMax = List.offsetWidth - iBox;
+        for(var i = 0; i < aLi.length; i++) {
+        aLi[i].index = i;
+        aLi[i].onclick = function(){
+            console.log(1);
+            var iMove = this.index * iLi;
+            List.style.left = -iMove + dis + 'px';
+            var str = parseInt(List.style.left);
+            if(str >= (dis-iLi)) {
+            List.style.left=0;
+            }
+            if(-str >= iMax) {
+            list.style.left = -iMax + 'px'
+            }
+        }
+        }
+      </script>
+</body>
+</html>
