@@ -108,6 +108,8 @@
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#checkModal3">확인3</button>
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#checkModal4">확인4</button>
 
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#cropModal">작목선택</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#inviteModal">친구초대</button>
             </div>
 
         </div>
@@ -159,7 +161,6 @@
             </div>
             <div class="modal-body">
                 <p class="txt14">관심 작목을 선택해 주세요(최대1개)</p>
-                <p class="txt14">관심 작목으로 <strong class="orangecolor">딸기</strong> 를 선택 하셨습니다.</p>
                 <div class="d-flex mt-12">
                     <div class="dropdown select" id="country-codes">
                         <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
@@ -496,6 +497,73 @@
         </div>
     </div>
     <!-- //확인4 -->
+
+    <!-- 작목선택모달 -->
+    <div class="modal fade" id="cropModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w356">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">작목선택</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="txt14">관심 작목으로 <strong class="orangecolor">딸기</strong> 를 선택 하셨습니다.</p>
+                <div class="d-flex mt-12">
+                    <div class="dropdown select" id="country-codes">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                            <span class="value">선택</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul class="h150">
+                                <li><button type="button">채소</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown select ml-8" id="country-codes">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                            <span class="value">선택</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul class="h150">
+                                <li><button type="button">딸기</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-white btn-black40" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-orange btn-black40">확인</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //작목선택모달 -->
+
+    <!-- 친구초대모달 -->
+    <div class="modal fade" id="inviteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w475">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">친구초대</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="txt14">초대링크를 눌러 원하는곳에 공유해보세요.</p>
+                <div class="link-copy">
+                    <input type="text" class="input-box" value="https://url.kr/g7makh" disabled>
+                    <button type="button" class="btn btn-orange btn-black48">초대링크복사</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //친구초대모달 -->
+
 
     <footer>
         <div class="container">

@@ -314,6 +314,7 @@ input.input-box::placeholder {color:#9fa1a1;font-size:14px;font-weight:normal;}
 .modal-w356 {max-width:356px;}
 .modal-w457 {max-width:457px;}
 .modal-w467 {max-width:467px;}
+.modal-w475 {max-width:475px;}
 .modal-w848 {max-width:848px;}
 .modal-content {border-radius:16px;;}
 .modal-content .modal-header {padding:24px 24px 0 24px;border-bottom:none;}
@@ -353,6 +354,9 @@ input.input-box::placeholder {color:#9fa1a1;font-size:14px;font-weight:normal;}
 .op-wrap .op-txt .op-rating {color:#88898a;font-size:15px;letter-spacing:-0.;}
 .op-wrap .op-txt .i-arrow  {position:absolute;top:0;right:0;bottom:0;margin:auto;padding-right:20px;background:none;border:none;}
 .op-wrap .op-txt .i-arrow::after {content:"";position:absolute;top:0;right:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_next_n.png) no-repeat left top;background-size:cover;} 
+
+.link-copy {display:flex;margin-top:12px;}
+.link-copy .input-box {flex-grow:1;height:48px;margin-right:8px;background-color:#e8e8e8;}
 
 /* Badge */
 .badge {font-size: 12px;padding:4px 4px;}
