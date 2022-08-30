@@ -312,6 +312,7 @@ input.input-box::placeholder {color:#9fa1a1;font-size:14px;font-weight:normal;}
 .modal-w320 {max-width:320px;}
 .modal-w346 {max-width:346px;}
 .modal-w356 {max-width:356px;}
+.modal-w419 {max-width:419px;}
 .modal-w457 {max-width:457px;}
 .modal-w467 {max-width:467px;}
 .modal-w475 {max-width:475px;}
@@ -357,6 +358,15 @@ input.input-box::placeholder {color:#9fa1a1;font-size:14px;font-weight:normal;}
 
 .link-copy {display:flex;margin-top:12px;}
 .link-copy .input-box {flex-grow:1;height:48px;margin-right:8px;background-color:#e8e8e8;}
+
+.withd .txt-box {padding:20px;background-color:#f2f3f4;border-radius:8px;}
+.withd .txt-box .tit {color:#3d424e;font-size:16px;font-weight:500;letter-spacing:-0.48px;}
+.withd .txt-box .tit strong {color:#e54e2b;}
+.withd .txt-box .desc {margin-top:6px;color:#3d424e;font-size:15px;line-height:1.53;letter-spacing:-0.45px;}
+.withd h6 {margin-top:16px;color:#262626;font-size:16px;font-weight:500;line-height:1;}
+.withd .custom-control {margin-top:11px;}
+.withd .custom-control + .custom-control {margin-top:8px;}
+.withd .custom-control .custom-control-label {color:#000;font-size:15px;letter-spacing:-0.27px;}
 
 /* Badge */
 .badge {font-size: 12px;padding:4px 4px;}

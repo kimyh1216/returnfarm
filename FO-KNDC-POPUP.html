@@ -113,6 +113,7 @@
 
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#bulletinModal">게시글이동</button>
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#changeGradeModal">등급변경</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#withdModal">강제탈퇴</button>
             </div>
 
         </div>
@@ -634,6 +635,70 @@
         </div>
     </div>
     <!-- //등급변경모달 -->
+
+    <!-- 강제탈퇴모달 -->
+    <div class="modal fade" id="withdModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w419">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">강제탈퇴</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body withd">
+                <div class="txt-box">
+                    <p class="tit">선택한 회원을 <strong>강제탈퇴</strong> 하시겠습니까?</p>
+                    <p class="desc">
+                        강제탈퇴 시 해제 전까지 해당 회원은 커뮤니티에 접근이 <br/>제한되며 해제 후 정상 커뮤니티 활동이 가능합니다.
+                    </p>
+                </div>
+                <h6>강제탈퇴 사유 선택</h6>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="spill" name="rd" class="custom-control-input green" value="spill">
+                    <label class="custom-control-label" for="spill">개인정보 유출, 사생활 침해</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="attack" name="rd" class="custom-control-input green" value="attack">
+                    <label class="custom-control-label" for="attack">욕설, 인신공격 등</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="area" name="rd" class="custom-control-input green" value="area">
+                    <label class="custom-control-label" for="area">지역감정 조장</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="copyright" name="rd" class="custom-control-input green" value="copyright">
+                    <label class="custom-control-label" for="copyright">저작권 위반</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="repet" name="rd" class="custom-control-input green" value="repet">
+                    <label class="custom-control-label" for="repet">반복 게시(도배)</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="advert" name="rd" class="custom-control-input green" value="advert">
+                    <label class="custom-control-label" for="advert">광고성 글 게시</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="porno" name="rd" class="custom-control-input green" value="porno">
+                    <label class="custom-control-label" for="porno">음란한 글, 윤락/원조교제 알선 등</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="falsed" name="rd" class="custom-control-input green" value="falsed">
+                    <label class="custom-control-label" for="falsed">허위사실 유포</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="cs" name="rd" class="custom-control-input green" value="closure">
+                    <label class="custom-control-label" for="cs">커뮤니티 폐쇄</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-orange btn-black48">강제탈퇴</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //강제탈퇴모달 -->
 
 
     <footer>
