@@ -250,7 +250,8 @@
 .faq-content {display:block;}
 .faq-content .pc-tab {margin-top:30px;}
 .faq-content .paging {margin-top:24px;}
-.search-box {position:relative;display:flex;align-items:center;max-width:480px;height:52px;margin:0 auto;padding:0 50px 0 23px;background:#fff;border:2px solid #4d4b4b;border-radius:26px;}
+.search-box {margin:0 auto;}
+.search-box .inner-box {position:relative;display:flex;align-items:center;max-width:480px;height:52px;margin:auto;padding:0 50px 0 23px;background:#fff;border:2px solid #4d4b4b;border-radius:26px;}
 .search-box .dropdown {margin-right:11px;}
 .search-box .dropdown .btn {position:relative;padding:0 22px 0 0;}
 .search-box .dropdown .btn::after {content:"";position:absolute;top:0;right:0;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_drop_n.png) no-repeat left top;background-size:cover;border:none;}

@@ -88,47 +88,54 @@
                 </ul>
             </div>
         </div>
-        <div class="community-home container-fluid mt-5">
+        <div class="community-home container-fluid">
             
             <div class="search-box">
-                <div class="dropdown" id="country-codes">
-                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
-                        <span class="value">제목</span>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <ul>
-                            <li><button type="button">제목</button></li>
-                            <li><button type="button">카테고리2</button></li>
-                            <li><button type="button">카테고리3</button></li>
-                        </ul>
+                <div class="inner-box">
+                    <div class="dropdown" id="country-codes">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                            <span class="value">제목</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul>
+                                <li><button type="button">제목</button></li>
+                                <li><button type="button">카테고리2</button></li>
+                                <li><button type="button">카테고리3</button></li>
+                            </ul>
+                        </div>
                     </div>
+                    <input type="text" class="input-box" placeholder="검색어를 입력하세요.">
+                    <button type="button" class="search">검색</button>
                 </div>
-                <input type="text" class="input-box" placeholder="검색어를 입력하세요.">
-                <button type="button" class="search">검색</button>
             </div>
 
             <div class="tab-wrap">
-                <ul class="nav pc-tab" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" data-toggle="tab" data-target="#pc-tab1" type="button">홈</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" data-toggle="tab" data-target="#pc-tab2" type="button">지역별 커뮤니티</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" data-toggle="tab" data-target="#pc-tab3" type="button">연령별 커뮤니티</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" data-toggle="tab" data-target="#pc-tab4" type="button">작목별 커뮤니티</button>
-                    </li>
-                </ul>
-                <button type="button" class="btn btn-black btn-black40">커뮤니티 개설</button>
+                <div class="scroller">
+                    <ul class="nav pc-tab" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-toggle="tab" data-target="#pc-tab1" type="button">홈</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#pc-tab2" type="button">지역별 커뮤니티</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#pc-tab3" type="button">연령별 커뮤니티</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-toggle="tab" data-target="#pc-tab4" type="button">작목별 커뮤니티</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cmnt-btn">
+                    <button type="button" class="btn btn-black btn-black40">커뮤니티 개설</button>
+                </div>
             </div>
 
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane active" id="pc-tab1">
 
-                    <h3><strong>추천</strong> 커뮤니티</h3>
+                    
+                    <h3 class="sc-tit"><strong>추천</strong> 커뮤니티</h3>
                     <div class="community-swiper">
 
                         <div class="swiper-container">
@@ -293,8 +300,214 @@
                         </script>
                     </div>
                     
+                    
                     <div class="com-operation">
-                        <h3>내 커뮤니티 <strong>운영중인 커뮤니티</strong></h3>
+                        <div class="inner">
+                            <h3>내 커뮤니티 <strong>운영중인 커뮤니티</strong></h3>
+                            <ul class="commnt-list">
+                                <li>
+                                    <div class="c-img"><img src="./images/img_photo_commu01.jpg" alt=""></div>
+                                    <div class="c-txt">
+                                        <h4>문경시 귀농·귀촌 연합회</h4>
+                                        <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
+                                        <div class="i-wrap">
+                                            <span class="i-memb">25</span>
+                                            <span class="i-writing">164</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="c-img"><img src="./images/img_photo_commu02.jpg" alt=""></div>
+                                    <div class="c-txt">
+                                        <h4>내 활동 문경 커뮤니티 타이틀 텍스트</h4>
+                                        <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
+                                        <div class="i-wrap">
+                                            <span class="i-memb">8</span>
+                                            <span class="i-writing">12</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="c-img"><img src="./images/img_photo_commu03.jpg" alt=""></div>
+                                    <div class="c-txt">
+                                        <h4>커뮤니티 이름 문경  이름 이름</h4>
+                                        <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
+                                        <div class="i-wrap">
+                                            <span class="i-memb">8</span>
+                                            <span class="i-writing">12</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="c-img"><img src="./images/img_photo_commu04.jpg" alt=""></div>
+                                    <div class="c-txt">
+                                        <h4>우리 함께 문경에서 농작물 대박 나자</h4>
+                                        <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
+                                        <div class="i-wrap">
+                                            <span class="i-memb">8</span>
+                                            <span class="i-writing">12</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="c-img"><img src="./images/img_photo_commu05.jpg" alt=""></div>
+                                    <div class="c-txt">
+                                        <h4>문경 귀농은 좋은것기여~!</h4>
+                                        <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
+                                        <div class="i-wrap">
+                                            <span class="i-memb">8</span>
+                                            <span class="i-writing">12</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="c-img"><img src="./images/img_photo_commu06.jpg" alt=""></div>
+                                    <div class="c-txt">
+                                        <h4>살기좋은 문경으로 오세요~!</h4>
+                                        <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
+                                        <div class="i-wrap">
+                                            <span class="i-memb">8</span>
+                                            <span class="i-writing">12</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="inner">
+                        <h3 class="tit mt-68">커뮤니티 <strong>인기글</strong></h3>
+                        <div class="village-news-list mt-17">
+                            <div class="vn-list">
+                                <div class="vn-txt-wrap">
+                                    <div class="vn-txt">
+                                        <ul class="area-title">
+                                            <li>문경시 귀농·귀촌 연합회</li>
+                                        </ul>
+                                        <a href="#">
+                                            <strong>귀농 첫해의 무화과 농사</strong>
+                                            <p>귀농&nbsp;6년차 그때와 지금은 모든게 달라졌다. 농장의 상황도 나의 마음 가짐도 그리고 농장을 알게 된 많은 사람들… 문득 6년의 시간 중 막… 몇가지는 달성이 되었지만, 몇가지는 아직도 멀다. 이제 얼마 남지 않은 시간이지만, 매우 잘 될꺼라고 본다. </p>
+                                        </a>
+                                    </div>
+                                    <div class="vn-img"><img src="./images/img_photo_new1.jpg" alt=""></div>
+                                </div>
+                                <div class="vn-wrap">
+                                    <ul class="name-title">
+                                        <li>작성자</li>
+                                        <li>귀농귀촌정보센터</li>
+                                    </ul>
+                                    <span class="vn-date"><span class="comment-number">12</span></span>
+                                </div>
+                            </div>
+                            <div class="vn-list">
+                                <div class="vn-txt-wrap">
+                                    <div class="vn-txt">
+                                        <ul class="area-title">
+                                            <li>문경시 귀농·귀촌 연합회</li>
+                                        </ul>
+                                        <a href="#">
+                                            <strong>귀농 첫해의 무화과 농사</strong>
+                                            <p>귀농&nbsp;6년차 그때와 지금은 모든게 달라졌다. 농장의 상황도 나의 마음 가짐도 그리고 농장을 알게 된 많은 사람들… 문득 6년의 시간 중 막… 몇가지는 달성이 되었지만, 몇가지는 아직도 멀다. 이제 얼마 남지 않은 시간이지만, 매우 잘 될꺼라고 본다. </p>
+                                        </a>
+                                    </div>
+                                    <div class="vn-img"><img src="./images/img_photo_new2.jpg" alt=""></div>
+                                </div>
+                                <div class="vn-wrap">
+                                    <ul class="name-title">
+                                        <li>작성자</li>
+                                        <li>귀농귀촌정보센터</li>
+                                    </ul>
+                                    <span class="vn-date"><span class="comment-number">12</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pc">
+                        <div class="pagination paging">
+                            <button type="button" class="page-link firstBtn disabled">
+                                처음페이지p
+                            </button>
+                            <button type="button" class="page-link prevBtn disabled">
+                                이전페이지
+                            </button>
+
+                            <a class="page-link on" href="#">1</a>
+                            <a class="page-link" href="#">2</a>
+                            <a class="page-link" href="#">3</a>
+                            <a class="page-link" href="#">4</a>
+                            <a class="page-link" href="#">5</a>
+                            <a class="page-link" href="#">6</a>
+                            <a class="page-link" href="#">7</a>
+                            <a class="page-link" href="#">8</a>
+                            <a class="page-link" href="#">9</a>
+                            <a class="page-link" href="#">10</a>
+                            
+                            <button type="button" class="page-link nextBtn">
+                                다음페이지
+                            </button>
+                            <button type="button" class="page-link lastBtn">
+                                마지막페이지
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mo">
+                        <div class="pagination paging">
+                            <button type="button" class="page-link firstBtn disabled">
+                                처음페이지
+                            </button>
+                            <button type="button" class="page-link prevBtn disabled">
+                                이전페이지
+                            </button>
+
+                            <a class="page-link on" href="#">1</a>
+                            <a class="page-link" href="#">2</a>
+                            <a class="page-link" href="#">3</a>
+                            
+                            <button type="button" class="page-link nextBtn">
+                                다음페이지
+                            </button>
+                            <button type="button" class="page-link lastBtn">
+                                마지막페이지
+                            </button>
+                        </div>
+                    </div>
+                                        
+                </div>
+                <div class="tab-pane" id="pc-tab2">
+                    
+
+                    <div class="filter-tab">
+                        <div class="all-area">
+                            <a href="#">전체</a>
+                            <a href="#">지역</a>
+                            <a href="#">시도</a>
+                            <span>시군구</span>
+                        </div>
+                        <div class="line">
+                            <button type="button" class="active">전체지역(<span>122</span>)</button>
+                            <button type="button">강원도(<span>20</span>)</button>
+                            <button type="button">경기도(<span>16</span>)</button>
+                            <button type="button">경상남도(<span>24</span>)</button>
+                            <button type="button">경상북도(<span>8</span>)</button>
+                            <button type="button">광주광역시(<span>9</span>)</button>
+                            <button type="button">대구광역시(<span>31</span>)</button>
+                            <button type="button">대전광역시(<span>8</span>)</button>
+                            <button type="button">부산광역시(<span>9</span>)</button>
+                            <button type="button">서울특별시(<span>31</span>)</button>
+                            <button type="button">세종특별자차시(<span>8</span>)</button>
+                            <button type="button">울산광역시(<span>9</span>)</button>
+                            <button type="button">인천광역시(<span>31</span>)</button>
+                            <button type="button">전라남도(<span>8</span>)</button>
+                            <button type="button">전라북도(<span>9</span>)</button>
+                            <button type="button">제주특별자치도(<span>31</span>)</button>
+                            <button type="button">충청남도(<span>8</span>)</button>
+                            <button type="button">충청북도(<span>9</span>)</button>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <h3 class="tit mt-36">커뮤니티<strong>(24개)</strong></h3>
                         <ul class="commnt-list">
                             <li>
                                 <div class="c-img"><img src="./images/img_photo_commu01.jpg" alt=""></div>
@@ -363,354 +576,186 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
 
-                    <h3 class="tit mt-68">커뮤니티 <strong>인기글</strong></h3>
-                    <div class="village-news-list mt-17">
-                        <div class="vn-list">
-                            <div class="vn-txt-wrap">
-                                <div class="vn-txt">
-                                    <ul class="area-title">
-                                        <li>문경시 귀농·귀촌 연합회</li>
-                                    </ul>
-                                    <a href="#">
-                                        <strong>귀농 첫해의 무화과 농사</strong>
-                                        <p>귀농&nbsp;6년차 그때와 지금은 모든게 달라졌다. 농장의 상황도 나의 마음 가짐도 그리고 농장을 알게 된 많은 사람들… 문득 6년의 시간 중 막… 몇가지는 달성이 되었지만, 몇가지는 아직도 멀다. 이제 얼마 남지 않은 시간이지만, 매우 잘 될꺼라고 본다. </p>
-                                    </a>
-                                </div>
-                                <div class="vn-img"><img src="./images/img_photo_new1.jpg" alt=""></div>
-                            </div>
-                            <div class="vn-wrap">
-                                <ul class="name-title">
-                                    <li>작성자</li>
-                                    <li>귀농귀촌정보센터</li>
-                                </ul>
-                                <span class="vn-date"><span class="comment-number">12</span></span>
-                            </div>
-                        </div>
-                        <div class="vn-list">
-                            <div class="vn-txt-wrap">
-                                <div class="vn-txt">
-                                    <ul class="area-title">
-                                        <li>문경시 귀농·귀촌 연합회</li>
-                                    </ul>
-                                    <a href="#">
-                                        <strong>귀농 첫해의 무화과 농사</strong>
-                                        <p>귀농&nbsp;6년차 그때와 지금은 모든게 달라졌다. 농장의 상황도 나의 마음 가짐도 그리고 농장을 알게 된 많은 사람들… 문득 6년의 시간 중 막… 몇가지는 달성이 되었지만, 몇가지는 아직도 멀다. 이제 얼마 남지 않은 시간이지만, 매우 잘 될꺼라고 본다. </p>
-                                    </a>
-                                </div>
-                                <div class="vn-img"><img src="./images/img_photo_new2.jpg" alt=""></div>
-                            </div>
-                            <div class="vn-wrap">
-                                <ul class="name-title">
-                                    <li>작성자</li>
-                                    <li>귀농귀촌정보센터</li>
-                                </ul>
-                                <span class="vn-date"><span class="comment-number">12</span></span>
-                            </div>
+                        <div class="btn-center mt-20">
+                            <button type="button" class="btn btn-outline-frame44 rounded-pill"><span class="icon-more">6개 더보기</span></button>
                         </div>
                     </div>
-                    <div class="pagination paging">
-                        <button type="button" class="page-link firstBtn disabled">
-                            처음페이지
-                        </button>
-                        <button type="button" class="page-link prevBtn disabled">
-                            이전페이지
-                        </button>
-
-                        <a class="page-link on" href="#">1</a>
-                        <a class="page-link" href="#">2</a>
-                        <a class="page-link" href="#">3</a>
-                        <a class="page-link" href="#">4</a>
-                        <a class="page-link" href="#">5</a>
-                        <a class="page-link" href="#">6</a>
-                        <a class="page-link" href="#">7</a>
-                        <a class="page-link" href="#">8</a>
-                        <a class="page-link" href="#">9</a>
-                        <a class="page-link" href="#">10</a>
-                        
-                        <button type="button" class="page-link nextBtn">
-                            다음페이지
-                        </button>
-                        <button type="button" class="page-link lastBtn">
-                            마지막페이지
-                        </button>
-                    </div>
-                                        
-                </div>
-                <div class="tab-pane" id="pc-tab2">
-
-                    <div class="filter-tab">
-                        <div class="all-area">
-                            <button type="button">전체</button>
-                            <button type="button">지역</button>
-                            <button type="button">시도</button>
-                            <span>시군구</span>
-                        </div>
-                        <div class="line">
-                            <button type="button" class="active">전체지역(<span>122</span>)</button>
-                            <button type="button">강원도(<span>20</span>)</button>
-                            <button type="button">경기도(<span>16</span>)</button>
-                            <button type="button">경상남도(<span>24</span>)</button>
-                            <button type="button">경상북도(<span>8</span>)</button>
-                            <button type="button">광주광역시(<span>9</span>)</button>
-                            <button type="button">대구광역시(<span>31</span>)</button>
-                            <button type="button">대전광역시(<span>8</span>)</button>
-                            <button type="button">부산광역시(<span>9</span>)</button>
-                            <button type="button">서울특별시(<span>31</span>)</button>
-                            <button type="button">세종특별자차시(<span>8</span>)</button>
-                            <button type="button">울산광역시(<span>9</span>)</button>
-                            <button type="button">인천광역시(<span>31</span>)</button>
-                            <button type="button">전라남도(<span>8</span>)</button>
-                            <button type="button">전라북도(<span>9</span>)</button>
-                            <button type="button">제주특별자치도(<span>31</span>)</button>
-                            <button type="button">충청남도(<span>8</span>)</button>
-                            <button type="button">충청북도(<span>9</span>)</button>
-                        </div>
-                    </div>
-
-                    <h3 class="tit mt-36">커뮤니티<strong>(24개)</strong></h3>
-                    <ul class="commnt-list">
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu01.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>문경시 귀농·귀촌 연합회</h4>
-                                <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">25</span>
-                                    <span class="i-writing">164</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu02.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>내 활동 문경 커뮤니티 타이틀 텍스트</h4>
-                                <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu03.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>커뮤니티 이름 문경  이름 이름</h4>
-                                <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu04.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>우리 함께 문경에서 농작물 대박 나자</h4>
-                                <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu05.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>문경 귀농은 좋은것기여~!</h4>
-                                <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu06.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>살기좋은 문경으로 오세요~!</h4>
-                                <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="btn-center mt-20">
-                        <button type="button" class="btn btn-outline-frame44 rounded-pill"><span class="icon-more">6개 더보기</span></button>
-                    </div>
-
                 </div>
                 <div class="tab-pane" id="pc-tab3">
 
+                   
                     <div class="filter-tab">
-                        <button type="button" class="active">전체연령(<span>103</span>)</button>
-                        <button type="button">10대(<span>20</span>)</button>
-                        <button type="button">30대(<span>16</span>)</button>
-                        <button type="button">40대(<span>24</span>)</button>
-                        <button type="button">50대(<span>38</span>)</button>
-                        <button type="button">60대(<span>15</span>)</button>
+                        <div class="line pt-0">
+                            <button type="button" class="active">전체연령(<span>103</span>)</button>
+                            <button type="button">10대(<span>20</span>)</button>
+                            <button type="button">30대(<span>16</span>)</button>
+                            <button type="button">40대(<span>24</span>)</button>
+                            <button type="button">50대(<span>38</span>)</button>
+                            <button type="button">60대(<span>15</span>)</button>
+                        </div>
                     </div>
+                    <div class="inner">
+                        <h3 class="tit mt-36">커뮤니티<strong>(24개)</strong></h3>
+                        <ul class="commnt-list">
+                            <li>
+                                <div class="c-img"><img src="./images/img_photo_commu01.jpg" alt=""></div>
+                                <div class="c-txt">
+                                    <h4>문경시 귀농·귀촌 연합회</h4>
+                                    <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
+                                    <div class="i-wrap">
+                                        <span class="i-memb">25</span>
+                                        <span class="i-writing">164</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-img"><img src="./images/img_photo_commu02.jpg" alt=""></div>
+                                <div class="c-txt">
+                                    <h4>내 활동 문경 커뮤니티 타이틀 텍스트</h4>
+                                    <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
+                                    <div class="i-wrap">
+                                        <span class="i-memb">8</span>
+                                        <span class="i-writing">12</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-img"><img src="./images/img_photo_commu03.jpg" alt=""></div>
+                                <div class="c-txt">
+                                    <h4>커뮤니티 이름 문경  이름 이름</h4>
+                                    <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
+                                    <div class="i-wrap">
+                                        <span class="i-memb">8</span>
+                                        <span class="i-writing">12</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-img"><img src="./images/img_photo_commu04.jpg" alt=""></div>
+                                <div class="c-txt">
+                                    <h4>우리 함께 문경에서 농작물 대박 나자</h4>
+                                    <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
+                                    <div class="i-wrap">
+                                        <span class="i-memb">8</span>
+                                        <span class="i-writing">12</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-img"><img src="./images/img_photo_commu05.jpg" alt=""></div>
+                                <div class="c-txt">
+                                    <h4>문경 귀농은 좋은것기여~!</h4>
+                                    <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
+                                    <div class="i-wrap">
+                                        <span class="i-memb">8</span>
+                                        <span class="i-writing">12</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-img"><img src="./images/img_photo_commu06.jpg" alt=""></div>
+                                <div class="c-txt">
+                                    <h4>살기좋은 문경으로 오세요~!</h4>
+                                    <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
+                                    <div class="i-wrap">
+                                        <span class="i-memb">8</span>
+                                        <span class="i-writing">12</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
 
-                    <h3 class="tit mt-36">커뮤니티<strong>(24개)</strong></h3>
-                    <ul class="commnt-list">
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu01.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>문경시 귀농·귀촌 연합회</h4>
-                                <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">25</span>
-                                    <span class="i-writing">164</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu02.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>내 활동 문경 커뮤니티 타이틀 텍스트</h4>
-                                <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu03.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>커뮤니티 이름 문경  이름 이름</h4>
-                                <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu04.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>우리 함께 문경에서 농작물 대박 나자</h4>
-                                <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu05.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>문경 귀농은 좋은것기여~!</h4>
-                                <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu06.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>살기좋은 문경으로 오세요~!</h4>
-                                <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="btn-center mt-20">
-                        <button type="button" class="btn btn-outline-frame44 rounded-pill"><span class="icon-more">6개 더보기</span></button>
+                        <div class="btn-center mt-20">
+                            <button type="button" class="btn btn-outline-frame44 rounded-pill"><span class="icon-more">6개 더보기</span></button>
+                        </div>
                     </div>
-
                 </div>
                 <div class="tab-pane" id="pc-tab4">
 
+                    
                     <div class="filter-tab">
-                        <button type="button" class="active">전체작목(<span>48</span>)</button>
-                        <button type="button">작목A(<span>8</span>)</button>
-                        <button type="button">작목B(<span>9</span>)</button>
-                        <button type="button">작목C(<span>31</span>)</button>
+                        <div class="line pt-0">
+                            <button type="button" class="active">전체작목(<span>48</span>)</button>
+                            <button type="button">작목A(<span>8</span>)</button>
+                            <button type="button">작목B(<span>9</span>)</button>
+                            <button type="button">작목C(<span>31</span>)</button>
+                        </div>
                     </div>
+                    <div class="inner">
+                        <h3 class="tit mt-36">커뮤니티<strong>(24개)</strong></h3>
+                        <ul class="commnt-list">
+                            <li>
+                                <div class="c-img"><img src="./images/img_photo_commu01.jpg" alt=""></div>
+                                <div class="c-txt">
+                                    <h4>문경시 귀농·귀촌 연합회</h4>
+                                    <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
+                                    <div class="i-wrap">
+                                        <span class="i-memb">25</span>
+                                        <span class="i-writing">164</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-img"><img src="./images/img_photo_commu02.jpg" alt=""></div>
+                                <div class="c-txt">
+                                    <h4>내 활동 문경 커뮤니티 타이틀 텍스트</h4>
+                                    <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
+                                    <div class="i-wrap">
+                                        <span class="i-memb">8</span>
+                                        <span class="i-writing">12</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-img"><img src="./images/img_photo_commu03.jpg" alt=""></div>
+                                <div class="c-txt">
+                                    <h4>커뮤니티 이름 문경  이름 이름</h4>
+                                    <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
+                                    <div class="i-wrap">
+                                        <span class="i-memb">8</span>
+                                        <span class="i-writing">12</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-img"><img src="./images/img_photo_commu04.jpg" alt=""></div>
+                                <div class="c-txt">
+                                    <h4>우리 함께 문경에서 농작물 대박 나자</h4>
+                                    <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
+                                    <div class="i-wrap">
+                                        <span class="i-memb">8</span>
+                                        <span class="i-writing">12</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-img"><img src="./images/img_photo_commu05.jpg" alt=""></div>
+                                <div class="c-txt">
+                                    <h4>문경 귀농은 좋은것기여~!</h4>
+                                    <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
+                                    <div class="i-wrap">
+                                        <span class="i-memb">8</span>
+                                        <span class="i-writing">12</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-img"><img src="./images/img_photo_commu06.jpg" alt=""></div>
+                                <div class="c-txt">
+                                    <h4>살기좋은 문경으로 오세요~!</h4>
+                                    <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
+                                    <div class="i-wrap">
+                                        <span class="i-memb">8</span>
+                                        <span class="i-writing">12</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
 
-                    <h3 class="tit mt-36">커뮤니티<strong>(24개)</strong></h3>
-                    <ul class="commnt-list">
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu01.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>문경시 귀농·귀촌 연합회</h4>
-                                <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">25</span>
-                                    <span class="i-writing">164</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu02.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>내 활동 문경 커뮤니티 타이틀 텍스트</h4>
-                                <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu03.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>커뮤니티 이름 문경  이름 이름</h4>
-                                <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu04.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>우리 함께 문경에서 농작물 대박 나자</h4>
-                                <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu05.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>문경 귀농은 좋은것기여~!</h4>
-                                <p>문경시 귀농귀촌 연합회입니다.커뮤니티 설명글이 최대 2줄까지 작성됩니다. 최대 2줄이요</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="c-img"><img src="./images/img_photo_commu06.jpg" alt=""></div>
-                            <div class="c-txt">
-                                <h4>살기좋은 문경으로 오세요~!</h4>
-                                <p>최대 두줄까지 보여지는 문구 입니다. 한줄은 이렇게 보여집니다.</p>
-                                <div class="i-wrap">
-                                    <span class="i-memb">8</span>
-                                    <span class="i-writing">12</span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="btn-center mt-20">
-                        <button type="button" class="btn btn-outline-frame44 rounded-pill"><span class="icon-more">6개 더보기</span></button>
+                        <div class="btn-center mt-20">
+                            <button type="button" class="btn btn-outline-frame44 rounded-pill"><span class="icon-more">6개 더보기</span></button>
+                        </div>
                     </div>
 
                 </div>
