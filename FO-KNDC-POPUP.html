@@ -109,7 +109,10 @@
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#checkModal4">확인4</button>
 
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#cropModal">작목선택</button>
-                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#inviteModal">친구초대</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#inviteModal">친구초대</button><br/><br/>
+
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#bulletinModal">게시글이동</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#changeGradeModal">등급변경</button>
             </div>
 
         </div>
@@ -563,6 +566,74 @@
         </div>
     </div>
     <!-- //친구초대모달 -->
+
+    <!-- 게시글이동모달 -->
+    <div class="modal fade" id="bulletinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w356">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">게시글 이동</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="txt14">선택한 글을 이동합니다.</p>
+                <div class="d-flex mt-12">
+                    <div class="dropdown select sw-100p" id="country-codes">
+                        <button class="btn dropdown-toggle sw-100p" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                            <span class="value">선택</span>
+                        </button>
+                        <div class="dropdown-menu sw-100p" aria-labelledby="dropdownMenuButton">
+                            <ul class="h150">
+                                <li><button type="button">자유게시판1</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn btn-orange btn-black48">이동</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //게시글이동모달 -->
+
+    <!-- 등급변경모달 -->
+    <div class="modal fade" id="bulletinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w356">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">등급 변경</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="txt14">선택한 회원의 등급을 변경합니다.</p>
+                <div class="d-flex mt-12">
+                    <div class="dropdown select sw-100p" id="country-codes">
+                        <button class="btn dropdown-toggle sw-100p" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                            <span class="value">선택</span>
+                        </button>
+                        <div class="dropdown-menu sw-100p" aria-labelledby="dropdownMenuButton">
+                            <ul class="h150">
+                                <li><button type="button">정회원</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn btn-orange btn-black48">변경</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //등급변경모달 -->
 
 
     <footer>
