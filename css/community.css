@@ -171,10 +171,7 @@ h3.tit strong {color:#ee8508;}
 @media only screen and (max-width: 1650px){
     .knowledge .swiper-container::after {display:none;}
 }
-@media only screen and (max-width: 1199px) {
-    .community-home .inner {padding:0 16px;}
-}
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 1024px) {
     .pc {display:none;}
     .mo {display:block;}
     header .util {display:none;}
@@ -225,6 +222,7 @@ h3.tit strong {color:#ee8508;}
     .new-list > li .mgbox > a > p {margin-top:12px;font-size:14px;}
 
     .community-home {padding:16px 0 0 0;}
+    .community-home .inner {padding:0 16px;}
     .community-home .sc-tit {margin:44px 0 0 16px;}
     .community-home .tab-wrap {margin:4px 0 0 0;padding:0;border-top:none;border-bottom:1px solid #e8e8e8;}
     .community-home .tab-wrap .scroller {overflow-x:scroll;-ms-overflow-style:none;scrollbar-width:none;}
@@ -258,7 +256,15 @@ h3.tit strong {color:#ee8508;}
     .community-home .filter-tab .line {width:calc(100% + 8px)}
     .community-home .filter-tab {padding:16px;border-radius:0;border-left:none;border-right:none;border-bottom:none;}
     .community-home .filter-tab button {width:calc(33.3333% - 6px);margin:3px;padding:14px 3px;font-size:13px;letter-spacing:-0.39px;}
+    .search-txt {margin:16px 16px 0 16px;padding-bottom:16px;}
+    .search-txt p {font-size:16px;}
     
+    .search-result-non {padding:48px 0;}
+    .search-result-non .none-search {width:100px;height:100px;}
+    .search-result-non .txt {font-size:18px;}
+    .search-result-non .stxt {font-size:14px;}
+    .search-result-non .m-block {display:block;}
+
 }
 @media only screen and (max-width: 480px) {
     .community-home .tab-wrap .pc-tab {width:480px;}
