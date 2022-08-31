@@ -18,7 +18,7 @@
 
 /* 게시글관리 */
 .control-btn {margin-top: 12px;padding-top: 12px;border-top: 1px solid #e8e8e8;}
-.control-btn .btn-outline-frame40 {border-width: 2px;border-radius: 8px;}
+.control-btn .btn-outline-frame40 {height: 40px;padding: 8px 16px;border-width: 2px;border-color:#939494;border-radius: 8px;font-weight: 800;}
 .sel_submenu {background-color: #f8f8f8;border-bottom: 1px solid #e8e8e8;}
 .sel_submenu .container {display:flex;column-gap: 12px;}
 .sel_submenu a {position: relative; padding:10px 0 13px 12px; color:#88898a;}
