@@ -83,7 +83,7 @@
 .btn-outline-danger:hover {border-color:#d3343a;background-color:d3343a;}
 .btn-outline-danger.disabled {background:white;border-color:#cfd0d0;color:#cfd0d0;opacity: 1;}
 
-.btn-outline-frame44 {padding:9px 16px;background:white;border-color:#101314;color:#101314;font-size:16px;}
+.btn-outline-frame44 {padding:9px 16px;border-color:#101314;color:#101314;font-size:16px;}
 .btn-outline-frame44:hover {border-color:#101314;background-color:rgba(232, 232, 232, 0.5);}
 .btn-outline-frame44.disabled {background:white;border-color:#cfd0d0;color:#cfd0d0;opacity: 1;}
 .icon-more {position:relative;padding-left:14px;}

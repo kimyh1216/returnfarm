@@ -152,7 +152,7 @@ header .util .dropdown .dropdown-toggle{
 .gnb {background-color: #fff;}
 .gnb > ul{display: flex;width:100%;height: 64px;padding:0 24px;justify-content: space-between;align-items: center;}
 .gnb > ul li {display: flex;align-items: center;}
-.gnb > ul li .logo {display: block;width:171px;height:27px;background: url(../images/img_logo_top_black.png);background-size: cover;vertical-align: middle;}
+.gnb > ul li .logo {display: block;width:171px;height:27px;background: url(../images/img_logo_top_black.png);background-size: cover;}
 
 .gnb_menu_list {display: flex;}
 .gnb_menu_list li {margin-left: 32px;font-size: 18px;}
@@ -243,7 +243,7 @@ footer .link li {position: relative;margin-right: 10px;padding-right: 10px;font-
 footer .link li:after{content:"";position: absolute;right:-1px;top:6px;width:1px;height:12px;background:#101314;opacity: 0.3;}
 footer .link li:last-of-type:after{display: none;}
 footer .address {margin-top: 12px;margin-left: 32px;font-size: 12px;color:#888282}
-footer .address li{line-height: 18px;}
+footer .address li{line-height: 18px;word-break: keep-all;}
 footer .address li:nth-child(2){margin-top:6px;color:#999;font-weight: 200;}
 footer .cooperation{position: absolute;right: 0;}
 footer .cooperation ul {display: flex;
@@ -252,8 +252,8 @@ footer .cooperation ul li{margin-left: 26px;}
 footer .cooperation ul img{height: 46px;}
 @media only screen and (max-width: 768px) {
     .gnb_menu_list {display:none;}
-    footer .inner{flex-direction: column;}
-    footer .link {margin-left: 0;margin-top: 24px;}
+    footer .inner{flex-direction: column;padding-left: 16px;}
+    footer .link {margin-left: 0;margin-top: 24px;flex-wrap: wrap;height: auto;}
     footer .address{margin-left: 0;}
     footer .cooperation {position: static;border-top: 1px solid #cacaca;margin-top: 20px;padding-top: 20px;}
     footer .cooperation ul li:first-of-type {margin-left: 0;}
