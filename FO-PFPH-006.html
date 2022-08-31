@@ -88,23 +88,23 @@
         <div class="container mt-5">
             
             <canvas id="myChart" width="400" height="400"></canvas>
-<script>
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
-    type: 'radar',
-    data: {
-        labels: ['주거', '교육', '자금', '생활', '농지/일자리'],
-        datasets: [{
-            label:'',
-            fill:true,
-            data: [12, 19, 3, 5, 2],
-            backgroundColor: 'rgba(238, 133, 8, 0.3)',
-            borderColor: 'rgb(238, 133, 8)',
-            borderWidth: 2
-        }]
-    }
-});
-</script>
+            <script>
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['주거', '교육', '자금', '생활', '농지/일자리'],
+                    datasets: [{
+                        label:'',
+                        fill:true,
+                        data: [12, 19, 3, 5, 2],
+                        backgroundColor: 'rgba(238, 133, 8, 0.3)',
+                        borderColor: 'rgb(238, 133, 8)',
+                        borderWidth: 2
+                    }]
+                }
+            });
+            </script>
 
         </div>
     </div>
