@@ -114,7 +114,9 @@
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#bulletinModal">게시글이동</button>
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#changeGradeModal">등급변경</button>
                 <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#activityModal">활동중지</button>
-                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#withdModal">강제탈퇴</button>
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#withdModal">강제탈퇴</button><br/><br/>
+
+                <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#openingModal">커뮤니티개설</button>
             </div>
 
         </div>
@@ -235,7 +237,7 @@
                 </div>
                 <div class="input-check">
                     <div class="i-pd">
-                        <input type="text" class="input-box iw-100p" value="커뮤니티를 폐쇄합니다.">
+                        <input type="text" class="input-box iw100p" value="커뮤니티를 폐쇄합니다.">
                     </div>
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="notice">
@@ -764,6 +766,158 @@
         </div>
     </div>
     <!-- //강제탈퇴모달 -->
+
+    <!-- 커뮤니티개설 -->
+    <div class="modal fade" id="openingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w848">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">커뮤니티 개설</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <dl class="commnt-table">
+                    <dt>커뮤니티 명<span class="req">*</span></dt>
+                    <dd>
+                        <input type="text" class="input-box iw100p error-bd" value="우주최강 농사 커뮤니티짱">
+                        <p class="txt-complete">사용 가능한 이름입니다</p>
+                        <p class="txt-error dev-error">이미 사용 중입니다. 다른 이름을 입력해주세요.</p>
+                    </dd>
+                    <dt>커뮤니티 주소<span class="req">*</span></dt>
+                    <dd>
+                        <span class="d-block">https://www.returnfarm.com:444/community/</span>
+                        <input type="text" class="input-box iw100p error-bd mt-05" value="Spaceking">
+                        <p class="txt-complete">사용 가능한 주소입니다. <span class="d-block">커뮤니티 주소는 변경 불가하니 신중히 선택해 주세요.</span></p>
+                        <p class="txt-error dev-error">이미 사용중입니다. 다른 주소를 입력해주세요.</p>
+                    </dd>
+                    <dt>지역선택<span class="req">*</span></dt>
+                    <dd>
+                        <div class="d-flex">
+                            <div class="dropdown select" id="country-codes">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                                    <span class="value">시도</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <ul class="h150">
+                                        <li><button type="button">경기도</button></li>
+                                        <li><button type="button">강원도</button></li>
+                                        <li><button type="button">경상북도</button></li>
+                                        <li><button type="button">경상남도</button></li>
+                                        <li><button type="button">충청북도</button></li>
+                                        <li><button type="button">충청남도</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown select" id="country-codes">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                                    <span class="value">시군구</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <ul class="h150">
+                                        <li><button type="button">고성군</button></li>
+                                        <li><button type="button">강원도</button></li>
+                                        <li><button type="button">경상북도</button></li>
+                                        <li><button type="button">경상남도</button></li>
+                                        <li><button type="button">충청북도</button></li>
+                                        <li><button type="button">충청남도</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="txt-error dev-error">지역을 선택하세요.</p>
+                    </dd>
+                    <dt>작목선택<span class="req">*</span></dt>
+                    <dd>
+                        <div class="d-flex align-items-center">
+                            <button type="button" class="btn btn-black btn-black40" data-toggle="modal" data-target="#exampleModal">검색하기</button>
+                            <ul class="files-area file-sec">
+                                <li>
+                                    채소 > 딸기
+                                    <button type="button" class="file-del">삭제</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="txt-error dev-error">작목을 선택하세요.</p>
+                    </dd>
+                    <dt>공개설정</dt>
+                    <dd>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="pb_1" name="pb" class="custom-control-input green" value="email" checked>
+                            <label class="custom-control-label" for="pb_1">공개</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="pb_2" name="pb" class="custom-control-input red" value="pone">
+                            <label class="custom-control-label" for="pb_2">비공개</label>
+                        </div>
+                    </dd>
+                    <dt>가입방식</dt>
+                    <dd>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="rd_1" name="rd" class="custom-control-input green" value="email" checked>
+                            <label class="custom-control-label" for="rd_1">바로 가입</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="rd_2" name="rd" class="custom-control-input red" value="pone">
+                            <label class="custom-control-label" for="rd_2">운영자 승인후 가입</label>
+                        </div>
+                    </dd>
+                    <dt>대표 이미지</dt>
+                    <dd>
+                        <div class="img-upload">
+                            <div class="img-btn">
+                                <button type="button" class="btn btn-black btn-black40">이미지 선택</button>
+                            </div>
+                            <div class="reptimg">
+                                <button type="button" class="file-del">삭제</button>
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>메인 이미지 (배경)</dt>
+                    <dd>
+                        <div class="img-upload">
+                            <div class="img-btn">
+                                <button type="button" class="btn btn-black btn-black40">이미지 선택</button>
+                            </div>
+                            <div class="mainimg">
+                                <button type="button" class="file-del">삭제</button>
+                            </div>
+                        </div>
+                    </dd>
+                    <dt>커뮤니티 소개<span class="req">*</span></dt>
+                    <dd>
+                        <textarea class="commnt-textarea error-bd"></textarea>
+                        <p class="txt-error dev-error">커뮤니티 소개를 입력하세요.</p>
+                    </dd>
+                    <dt>검색 키워드</dt>
+                    <dd>
+                        <input type="text" class="input-box iw363" placeholder="#입력(최대10개)">
+                        <ul class="files-area">
+                            <li>
+                                키워드
+                                <button type="button" class="file-del">삭제</button>
+                            </li>
+                            <li>
+                                대박농장
+                                <button type="button" class="file-del">삭제</button>
+                            </li>
+                            <li>
+                                함께행복
+                                <button type="button" class="file-del">삭제</button>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-orange btn-black48">개설</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //커뮤니티개설 -->
 
 
     <footer>
