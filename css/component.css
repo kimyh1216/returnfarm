@@ -372,11 +372,18 @@ input.input-box::placeholder {color:#9fa1a1;font-size:14px;font-weight:normal;}
 .withd .custom-control + .custom-control {margin-top:8px;}
 .withd .custom-control .custom-control-label {color:#000;font-size:15px;letter-spacing:-0.27px;}
 
+.modal-content .commnt-table {margin-top:0;border-top:none;}
 .modal-content .commnt-table dt {padding-bottom:0;border-bottom:none;}
+.modal-content .commnt-table dt:first-child {padding-top:0;}
 .modal-content .commnt-table dt,
 .modal-content .commnt-table dd {font-size:14px;}
 .modal-content .txt-complete,
 .modal-content .txt-error {margin:5px 0 0 0;}
+.modal-content .commnt-table dd .img-upload {display:block;}
+.modal-content .commnt-table dd .img-upload .reptimg,
+.modal-content .commnt-table dd .img-upload .mainimg {margin-top:6px;}
+
+
 
 /* Badge */
 .badge {font-size: 12px;padding:4px 4px;}
