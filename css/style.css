@@ -17,8 +17,11 @@
 .comm-tit-sub+.total {margin-top: 24px;}
 
 /* 게시글관리 */
-.control-btn {margin-top: 12px;padding-top: 12px;border-top: 1px solid #e8e8e8;}
+.control-btn {display: flex;justify-content: space-between;align-items: center; margin-top: 12px;padding-top: 12px;border-top: 1px solid #e8e8e8;}
 .control-btn .btn-outline-frame40 {height: 40px;padding: 8px 16px;border-width: 2px;border-color:#939494;border-radius: 8px;font-weight: 800;}
+.control-btn .btn-outline-frame40.disabled{border-color: #e9e9e9;}
+.control-btn .txt-error {color:#e54e2b;font-size: 15px;}
+.control-btn .txt-error::after{background: url(../images/ico_16_error_filled.png);background-size: cover;}
 .sel_submenu {background-color: #f8f8f8;border-bottom: 1px solid #e8e8e8;}
 .sel_submenu .container {display:flex;column-gap: 12px;}
 .sel_submenu a {position: relative; padding:10px 0 13px 12px; color:#88898a;}
@@ -116,6 +119,8 @@
 .table-list td .locked i::after {content:"";position:absolute;top:0;left:0;width:16px;height:16px;background:url(../images/ico_16_lock.png) no-repeat left top;background-size:cover;}
 .table-list td .locked .categori {margin-right:4px;color:#88898a;}
 .table-list .notice {background-color: #fff5eb;}
+.table-list tr.on {background-color: rgba(232, 232, 232, 0.7);}
+
 
 .paging {justify-content:center;margin-top:24px;}
 .paging .page-link {display: flex;align-items: center;justify-content: center;width:34px;height:34px;margin:0 2px;padding:0;border-radius:4px;color:#767676;font-size:13px;}
