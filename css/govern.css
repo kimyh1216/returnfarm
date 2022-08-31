@@ -24,26 +24,6 @@
 .settlement_step4 li.step3::after {content:"";position:absolute;top:0;right:-20px;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/main/ico_arrow_step.png) no-repeat left top;background-size:cover;}
 
 
-.map-info .map {position:relative;max-width:1920px;margin:48px auto 0;}
-.map-info .map img {width:100%;height:auto;}
-.map-info .map .layer-wrap {display:none;position:absolute;top:20px;left:20px;}
-.map-info .map .layer {position:relative;z-index: 2;width:282px;padding:16px;background-color:#fff;border:1px solid #4d4b4b;border-radius:12px;box-shadow:0 2px 24px  rgba(0,0,0,0.07);}
-.map-info .map .l-img {overflow:hidden;width:250px;height:186px;}
-.map-info .map .l-img img {width:100%;height:auto;}
-.map-info .map .layer > strong {display:block;margin-top:10px;color:#101314;font-size:18px;font-weight:500;}
-.map-info .map .layer > p {display:block;color:#848484;font-size:14px;font-weight:500;line-height:1.43;}
-.map-info .map .layer > .price {margin-top:14px;color:#e30000;font-size:20px;font-weight:bold;}
-.map-info .map .layer > .btn-detail {width:100%;margin-top:23px;padding:11px 0;border:1px solid rgba(16,19,20,0.3);border-radius:4px;}
-.map-info .map .layer-wrap .layer-close {position:absolute;top:0;right:-34px;z-index:1;width:44px;height:34px;background-color:#4d4b4b;border-radius:3px;}
-.map-info .map .layer-wrap .layer-close .close {font-size:0;line-height:0;}
-.map-info .map .layer-wrap .layer-close .close::after {content:"";position:absolute;top:0;right:8px;bottom:0;margin:auto;width:20px;height:20px;background:url(../images/main/ico_20_close_n.png) no-repeat left top;background-size:cover;}
-.map-info .map .full {position:absolute;top:20px;right:20px;}
-.map-info .map .map-size {position:absolute;bottom:20px;right:20px;}
-.map-info .map .house-info {position:absolute;left:0;bottom:20px;right:0;text-align:center;}
-.map-info .map .house-info button {position:relative;padding:8px 12px 8px 44px;background-color:#fff;border:1px solid #fff;border-radius:20px;}
-.map-info .map .house-info .farmland::after {content:"";position:absolute;top:0;left:12px;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_poi_life_map.png) no-repeat left top;background-size:cover;}
-.map-info .map .house-info .vacant-house::after {content:"";position:absolute;top:0;left:12px;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_poi_house_map.png) no-repeat left top;background-size:cover;}
-
 .map-info .swiper-container {position:relative;max-width:1200px;margin:48px auto 0;}
 .map-info .swiper {padding-bottom:47px;}
 .map-info .swiper-slide li {position:relative;display:flex;flex-wrap:wrap;height:180px;padding:16px 24px;background-color:#fff;border-radius:20px;box-shadow:0 2px 10px rgba(129,145,45,0.15);}
