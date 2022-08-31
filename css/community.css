@@ -147,7 +147,7 @@ h3.tit strong {color:#ee8508;}
 .community-home .tab-wrap {max-width:1200px;margin:32px auto 0;}
 .community-home h3 {max-width:1200px;margin:56px auto 0;color:#101314;font-size:38px;font-family:'NanumSquareRound';line-height:1;}
 .community-home h3 strong {color:#ee8508;}
-.community-home h3.tit {font-size:24px;}
+.community-home h3.tit {margin-top: 68px;font-size:24px;}
 .community-swiper .swiper-container {max-width:1296px;width:100%;margin:24px auto 0;padding:0 48px;position:relative;}
 .community-swiper .swiper {padding-bottom:48px;}
 .community-swiper .recom-wrap {overflow:hidden;border-radius:20px;}
@@ -177,10 +177,11 @@ h3.tit strong {color:#ee8508;}
     header .util {display:none;}
     .gnb > ul {padding:0 16px;}
     .gnb > ul li .logo {width:125px;height:20px;}
-    .tit_sub {font-size:13px;}
-    .gnb .icon-user,
+    .tit_sub {height: 20px;line-height: 20px;font-size:13px;border-radius: 2px;}
+    .gnb .icon-user {display: none;}
     .search-btn,
     .menu-btn {width:24px;height:24px;}
+    .search-btn {margin-right: 10px;}
     .lnb-area {padding:0;}
     .lnb-area .home {display:none;}
     
@@ -208,8 +209,20 @@ h3.tit strong {color:#ee8508;}
     .village-news {padding:44px 16px 56px;background-color:#ffeed9;}
     .village-news h3 {font-size:24px;text-align:left;}
     .village-news-list {margin-top:16px;}
-    .village-news-list .vn-list .vn-wrap {display:block;}
-    .village-news-list .vn-list .vn-txt-wrap {display:block;}
+    .village-news-list .vn-list {border-radius: 12px;}
+    .village-news-list .vn-list .vn-wrap {column-gap: 10px;}
+    .village-news-list .vn-list .vn-wrap .name-title{position: relative; padding-right: 10px;}
+    .village-news-list .vn-list .vn-wrap .name-title:after{content: "";
+        position: absolute;
+        right: -1px;
+        top: 6px;
+        width: 1px;
+        height: 12px;
+        background: #dfdfe2;
+    }
+    .village-news-list .vn-list .vn-txt-wrap {display:block;padding: 24px 16px;}
+    .village-news-list .vn-list .vn-txt-wrap .vn-txt a > strong {margin-top: 16px; font-size: 18px;}
+    .village-news-list .vn-list .vn-txt-wrap .vn-txt a > p {margin-top: 12px; font-size: 14px;}
     .village-news-list .vn-list .vn-img {overflow:hidden;position:relative;margin-top:20px;padding-top:62.2%;max-width:100%;}
     .village-news-list .vn-list .vn-img img {position:absolute;top:-9999px;left:-9999px;right:-9999px;bottom:-9999px;width:100%;margin:auto;}
     .village-news-list .vn-list .vn-wrap .vn-date {margin-left:0;padding-left:0;}
@@ -232,12 +245,12 @@ h3.tit strong {color:#ee8508;}
     .community-home .tab-wrap .pc-tab::after {content:"";display:table;}
     .community-home .tab-wrap .pc-tab::after {clear:both;}
     .community-home .tab-wrap .pc-tab li {float:left;}
-    .community-home .pc-tab li .nav-link {padding:16px 17px 18px;font-size:16px;}
+    .community-home .pc-tab li .nav-link {padding:16px 18px 18px;font-size:16px;}
     .community-home .pc-tab li + li {margin:0;}
     .community-home .tab-wrap .cmnt-btn {position:inherit;bottom:inherit;left:inherit;padding:20px 16px;}
     .community-home .tab-wrap .cmnt-btn .btn {display:block;width:100%;height:44px;}
     .community-home .search-box {padding:0 16px}
-    .community-home h3 {margin:44px 0 0 0;font-size:24px;}
+    .community-home h3.tit {margin:44px 0 0 0;}
     .community-swiper .swiper-container {padding:0 0 0 16px;}
     .commnt-list {margin-top:20px;}
     .commnt-list li {width:100%;margin:0;padding:12px;}
@@ -251,7 +264,8 @@ h3.tit strong {color:#ee8508;}
     .commnt-list li .c-txt .i-wrap .i-writing {font-size:12px;}
     .commnt-list li .c-txt .i-wrap .i-memb::after {width:16px;height:16px;}
     .commnt-list li .c-txt .i-wrap .i-writing::after {width:16px;height:16px;}
-    .com-operation {padding:44px 0;}
+    .commnt-list+.morebtn {margin-top: 16px; text-align: center;}
+    .com-operation {margin-top:40px;padding:44px 0;}
     .com-operation h3 {margin:0;}
     .community-home .filter-tab .line {width:calc(100% + 8px)}
     .community-home .filter-tab {padding:16px;border-radius:0;border-left:none;border-right:none;border-bottom:none;}
