@@ -79,7 +79,7 @@
 .community-home .tab-wrap .cmnt-btn {position:absolute;bottom:12px;right:0;}
 
 
-.filter-tab {display:flex;flex-wrap:wrap;margin-top:20px;padding:20px 16px;background:#f8f8f8;border:1px solid #e8e8e8;border-radius:12px;}
+.filter-tab {margin-top:20px;padding:20px 16px;background:#f8f8f8;border:1px solid #e8e8e8;border-radius:12px;}
 .filter-tab .all-area {display:flex;width:100%;padding-bottom:12px;border-bottom:1px solid #e8e8e8;}
 .filter-tab .all-area a {position:relative;width:auto;margin:0;padding:0;background:none;border:none;}
 .filter-tab .all-area a,
