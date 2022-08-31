@@ -417,9 +417,13 @@
                             </div>
                         </div>
                         <div class="control-btn">
-                            <button type="button" class="btn btn-outline-frame40">이동</button>
-                            <button type="button" class="btn btn-outline-frame40">스팸처리</button>
-                            <button type="button" class="btn btn-outline-frame40">삭제</button>
+                            <div class="btn-set">
+                                <button type="button" class="btn btn-outline-frame40" data-toggle="modal" data-target="#bulletinModal">이동</button>
+                                <button type="button" class="btn btn-outline-frame40">스팸처리</button>
+                                <button type="button" class="btn btn-outline-frame40">삭제</button>
+                                <!-- <button type="button" class="btn btn-outline-frame40 disabled">복구</button> -->
+                            </div>
+                            <p class="txt-error dev-error">삭제된 글은 30일 이후 완전 삭제처리됩니다.</p>
                         </div>
                         <table class="table-list">
                             <colgroup>
@@ -446,7 +450,7 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr>
+                              <tr class="on">
                                 <td class="text-center">
                                     <div class="custom-checkbox single">
                                         <input type="checkbox" class="custom-control-input" id="customCheck2-1">
@@ -605,7 +609,263 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane" id="pc-tab5">5555</div>
+                <div class="tab-pane" id="pc-tab5">
+                    <div class="sel_submenu">
+                        <div class="container">
+                            <a class="on" href="#">회원관리</a>
+                            <a href="#">탈퇴/활동정지 관리</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row total">
+                            <div class="col-6 total-all">
+                                <div class="dropdown select" id="country-codes">
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                                        <span class="value">회원전체</span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <ul>
+                                            <li><button type="button">최신순</button></li>
+                                            <li><button type="button">답변대기</button></li>
+                                            <li><button type="button">답변완료</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="total-txt">
+                                    등업대기(비회원)<strong>12</strong>명 · 정회원<strong>767</strong>명 · 부운영자<strong>3</strong>명
+                                </p>
+                                <!-- <p class="total-txt">
+                                    자진탈퇴<strong>12</strong>명 · 강제탈퇴<strong>767</strong>명 · 활동정지<strong>3</strong>명
+                                </p> -->
+                            </div>
+                            <div class="col-6 d-flex align-items-center justify-content-end">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">내 답변만 보기</label>
+                                </div>
+                                <div class="total-search d-flex align-items-center justify-content-end">
+                                    <div class="dropdown select" id="country-codes">
+                                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                                            <span class="value">아이디+닉네임</span>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <ul>
+                                                <li><button type="button">제목</button></li>
+                                                <li><button type="button">내용</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="total-input">
+                                        <input type="text" class="input-box" placeholder="검색어를 입력해주세요">
+                                    </div>
+                                    <button type="button" class="search-icon-btn">검색</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-btn">
+                            <div class="btn-set">
+                                <button type="button" class="btn btn-outline-frame40" data-toggle="modal" data-target="#changeGradeModal">등급변경</button>
+                                <button type="button" class="btn btn-outline-frame40" data-toggle="modal" data-target="#activityModal">활동중지</button>
+                                <button type="button" class="btn btn btn-outline-frame40" data-toggle="modal" data-target="#withdModal">강제탈퇴</button>
+                                <!-- <button type="button" class="btn btn btn-outline-frame40 disabled">가입제한 해제</button> -->
+                            </div>
+                            <p class="txt-error dev-error">삭제된 글은 30일 이후 완전 삭제처리됩니다.</p>
+                        </div>
+                        <table class="table-list">
+                            <colgroup>
+                                <col style="width:5%;" />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col" class="text-center">
+                                    <div class="custom-checkbox single">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2-0">
+                                        <label class="custom-control-label" for="customCheck2-0"></label>
+                                    </div>
+                                </th>
+                                <th scope="col" class="text-center">ID</th>
+                                <th scope="col" class="text-center">닉네임</th>
+                                <th scope="col" class="text-center">회원등급</th>
+                                <th scope="col" class="text-center">가입일</th>
+                                <th scope="col" class="text-center">방문수</th>
+                                <th scope="col" class="text-center">게시글수</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="text-center">
+                                    <div class="custom-checkbox single">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2-1">
+                                        <label class="custom-control-label" for="customCheck2-1"></label>
+                                    </div>
+                                </td>
+                                <td class="text-center">danny</td>
+                                <td class="text-center">귀촌희망</td>
+                                <td class="text-center">정회원</td>
+                                <td class="text-center">2021.06.20</td>
+                                <td class="text-center">1836</td>
+                                <td class="text-center">242</td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">
+                                    <div class="custom-checkbox single">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2-1">
+                                        <label class="custom-control-label" for="customCheck2-1"></label>
+                                    </div>
+                                </td>
+                                <td class="text-center">danny</td>
+                                <td class="text-center">귀촌희망</td>
+                                <td class="text-center">정회원</td>
+                                <td class="text-center">2021.06.20</td>
+                                <td class="text-center">1836</td>
+                                <td class="text-center">242</td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">
+                                    <div class="custom-checkbox single">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2-1">
+                                        <label class="custom-control-label" for="customCheck2-1"></label>
+                                    </div>
+                                </td>
+                                <td class="text-center">danny</td>
+                                <td class="text-center">귀촌희망</td>
+                                <td class="text-center"><div class="text-primary">등업대기<br>비회원</div></td>
+                                <td class="text-center">2021.06.20</td>
+                                <td class="text-center">1836</td>
+                                <td class="text-center">242</td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">
+                                    <div class="custom-checkbox single">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2-1">
+                                        <label class="custom-control-label" for="customCheck2-1"></label>
+                                    </div>
+                                </td>
+                                <td class="text-center">danny</td>
+                                <td class="text-center">귀촌희망</td>
+                                <td class="text-center"><div class="text-primary">등업대기<br>비회원</div></td>
+                                <td class="text-center">2021.06.20</td>
+                                <td class="text-center">1836</td>
+                                <td class="text-center">242</td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">
+                                    <div class="custom-checkbox single">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2-1">
+                                        <label class="custom-control-label" for="customCheck2-1"></label>
+                                    </div>
+                                </td>
+                                <td class="text-center">danny</td>
+                                <td class="text-center">귀촌희망</td>
+                                <td class="text-center">정회원</td>
+                                <td class="text-center">2021.06.20</td>
+                                <td class="text-center">1836</td>
+                                <td class="text-center">242</td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">
+                                    <div class="custom-checkbox single">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2-1">
+                                        <label class="custom-control-label" for="customCheck2-1"></label>
+                                    </div>
+                                </td>
+                                <td class="text-center">danny</td>
+                                <td class="text-center">귀촌희망</td>
+                                <td class="text-center">정회원</td>
+                                <td class="text-center">2021.06.20</td>
+                                <td class="text-center">1836</td>
+                                <td class="text-center">242</td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">
+                                    <div class="custom-checkbox single">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2-1">
+                                        <label class="custom-control-label" for="customCheck2-1"></label>
+                                    </div>
+                                </td>
+                                <td class="text-center">danny</td>
+                                <td class="text-center">귀촌희망</td>
+                                <td class="text-center">정회원</td>
+                                <td class="text-center">2021.06.20</td>
+                                <td class="text-center">1836</td>
+                                <td class="text-center">242</td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">
+                                    <div class="custom-checkbox single">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2-1">
+                                        <label class="custom-control-label" for="customCheck2-1"></label>
+                                    </div>
+                                </td>
+                                <td class="text-center">danny</td>
+                                <td class="text-center">귀촌희망</td>
+                                <td class="text-center">정회원</td>
+                                <td class="text-center">2021.06.20</td>
+                                <td class="text-center">1836</td>
+                                <td class="text-center">242</td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">
+                                    <div class="custom-checkbox single">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2-1">
+                                        <label class="custom-control-label" for="customCheck2-1"></label>
+                                    </div>
+                                </td>
+                                <td class="text-center">danny</td>
+                                <td class="text-center">귀촌희망</td>
+                                <td class="text-center">정회원</td>
+                                <td class="text-center">2021.06.20</td>
+                                <td class="text-center">1836</td>
+                                <td class="text-center">242</td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">
+                                    <div class="custom-checkbox single">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2-1">
+                                        <label class="custom-control-label" for="customCheck2-1"></label>
+                                    </div>
+                                </td>
+                                <td class="text-center">danny</td>
+                                <td class="text-center">귀촌희망</td>
+                                <td class="text-center">정회원</td>
+                                <td class="text-center">2021.06.20</td>
+                                <td class="text-center">1836</td>
+                                <td class="text-center">242</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagination paging">
+                            <button type="button" class="page-link firstBtn disabled">
+                                처음페이지
+                            </button>
+                            <button type="button" class="page-link prevBtn disabled">
+                                이전페이지
+                            </button>
+
+                            <a class="page-link on" href="#">1</a></li>
+                            <a class="page-link" href="#">2</a></li>
+                            <a class="page-link" href="#">3</a></li>
+                            <a class="page-link" href="#">4</a></li>
+                            <a class="page-link" href="#">5</a></li>
+                            <a class="page-link" href="#">6</a></li>
+                            <a class="page-link" href="#">7</a></li>
+                            <a class="page-link" href="#">8</a></li>
+                            <a class="page-link" href="#">9</a></li>
+                            
+                            <button type="button" class="page-link nextBtn">
+                                다음페이지
+                            </button>
+                            <button type="button" class="page-link lastBtn">
+                                마지막페이지
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -644,5 +904,197 @@
             </ul>
         </div>
     </footer>
+    <!-- 게시글이동모달 -->
+    <div class="modal fade" id="bulletinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w356">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">게시글 이동</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="txt14">선택한 글을 이동합니다.</p>
+                <div class="d-flex mt-12">
+                    <div class="dropdown select sw-100p" id="country-codes">
+                        <button class="btn dropdown-toggle sw-100p" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                            <span class="value">선택</span>
+                        </button>
+                        <div class="dropdown-menu sw-100p" aria-labelledby="dropdownMenuButton">
+                            <ul class="h150">
+                                <li><button type="button">자유게시판1</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn btn-orange btn-black48">이동</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //게시글이동모달 -->
+    <!-- 활동중지모달 -->
+    <div class="modal fade" id="activityModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w419">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">활동중지</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body withd">
+                <div class="txt-box">
+                    <p class="tit">선택한 회원을 <strong>활동중지</strong> 하시겠습니까?</p>
+                    <p class="desc">
+                        활동중지 시 해제 전까지 해당 회원은 커뮤니티에 접근이 <br/>제한되며 해제 후 정상 커뮤니티 활동이 가능합니다.
+                    </p>
+                </div>
+                <h6>활동중지 사유 선택</h6>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="spill" name="rd" class="custom-control-input green" value="spill">
+                    <label class="custom-control-label" for="spill">개인정보 유출, 사생활 침해</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="attack" name="rd" class="custom-control-input green" value="attack">
+                    <label class="custom-control-label" for="attack">욕설, 인신공격 등</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="area" name="rd" class="custom-control-input green" value="area">
+                    <label class="custom-control-label" for="area">지역감정 조장</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="copyright" name="rd" class="custom-control-input green" value="copyright">
+                    <label class="custom-control-label" for="copyright">저작권 위반</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="repet" name="rd" class="custom-control-input green" value="repet">
+                    <label class="custom-control-label" for="repet">반복 게시(도배)</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="advert" name="rd" class="custom-control-input green" value="advert">
+                    <label class="custom-control-label" for="advert">광고성 글 게시</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="porno" name="rd" class="custom-control-input green" value="porno">
+                    <label class="custom-control-label" for="porno">음란한 글, 윤락/원조교제 알선 등</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="falsed" name="rd" class="custom-control-input green" value="falsed">
+                    <label class="custom-control-label" for="falsed">허위사실 유포</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="cs" name="rd" class="custom-control-input green" value="closure">
+                    <label class="custom-control-label" for="cs">커뮤니티 폐쇄</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-orange btn-black48">활동중지</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //활동중지모달 -->
+    <!-- 등급변경모달 -->
+    <div class="modal fade" id="changeGradeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w356">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">등급 변경</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="txt14">선택한 회원의 등급을 변경합니다.</p>
+                <div class="d-flex mt-12">
+                    <div class="dropdown select sw-100p" id="country-codes">
+                        <button class="btn dropdown-toggle sw-100p" type="button" data-toggle="dropdown" id="dropdownMenuButton">
+                            <span class="value">선택</span>
+                        </button>
+                        <div class="dropdown-menu sw-100p" aria-labelledby="dropdownMenuButton">
+                            <ul class="h150">
+                                <li><button type="button">정회원</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn btn-orange btn-black48">변경</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //등급변경모달 -->
+    <!-- 강제탈퇴모달 -->
+    <div class="modal fade" id="withdModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered modal-w419">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">강제탈퇴</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body withd">
+                <div class="txt-box">
+                    <p class="tit">선택한 회원을 <strong>강제탈퇴</strong> 하시겠습니까?</p>
+                    <p class="desc">
+                        강제탈퇴 시 해제 전까지 해당 회원은 커뮤니티에 접근이 <br/>제한되며 해제 후 정상 커뮤니티 활동이 가능합니다.
+                    </p>
+                </div>
+                <h6>강제탈퇴 사유 선택</h6>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="spill" name="rd" class="custom-control-input green" value="spill">
+                    <label class="custom-control-label" for="spill">개인정보 유출, 사생활 침해</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="attack" name="rd" class="custom-control-input green" value="attack">
+                    <label class="custom-control-label" for="attack">욕설, 인신공격 등</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="area" name="rd" class="custom-control-input green" value="area">
+                    <label class="custom-control-label" for="area">지역감정 조장</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="copyright" name="rd" class="custom-control-input green" value="copyright">
+                    <label class="custom-control-label" for="copyright">저작권 위반</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="repet" name="rd" class="custom-control-input green" value="repet">
+                    <label class="custom-control-label" for="repet">반복 게시(도배)</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="advert" name="rd" class="custom-control-input green" value="advert">
+                    <label class="custom-control-label" for="advert">광고성 글 게시</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="porno" name="rd" class="custom-control-input green" value="porno">
+                    <label class="custom-control-label" for="porno">음란한 글, 윤락/원조교제 알선 등</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="falsed" name="rd" class="custom-control-input green" value="falsed">
+                    <label class="custom-control-label" for="falsed">허위사실 유포</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="cs" name="rd" class="custom-control-input green" value="closure">
+                    <label class="custom-control-label" for="cs">커뮤니티 폐쇄</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-white btn-black48" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-orange btn-black48">강제탈퇴</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //강제탈퇴모달 -->
 </body>
 </html>
