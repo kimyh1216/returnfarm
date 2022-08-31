@@ -1,6 +1,28 @@
 .pc-tab-full {border-bottom: 1px solid #e8e8e8;}
 .pc-tab-full .pc-tab{margin-bottom: -1px;}
 
+/* 지도 */
+.map {position:relative;max-width:1920px;margin:48px auto 0;}
+.map img {width:100%;height:auto;}
+.map .layer-wrap {display:none;position:absolute;top:20px;left:20px;}
+.map .layer {position:relative;z-index: 2;width:282px;padding:16px;background-color:#fff;border:1px solid #4d4b4b;border-radius:12px;box-shadow:0 2px 24px  rgba(0,0,0,0.07);}
+.map .l-img {overflow:hidden;width:250px;height:186px;}
+.map .l-img img {width:100%;height:auto;}
+.map .layer > strong {display:block;margin-top:10px;color:#101314;font-size:18px;font-weight:500;}
+.map .layer > p {display:block;color:#848484;font-size:14px;font-weight:500;line-height:1.43;}
+.map .layer > .price {margin-top:14px;color:#e30000;font-size:20px;font-weight:bold;}
+.map .layer > .btn-detail {width:100%;margin-top:23px;padding:11px 0;border:1px solid rgba(16,19,20,0.3);border-radius:4px;}
+.map .layer-wrap .layer-close {position:absolute;top:0;right:-34px;z-index:1;width:44px;height:34px;background-color:#4d4b4b;border-radius:3px;}
+.map .layer-wrap .layer-close .close {font-size:0;line-height:0;}
+.map .layer-wrap .layer-close .close::after {content:"";position:absolute;top:0;right:8px;bottom:0;margin:auto;width:20px;height:20px;background:url(../images/main/ico_20_close_n.png) no-repeat left top;background-size:cover;}
+.map .full {position:absolute;top:20px;right:20px;}
+.map .map-size {position:absolute;bottom:20px;right:20px;}
+.map .house-info {position:absolute;left:0;bottom:20px;right:0;text-align:center;}
+.map .house-info button {position:relative;padding:8px 12px 8px 44px;background-color:#fff;border:1px solid #fff;border-radius:20px;}
+.map .house-info .farmland::after {content:"";position:absolute;top:0;left:12px;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_poi_life_map.png) no-repeat left top;background-size:cover;}
+.map .house-info .vacant-house::after {content:"";position:absolute;top:0;left:12px;bottom:0;margin:auto;width:24px;height:24px;background:url(../images/main/img_poi_house_map.png) no-repeat left top;background-size:cover;}
+
+
 /* 커뮤니티 왼쪽메뉴 */
 .comm-menu {min-height: 449px; margin-top:32px; margin-right: -6px; padding:20px 16px;border:1px solid #ddd;border-radius: 8px;}
 .comm-menu .user{display: flex;column-gap: 16px;}
@@ -115,6 +137,7 @@
 .table-list td {height:48px;border-bottom:1px solid #eaeaea;color:#262626;font-size:14px;}
 .table-list td.tit {padding-left:100px;}
 .table-list td a {color:#262626;font-size:15px;}
+.table-list td .locked {display:flex;align-items:center;}
 .table-list td .locked i {position:relative;display:inline-block;width:16px;height:16px;margin-right:4px;font-size:0;line-height:0;}
 .table-list td .locked i::after {content:"";position:absolute;top:0;left:0;width:16px;height:16px;background:url(../images/ico_16_lock.png) no-repeat left top;background-size:cover;}
 .table-list td .locked .categori {margin-right:4px;color:#88898a;}
@@ -312,22 +335,30 @@
 .counsel-content .card .card-body .p-num {display:block;margin-top:40px;color:#4d4b4b;font-size:32px;line-height:1.47;}
 
 /* 지역상담 */
-.area {background:url(../images/img_top_area.jpg) no-repeat center;background-size:cover;}
-.area-select {display:flex;padding:12px 16px;background:#f8f8f8;border-radius:12px;}
+.area-counsel .stit20 {margin-bottom:0;color:#101314;font-size:20px;line-height:1;font-weight:bold;}
+.area-counsel .stit18 {margin-bottom:0;color:#101314;font-size:18px;line-height:1;font-weight:bold;letter-spacing:-0.9px;}
+.visual-area {background:url(../images/img_top_area.jpg) no-repeat center;background-size:cover;}
+.area-select {display:flex;margin-top:36px;padding:12px 16px;background:#f8f8f8;border-radius:12px;}
 .area-select .select + .select {margin-left:6px;}
-.area .stit {color:#101314;font-size:20px;line-height:1.8;font-weight:bold;}
+.area-counsel .map {overflow:hidden;max-width:1200px;margin-top:16px;}
+
 
 .area-list {width:100%;margin-top:16px;border-top:1px solid #101314;border-bottom:1px solid #101314;}
 .area-list th {padding:15px 0;background:#fafafa;border-left:1px solid #e3e3e3;border-bottom:2px solid #101314;color:#101314;font-size:14px;line-height:1.43;letter-spacing:-0.42px;}
 .area-list th:first-child,
 .area-list td:first-child {border-left:none;}
 .area-list td {padding:15px 0;background:#fafafa;border-top:1px solid #e3e3e3;border-left:1px solid #e3e3e3;color:#101314;font-size:14px;line-height:1.43;letter-spacing:-0.42px;}
-.area-list td.td-area {padding-left:10px;}
+.area-list td.td-area {padding:15px 10px;}
+.dot-light {margin-top:9px;}
+.dot-light li {position:relative;padding-left:7px;color:#8b8b8b;font-size:14px;line-height:1.43;letter-spacing:-0.7px;}
+.dot-light li::after {content:"";position:absolute;top:0;left:0;bottom:0;margin:auto;width:2px;height:2px;background-color:#8b8b8b;}
+.dot-light li + li {margin-top:6px;}
+.txt-b8 {margin-top:9px;color:#8b8b8b;font-size:14px;line-height:1.43;letter-spacing:-0.7px;}
 
 /* 교육정보 및 신청 */
 .academy {background:url(../images/img_top_education.jpg) no-repeat center;background-size:cover;}
 .common-txt {padding-bottom:72px;border-bottom:1px solid #b8d3ad;}
-.common-txt.character {background:url(../images/img_statistics.png) no-repeat right bottom;background-size:213px 223px;}
+.common-txt.character {margin-top:42px;background:url(../images/img_statistics.png) no-repeat right bottom;background-size:213px 223px;}
 .common-txt.character h3 {margin:20px 0 0 0;color:#70b949;font-size:40px;line-height:1.5;letter-spacing:-2px;font-weight:bold;}
 .common-txt h4 {margin:0;color:#101314;font-size:18px;line-height:1.78;letter-spacing:-0.9px;font-weight:bold;}
 .common-txt > p {margin:8px 0 0 0;color:#101314;font-size:15px;line-height:1.6;letter-spacing:-0.75px;}
@@ -352,6 +383,9 @@
 .common-txt.line-black {border-bottom:1px solid #4d4b4b;}
 .common-txt .ce-down {margin-top:8px;position:relative;height:34px;padding:0 11px 0 31px;background:none;border:1px solid #968f8f;border-radius:18px;color:#101314;font-size:15px;line-height:1.47;letter-spacing:-0.45px;font-weight:500;}
 .common-txt .ce-down::after {content:"";position:absolute;top:0;left:11px;bottom:0;margin:auto;width:16px;height:16px;background:url(../images/ico_16_down.png) no-repeat left top;background-size:cover;}
+.common-txt.line-green {border-bottom:1px solid #b8d3ad;}
+.common-txt .txt-summary {color:#70b949;font-size:20px;font-weight:bold;line-height:1.55;letter-spacing:-1px;}
+.common-txt .p-block {display:block;}
 
 .area-title {display:flex;}
 .area-title li {color:#4d4b4b;font-size:14px;font-weight:500;}
@@ -361,6 +395,7 @@
 .name-title {display:flex;}
 .name-title li {color:#4e5658;font-size:14px;font-weight:bold;}
 .name-title li + li {margin-left:4px;color:#848484;font-size:14px;font-weight:500;}
+
 
 /* color set */
 .text-primary {color:#ee8508 !important}
