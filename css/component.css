@@ -228,6 +228,7 @@
 /* 4.6 version */
 .custom-checkbox .custom-control-label {font-size:15px;}
 .custom-checkbox .custom-control-label::before {top:0.15rem;width:20px;height:20px;background:url(../images/checkbox_20_n.png) no-repeat left top;background-size:cover;border:none;}
+.custom-checkbox .custom-control-label::after {cursor: pointer;}
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
     width:20px;
     height:20px;
@@ -241,6 +242,8 @@
 }
 .custom-checkbox .custom-control-input:focus~.custom-control-label::before {box-shadow:none;}
 .custom-checkbox .custom-control-input:checked~.custom-control-label::after {background:none;}
+.custom-checkbox.single .custom-control-label::before{left:-10px;}
+.custom-checkbox.single .custom-control-label::after{left:-8px;}
 
 .custom-radio .custom-control-label {font-size:15px;}
 .custom-radio .custom-control-label::before {top:0.15rem;width:20px;height:20px;background:url(../images/radiobutton_20_n.png) no-repeat left top;background-size:cover;border:none;}

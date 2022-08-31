@@ -16,6 +16,16 @@
 .comm-tit-sub {color:#88898a;}
 .comm-tit-sub+.total {margin-top: 24px;}
 
+/* 게시글관리 */
+.control-btn {margin-top: 12px;padding-top: 12px;border-top: 1px solid #e8e8e8;}
+.control-btn .btn-outline-frame40 {height: 40px;padding: 8px 16px;border-width: 2px;border-color:#939494;border-radius: 8px;font-weight: 800;}
+.sel_submenu {background-color: #f8f8f8;border-bottom: 1px solid #e8e8e8;}
+.sel_submenu .container {display:flex;column-gap: 12px;}
+.sel_submenu a {position: relative; padding:10px 0 13px 12px; color:#88898a;}
+.sel_submenu a:before {content: "";position: absolute;left:0;top:50%;margin-top: -7px; width:1px;height:14px;background-color: #e8e8e8;}
+.sel_submenu a.on,
+.sel_submenu a:hover {color:#ee8508;}
+
 /* 온라인상담 게시판 */
 .sub-contents {width:100%;}
 .sub-contents .online {background:#eaf8e1 url(../images/img_onlineconsulting.png) no-repeat center center;background-size:cover;}
