@@ -1,0 +1,408 @@
+<!-- 기초데이터 설정 -->
+<!DOCTYPE HTML>
+<!--[if IE 7]><html lang="ko" class="old ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko" class="old ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko" class="modern ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="ko">
+<!--<![endif]-->
+<head>
+<!-- title config.value로 나중에 교체 -->
+<title>신청하기 2단계</title>
+<!-- 기초데이터 설정 -->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0"/>
+<meta name="robots" content="noindex, nofollow">
+<meta name="title" content="농촌에서 살아보기 홈페이지에 오신것을 환영합니다." />
+<meta name="keywords" content="농촌에서 살아보기 소개, 커뮤니티 시범사업 신청하기, 커뮤니티" />
+<meta name="author" content="농촌에서 살아보기" />
+<meta name="description" content="농촌에서 살아보기" />
+
+
+<!-- 기초데이터 설정 -->
+<!-- WVTEX -->
+<link rel="stylesheet" type="text/css" href="css/wvtex/css/admin_blue.css">
+<link rel="stylesheet" type="text/css" href="css/wvtex/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/jquery/redmond/jquery-ui-1.8.23.custom.css"><!-- 기초데이터 설정 -->
+<script type="text/javaScript" language="javascript" src="js/egovframework/com/cmm/jquery.js"></script>
+<!-- wvtex -->
+<script type="text/javaScript" language="javascript" src="js/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javaScript" language="javascript" src="js/jquery/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javaScript" language="javascript" src="js/wvtex/jquery.wvtex.util.js"></script>
+<script type="text/javaScript" language="javascript" src="js/wvtex/jquery.wvtex.js"></script>
+<script type="text/javaScript" language="javascript" src="css/wvtex/js/adminS.1.1.js"></script>
+<script type="text/javaScript" language="javascript" src="css/wvtex/js/jquery.easing.1.3.js"></script><!-- 기초데이터 설정 -->
+
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<!-- CSS(S) -->
+<link rel="stylesheet" type="text/css" href="css/wvtex/readyReturnfarm/css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/wvtex/readyReturnfarm/css/common.css">
+<link rel="stylesheet" type="text/css" href="css/wvtex/readyReturnfarm/css/jquery-ui.css"><!-- datepicker -->
+<!-- CSS(E) -->
+
+<!-- SCRIPT(S) -->
+<script type="text/javascript" src="css/wvtex/readyReturnfarm/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="css/wvtex/readyReturnfarm/js/jquery-ui.js"></script><!-- datepicker -->
+<script type="text/javascript" src="css/wvtex/readyReturnfarm/js/script.js"></script>
+<!-- SCRIPT(E) -->
+<script type="text/javascript">
+var timeoutHnd = null;
+var logouTimeInterval = 5 * 60 * 1000; // 5 mins here u can increase session time
+
+$( document ).ready(function() {
+	// session timer
+	timeoutHnd = setTimeout('OnTimeoutReached();', logouTimeInterval);
+
+});
+
+function OnTimeoutReached() {
+	$.ajax({ 
+		url:"/usr/login/joinProcessing.do"
+	});
+	ResetLogOutTimer();
+}
+
+function ResetLogOutTimer() {
+	clearTimeout(timeoutHnd); 
+	// set new timer
+	timeoutHnd = setTimeout('OnTimeoutReached();', logouTimeInterval);
+}
+
+function goSubmit() {
+	if($("#chk1").is(":checked") == false){
+		alert("서비스 이용약관에 동의해주세요.");
+		$("#chk1").focus();
+		return;
+	} else if($("#chk2").is(":checked") == false){
+		alert("개인정보 수집 및 이용동의에 동의해주세요.");
+		$("#chk2").focus();
+		return;
+	} else if($("#chk3").is(":checked") == false){
+		alert("참가신청 전 유의사항에 동의해주세요.");
+		$("#chk3").focus();
+		return;
+	}
+	
+	//location.href = "/cmn/returnFarm/module/readyReturnfarm/applyConfirm.do";
+	alert("신청이 완료 되었습니다.")
+}
+
+</script>
+
+</head>
+
+<body onload="" style="overflow:auto; overflow-y:scroll;">
+	<!-- warp(S) -->
+	<div class="wrap">
+		<!-- left menu(S) -->
+		<!-- 기초데이터 설정 -->
+		<div class="left_menu">
+			<div class="lm_in">
+				<a href="https://www.returnfarm.com:444/" class="logo_home" target="_blank" title="새창열림">
+					<img src="css/wvtex/readyReturnfarm/img/returnfarm_logo.png" alt="귀농귀촌로고">
+				</a>
+				<span class="txt_title">
+					<!--a href="/cmn/returnFarm/module/readyReturnfarm/summary.do"><img src="css/wvtex/readyReturnfarm/img/text-title.png" alt="농촌에서미리살아보기"></a-->
+				</span>
+
+				<div class="menu_list">
+					<ul class="depth_01">
+						<li>
+						 <a href="#">커뮤니티 시범사업 신청하기</a>
+							<ul class="depth_02">
+								<li><a href="index.html" class="on" >신청하기</a></li>
+								<li><a href="mypage.html">신청내역확인</a></li>
+							</ul>
+					   </li>
+					</ul>
+				</div>
+			</div>
+			<div class="l_footer">
+				<div class="foot_txt_box">
+					<p class="txt_f">(06774) 서울특별시 서초구 강남대로 27 aT 센터 4층</p>
+					<p class="txt_f">귀농귀촌 종합상담  1899-9097</p>
+					<p class="txt_f">시스템 문의  1544-5865</p>
+					<p class="txt_f">Copyright 2015 귀농귀촌종합센터 All Rights</p>
+				</div>
+			</div>
+		</div>
+		<!-- left menu(E) -->
+		
+		<!-- mobile header(S) -->
+		<!-- 기초데이터 설정 -->
+<div class="mobile_header">
+    <a href="/cmn/returnFarm/module/readyReturnfarm/summary.do" class="mg_logo"><img src="css/wvtex/readyReturnfarm/img/header_mg_logo.png" alt="모바일헤더로고"></a>
+    <a href="#!" class="btn_mobile_menu"><img src="css/wvtex/readyReturnfarm/img/btn_mobile_menu.png" alt="모바일메뉴버튼"></a>
+</div><!-- mobile header(E) -->
+
+		<!-- right content(S) -->
+		<div class="right_cont">
+
+			<!-- sub-conts(S) -->
+			<div class="content">
+				<div class="cont_in">
+					
+					<!-- 페이지타이틀(S) -->
+					<div class="main_title">
+						<h2 class="page_tit nobar">신청하기</h2>
+						<div class="step_box">
+							<p class="step">STEP1<span>정보입력</span></p>
+							<p class="step on">STEP2<span>서약 및 동의서</span></p>
+							<!--p class="step">STEP3<span>신청완료</span></p-->
+						</div>
+					</div>
+					<!-- 페이지타이틀(E) -->
+					
+					<!-- 1. 서비스 이용약관(S) -->
+					<div class="title_box">
+						<div class="fl">
+							<h4 class="tit_02">1. 서비스 이용약관</h4>
+						</div>
+					</div>
+
+					<div class="agree">
+						<div class="agree_txt">
+							<h4>제 1 장 총 칙</h4>
+							<br>
+							<p>제 1 조 (목적)</p>
+							<p>본 약관은 농림수산식품교육문화정보원(이하 “농정원”이라 함) 귀농귀촌종합센터 통합정보시스템이 제공하는 모든 서비스(이하 "서비스"라 함)의 이용조건 및 절차, 이용자와 농정원 귀농귀촌종합센터 통합정보시스템의 권리, 의무, 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.</p>
+							<br>
+							<p>제 2 조 (약관의 효력과 변경)</p>
+							<p>1. 농정원 귀농귀촌종합센터 통합정보시스템은 귀하가 본 약관 내용에 동의하는 경우, 농정원 귀농귀촌종합센터 통합정보시스템의 서비스 제공 행위 및 귀하의 서비스 사용 행위에 본 약관이 우선적으로 적용됩니다.</p>
+							<p>2. 농정원 귀농귀촌종합센터 통합정보시스템은 본 약관을 사전 고지 없이 변경할 수 있고, 변경된 약관은 농정원 귀농귀촌종합센터 통합정보시스템 내에 공지하거나 이메일을 통해 회원에게 공지하며, 공지와 동시에 그 효력이 발생됩니다. 이용자가 변경된 약관에 동의하지 않는 경우, 이용자는 본인의 회원등록을 취소(회원탈퇴)할 수 있으며 계속 사용의 경우는 약관 변경에 대한 동의로 간주됩니다.</p>
+							<br>
+							<p>제 3 조 (약관 외 준칙)</p>
+							<p>1. 본 약관에 명시되지 않은 사항은 전기통신기본법, 전기통신사업법, 정보통신윤리위원회 심의규정, 정보통신 윤리강령, 프로그램보호법 및 기타 관련 법령의 규정에 의합니다.</p>
+							<br>
+							<p>제 4 조 (용어의 정의)</p>
+							<p>본 약관에서 사용하는 용어의 정의는 다음과 같습니다.</p>
+							<p>1. 이용자 : 본 약관에 따라 농정원 귀농귀촌종합센터 통합정보시스템이 제공하는 서비스를 받는 자.</p>
+							<p>2. 가입 : 농정원 귀농귀촌종합센터 통합정보시스템이 제공하는 신청서 양식에 해당 정보를 기입하고, 본 약관에 동의하여 서비스 이용계약을 완료시키는 행위.</p>
+							<p>3. 회원 : 농정원 귀농귀촌종합센터 통합정보시스템에 개인 정보를 제공하여 회원 등록을 한 자로서 농정원 귀농귀촌종합센터 통합정보시스템이 제공하는 서비스를 이용할 수 있는 자.</p>
+							<p>4. 비밀번호 : 이용자와 회원ID가 일치하는지를 확인하고 통신상의 자신의 비밀보호를 위하여 이용자 자신이 선정한 문자와 숫자의 조합.</p>
+							<p>5. 탈퇴 : 회원이 이용계약을 종료시키는 행위.</p>
+							<br>
+							<h4>제 2 장 서비스 제공 및 이용</h4>
+							<br>
+							<p>제 5 조 (이용계약의 성립)</p>
+							<p>1. 이용계약은 신청자가 온라인으로 농정원 귀농귀촌종합센터 통합정보시스템에서 제공하는 소정의 가입신청 양식에서 요구하는 사항을 기록하여 가입을 완료하는 것으로 성립됩니다.</p>
+							<p>2. 농정원 귀농귀촌종합센터 통합정보시스템은 다음 각 호에 해당하는 이용계약에 대하여는 가입을 취소할 수 있습니다.</p>
+							<p>1) 다른 사람의 명의를 사용하여 신청하였을 때</p>
+							<p>2) 이용계약 신청서의 내용을 허위로 기재하였거나 신청하였을 때</p>
+							<p>3) 다른 사람의 농정원 귀농귀촌종합센터 통합정보시스템 서비스 이용을 방해하거나 그 정보를 도용하는 등의 행위를 하였을 때</p>
+							<p>4) 농정원 귀농귀촌종합센터 통합정보시스템을 이용하여 법령과 본 약관이 금지하는 행위를 하는 경우</p>
+							<p>5) 기타 농정원 귀농귀촌종합센터 통합정보시스템이 정한 이용신청요건이 미비 되었을 때</p>
+							<br>
+							<p>제 6 조 (회원정보 사용에 대한 동의)</p>
+							<p>1. 회원의 개인정보는 공공기관의 개인정보보호에 관한 법률에 의해 보호됩니다.</p>
+							<p>2. 농정원 귀농귀촌종합센터 통합정보시스템의 회원 정보는 다음과 같이 사용, 관리, 보호됩니다.</p>
+							<p>1) 개인정보의 사용 : 농정원 귀농귀촌종합센터 통합정보시스템은 서비스 제공과 관련해서 수집된 회원의 신상정보를 본인의 승낙 없이 제3자에게 누설, 배포하지 않습니다.</p>
+							<p>단, 전기통신기본법 등 법률의 규정에 의해 국가기관의 요구가 있는 경우, 범죄에 대한 수사상의 목적이 있거나 정보통신윤리 위원회의 요청이 있는 경우 또는 기타 관계법령에서 정한 절차에 따른 요청이 있는 경우, 귀하가 농정원 귀농귀촌종합센터 통합정보시스템에 제공한 개인정보를 스스로 공개한 경우에는 그러하지 않습니다.</p>
+							<p>2) 개인정보의 관리 : 귀하는 개인정보의 보호 및 관리를 위하여 서비스의 개인정보관리에서 수시로 귀하의 개인정보를 수정/삭제 할 수 있습니다.</p>
+							<p>3) 개인정보의 보호 : 귀하의 개인정보는 오직 귀하만이 열람/수정/삭제 할 수 있으며, 이는 전적으로 귀하의 ID와 비밀번호에 의해 관리되고 있습니다. 따라서 타인에게 본인의 ID와 비밀번호를 알려주어서는 안되며, 작업 종료시에는 반드시 로그아웃해 주시기 바랍니다.</p>
+							<p>3. 회원이 본 약관에 따라 이용신청을 하는 것은, 농정원 귀농귀촌종합센터 통합정보시스템이 신청서에 기재된 회원정보를 수집, 이용하는 것에 동의하는 것으로 간주됩니다.</p>
+							<br>
+							<p>제 7 조 (사용자의 정보 보안)</p>
+							<p>1. 가입 신청자가 농정원 귀농귀촌종합센터 통합정보시스템 서비스 가입 절차를 완료하는 순간부터 귀하는 입력한 정보의 비밀을 유지할 책임이 있으며, 회원의 ID와 비밀번호를 사용하여 발생하는 모든 결과에 대한 책임은 회원 본인에게 있습니다.</p>
+							<p>2. ID와 비밀번호에 관한 모든 관리의 책임은 회원에게 있으며, 회원의 ID나 비밀번호가 부정하게 사용되었다는 사실을 발견한 경우에는 즉시 농정원 귀농귀촌종합센터 통합정보시스템에 신고하여야 합니다. 신고를 하지 않음으로 인한 모든 책임은 회원 본인에게 있습니다.</p>
+							<p>3. 이용자는 농정원 귀농귀촌종합센터 통합정보시스템 서비스의 사용 종료시 마다 정확히 접속을 종료해야 하며, 정확히 종료하지 아니함으로써 제3자가 귀하에 관한 정보를 이용하게 되는 등의 결과로 인해 발생하는 손해 및 손실에 대하여 농정원 귀농귀촌종합센터 통합정보시스템은 책임을 부담하지 아니합니다.</p>
+							<br>
+							<p>제 8 조 (서비스의 중지)<br>
+							<p>1. 농정원 귀농귀촌종합센터 통합정보시스템은 이용자가 본 약관의 내용에 위배되는 행동을 한 경우, 임의로 서비스 사용을 제한 및 중지할 수 있습니다.</p>
+							<br>
+							<p>제 9 조 (서비스의 변경 및 해지)</p>
+							<p>1. 농정원 귀농귀촌종합센터 통합정보시스템은 귀하가 서비스를 이용하여 기대하는 손익이나 서비스를 통하여 얻은 자료로 인한 손해에 관하여 책임을 지지 않으며, 회원이 본 서비스에 게재한 정보, 자료, 사실의 신뢰도, 정확성 등 내용에 관하여는 책임을 지지 않습니다. </p>
+							<p>2. 농정원 귀농귀촌종합센터 통합정보시스템은 서비스 이용과 관련하여 가입자에게 발생한 손해 중 가입자의 고의, 과실에 의한 손해에 대하여 책임을 부담하지 아니합니다.</p>
+							<br>
+							<p>제 10 조 (게시물의 저작권)</p>
+							<p>1. 귀하가 게시한 게시물의 내용에 대한 권리는 귀하에게 있습니다.</p>
+							<p>2. 농정원 귀농귀촌종합센터 통합정보시스템은 게시된 내용을 사전 통지 없이 편집, 이동할 수 있는 권리를 보유하며, 게시판운영 원칙에 따라 사전 통지 없이 삭제할 수 있습니다.</p>
+							<p>3. 귀하의 게시물이 타인의 저작권을 침해함으로써 발생하는 민, 형사상의 책임은 전적으로 귀하가 부담하여야 합니다.</p>
+							<br>
+							<h4>제 3 장 의무 및 책임</h4>
+							<br>
+							<p>제 11 조 (농정원 귀농귀촌종합센터 통합정보시스템의 의무)</p>
+							<p>1. 농정원 귀농귀촌종합센터 통합정보시스템은 회원의 개인 신상 정보를 본인의 승낙없이 타인에게 누설, 배포하지 않습니다. 다만, 전기통신관련법령 등 관계법령에 의하여 관계 국가기관 등의 요구가 있는 경우에는 그러하지 아니합니다.</p>
+							<br>
+							<p>제 12 조 (회원의 의무)</p>
+							<p>1. 회원가입 시에 요구되는 정보는 정확하게 기입하여야 합니다. 또한 이미 제공된 귀하에 대한 정보가 정확한 정보가 되도록 유지, 갱신하여야 하며, 회원은 자신의 ID 및 비밀번호를 제3자에게 이용하게 해서는 안됩니다.</p>
+							<p>2. 회원은 농정원 귀농귀촌종합센터 통합정보시스템의 사전 승낙 없이 서비스를 이용하여 어떠한 영리행위도 할 수 없습니다.</p>
+							<br>
+							<h4>제 4 장 기타</h4>
+							<p>제 13 조 (양도금지)</p>
+							<p>1. 회원이 서비스의 이용권한, 기타 이용계약 상 지위를 타인에게 양도, 증여할 수 없습니다.</p>
+							<br>
+							<p>제 14 조 (손해배상)</p>
+							<p>1. 농정원 귀농귀촌종합센터 통합정보시스템은 무료로 제공되는 서비스와 관련하여 회원에게 어떠한 손해가 발생하더라도 농정원 귀농귀촌종합센터 통합정보시스템이 고의로 행한 범죄행위를 제외하고 이에 대하여 책임을 부담하지 아니합니다.</p>
+							<br>
+							<p>제 15 조 (면책조항)</p>
+							<p>1. 농정원 귀농귀촌종합센터 통합정보시스템은 회원이나 제3자에 의해 표출된 의견을 승인하거나 반대하거나 수정하지 않습니다. 농정원 귀농귀촌종합센터 통합정보시스템은 어떠한 경우라도 회원이 서비스에 담긴 정보에 의존해 얻은 이득이나 입은 손해에 대해 책임이 없습니다.</p>
+							<p>2. 농정원 귀농귀촌종합센터 통합정보시스템은 회원간 또는 회원과 제3자간에 서비스를 매개로 하여 물품거래 혹은 금전적 거래 등과 관련하여 어떠한 책임도 부담하지 아니하고, 회원이 서비스의 이용과 관련하여 기대하는 이익에 관하여 책임을 부담하지 않습니다.</p>
+							<br>
+							<p>제 16 조 (재판관할)</p>
+							<p>1. 농정원 귀농귀촌종합센터 통합정보시스템과 이용자 간에 발생한 서비스 이용에 관한 분쟁에 대하여는 대한민국 법을 적용하며, 본 분쟁으로 인한 소는 대한민국의 법원에 제기합니다.</p>
+							<br>
+							<p>부 칙 1. (시행일)</p>
+							<p>본 약관은 2013년 2월 21일부터 시행됩니다.</p>
+						</div>
+					</div>
+
+					<div class="mt20">
+						<input type="checkbox" id="chk1"><label for="chk1"><span></span>동의합니다.</label>
+					</div>
+					<!-- 1. 서비스 이용약관(E) -->
+					
+					<!-- 2. 개인정보 수집 및 이용동의(S) -->
+					<div class="title_box mt50">
+						<div class="fl">
+							<h4 class="tit_02">2. 개인정보 수집 및 이용동의</h4>
+						</div>
+					</div>
+
+					<div class="agree">
+						<div class="agree_txt">
+							<p>농정원 귀농귀촌종합센터 통합정보시스템에서 수집하는 개인정보는 개인정보보호법 제15조(개인정보의 수집·이용)에 따라 개인정보의 수집·이용 시 본인의 동의를 얻어야 하는 정보입니다. 이에 농정원은 아래 내용과 같이 개인정보를 수집·이용하고자 합니다.</p>
+							<br>
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col style="width:200px">
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">개인정보의 수집 및 이용 목적</th>
+										<td class="tl">회원관리, 귀농귀촌종합센터 통합정보시스템의 원활한 서비스(교육, 강사, 귀농귀촌 멘토링 서비스, 지자체 설명회 등 귀농귀촌종합센터에서 제공하는 서비스) 이용을 위함</td>
+									</tr>
+									<tr>
+										<th scope="row">수집하는 개인정보 항목</th>
+										<td class="tl">
+											[필수] 성명, 생년월일, 성별, 아이디, 비밀번호, 주소, 휴대폰번호, 직업, 이메일 <br>
+											[선택] (기본정보) 전화번호 <br>
+											(희망정보) 희망형태, 귀농귀촌형태, 실행시기, 관심지역, 결혼여부, 부양가족 수, 최종학력, 보유 자격·기술, 귀농귀촌 교육이수 여부, 교육이수 시간, 관심분야
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">개인정보의 보유 및 이용 기간</th>
+										<td class="tl">회원탈퇴 시 또는 서비스 폐지 시까지 </td>
+									</tr>
+								</tbody>
+							</table>
+							<p>※ 개인정보 수집 및 이용에 따른 동의를 거부할 수는 있으나, 동의를 거부할 경우 귀농귀촌종합센터 통합정보시스템의 서비스 이용에 제한이 있음을 알려드립니다.</p>
+						</div>
+					</div>
+					
+					<div class="mt20">
+						<input type="checkbox" id="chk2"><label for="chk2"><span></span>동의합니다.</label>
+					</div>
+					<!-- 2. 개인정보 수집 및 이용동의(E) -->
+					
+					<!-- 3. 참가신청 전 유의사항(S) -->
+					<div class="title_box mt50">
+						<div class="fl">
+							<h4 class="tit_02">3. 참가신청 전 유의사항</h4>
+						</div>
+					</div>
+
+					<div class="agree">
+						<div class="agree_txt" style="height: auto;">
+							<p>본 '농촌에서 살아보기'는 낭만적인 체험·여행 상품이 아니라 귀농귀촌을 하기 전에 치열한 농업농촌 삶의 현장을 경험하고 정착 가능성을 미리 알아보는 프로그램입니다. 참여기간 동안 영농활동이 힘들고, 생활이 불편하며, 지역민과 갈등이 있을 수도 있습니다. 이 모든 과정이 실제 귀농귀촌 후 발생할 수 있는 현실이며, 이를 사전에 경험하고 이해함으로써 향후 귀농귀촌을 실행한 후 정착 가능성을 높이는 것이 본 프로그램의 목적입니다.</p>
+						</div>
+					</div>
+
+					<div class="mt20">
+						<input type="checkbox" id="chk3"><label for="chk3"><span></span>위 내용을 충분히 숙지하고 동의하며 참가 신청합니다.(동의하지 않을 경우 신청 불가)</label>
+					</div>
+					<!-- 참가신청 전 유의사항(E) -->
+					
+					<div class="sign_txt clearfix">
+						<ul>
+							<li style="font-size:16px">상기 신청 내용이 사실과 다른 경우 참가취소 등 제재사유의 근거가 될 수 있습니다.</li>
+							
+						</ul>
+					</div>
+					<!-- 체크박스(E) -->
+
+
+					<!-- 하단버튼(S) -->
+					<div class="btn_box tc mt30">
+						<a href='javascript:FL.vtexDownloadFile("FILE_000000000046151","0","FL");' class="btn_type_02 down">참가신청서</a>
+						<a href='javascript:FL.vtexDownloadFile("FILE_000000000046153","0","FL");' class="btn_type_02 down">참가약정서</a>
+						<a href='javascript:FL.vtexDownloadFile("FILE_000000000063416","1","FL");' class="btn_type_02 down">개인정보 제공 동의서</a>
+					</div>
+					<!-- 하단버튼(E) -->
+
+					<!-- 하단버튼(S) -->
+					<div class="btn_box tc mt70">
+						<a href="#!" class="btn_type_06 cancel">취소</a>
+						<a href="javascript:goSubmit();" class="btn_type_06 next">다음단계</a>
+					</div>
+					<!-- 하단버튼(E) -->
+					
+					<!-- page(S) -->
+					<!--  
+					<div class="paging_box mt30">
+					
+						<a href="#!" class="btn_page on">1</a>
+						<a href="#!" class="btn_page">2</a>
+						<a href="#!" class="btn_page">3</a>
+						<a href="#!" class="btn_page">4</a>
+						<a href="#!" class="btn_page">5</a>
+						
+						<a href="#!" class="btn_page_next">다음</a>
+					</div>
+					-->
+					<!-- page(E) -->
+					
+				</div>
+			</div>
+			<!-- sub-conts(E) -->
+
+		</div>
+		<!-- right content(E) -->
+
+		<!-- footer mobile(S) -->
+		<!-- 기초데이터 설정 -->
+<div class="mobile_footer">
+    <p>(06774) 서울특별시 서초구 강남대로 27 aT 센터 4층</p>
+    <p>귀농귀촌 종합상담 : 1899-9097 / 시스템 문의 : 1544-5865</p>
+    <p>Copyright 2015 귀농귀촌종합센터 All Rights</p>
+</div><!-- footer mobile(E) -->
+
+		
+		<!-- lnb menu(S) -->
+		<!-- 기초데이터 설정 -->
+		<div class="lnb">
+			<div class="lnb_in">
+				<a href="#!" class="btn_lnb_close"></a>
+				<div class="lnb_menu_list">
+					<div class="link"><a href="https://www.returnfarm.com:444/"><span>바로가기</span></div>
+					<ul class="depth_01 mt30">
+						<li>
+						   <a href="/cmn/returnFarm/module/readyReturnfarm/guidance.do">커뮤니티 시범사업 신청하기</a>
+							<ul class="depth_02">
+								<li><a href="detail.html">신청하기</a></li>
+								<li><a href="mypage.html">신청내역확인</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- lnb menu(E) -->
+		
+	</div>
+	<!-- wrap(E) -->		
+
+
+<iframe title="저장하기" name="hiddenframe" id="hiddenframe" height="0" width="0" style="display:none;"></iframe>
+
+</body>
+</html>
