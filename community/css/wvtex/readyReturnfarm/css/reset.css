@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* 
+Reset & Set Stylesheet
+v1.0.1
+First Updated: 2016-08-01
+Last Updated: 2016-08-05
+Author: OBS
+*/
+
+/***** RESET *****/
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+margin:0; 
+padding:0; 
+border:0; 
+font-size:100%; 
+font:inherit; 
+font-family:'Noto Sans KR', 고딕, san-serif, IcoMoon,dashicons, FontAwesome!important;
+word-break:normal;
+letter-spacing:0px;
+}
+sup {
+margin:0; 
+padding:0; 
+border:0; 
+font-size:100%; 
+font:inherit; 
+
+word-break:normal;
+}
+
+body{ box-sizing:border-box; width:100%; height:100%;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
+/*html, body {height:100%;}*/
+body {line-height:1; word-break:break-all; -ms-word-break:break-all; -webkit-text-size-adjust:none; height:100%; }
+ol, ul, dl, li, menu {list-style:none; padding:0; margin:0;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content:none}
+table {border-collapse:collapse; border-spacing:0; }
+textarea {overflow:auto}
+input, select, textarea, button, optgroup {font-size:100%; vertical-align:middle;  color:#444444; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0; margin:0; }
+em, address{font-style:normal;}
+button {border:none 0; cursor:pointer;}
+select option{font-size:14px;}
+.disabled{background: #eeeeee; border:0!important;}
+input:disabled{background: #eeeeee; border:0!important;}
+input:read-only{background: #eeeeee; border:0!important;}
+/* Hyper Link */
+
+a, a:link, a:active, a:hover, a:visited{text-decoration:none; }
+/* Form Type (html5 & 모바일 적용) */
+input[type='tel'],input[type='number'],input[type='email'],input[type='text'],input[type='password'],input[type='submit'],input[type='search'],input[type='submit'],input[type='reset'],input[type='file']{-webkit-appearance:none; border-top-left-radius:0; border-top-right-radius:0; border-bottom-left-radius:0; border-bottom-right-radius:0; height: 30px; border:0;  padding:0 8px;  /* margin-top:3px; */}
+;;-webkit-input-placeholder
+input[type='checkbox']{-webkit-appearance:checkbox}
+input[type='radio']{-webkit-appearance:radio}
+input[type='number']{-webkit-appearance:none}
+input[type='search']::-webkit-search-cancel-button{-webkit-appearance:none}
+
+textarea{resize:none; padding:0px; border:none; font-family:'NotoSansCJKkr-DemiLight'}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+
+input[type="checkbox"], 
+input[type="radio"]{
+	display:none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label{
+	color:#303030; font-size:15px; line-height:24px;
+}
+
+input[type="checkbox"] + label span{
+	display:inline-block;
+	width:18px;
+	height:17px;
+	background:url("../img/btn_check_box_off.png")no-repeat;
+	cursor:pointer;
+	vertical-align:-16%;
+	margin-right:5px;
+	
+}
+
+input[type="checkbox"]:checked + label span{
+	background:url("../img/btn_check_box_on.png")no-repeat;
+	width:18px;
+	height:17px;
+}
+
+/*
+input[type="radio"] + label span{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	background:url("../img/btn_radio_off.png")no-repeat;
+	cursor:pointer;
+	vertical-align:-9%;
+	margin-right:5px;
+	
+}
+
+input[type="radio"]:checked + label span{
+	background:url("../img/btn_radio_on.png")no-repeat;
+	width:15px;
+	height:15px;
+} */
+
+/* hsg */
+input[type="radio"] {position:absolute; width:15px; height:15px;}
+input[type="radio"] + .rdo {position:absolute; width:15px; height:15px; overflow:hidden; background:url("../img/btn_radio_off.png") no-repeat center center; cursor:pointer; vertical-align:middle;}
+input[type="radio"] ~ .label-title {margin-left:20px; font-size:15px; vertical-align: top;}
+input[type="radio"]:checked + .rdo {background:url("../img/btn_radio_on.png") no-repeat center center;}
+input[type="checkbox"] + label span.mt,
+input[type="radio"] + label span.mt{margin-top:5px;}
+
+
+input[type="text"]{height:30px; border:1px solid #dcdcdc; font-size:14px; box-sizing:border-box;}
+input[type="password"]{height:30px; border:1px solid #dcdcdc; font-size:14px; box-sizing:border-box;}
+input[type="number"]{height:30px; border:1px solid #dcdcdc; font-size:14px; box-sizing:border-box;}
+/* placeholder font*/
+::-webkit-input-placeholder{font-family:"NanumGothic"}
+:-moz-placeholder{font-family:"NanumGothic"}
+::-moz-placeholder{font-family:"NanumGothic"}
+:-ms-input-placeholder {font-family:"NanumGothic"}
+
+input:disabled {background:#f5f5f5;}
+
+
+/*/셀렉트박스/*/
+select{-webkit-appearance: none;  /* 네이티브 외형 감추기 */
+-moz-appearance: none;
+appearance: none;
+background:#fff url("../img/select_arrow.png") no-repeat 50%; background-position:calc(100% - 5px); /* 화살표 모양의 이미지 */
+height:30px;
+padding:0px 5px;
+-webkit-appearance: none; /* 네이티브 외형 감추기 */
+-moz-appearance: none;
+appearance: none;
+border:1px solid #dcdcdc;
+box-sizing:border-box; 
+font-size:14px; 
+color:#777777;
+}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand {
+    display:none;
+}
+
+
+
+/* a:link { color: red; text-decoration: none;}
+a:visited { color: black; text-decoration: none;} */
+
+
+
+
+/* blind */
+.blind{overflow:hidden; position:absolute; top:-1px; left:-1px; z-index:-1; width:1px; height:0px; font-size:0; line-height:0; white-space:nowrap;text-indent: -9000px;}
+caption,legend{overflow:hidden;height:0px; font-size:0; line-height:0; white-space:nowrap;text-indent: -9000px;}
+
+
+/* 
+@media screen and (max-width: 1440px) { 
+	select{height:80px; font-size:28px; padding:0 5%;}
+	input[type="text"]{height:78px; border:1px solid #cecece; font-size:40px; padding:0 38px;}
+	select.sel_type_02{height:80px;}
+	input[type="checkbox"] + label span{width:36px; height:36px; background:url("../img/btn_check_box_off.png")no-repeat; cursor:pointer; vertical-align:-5%; margin-right:5px; background-size:contain;}
+	input[type="checkbox"]:checked + label span{ background:url("../img/btn_check_box_on.png")no-repeat; width:36px; height:36px;  background-size:contain;}
+} */
+
+@media screen and (max-width: 630px) {
+	select{font-size:15px!important;}
+	input{font-size:15px!important;}
+}

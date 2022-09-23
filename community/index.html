@@ -1,0 +1,419 @@
+
+<!-- 기초데이터 설정 -->
+<!DOCTYPE HTML>
+<!--[if IE 7]><html lang="ko" class="old ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko" class="old ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko" class="modern ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="ko">
+<!--<![endif]-->
+<head>
+<!-- title config.value로 나중에 교체 -->
+<title>신청하기</title>
+<!-- 기초데이터 설정 -->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0"/>
+<meta name="robots" content="noindex, nofollow">
+<meta name="title" content="농촌에서 살아보기 홈페이지에 오신것을 환영합니다." />
+<meta name="keywords" content="농촌에서 살아보기 소개, 커뮤니티 시범사업 신청하기, 커뮤니티" />
+<meta name="author" content="농촌에서 살아보기" />
+<meta name="description" content="농촌에서 살아보기" />
+
+
+<!-- 기초데이터 설정 -->
+<!-- WVTEX -->
+<link rel="stylesheet" type="text/css" href="css/wvtex/css/admin_blue.css">
+<link rel="stylesheet" type="text/css" href="css/wvtex/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/jquery/redmond/jquery-ui-1.8.23.custom.css"><!-- 기초데이터 설정 -->
+<script type="text/javaScript" language="javascript" src="js/egovframework/com/cmm/jquery.js"></script>
+<!-- wvtex -->
+<script type="text/javaScript" language="javascript" src="js/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javaScript" language="javascript" src="js/jquery/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javaScript" language="javascript" src="js/wvtex/jquery.wvtex.util.js"></script>
+<script type="text/javaScript" language="javascript" src="js/wvtex/jquery.wvtex.js"></script>
+<script type="text/javaScript" language="javascript" src="css/wvtex/js/adminS.1.1.js"></script>
+<script type="text/javaScript" language="javascript" src="css/wvtex/js/jquery.easing.1.3.js"></script><!-- 기초데이터 설정 -->
+
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<!-- CSS(S) -->
+<link rel="stylesheet" type="text/css" href="css/wvtex/readyReturnfarm/css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/wvtex/readyReturnfarm/css/common.css">
+<link rel="stylesheet" type="text/css" href="css/wvtex/readyReturnfarm/css/jquery-ui.css"><!-- datepicker -->
+<!-- CSS(E) -->
+
+<!-- SCRIPT(S) -->
+<script type="text/javascript" src="css/wvtex/readyReturnfarm/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="css/wvtex/readyReturnfarm/js/jquery-ui.js"></script><!-- datepicker -->
+<script type="text/javascript" src="css/wvtex/readyReturnfarm/js/script.js"></script>
+<!-- SCRIPT(E) -->
+<script type="text/javascript">
+/**
+ * 페이지 로드시 실행되는 함수
+ */
+$(document).ready(function(){
+	// 시도 셀렉트 박스
+	//setOrganCode();
+	
+	//selTownTypeDet();
+});
+
+/**
+ * 지역 코드 설정
+ */
+function setOrganCode() {
+	var currentVal = '';
+	var currentValSub = '';
+
+	if (currentVal != null && currentVal != '') {
+		UT.setSidoCd("sidoCd", currentVal, "sigunCd", currentValSub);
+
+	} else {
+		UT.setSidoCd("sidoCd");
+	};
+};
+
+/**
+ * 검색 하기 실행
+ */
+function doList(pageNo) {
+	var form = $("#FormSearch");
+
+	if (typeof pageNo !== 'undefined') {
+		form.find(":input[name='pageIndex']").val(pageNo);
+	}
+
+	form.attr("method", "POST");
+	form.attr("action", "/cmn/returnFarm/module/readyReturnfarm/list.do");
+	form.submit();
+};
+/*
+function selTownTypeDet() {
+	
+	var townType = $("#townType").val();
+	var selTownType = '';
+	
+	var html = '';
+	
+	if(townType == 'TOTY01') {
+		html = '<select name="townTypeDet" id="townTypeDet">'
+			+ '<option value="" >세부유형전체</option>'
+		    + '<option value="TODT01" >일반</option>'
+			+ '<option value="TODT02" >재배품목 장기실습</option>'
+			+ '</select>'
+			+ '<label for="townTypeDet"></label>';
+		$("#selTownTypeDet").empty();
+	} else if(townType == 'TOTY02') {
+		html = '<select name="townTypeDet" id="townTypeDet">'
+			+ '<option value="" >세부유형전체</option>'
+		    + '<option value="TODT03" >일반</option>'
+			+ '<option value="TODT04" >중심지거주</option>'
+			+ '<option value="TODT05" >농촌유학연계</option>'
+			+ '</select>'
+			+ '<label for="townTypeDet"></label>';
+		$("#selTownTypeDet").empty();
+	} else if(townType == 'TOTY03') {
+		html = '<select name="townTypeDet" id="townTypeDet">'
+			+ '<option value="" >세부유형전체</option>'
+		    + '<option value="TODT06" >일반</option>'
+			+ '<option value="TODT07" >창업연계</option>'
+			+ '<option value="TODT08" >사회적경제</option>'
+			+ '</select>'
+			+ '<label for="townTypeDet"></label>';
+		$("#selTownTypeDet").empty();
+	} else {
+		html = '<select name="townTypeDet" id="townTypeDet">'
+			+ '<option value="" >세부유형전체</option>'
+			+ '</select>'
+			+ '<label for="townTypeDet"></label>';
+		$("#selTownTypeDet").empty();
+	}
+	
+	$("#selTownTypeDet").append(html);
+};*/
+</script>
+
+</head>
+<body onload="" style="overflow:auto; overflow-y:scroll;">
+
+	
+	<!-- warp(S) -->
+	<div class="wrap">
+		<!-- left menu(S) -->
+		<!-- 기초데이터 설정 -->
+		<div class="left_menu">
+			<div class="lm_in">
+				<a href="https://www.returnfarm.com:444/" class="logo_home" target="_blank" title="새창열림">
+					<img src="css/wvtex/readyReturnfarm/img/returnfarm_logo.png" alt="귀농귀촌로고">
+				</a>
+				<span class="txt_title">
+					<!--a href="/cmn/returnFarm/module/readyReturnfarm/summary.do"><img src="css/wvtex/readyReturnfarm/img/text-title.png" alt="농촌에서미리살아보기"></a-->
+				</span>
+
+				<div class="menu_list">
+					<ul class="depth_01">
+						<li>
+						 <a href="#">커뮤니티 시범사업 신청하기</a>
+							<ul class="depth_02">
+								<li><a href="index.html" class="on" >신청하기</a></li>
+								<li><a href="mypage.html">신청내역확인</a></li>
+							</ul>
+					   </li>
+					</ul>
+				</div>
+			</div>
+			<div class="l_footer">
+				<div class="foot_txt_box">
+					<p class="txt_f">(06774) 서울특별시 서초구 강남대로 27 aT 센터 4층</p>
+					<p class="txt_f">귀농귀촌 종합상담  1899-9097</p>
+					<p class="txt_f">시스템 문의  1544-5865</p>
+					<p class="txt_f">Copyright 2015 귀농귀촌종합센터 All Rights</p>
+				</div>
+			</div>
+		</div>
+		<!-- left menu(E) -->
+
+		<!-- mobile header(S) -->
+		<!-- 기초데이터 설정 -->
+<div class="mobile_header">
+    <a href="/cmn/returnFarm/module/readyReturnfarm/summary.do" class="mg_logo"><img src="css/wvtex/readyReturnfarm/img/header_mg_logo.png" alt="모바일헤더로고"></a>
+    <a href="#!" class="btn_mobile_menu"><img src="css/wvtex/readyReturnfarm/img/btn_mobile_menu.png" alt="모바일메뉴버튼"></a>
+</div><!-- mobile header(E) -->
+
+		<!-- right content(S) -->
+		<div class="right_cont">
+
+			<!-- sub-conts(S) -->
+			<div class="content">
+				<div class="cont_in">
+					<!-- 페이지타이틀(S) -->
+					<div class="main_title">
+							<h2 class="page_tit">신청하기</h2>
+							<p class="m_t_comment">설명 설명<br/>
+							</p>
+<!-- 							<p class="m_t_subList">* 총 95개 시군(110개 마을 규모)이 참여할 예정으로 2~3월 중 업데이트 됩니다.<br/>  -->
+<!-- 								* 준비된 마을부터 순차적으로 신청을 받을 계획이며, 첫 참가자 모집은 2.23일부터 시작합니다. -->
+<!-- 							</p>  -->
+					</div>
+					<!-- 페이지타이틀(E) -->
+
+					<!-- 검색창(S) -->
+					<form id="FormSearch" name="FormSearch" method="post">
+						<input type="hidden" name="pageIndex" >
+					<div class="sb_wrap">
+						<div class="main_total fl">
+							<p class="tit">등록 된 지역<br /><span>5</span>건</p>
+						</div>
+						<div class="search_box fr" style="width:auto">
+							<div class="fl">
+								<div class="s_sel_box top clearfix">
+									<div class="sel_type_01">
+										<select id="sidoCd" name="sidoCd" title="시도선택" onchange="UT.setSigunCd('sidoCd', 'sigunCd')">
+										</select>
+										<label for="sidoCd"></label>
+									</div>
+									<div class="sel_type_01">
+										<select id="sigunCd" name="sigunCd" title="시군구선택">
+											<option value="" selected="selected">시군구선택</option>
+										</select>
+										<label for="sigunCd"></label>
+									</div>
+									<div class="sel_type_01">
+										<select name="townType" id="townType">
+											<option value="">유형전체</option>
+											<option value="TOTY01" >귀농형</option>
+											<option value="TOTY02" >귀촌형</option>
+										</select>
+										<label for="townType"></label>
+									</div>
+								</div>
+				
+							</div>
+							<a href="#!" class="btn_search fr square" onclick="doList(1)">검색</a>
+						</div>
+					</div>
+					</form>
+					<!-- 검색창(E) -->
+					<ul class="aplct_list clearfix">
+						<li>
+							<a href="detail.html">
+							<div class="img">
+								<img src='cmn/cmm/fms/test.jpg' alt="소호마을">
+								<span class="cat" value="귀농형">귀농형</span>
+								</div>
+							<div class="txt">
+								<!--span class="loc">울산광역시&nbsp;울주군</span-->
+								<p class="tit1">강원도 춘천시</p>
+								<ul>
+									<li>
+										<span>세부유형</span>
+										<span class="cat1">귀농형</span>
+											</li>
+									<li><span>신청기간</span><span>2022.07.01~2022.07.31</span></li>
+									<li><span>운영기간</span><span>2022.06.15~2022.11.14</span></li>
+									<li><span>모집인원</span><span>10명</span></li>
+									</ul>
+								<div class="state">
+									<span class="status" value="신청가능">신청가능</span>
+									<span class="detail">상세보기</span>
+								</div>
+							</div>
+							</a>
+						</li>
+						<li>
+							<a href="detail.html">
+							<div class="img">
+								<img src='cmn/cmm/fms/test.jpg' alt="소호마을">
+								<span class="cat" value="귀촌형">귀촌형</span>
+								</div>
+							<div class="txt">
+								
+								<p class="tit1">강원도 춘천시</p>
+								<ul>
+									<li>
+										<span>세부유형</span>
+										<span class="cat2">귀촌형</span>
+									</li>
+									<li><span>신청기간</span><span>2022.04.15~2022.04.20</span></li>
+									<li><span>운영기간</span><span>2022.04.01~2022.09.30</span></li>
+									<li><span>모집인원</span><span>20명</span></li>
+									</ul>
+								<div class="state">
+									<span class="status" value="마감">마감</span>
+										<span class="detail">상세보기</span>
+								</div>
+							</div>
+							</a>
+						</li>
+						<li>
+							<a href="detail.html">
+							<div class="img">
+								<img src='cmn/cmm/fms/test.jpg' alt="소호마을">
+								<span class="cat" value="귀농형">귀농형</span>
+								</div>
+							<div class="txt">
+								<!--span class="loc">울산광역시&nbsp;울주군</span-->
+								<p class="tit1">강원도 춘천시</p>
+								<ul>
+									<li>
+										<span>세부유형</span>
+										<span class="cat1">귀농형</span>
+											</li>
+									<li><span>신청기간</span><span>2022.07.01~2022.07.31</span></li>
+									<li><span>운영기간</span><span>2022.06.15~2022.11.14</span></li>
+									<li><span>모집인원</span><span>10명</span></li>
+									</ul>
+								<div class="state">
+									<span class="status" value="신청가능">신청가능</span>
+									<span class="detail">상세보기</span>
+								</div>
+							</div>
+							</a>
+						</li>
+						<li>
+							<a href="detail.html">
+							<div class="img">
+								<img src='cmn/cmm/fms/test.jpg' alt="소호마을">
+								<span class="cat" value="귀촌형">귀촌형</span>
+								</div>
+							<div class="txt">
+								
+								<p class="tit1">강원도 춘천시</p>
+								<ul>
+									<li>
+										<span>세부유형</span>
+										<span class="cat2">귀촌형</span>
+									</li>
+									<li><span>신청기간</span><span>2022.04.15~2022.04.20</span></li>
+									<li><span>운영기간</span><span>2022.04.01~2022.09.30</span></li>
+									<li><span>모집인원</span><span>20명</span></li>
+									</ul>
+								<div class="state">
+									<span class="status" value="마감">마감</span>
+										<span class="detail">상세보기</span>
+								</div>
+							</div>
+							</a>
+						</li>
+												<li>
+							<a href="detail.html">
+							<div class="img">
+								<img src='cmn/cmm/fms/test.jpg' alt="소호마을">
+								<span class="cat" value="귀촌형">귀촌형</span>
+								</div>
+							<div class="txt">
+								
+								<p class="tit1">강원도 춘천시</p>
+								<ul>
+									<li>
+										<span>세부유형</span>
+										<span class="cat2">귀촌형</span>
+									</li>
+									<li><span>신청기간</span><span>2022.04.15~2022.04.20</span></li>
+									<li><span>운영기간</span><span>2022.04.01~2022.09.30</span></li>
+									<li><span>모집인원</span><span>20명</span></li>
+									</ul>
+								<div class="state">
+									<span class="status" value="마감">마감</span>
+										<span class="detail">상세보기</span>
+								</div>
+							</div>
+							</a>
+						</li>
+						
+						</ul>
+					<!-- 페이징 처리 시작 -->
+					<!--div class="paging">
+							<span class="pagingIn"> <strong>1</strong>&#160;<a href="?pageIndex=2" onclick="doList(2);return false; ">2</a>&#160;<a href="?pageIndex=3" onclick="doList(3);return false; ">3</a>&#160;<a href="?pageIndex=4" onclick="doList(4);return false; ">4</a>&#160;<a href="?pageIndex=5" onclick="doList(5);return false; ">5</a>&#160;<a href="?pageIndex=6" onclick="doList(6);return false; ">6</a>&#160;<a href="?pageIndex=7" onclick="doList(7);return false; ">7</a>&#160;<a href="?pageIndex=8" onclick="doList(8);return false; ">8</a>&#160;<a href="?pageIndex=9" onclick="doList(9);return false; ">9</a>&#160;<a href="?pageIndex=10" onclick="doList(10);return false; ">10</a>&#160;
+</span>
+						</div-->
+					<!-- 페이징 처리 종료 -->
+				</div>
+			</div>
+			<!-- sub-conts(E) -->
+
+		</div>
+		<!-- right content(E) -->
+
+		<!-- footer mobile(S) -->
+		<!-- 기초데이터 설정 -->
+<div class="mobile_footer">
+    <p>(06774) 서울특별시 서초구 강남대로 27 aT 센터 4층</p>
+    <p>귀농귀촌 종합상담 : 1899-9097 / 시스템 문의 : 1544-5865</p>
+    <p>Copyright 2015 귀농귀촌종합센터 All Rights</p>
+</div><!-- footer mobile(E) -->
+
+
+		<!-- lnb menu(S) -->
+		<!-- 기초데이터 설정 -->
+		<div class="lnb">
+			<div class="lnb_in">
+				<a href="#!" class="btn_lnb_close"></a>
+				<div class="lnb_menu_list">
+					<div class="link"><a href="https://www.returnfarm.com:444/"><span>바로가기</span></div>
+					<ul class="depth_01 mt30">
+						<li>
+						   <a href="/cmn/returnFarm/module/readyReturnfarm/guidance.do">커뮤니티 시범사업 신청하기</a>
+							<ul class="depth_02">
+								<li><a href="detail.html">신청하기</a></li>
+								<li><a href="mypage.html">신청내역확인</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- lnb menu(E) -->
+	</div>
+	<!-- wrap(E) -->
+
+<iframe title="저장하기" name="hiddenframe" id="hiddenframe" height="0" width="0" style="display:none;"></iframe>
+
+</body>
+</html>
