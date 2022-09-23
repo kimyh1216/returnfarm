@@ -127,8 +127,8 @@ function goSubmit() {
 	var joinEmergNo3 = $("#joinEmergNo3").val();
 	$("#joinEmergNo").val(joinEmergNo1+"-"+joinEmergNo2+"-"+joinEmergNo3);	
 
-	var arrColId = ['selfIntro', 'farmReady', 'wishProgram'];
-	var arrColName = ['자기소개 및 신청동기', '귀농귀촌 준비정도', '희망 프로그램 및 마을 활동'];
+	var arrColId = ['selfIntro', 'farmReady', 'wishProgram','wishPlan'];
+	var arrColName = ['자기소개 및 신청동기', '귀농귀촌 준비정도', '귀농귀촌 희망사항 및 애로사항','귀농귀촌계획'];
 
 	for (var i = 0; i < arrColId.length; i++) {
 		if($("#" + arrColId[i]).val().length < 100){
@@ -168,12 +168,17 @@ function goSubmit() {
 				<div class="menu_list">
 					<ul class="depth_01">
 						<li>
-						 <a href="#">커뮤니티 시범사업 신청하기</a>
+							<a href="index.html">함께 준비하는 귀농귀촌 커뮤니티</a>
 							<ul class="depth_02">
-								<li><a href="index.html" class="on" >신청하기</a></li>
-								<li><a href="mypage.html">신청내역확인</a></li>
+								<li><a class="on" >커뮤니티 프로그램 소개</a></li>
+								<li><a href="program.html">프로그램 개요</a></li>
 							</ul>
-					   </li>
+							<ul class="depth_02">
+								<li><a class="on" >커뮤니티 프로그램 신청하기</a></li>
+								<li><a href="applyForm.html">신청하기</a></li>
+								<li><a href="mypage.html">신청내역</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -310,11 +315,41 @@ function goSubmit() {
 								<span>관심분야</span>
 								<div>
 									<select id="doInterests" name="doInterests" title="관심분야 선택">
+										<!-- 귀농 -->
 										<option value="">관심분야 선택</option>
-										<option value="0" >주작물1</option>
-										<option value="1" >주작물2</option>
+										<option value="0" >주작목 1(지역전략작물)</option>
+										<option value="1" >주작목 2(지역푸드플랜)</option>
 										<option value="2" >농업창업</option>
-										<option value="3" >첨단농업창업</option>
+										<option value="3" >첨단농업기술</option>
+										<option value="4" >친환경농업</option>
+										<option value="5" >축산업</option>
+										<option value="6" >겸업 농업</option>
+										<option value="7" >농기계</option>
+										<option value="8" >연령별 귀농</option>
+										<option value="9" >U턴형 귀농귀촌</option>
+										<option value="10" >여성귀농귀촌</option>
+										<option value="11" >사회적농업</option>
+										<option value="12" >농촌경관</option>
+										<option value="13" >가족</option>
+										<option value="14" >심신건강</option>
+										<option value="15" >농업농촌 국제교류</option>
+										<option value="16" >귀농귀촌 탐색단계</option>
+										<!-- //귀농 -->
+										<!-- 귀촌
+										<option value="">관심분야 선택</option>
+										<option value="0" >전원생활</option>
+										<option value="1" >농촌경제생활</option>
+										<option value="2" >도농교류형 창업</option>
+										<option value="3" >공동체</option>
+										<option value="4" >U턴형 귀농귀촌</option>
+										<option value="5" >여성귀농귀촌</option>
+										<option value="6" >사회적농업</option>
+										<option value="7" >농촌경관</option>
+										<option value="8" >가족</option>
+										<option value="9" >심신건강</option>
+										<option value="10" >농업농촌 국제교류</option>
+										<option value="11" >귀농귀촌 탐색단계</option>
+										-->
 									</select>
 								</div>
 							</li>
@@ -334,21 +369,27 @@ function goSubmit() {
 								</dd>
 							</dl>
 							<dl>
-								<dt>귀농귀촌<br/>준비정도</dt>
+								<dt>귀농귀촌 준비 정도</dt>
 								<dd>
 									<textarea id="farmReady" rows="5" style="resize: none;" name="farmReady" placeholder="교육이수, 현장방문, 준비기간 등"></textarea>
 								</dd>
 							</dl>
 							<dl>
-								<dt>희망 프로그램</dt>
+								<dt>귀농귀촌 희망사항<br /> 및 애로사항</dt>
 								<dd>
-									<textarea id="wishProgram" rows="5" style="resize: none;" name="wishProgram" placeholder="희망하는 프로그램 또는 활동에 대하여 구체적으로 서술"></textarea>
+									<textarea id="wishProgram" rows="5" style="resize: none;" name="wishProgram" placeholder="귀농귀촌을 준비하는 나에게 가장 필요한 것과 어려움, 희망하는 활동 및 프로그램 등"></textarea>
+								</dd>
+							</dl>
+							<dl>
+								<dt>귀농귀촌계획</dt>
+								<dd>
+									<textarea id="wishPlan" rows="5" style="resize: none;" name="wishPlan" placeholder="귀농귀촌에 대한 꿈과 계획을 자유롭게 작성"></textarea>
 								</dd>
 							</dl>
 						</li>
 						<div class="sign_txt mt10 clearfix">
 							<ul>
-								<li>허위사실, 불성실 기재 시 심사에서 탈락될 수 있으며, 아래 각 항목별 작성양식에 의거 자유기술 바랍니다. (글자수 : 최소 100자 이상, 최대 1,000자)</li>
+								<li>항목별 작성양식에 의거 자유기술 바랍니다. (글자수 : 최소 100자 이상, 최대 1,000자)</li>
 							</ul>
 						</div>
 					</div>
