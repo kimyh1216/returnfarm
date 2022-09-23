@@ -1,0 +1,568 @@
+<!-- 기초데이터 설정 -->
+<!DOCTYPE HTML>
+<!--[if IE 7]><html lang="ko" class="old ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko" class="old ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko" class="modern ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="ko">
+<!--<![endif]-->
+<head>
+<!-- title config.value로 나중에 교체 -->
+<title>상세페이지</title>
+<!-- 기초데이터 설정 -->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0"/>
+<meta name="robots" content="noindex, nofollow">
+<meta name="title" content="농촌에서 살아보기 홈페이지에 오신것을 환영합니다." />
+<meta name="keywords" content="농촌에서 살아보기 소개, 커뮤니티 시범사업 신청하기, 커뮤니티" />
+<meta name="author" content="농촌에서 살아보기" />
+<meta name="description" content="농촌에서 살아보기" />
+
+
+<!-- 기초데이터 설정 -->
+<!-- WVTEX -->
+<link rel="stylesheet" type="text/css" href="css/wvtex/css/admin_blue.css">
+<link rel="stylesheet" type="text/css" href="css/wvtex/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/jquery/redmond/jquery-ui-1.8.23.custom.css"><!-- 기초데이터 설정 -->
+<script type="text/javaScript" language="javascript" src="js/egovframework/com/cmm/jquery.js"></script>
+<!-- wvtex -->
+<script type="text/javaScript" language="javascript" src="js/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javaScript" language="javascript" src="js/jquery/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javaScript" language="javascript" src="js/wvtex/jquery.wvtex.util.js"></script>
+<script type="text/javaScript" language="javascript" src="js/wvtex/jquery.wvtex.js"></script>
+<script type="text/javaScript" language="javascript" src="css/wvtex/js/adminS.1.1.js"></script>
+<script type="text/javaScript" language="javascript" src="css/wvtex/js/jquery.easing.1.3.js"></script><!-- 기초데이터 설정 -->
+
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<!-- CSS(S) -->
+<link rel="stylesheet" type="text/css" href="css/wvtex/readyReturnfarm/css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/wvtex/readyReturnfarm/css/common.css">
+<link rel="stylesheet" type="text/css" href="css/wvtex/readyReturnfarm/css/jquery-ui.css"><!-- datepicker -->
+<link rel="stylesheet" type="text/css" href="css/wvtex/readyReturnfarm/css/jquery.bxslider.css">
+<!-- CSS(E) -->
+
+<!-- SCRIPT(S) -->
+<script type="text/javascript" src="css/wvtex/readyReturnfarm/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="css/wvtex/readyReturnfarm/js/jquery-ui.js"></script><!-- datepicker -->
+<script type="text/javascript" src="css/wvtex/readyReturnfarm/js/script.js"></script>
+<script type="text/javascript" src="css/wvtex/readyReturnfarm/js/jquery.bxslider.min.js"></script> 
+<!-- SCRIPT(E) -->
+
+<script type="text/javascript">
+function goSubmit() {
+	/* 
+	var now = new Date();
+	var startDt = new Date('2022.09.13');
+	var endDt = new Date('2022.09.30');
+	if(startDt > now || endDt < now) {
+		alert("신청기간이 아닙니다.");
+		return;
+	}
+	 */
+	
+	
+	if('남성' == '알수없음' || '1991.06.22' == '..') {
+		var text = "귀하는 2017년 이전 귀농귀촌 누리집 가입자로,\n";
+			text += "2017년 이후 회원가입 약관 변경에 따라 아래 회원 정보를\n";
+			text += "추가 업데이트해야 프로그램 신청이 가능하십니다.\n";
+			text += "마이페이지에서 성별, 주소 등 정보를 입력하신 후 신청바랍니다.";
+			
+		alert(text);
+		location.href = "/usr/returnFarm/mypage/memberModify.do";
+		return;
+	}
+	
+		if($("#roomNo").val() == "") {
+			alert("신청할 객실을 선택주세요.");
+			return;
+		} else if("{uniqId=RFMBER_0000000061534, mberId=sazavi10, password=dn3DMTKRNpHu9NqRE6yb2Xzfranob1te68VM2Bo+svvCxWeAnydZMv3uJcT2hYQjDudlITGyyPs1cXeQoZN/nw==, mberNm=홍길동, passwordHintCode=null, passwordAnswer=null, sexdstnCode=1, birthDt=19810421, zip1=221, zip2=72, adres=인천광역시 미추홀구 미추로 17, detailAdres=1, telno=--, mbtlnum=010-3063-9106, email=sazavi10@naver.com, unityIdMapngYn=null, passwordUpdtPnttm=2022-08-22, emailRecptnYn=N, smsRecptnYn=N, infoProvdYn=null, jobTyCode=null, farmCode=null, virtlNo=PfLGfMc1RGr8OW5DBl6fXEl+7DuVOSdwszfbhr9FNDUmXIEQPKmP6HFL8pi+tfMoxCGKOxne/nIDnD+Li5UfMQ==, crtfcTyCode=CETC02, snsLoginId=null, useAt=Y, frstRegistPnttm=2022-08-19, frstRegisterId=null, lastUpdtPnttm=null, lastUpdusrId=null, deleteYn=N, pushYn=null, loginErrCnt=0, loginErrDate=2022-09-02, adtChd=A, chdNm=null, chdBirthDt=null, chdSexdstnCd=null, newJobCd=0, newJobEtc=null, happyCallYn=N, farmAplctYn=N, neighborhoodWriterYn=N, intellectualYn=N, counselorYn=N, sexdstnCode2=남성, birthDt2=1991.06.22}" == ""){
+			alert("로그인 후 이용하시기 바랍니다.");
+			location.href = "/usr/login/loginForm.do";
+			return;
+		}
+	
+		$("#formApply").submit();
+	
+}
+</script>
+
+
+</head>
+<body onload="" style="overflow:auto; overflow-y:scroll;">
+
+	 
+	<!-- warp(S) -->
+	<div class="wrap">
+				<!-- left menu(S) -->
+		<!-- 기초데이터 설정 -->
+		<div class="left_menu">
+			<div class="lm_in">
+				<a href="https://www.returnfarm.com:444/" class="logo_home" target="_blank" title="새창열림">
+					<img src="css/wvtex/readyReturnfarm/img/returnfarm_logo.png" alt="귀농귀촌로고">
+				</a>
+				<span class="txt_title">
+					<!--a href="/cmn/returnFarm/module/readyReturnfarm/summary.do"><img src="css/wvtex/readyReturnfarm/img/text-title.png" alt="농촌에서미리살아보기"></a-->
+				</span>
+
+				<div class="menu_list">
+					<ul class="depth_01">
+						<li>
+						 <a href="#">커뮤니티 시범사업 신청하기</a>
+							<ul class="depth_02">
+								<li><a href="index.html" class="on" >신청하기</a></li>
+								<li><a href="mypage.html">신청내역확인</a></li>
+							</ul>
+					   </li>
+					</ul>
+				</div>
+			</div>
+			<div class="l_footer">
+				<div class="foot_txt_box">
+					<p class="txt_f">(06774) 서울특별시 서초구 강남대로 27 aT 센터 4층</p>
+					<p class="txt_f">귀농귀촌 종합상담  1899-9097</p>
+					<p class="txt_f">시스템 문의  1544-5865</p>
+					<p class="txt_f">Copyright 2015 귀농귀촌종합센터 All Rights</p>
+				</div>
+			</div>
+		</div>
+		<!-- left menu(E) -->
+		
+		<!-- mobile header(S) -->
+		<!-- 기초데이터 설정 -->
+<div class="mobile_header">
+    <a href="/cmn/returnFarm/module/readyReturnfarm/summary.do" class="mg_logo"><img src="css/wvtex/readyReturnfarm/img/header_mg_logo.png" alt="모바일헤더로고"></a>
+    <a href="#!" class="btn_mobile_menu"><img src="css/wvtex/readyReturnfarm/img/btn_mobile_menu.png" alt="모바일메뉴버튼"></a>
+</div><!-- mobile header(E) -->
+
+		<!-- right content(S) -->
+		<div class="right_cont">
+
+			<!-- sub-conts(S) -->
+			<div class="content" id="printForm">
+				<div class="cont_in">
+					
+					<div class="main_title">
+						<h2 class="page_tit nobar">상세보기</h2>
+					</div>
+					
+					<div class="room_info clearfix">
+						<div class="left" id="imgBox">
+							<ul class="slide">
+			]					<li><div class="img"><img src='cmn/cmm/fms/detail_thum_01.jpeg' /></div></li>
+								<li><div class="img"><img src='cmn/cmm/fms/detail_thum_02.jpeg' /></div></li>
+							</ul>
+
+							<script>
+							$(".slide").bxSlider({
+								slideWidth: 720, minSlides: 1, maxSlides: 1, moveSlides: 1, slideMargin: 0, pause: 5000, speed: 1000, pager: false, autoHover: true, auto: true, autoControls: false
+							});
+							</script>
+						</div>
+						<div class="right">
+							<div class="tit">
+								<p style="display: inline;" >강원도 양양군</p>
+								&nbsp;
+								<img src="css/wvtex/readyReturnfarm/img/ico_type01.gif" alt="귀농형">
+								
+							</div>
+							
+							<ul class="info2">
+								<li>
+									<span>세부유형</span>
+									<span
+										class="cat2">
+										귀촌형
+									</span>
+								</li>
+								<li><span>신청기간</span><span>2022.09.13~2022.09.30</span></li>
+								<li><span>운영기간</span><span>2022.09.19~2022.12.18</span></li>
+								<li><span>모집인원</span><span>11명</span></li>
+							</ul>
+							<form id="formApply" method="post" action="applyForm.html">
+								<input type="hidden" name="sidoCd" value="6450000">
+							    <input type="hidden" name="sigunCd" value="4670000">
+							    <input type="hidden" name="townNm" value="어은마을">
+								<input type="hidden" name="townId" value="RRT_0000000541">
+								<input type="hidden" name="roomNm" value="">
+								<input type="hidden" name=roomId value="">
+								
+								<div class="btn">
+									<a href="javascript:goSubmit();">신청하기</a>
+										<!-- <a href="#!">준비중</a> -->
+								</div>
+							</form>
+						</div>
+					</div>
+					<ul class="tabs clearfix" role="tablist">
+						<li id="tab1" class="tab active" data-tab="bbs01" role="tab" aria-controls="tab-panel1" aria-selected="true" tabindex="0">시군정보</li>
+						<li id="tab2" class="tab" data-tab="bbs02" role="tab" aria-controls="tab-panel2" tabindex="-1" aria-selected="false">교육 프로그램</li>
+					</ul>
+					 
+					<div class="detail_con">
+					
+						<!-- tab1:마을정보 -->
+						<div id="tab-panel1" class="tab_content active" role="tabpanel" aria-labelledby="tab1">
+							<h3>지리적 특징</h3>
+							<p>양양군은 강원도 동쪽에 위치하고 있으며 위로는 속초와 아래로 강릉을 접하고 있으며 태백산맥 동쪽에 위치하고 있어 동해바다의 난류 영향으로 여름에 시원하고 겨울에 따뜻한 기후를 가지고 있고 수도권에서 가장 가까운 바다를 접하고 있는 지역임</p>
+							
+							<h3>주요 농특산물</h3>
+							<p>쌀, 산채, 표고버섯, 느타리 버섯, 감, 배, 복숭아, 토종꿀, 한우</p>
+
+							<h3>귀농 추천품목</h3>
+							<p>표고버섯, 산나물</p>
+
+							<h3>대표 브랜드</h3>
+							<p>동철감, 낙산배, 산양산삼, 해뜨미쌀, 양양토종꿀</p>
+
+							<h3>총 면적</h3>
+							<p>630.09㎢(임야 83.41%,농지 8%)</p>
+
+							<h3>총인구</h3>
+							<p>27,856(2022년 7월 기준)</p>
+
+							<h3>귀농귀촌 수</h3>
+							<p>(귀농/귀촌)43명/25가구 (`21년 기준)</p>
+
+							<h3>지원 사업</h3>
+							<div class="overflow_x">
+								<table>
+									<thead>
+										<tr>
+											<th>지원 사업</th>
+											<th>지원 내용</th>
+											<th>비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="left">귀농귀촌인 주택설계비 지원</td>
+											<td class="left">주택 신축시 설계비 지원</td>
+											<td>주택설계비 50%(최대 100만원) 보조</td>
+										</tr>
+										<tr>
+											<td class="left">귀농귀촌인 주건환경개선사업</td>
+											<td class="left">주택수리비 지원</td>
+											<td>주택수리비 최대 1,000만원 보조</td>
+										</tr>
+										<tr>
+											<td class="left">귀농귀촌인 이사비용 지원사업</td>
+											<td class="left">이사비용 지원</td>
+											<td>이사비 50%(최대 100만원) 보조</td>
+										</tr>
+										<tr>
+											<td class="left">청년농업인 창업기반구축 지원사업</td>
+											<td class="left">생산·유통, 제조가공, 체험관광, 브랜드개발, 마케팅 등</td>
+											<td>도비 24%, 시군비 56%, 자부담 20%(성적별 상이 지원)</td>
+										</tr>
+										<tr>
+											<td class="left">귀농 창업자금 및 주택자금 융자지원</td>
+											<td class="left">농업기반시설 조성 및 주택 구입·수리</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td class="left">귀농창업 지원</td>
+											<td class="left">귀농 창업자금 지원</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td class="left">선도농가 현장실습 지원</td>
+											<td class="left">초기 영농기술 습득</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td class="left">귀농인 주거환경개선 지원</td>
+											<td class="left">주택 본체 내외부 수리</td>
+											<td>가구당 500만원 한도</td>
+										</tr>
+										<tr>
+											<td class="left">귀농귀촌 체험학교 운영</td>
+											<td class="left">귀농귀촌인 정착에 필요한 기술 및 정보제공</td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+
+						<!-- tab2:프로그램 -->
+						<div id="tab-panel2" class="tab_content" role="tabpanel" aria-labelledby="tab2">
+							<h3 class="tit_01">프로그램 (귀농형)</h3>
+							<ul id="programBody"></ul>
+							<div class="sign_box2 mb60">
+								<p>비고사항<span></span></p>
+							</div>
+							
+							<h3 class="tit_01">세부 프로그램</h3>
+							<div class="m_sign">
+								<p>좌우 스크롤로 콘텐츠를 확인할 수 있습니다.</p>
+							</div>
+							<div class="overflow_x">
+								<table>
+									<thead>
+										<tr>
+											<th>일정</th>
+											<th colspan="2">분류</th>
+											<th>프로그램 내용</th>
+											<th>시간</th>
+											<th>비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>10. 8(토)</td>
+											<td colspan="2">사전워크숍</td>
+											<td class="left">
+												<ul>
+													<li>□ 커뮤니티 결성 및 활동 방법 안내</li>
+													<li>□ 대상시군 지역 특성 및 특화 프로그램 안내</li>
+												</ul>
+											</td>
+											<td>6H</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td rowspan="3">10. 8(토) ~ 11. 13(일)</td>
+											<td colspan="2">출발지<br/>자율적 커뮤니티 활동 1.</td>
+											<td class="left">
+												<ul>
+													<li>□ 그룹 커뮤니티 활동 (자율 활동)
+														<p>- 구성원 유대감 형성 및 그룹 결속 다지기</p>
+													</li>
+													<li>□ 대상시군 지역 활동 설계
+														<p>"우리 그룹에 필요한 지역 연계 활동은 무엇이며, 어떻게 할것인가?"</p>
+														<p>- 관심지역 연계 귀농귀촌 준비 활동 계획하기</p>
+													</li>
+												</ul>
+											</td>
+											<td>20H이상<br/>(출발지 자율적 커뮤니티활동 1,2 합산)</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td colspan="2">대상시군<br/>커뮤니티 활동</td>
+											<td class="left">
+												<ul>
+													<li>□ 지역 탐방을 통해 커뮤니티와 연대할 수 있는 지역 네트워크 및 관계 형성
+														<p>- 커뮤니티 그룹에게 필요한 멘토, 관계자, 관련기관과 현장 교류</p>
+														<p>(지역 내 귀농귀촌에 필요한 정보 및 실질적인 도움 등 지원)</p>
+													</li>
+													<li>□ 향후 지속가능한 현장 협력 체계 구축 및 지역 일자리 탐색, 연계활동
+														<p>- 지역 취·창업 및 소득활동을 위한 기반 구축</p>
+														<p>- 커뮤니티 조직 및 개인에게 맞는 취·창업 아이템 기획</p>
+													</li>
+													<li></li>
+												</ul>
+												<strong> 자율적 프로그램 기획 (예시)</strong>
+												<ul>
+													<li>◎ 강원도 약용식물 알아보기(강원도 주요 약초의 종류와 효능, 약용작물 가공유통 사례, 산림농업 전망 등)</li>
+													<li>◎ 양양 술곳간(전통주 제조장) 방문 및 양조기술 학습</li>
+													<li>◎ 귀농인 우수사례 견학 및 선배와의 대화하기 : 해풍추이농장(표고버섯)</li>
+													<li>◎ 로컬푸드와 연계한 서프푸드 계획하기</li>
+												</ul>
+											</td>
+											<td>20H 내외<br/>(당일 또는 1박2일)</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td colspan="2">출발지<br/>자율적 커뮤니티 활동 2.</td>
+											<td class="left">
+												<ul>
+													<li>□ 지역을 연계한 귀농귀촌 실행 계획 구체화</li>
+													<li>□ 지속적인 커뮤니티 유지 및 지역 연계 활동을 위한 후속 계획 수립</li>
+												</ul>
+											</td>
+											<td>20H 이상<br/>
+												(출발지 자율적 커뮤니티활동 1,2 합산)</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>11월 4주</td>
+											<td colspan="2">성과공유대회</td>
+											<td class="left">
+												<ul>
+													<li>□ 소그룹 활동 내용 공유 및 시상식</li>
+													<li>□ 지속적인 커뮤니티 활동을 위한 의견수렴</li>
+												</ul>
+											</td>
+											<td>6H</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>12월 이후</td>
+											<td>후속 커뮤니티 활동</td>
+											<td>귀촌형</td>
+											<td class="left">
+												<ul>
+													<li>□ 지속적인 커뮤니티 활동 및 지역 교류</li>
+													<li>❍ 로컬푸드 및 지역 전략 작물 생산을 위한 계획 수립
+														<p>- 지역 농산물직판매장, 학교급식센터에서 필요로 하는 품목 생산</p>
+														<p>- 고령화로 인해 재배면적이 줄고 있는 전략 작물을 귀농희망자가 접근할 수 있도록 품목 위주의 컨설팅 연계</p>
+													</li>
+													<li>❍ 동일 품목의 타 지역 커뮤니티와 교류회 및 지역별 통합로컬푸드센터와 연계한 생산 활동 추진</li>
+												</ul>
+											</td>
+											<td>-</td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						<script>
+						$(document).ready(function(){
+
+							//의미적으로 활성화 표기를 위해 true로 설정된 aria-selected 속성 추가
+							//시각적인 활성화/비활성화는 .active 클래스이용 css로 조정
+							$(".tab:first-of-type, .tab_content:first-of-type").addClass("active");
+							$(".tab:first-of-type").attr("aria-selected", "true");
+							$(".tab:first-of-type").attr("tabindex", "0");
+							$(".tab").on("keydown", function(event){
+								event = event || window.event;
+								event.preventDefault ? event.preventDefault() : event.returnValue = false;
+								var keycode = event.keyCode || event.which;
+							
+								switch(keycode){
+								case 37:  // left arrow
+									if(this.previousElementSibling){
+										$(this).attr("tabindex", "-1").prev().attr("tabindex", "0").focus();
+									}else{
+										// 초점이 첫 번째 요소에 있었다면, 마지막 탭으로 초점 이동
+										$(this).attr("tabindex", "-1");
+										$(".tab:last-of-type").attr("tabindex", "0").focus();
+									}
+									break;
+							
+								case 39:  // right arrow
+									if(this.nextElementSibling){
+										$(this).attr("tabindex", "-1").next().attr("tabindex", "0").focus();
+									}else{
+										// 초점이 마지막 요소에 있었다면, 첫 번째 탭으로 초점 이동
+										$(this).attr("tabindex", "-1");
+										$(".tab:first-of-type").attr("tabindex", "0").focus();
+									}
+									break;
+								}
+							});
+							
+							$(".tab").on("keydown", function(event){
+								event = event || window.event;
+								var keycode = event.keyCode || event.which;
+								
+								switch(keycode){
+								case 32:    // Space
+								case 13:    // Enter
+									// 선택된 탭 활성화
+									$(this).addClass("active").attr("aria-selected", "true")
+									// 기존 탭 비활성화
+									.siblings().removeClass("active").attr("aria-selected", "false");
+									// 연관된 탭 패널 활성화
+									$("#" + $(this).attr("aria-controls")).addClass("active")
+									// 기존 탭 패널 비활성화
+									.siblings(".tab_content").removeClass("active");
+								break;
+								}
+							});
+							
+							$(".tabs").on("keydown", ".active", function(event){
+								event = event || window.event;
+								var keycode = event.keyCode || event.which;
+							
+								// tab 키 눌렀을 때 (shift + tab은 제외)
+								if(!event.shiftKey && keycode === 9){
+									event.preventDefault ? event.preventDefault() : event.returnValue = false;
+									$("#" + $(this).attr("aria-controls")).addClass("active")
+									// 기존 탭 패널 비활성화
+									.siblings(".tab_content").removeClass("active");
+									$("#" + $(this).attr("aria-controls")).find("li:first-of-type a").focus()
+								}
+							});
+							
+							$(".tab").on("mousedown", function(){
+								// 선택된 탭 활성화
+								$(this).addClass("active").attr({"tabindex": "0","aria-selected": "true"}).focus()
+								// 기존 탭 비활성화
+								.siblings()
+								.removeClass("active")
+								.attr({"tabindex": "-1","aria-selected": "false"});
+								// 연관된 탭 패널 활성화
+								$("#" + $(this).attr("aria-controls")).addClass("active")
+								// 기존 탭 패널 비활성화
+								.siblings(".tab_content").removeClass("active");
+							});
+
+						});
+						</script>
+						
+						
+					</div>
+					 
+					<!-- 주요 프로그램 -->
+					<!--div class="detail_con" >주요프로그램</div-->
+					<!-- 풀내음 -->
+					<!-- 해당화 -->
+					<!-- 객실 세부 정보(E) -->
+
+					<!-- 하단버튼(S) -->
+					<div class="btn_box tc mt70">
+						<a href="/cmn/returnFarm/module/readyReturnfarm/list.do" class="btn_type_06 list">목록</a>
+					</div>
+					<!-- 하단버튼(E) -->
+				</div>
+			</div>
+			<!-- sub-conts(E) -->
+
+		</div>
+		<!-- right content(E) -->
+
+		<!-- footer mobile(S) -->
+		<!-- 기초데이터 설정 -->
+<div class="mobile_footer">
+    <p>(06774) 서울특별시 서초구 강남대로 27 aT 센터 4층</p>
+    <p>귀농귀촌 종합상담 : 1899-9097 / 시스템 문의 : 1544-5865</p>
+    <p>Copyright 2015 귀농귀촌종합센터 All Rights</p>
+</div><!-- footer mobile(E) -->
+
+		
+		<!-- lnb menu(S) -->
+		<!-- 기초데이터 설정 -->
+		<div class="lnb">
+			<div class="lnb_in">
+				<a href="#!" class="btn_lnb_close"></a>
+				<div class="lnb_menu_list">
+					<div class="link"><a href="https://www.returnfarm.com:444/"><span>바로가기</span></div>
+					<ul class="depth_01 mt30">
+						<li>
+						   <a href="/cmn/returnFarm/module/readyReturnfarm/guidance.do">커뮤니티 시범사업 신청하기</a>
+							<ul class="depth_02">
+								<li><a href="detail.html">신청하기</a></li>
+								<li><a href="mypage.html">신청내역확인</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- lnb menu(E) -->
+		
+		
+	</div>
+	<!-- wrap(E) -->		
+	
+	<form id="formDetail" method="post" action="detail.do">
+		<input type="hidden" name="townId" value="">
+		<input type="hidden" name="townOpId" value="">
+	    <input type="hidden" name="operationOrder" value="">
+	</form>
+
+
+<iframe title="저장하기" name="hiddenframe" id="hiddenframe" height="0" width="0" style="display:none;"></iframe>
+
+</body>
+</html>
