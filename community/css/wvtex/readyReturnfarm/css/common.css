@@ -437,7 +437,7 @@ input::-moz-placeholder { color: #888888; }
 .sign{text-align:center; margin-top:15px;}
 
 /* program */
-.desc_img img{width:90%;}
+.desc_img img{width:70%;}
 
 /* list */
 .cont_in > ul.type1 > li{position:relative; margin-top:25px; padding-left:14px; font-size:18px;}
