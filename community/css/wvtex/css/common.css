@@ -698,7 +698,7 @@ input::-moz-placeholder { color: #888888; }
 .aplct_list > li:nth-child(4n){margin-right:0;}
 .aplct_list > li:nth-child(-n+4){margin-top:0;}
 .aplct_list > li a{display:block}
-.aplct_list > li .img{overflow:hidden; position:relative; width:100%; height:0; padding-top:75%; background:#000;}
+.aplct_list > li .img{overflow:hidden; position:relative; width:100%; height:0; padding-top:74%; background:#000;}
 .aplct_list > li .img img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:100%;}
 .aplct_list > li .img .cat{position:absolute; top:8px; right:8px; padding:8px 17px; background:#fff; font-size:14px; font-weight:bold; border-radius:16px; box-shadow:0px 2px 4px 0px rgba(0, 0, 0, 0.08); line-height:16px;}
 .aplct_list > li .img .cat[value="귀농형"]{color:#f6921e}
