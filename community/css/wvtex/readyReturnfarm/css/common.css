@@ -955,7 +955,7 @@ input::-moz-placeholder { color: #888888; }
 #tab-panel1.tab_content table tr td:nth-child(4){width:153px !important;}
 #tab-panel1.tab_content table tr td:nth-child(5){width:166px !important;}
 #tab-panel1.tab_content table th{padding:20px !important; background-color:#eee !important; border:1px solid #ddd !important;}
-#tab-panel1.tab_content table tbody tr td{padding:20px !important; background-color:#fff !important; border:1px solid #ddd !important; text-align:center; vertical-align:middle !important; box-sizing:border-box;}
+#tab-panel1.tab_content table tbody tr td{padding:20px !important; background-color:#fff !important; border:1px solid #ddd !important; text-align:center; vertical-align:middle !important; box-sizing:border-box;line-height:24px;}
 #tab-panel1.tab_content table tbody tr td.left{text-align:left;}
 #tab-panel1.tab_content table tbody tr td p,
 #tab-panel1.tab_content table tbody tr td span{font-size:15px !important;}
@@ -970,9 +970,9 @@ input::-moz-placeholder { color: #888888; }
 #tab-panel2.tab_content table{width:100% !important; table-layout:fixed !important; margin-bottom:24px !important; font-size:15px !important;}
 #tab-panel2.tab_content table tr th:nth-child(1){width:127px !important;}
 #tab-panel2.tab_content table tr th:nth-child(2){width:166px !important;}
-#tab-panel2.tab_content table tr th:nth-child(3){width:667px !important;}
+#tab-panel2.tab_content table tr th:nth-child(3){width:687px !important;}
 #tab-panel2.tab_content table tr th:nth-child(4){width:153px !important;}
-#tab-panel2.tab_content table tr th:nth-child(5){width:166px !important;}
+#tab-panel2.tab_content table tr th:nth-child(5){width:146px !important;}
 #tab-panel2.tab_content table th {padding:20px !important; background-color:#eee !important; border:1px solid #ddd !important;}
 #tab-panel2.tab_content table tbody tr td{padding:20px !important; background-color:#fff !important; border:1px solid #ddd !important; text-align:center; vertical-align:middle !important; box-sizing:border-box;line-height:24px;}
 #tab-panel2.tab_content table tbody tr td.left{text-align:left;}
